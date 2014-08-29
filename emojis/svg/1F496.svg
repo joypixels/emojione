@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   enable-background="new 0 0 64 64"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="1F496.svg"
+   inkscape:export-filename="D:\TESTINGEMOJI\SVGTEST\1F496.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata3877"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs3875" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview3873"
+   showgrid="false"
+   inkscape:zoom="3.6875"
+   inkscape:cx="32"
+   inkscape:cy="32"
+   inkscape:window-x="389"
+   inkscape:window-y="272"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<g
+   id="g3859">
+	<g
+   id="g3861">
+		<path
+   fill="#DF394C"
+   d="M62.758,11.842C60.657,5.828,55.702,0.836,49.447,0.149c-3.551-0.34-7.117-0.103-10.369,1.534    c-2.56,1.292-4.602,3.451-6.447,5.679c-2.266-2.712-4.769-5.136-8.075-6.396C22.567,0.205,20.401-0.012,18.298,0    c-1.829,0.012-3.669,0.197-5.413,0.791C9.688,1.88,7.015,4.139,5.014,6.924c-1.17,1.63-2.03,3.489-2.673,5.407    c-0.637,1.907-1.158,4.124-1.158,6.158c0,2.334,0,4.559,0.447,6.859c0.505,2.63,1.425,5.158,2.55,7.56    c3.116,6.642,8.021,12.3,13.158,17.299c4.635,4.504,9.676,8.549,14.85,12.346c0.235,0.174,0.65,0.174,0.89,0    C40.729,56.938,48.18,50.77,54.3,43.334c3.88-4.719,7.278-10.089,8.909-16.127C64.562,22.225,64.459,16.71,62.758,11.842z"
+   id="path3863" />
+		<path
+   fill="#D13852"
+   d="M20.207,37.084C19.829,25.702,24.548,14.643,32.24,6.911c-2.167-2.526-4.564-4.756-7.685-5.945    C22.567,0.207,20.401-0.01,18.298,0c-1.829,0.014-3.669,0.197-5.413,0.791c-3.197,1.089-5.87,3.35-7.871,6.133    c-1.17,1.63-2.03,3.489-2.673,5.409c-0.637,1.905-1.158,4.122-1.158,6.156c0,2.334,0,4.561,0.447,6.859    c0.505,2.63,1.425,5.158,2.55,7.56c3.116,6.642,8.021,12.3,13.158,17.299c3.291,3.199,6.794,6.158,10.397,8.969    C23.268,53.068,20.491,45.523,20.207,37.084z"
+   id="path3865" />
+		<path
+   fill="#F1A5B1"
+   d="M52.375,21.78c0.796,1.78,3.41,2.391,5.828,1.366l0,0c2.431-1.027,3.755-3.308,2.956-5.088l-3.391-7.552    c-0.8-1.787-3.418-2.39-5.845-1.366l0,0c-2.426,1.028-3.74,3.302-2.951,5.083L52.375,21.78z"
+   id="path3867" />
+	</g>
+	<polygon
+   fill="#FAAA31"
+   points="59.916,46.201 52.786,44.073 56.424,37.611 49.964,41.247 47.948,34.109 45.969,41.247    39.452,37.682 39.45,37.686 43.145,44.073 36.019,46.201 43.143,48.067 39.508,54.526 45.969,50.89 47.962,58.031 49.964,50.89    56.424,54.526 52.786,48.067 59.916,46.209  "
+   id="polygon3869" />
+	<polygon
+   fill="#FAAA31"
+   points="15.552,8.727 10.945,7.351 13.294,3.175 9.12,5.525 7.817,0.911 6.539,5.525 2.328,3.221    2.328,3.224 4.714,7.351 0.107,8.725 4.714,9.931 2.361,14.107 6.539,11.757 7.827,16.373 9.12,11.757 13.294,14.107 10.945,9.931    15.552,8.73  "
+   id="polygon3871" />
+</g>
+</svg>
