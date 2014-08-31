@@ -36,10 +36,10 @@ class Emojione {
 
         return str_replace($replace,$replaceWith,$string);
     }
-    static function unicodeToShortname($string) {
+    static function toShort($string) {
         return str_replace(array_keys(self::$unicode_replace),array_values(self::$unicode_replace),$string);
     }
-    static function toShort($string) {
+    static function unicodeToImage($string) {
         if(self::$imageType == 'png') {
             $imagePath = self::$imagePathPNG;
             $extension = 'png';

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emojione - demo</title>
+    <link rel="stylesheet" href="../css/emojione.min.css" type="text/css" media="all" />
+
+    <style type="text/css">
+        main {
+            border: solid 1px #000000;
+            width: 780px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px 50px 50px 50px;
+        }
+        div {
+            background-color: #EEEEEE;
+            padding: 5px 20px 25px 20px;
+            margin-bottom:50px;
+        }
+    </style>
+
+    <script src="../lib/js/emojione.min.js"></script>
+    <script>
+        emojione.imageType = 'svg';
+
+        // defaults to cdnjs but we can use local images too:
+        emojione.imagePathPNG = './../images/png/';
+        emojione.imagePathSVG = './../images/svg/';
+    </script>
+</head>
+<body>
+<main>
+
+<h1>emojione demos</h1>
+
+    <div id="demo1">
+        <h3>Javascript - Shortcode -> Image</h3>
+
+        Input:<br/>
+        <input type="text" id="demo1-input" name="demo1-input" size="50" value="Hello world! :smile:"/> <input type="button" value="Convert" onclick="demo1Convert()"/>
+        <br /> <br />
+
+        Output:<br />
+        <span id="demo1-output"></span>
+
+        <script type="text/javascript">
+            function demo1Convert() {
+                var input = document.getElementById('demo1-input').value;
+                var output = emojione.toImage(input);
+                document.getElementById('demo1-output').innerHTML = output;
+            }
+        </script>
+    </div>
+
+    <div id="demo2">
+        <h3>Javascript - Unicode -> Image</h3>
+
+        Input:<br/>
+        <input type="text" id="demo2-input" name="demo2-input" size="50" value="Hello world! &#x1f604;"/> <input type="button" value="Convert" onclick="demo2Convert()"/>
+        <br />
+        <small>you can also try inputting an emoji from a mobile device here</small><br /><br />
+
+        Output:<br />
+        <span id="demo2-output"></span>
+
+        <script type="text/javascript">
+            function demo2Convert() {
+                var input = document.getElementById('demo2-input').value;
+                var output = emojione.unicodeToImage(input);
+                document.getElementById('demo2-output').innerHTML = output;
+            }
+        </script>
+    </div>
+
+    <div id="demo3">
+        <h3>Javascript - Unicode -> Shortcode</h3>
+
+        Input:<br/>
+        <input type="text" id="demo3-input" name="demo3-input" size="50" value="Hello world! &#x1f604;"/> <input type="button" value="Convert" onclick="demo3Convert()"/>
+        <br />
+        <small>you can also try inputting an emoji from a mobile device here</small><br /><br />
+
+        Output:<br />
+        <span id="demo3-output"></span>
+
+        <script type="text/javascript">
+            function demo3Convert() {
+                var input = document.getElementById('demo3-input').value;
+                var output = emojione.toShort(input);
+                document.getElementById('demo3-output').innerHTML = output;
+            }
+        </script>
+    </div>
+
+    <div id="demo4">
+        <h3>Javascript - Shortcode + Unicode -> Image</h3>
+
+        Input:<br/>
+        <input type="text" id="demo4-input" name="demo4-input" size="50" value="Hello world! :smile: &#x1f604;"/> <input type="button" value="Convert" onclick="demo4Convert()"/>
+        <br />
+        <small>you can also try inputting an emoji from a mobile device here</small><br /><br />
+
+        Output:<br />
+        <span id="demo4-output"></span>
+
+        <script type="text/javascript">
+            function demo4Convert() {
+                var input = document.getElementById('demo4-input').value;
+                var output = emojione.toImage(input);
+                document.getElementById('demo4-output').innerHTML = output;
+            }
+        </script>
+    </div>
+</main>
+</body>
+</html>
