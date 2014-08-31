@@ -38,7 +38,7 @@ Emojione::$imagePathSVG = './../images/svg/';
         <h3>PHP - Shortcode -> Image</h3>
 
         Input:<br/>
-        <form method="post" action="index.php#demo5">
+        <form method="post">
             <input type="text" id="demo5-input" name="demo5-input" size="50" value="Hello world! :smile: "/> <input type="submit" value="Convert"/>
         </form>
         <br />
@@ -58,7 +58,7 @@ Emojione::$imagePathSVG = './../images/svg/';
         <h3>PHP - Unicode -> Image</h3>
 
         Input:<br/>
-        <form method="post" action="index.php#demo6">
+        <form method="post">
             <input type="text" id="demo6-input" name="demo6-input" size="50" value="Hello world! &#x1f604;"/> <input type="submit" value="Convert"/>
         </form>
         <br />
@@ -78,7 +78,7 @@ Emojione::$imagePathSVG = './../images/svg/';
         <h3>PHP - Unicode -> Shortcode</h3>
 
         Input:<br/>
-        <form method="post" action="index.php#demo7">
+        <form method="post">
             <input type="text" id="demo7-input" name="demo7-input" size="50" value="Hello world! &#x1f604;"/> <input type="submit" value="Convert"/>
         </form>
         <br />
@@ -99,7 +99,7 @@ Emojione::$imagePathSVG = './../images/svg/';
         <h3>PHP - Shortcode + Unicode -> Image</h3>
 
         Input:<br/>
-        <form method="post" action="index.php#demo8">
+        <form method="post">
             <input type="text" id="demo8-input" name="demo8-input" size="50" value="Hello world! :smile: &#x1f604;"/> <input type="submit" value="Convert"/>
         </form>
         <br />
