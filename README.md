@@ -16,12 +16,12 @@ We've provided simple Javascript and PHP libraries for converting :shortnames: t
 
 > **What Shortnames?**
 > 
-> We built [emoji.codes](http://emoji.codes.com/) to make finding and copying shortnames as painless as possible.
+> [emoji.codes](http://emoji.codes/) has a complete list of shortnames as well as quick copy & search functions.
 
 
 ## Implementation
 
-There's a couple ways to implement emojione on your website. To make things as easy as possible we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally because when we do updates we'll simply push them to cdnjs and they'll be updated on your applications.
+There's a couple ways to implement Emojione on your website. To make things as easy as possible we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally because when we do updates we'll simply push them to cdnjs and they'll be updated on your applications.
 
 We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user inputted text, that you make sure you store only the :shortnames:. The flow is as follows:
 
@@ -160,6 +160,15 @@ $convertedString =  Emojione::toImage($string);
 ###
 ```
 
+## Considerations
+**Character Encoding &mdash; UTF-8**
+
+If you're getting serious about implementing emojis into your website you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There's a lot of options and configuration possibilies here so you'll have to figure that out depending on your own situation. 
+
+A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emojis. 
+
+To get you started here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
+
 ## Information
 
 ### Contact
@@ -178,7 +187,7 @@ If you discover any bugs, feel free to create an issue on GitHub. We also welcom
  *  https://github.com/emojione/issues
 
 ### Alternatives
-We sincerely hope that you choose to use emojione and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
+We sincerely hope that you choose to use Emojione and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
 * https://github.com/node-modules/emoji
@@ -190,4 +199,4 @@ We sincerely hope that you choose to use emojione and support our project, but i
 
 ## License
 
-Please view [license.md](https://github.com/Ranks/emojione/blob/master/license.md) for complete and up to date licensing terms.
+Please view [LICENSE.md](https://github.com/Ranks/emojione/blob/master/LICENSE.md) for complete and up to date licensing terms.
