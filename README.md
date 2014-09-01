@@ -190,4 +190,4 @@ We sincerely hope that you choose to use emojione and support our project, but i
 
 ## License
 
-Please view [license.md](https://github.com/Ranks/emojione/blob/master/license.md) for complete and up to date licensing terms.
+Please view [LICENSE.md](https://github.com/Ranks/emojione/blob/master/LICENSE.md) for complete and up to date licensing terms.
