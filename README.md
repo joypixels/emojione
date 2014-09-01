@@ -180,7 +180,7 @@ If you discover any bugs, feel free to create an issue on GitHub. We also welcom
 ### Alternatives
 We sincerely hope that you choose to use emojione and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
 
-* https://github.com/hassankhan/
+* https://github.com/hassankhan/emojify.js
 * https://github.com/node-modules/emoji
 * https://github.com/iamcal/php-emoji
 * https://github.com/Genshin/PhantomOpenEmoji
