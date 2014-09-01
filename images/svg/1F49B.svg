@@ -11,54 +11,49 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="Layer_1"
+   inkscape:export-ydpi="90"
+   inkscape:export-xdpi="90"
+   inkscape:export-filename="D:\TESTINGEMOJI\SVGTEST\1F49B.png"
+   sodipodi:docname="1F49B.svg"
+   inkscape:version="0.48.5 r10040"
    x="0px"
    y="0px"
    width="64px"
    height="64px"
    viewBox="0 0 64 64"
    enable-background="new 0 0 64 64"
-   xml:space="preserve"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="1F49B.svg"
-   inkscape:export-filename="D:\TESTINGEMOJI\SVGTEST\1F49B.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90"><metadata
-   id="metadata5720"><rdf:RDF><cc:Work
+   xml:space="preserve"><metadata
+   id="metadata3222"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs5718" /><sodipodi:namedview
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1"
-   objecttolerance="10"
-   gridtolerance="10"
-   guidetolerance="10"
-   inkscape:pageopacity="0"
-   inkscape:pageshadow="2"
-   inkscape:window-width="640"
-   inkscape:window-height="480"
-   id="namedview5716"
-   showgrid="false"
-   inkscape:zoom="3.6875"
-   inkscape:cx="32"
+   id="defs3220" />
+<sodipodi:namedview
    inkscape:cy="32"
-   inkscape:window-x="444"
-   inkscape:window-y="264"
+   inkscape:cx="32"
+   inkscape:zoom="3.6875"
+   showgrid="false"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   borderopacity="1"
+   id="namedview3463"
+   inkscape:current-layer="Layer_1"
    inkscape:window-maximized="0"
-   inkscape:current-layer="Layer_1" />
-<g
-   id="g5708">
-	<path
+   inkscape:window-y="470"
+   inkscape:window-x="593"
+   inkscape:window-height="448"
+   inkscape:window-width="640"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0">
+	</sodipodi:namedview>
+<path
+   id="path3208"
    fill="#FCCA58"
-   d="M62.582,12.036C60.445,5.924,55.409,0.85,49.053,0.151c-3.607-0.345-7.233-0.105-10.536,1.56   c-2.603,1.311-4.678,3.506-6.555,5.771c-2.302-2.757-4.846-5.221-8.208-6.501C21.733,0.209,19.533-0.013,17.395,0   c-1.855,0.013-3.727,0.2-5.5,0.803C8.647,1.912,5.929,4.207,3.897,7.037c-1.192,1.658-2.063,3.547-2.716,5.498   C0.528,14.47,0,16.725,0,18.792c0,2.374,0.002,4.633,0.455,6.973c0.514,2.669,1.449,5.241,2.593,7.68   c3.166,6.749,8.151,12.502,13.372,17.579c4.709,4.582,9.833,8.691,15.093,12.551c0.239,0.175,0.663,0.175,0.902,0   c7.779-5.707,15.349-11.978,21.571-19.532c3.944-4.798,7.394-10.254,9.054-16.389C64.411,22.587,64.312,16.983,62.582,12.036z"
-   id="path5710" />
-	<path
-   fill="#F2C05B"
-   d="M19.336,37.687C18.952,26.123,23.75,14.882,31.565,7.024c-2.199-2.568-4.639-4.834-7.812-6.042   c-2.02-0.772-4.221-0.992-6.358-0.981c-1.855,0.013-3.727,0.199-5.5,0.802C8.647,1.912,5.929,4.209,3.897,7.038   c-1.192,1.657-2.063,3.547-2.716,5.498C0.528,14.47,0,16.725,0,18.792c0,2.374,0.002,4.633,0.455,6.973   c0.514,2.673,1.449,5.241,2.593,7.682c3.166,6.747,8.151,12.502,13.372,17.581c3.344,3.252,6.902,6.257,10.566,9.114   C22.447,53.935,19.623,46.268,19.336,37.687z"
-   id="path5712" />
-	<path
+   d="M27.067,59.176c1.134,0.992,2.115,1.816,3.098,2.637c0.614,0.506,1.222,1.021,1.838,1.521  c0.577-0.472,1.199-0.987,1.82-1.507c1.001-0.832,1.979-1.66,2.948-2.487C49.484,47.6,63.71,34.467,63.91,18.166  c-0.057-1.283-0.275-2.719-0.643-4.128c-0.379-1.448-0.93-2.897-1.627-4.289c-1.789-3.281-6.232-6.02-10.767-6.573  c-8.619-1.017-12.651,1.197-16.718,7.004l-2.154,3.102L29.84,10.18c-3.673-5.27-7.292-7.144-14.389-7.144  c-0.74,0-1.513,0.047-2.323,0.139C8.602,3.73,4.153,6.469,2.316,9.828c-0.651,1.313-1.2,2.763-1.58,4.21  c-0.37,1.397-0.585,2.845-0.646,4.273C0.301,34.467,14.517,47.6,27.067,59.176z" />
+<path
+   id="path3210"
    fill="#F6DFB1"
-   d="M52.027,22.134c0.811,1.812,3.464,2.432,5.924,1.393l0,0c2.471-1.047,3.816-3.362,3.005-5.172l-3.448-7.677   c-0.812-1.814-3.474-2.426-5.938-1.387l0,0c-2.468,1.042-3.802,3.355-2.993,5.165L52.027,22.134z"
-   id="path5714" />
-</g>
+   d="M60.541,15.959c-0.057-1.054-0.253-2.019-0.57-2.902c-0.311-0.875-0.742-1.671-1.271-2.386  c-3.154-4.269-9.722-5.596-15.11-4.269c-2.094,0.59-4.188,1.471-5.086,3.535c-0.298,0.879,0.896,1.472,1.495,1.175  c3.894-0.59,8.231-0.367,11.752,1.175c0.879,0.391,1.705,0.859,2.465,1.417c2.552,1.823,3.743,4.768,4.345,7.71  c1.195-0.29,1.797-1.762,1.898-3.057C60.57,17.558,60.615,16.746,60.541,15.959z" />
 </svg>
