@@ -6,7 +6,7 @@ The web's first and only complete emoji set. It is 100% free and super easy to i
 
 ## The Idea
 
-To standardize emojis on the web through the use of common shortnames (:smile:). 
+To standardize emojis on the web through the use of common :shortnames:. 
 
 User inputted :shortnames: should be stored as is and then replaced with the matching emoji images when outputting client side. Likewise, Unicode emojis inputted (mainly from mobiles and tablets) should be converted to their corresponding :shortname: before storing in your database.
 
@@ -14,9 +14,9 @@ This allows you to quickly add "emoji support" to your forums, guestbooks, blogs
 
 We've provided simple Javascript and PHP libraries for converting :shortnames: to emoji images and and Unicode emojis to :shortnames:. See below for usage instructions.
 
-> **What Shortcodes?**
+> **What Shortnames?**
 > 
-> We built [emoji.codes](http://emoji.codes.com/) to make finding and copying shortcodes as painless as possible.
+> We built [emoji.codes](http://emoji.codes.com/) to make finding and copying shortnames as painless as possible.
 
 
 ## Implementation
