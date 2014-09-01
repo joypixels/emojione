@@ -21,7 +21,7 @@ We've provided simple Javascript and PHP libraries for converting :shortnames: t
 
 ## Implementation
 
-There's a couple ways to implement emojione on your website. To make things as easy as possible we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally because when we do updates we'll simply push them to cdnjs and they'll be updated on your applications.
+There's a couple ways to implement Emojione on your website. To make things as easy as possible we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally because when we do updates we'll simply push them to cdnjs and they'll be updated on your applications.
 
 We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user inputted text, that you make sure you store only the :shortnames:. The flow is as follows:
 
@@ -178,7 +178,7 @@ If you discover any bugs, feel free to create an issue on GitHub. We also welcom
  *  https://github.com/emojione/issues
 
 ### Alternatives
-We sincerely hope that you choose to use emojione and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
+We sincerely hope that you choose to use Emojione and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
 * https://github.com/node-modules/emoji
