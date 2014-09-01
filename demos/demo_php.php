@@ -1,21 +1,39 @@
 <?php
+# include the PHP library (if not autoloaded)
 require('./../lib/php/Emojione.class.php');
 
-// 'svg' or 'png'
+################################################
+# Optional:
+# default is PNG but you may also use SVG
 Emojione::$imageType = 'svg';
 
-// defaults to cdnjs but we can use local images too:
+# default is cdnjs but you can also change the paths
+# if you want to host the iamges somewhere else
 Emojione::$imagePathPNG = './../images/png/';
 Emojione::$imagePathSVG = './../images/svg/';
+################################################
 
 ?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>emojione - demo</title>
+    <title>PHP Demo &mdash; Emojione.com</title>
     <link rel="stylesheet" href="../css/emojione.min.css" type="text/css" media="all" />
+
     <style type="text/css">
+        html,body {
+            font-family:sans-serif;
+            background-color: #333333;
+        }
+        #logo {
+            background: url("http://www.emojione.com/images/emojione.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+            height: 141px;
+            margin: 0 auto;
+            text-indent: -9999em;
+            width: 247px;
+        }
         main {
+            background-color: #FFFFFF;
             border: solid 1px #000000;
             width: 780px;
             margin: 0 auto;
@@ -30,89 +48,78 @@ Emojione::$imagePathSVG = './../images/svg/';
     </style>
 </head>
 <body>
+<h1 id="logo">Emojione</h1>
 <main>
 
-    <h1>emojione demos</h1>
+    <h2>PHP Demos</h2>
 
-    <div id="demo5">
-        <h3>PHP - Shortcode -> Image</h3>
+    <div id="demo3">
+        <h3>Demo #3</h3>
+        <p>Convert Unicode emoji characters to shortnames.</p>
 
-        Input:<br/>
-        <form method="post">
-            <input type="text" id="demo5-input" name="demo5-input" size="50" value="Hello world! :smile: "/> <input type="submit" value="Convert"/>
-        </form>
-        <br />
-        <br />
-
-        Output:<br />
-        <span id="demo5-output">
-            <?php
-            if(isset($_POST['demo5-input'])) {
-                echo Emojione::toImage($_POST['demo5-input']);
-            }
-            ?>
-        </span>
-    </div>
-
-    <div id="demo6">
-        <h3>PHP - Unicode -> Image</h3>
-
-        Input:<br/>
-        <form method="post">
-            <input type="text" id="demo6-input" name="demo6-input" size="50" value="Hello world! &#x1f604;"/> <input type="submit" value="Convert"/>
+        <b>Input:</b><br/>
+        <form method="post" action="demo_php.php#demo3">
+            <input type="text" id="demo3-input" name="demo3-input" size="50" value="Hello world! &#x1f604;"/> <input type="submit" value="Convert"/>
         </form>
         <br />
         <small>you can also try inputting an emoji from a mobile device here</small><br /><br />
 
-        Output:<br />
-        <span id="demo6-output">
+        <br/>
+        <b>Output:</b><br />
+        <span id="demo3-output">
             <?php
-            if(isset($_POST['demo6-input'])) {
-                echo Emojione::unicodeToImage($_POST['demo6-input']);
+            if(isset($_POST['demo3-input'])) {
+                echo Emojione::toShort($_POST['demo3-input']);
             }
             ?>
         </span>
+
+        <br />
+        <br />
+        <br />
+        <b>Code:</b>
+        <pre>
+&lt;?php
+if(isset($_POST['demo3-input'])) {
+    echo Emojione::toShort($_POST['demo3-input']);
+}
+?&gt;
+        </pre>
     </div>
 
-    <div id="demo7">
-        <h3>PHP - Unicode -> Shortcode</h3>
 
-        Input:<br/>
-        <form method="post">
-            <input type="text" id="demo7-input" name="demo7-input" size="50" value="Hello world! &#x1f604;"/> <input type="submit" value="Convert"/>
+    <div id="demo4">
+        <h3>Demo #4</h3>
+        <p>Convert Unicode emoji characters and/or shortnames to images.</p>
+
+        <b>Input:</b><br/>
+        <form method="post" action="demo_php.php#demo4">
+            <input type="text" id="demo4-input" name="demo4-input" size="50" value="Hello world! :smile: &#x1f604;"/> <input type="submit" value="Convert"/>
         </form>
         <br />
         <small>you can also try inputting an emoji from a mobile device here</small><br /><br />
 
-        Output:<br />
-        <span id="demo7-output">
+        <br/>
+        <b>Output:</b><br />
+        <span id="demo4-output">
             <?php
-            if(isset($_POST['demo7-input'])) {
-                echo Emojione::toShort($_POST['demo7-input']);
+            if(isset($_POST['demo4-input'])) {
+                echo Emojione::toImage($_POST['demo4-input']);
             }
             ?>
         </span>
-    </div>
 
-
-    <div id="demo8">
-        <h3>PHP - Shortcode + Unicode -> Image</h3>
-
-        Input:<br/>
-        <form method="post">
-            <input type="text" id="demo8-input" name="demo8-input" size="50" value="Hello world! :smile: &#x1f604;"/> <input type="submit" value="Convert"/>
-        </form>
         <br />
-        <small>you can also try inputting an emoji from a mobile device here</small><br /><br />
-
-        Output:<br />
-        <span id="demo8-output">
-            <?php
-            if(isset($_POST['demo8-input'])) {
-                echo Emojione::toImage($_POST['demo8-input']);
-            }
-            ?>
-        </span>
+        <br />
+        <br />
+        <b>Code:</b>
+        <pre>
+&lt;?php
+if(isset($_POST['demo4-input'])) {
+    echo Emojione::toImage($_POST['demo4-input']);
+}
+?&gt;
+        </pre>
     </div>
 
 </main>
