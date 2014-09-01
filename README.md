@@ -16,7 +16,7 @@ We've provided simple Javascript and PHP libraries for converting :shortnames: t
 
 > **What Shortnames?**
 > 
-> We built [emoji.codes](http://emoji.codes.com/) to make finding and copying shortnames as painless as possible.
+> [emoji.codes](http://emoji.codes/) has a complete list of shortnames as well as quick copy & search functions.
 
 
 ## Implementation
