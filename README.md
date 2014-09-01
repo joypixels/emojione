@@ -160,6 +160,15 @@ $convertedString =  Emojione::toImage($string);
 ###
 ```
 
+## Considerations
+**Character Encoding &mdash; UTF-8**
+
+If you're getting serious about implementing emojis into your website you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There's a lot of options and configuration possibilies here so you'll have to figure that out depending on your own situation. 
+
+A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emojis. 
+
+To get you started here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
+
 ## Information
 
 ### Contact
