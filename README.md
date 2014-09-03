@@ -1,4 +1,4 @@
-#![Emojione Logo](http://git.emojione.com/images/png/1F40C.png) Emojione 
+#![Emojione Logo](http://git.emojione.com/assets/png/1F40C.png) Emojione 
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes.com/)
 
 The web's first and only complete emoji set. It is 100% free and super easy to integrate.
@@ -39,10 +39,10 @@ Include the Javascript library
 ```html
 <head>
 	<!-- include via cdnjs (or download and host locally if you prefer) -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0/emojione.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.0/emojione.min.js" type="text/javascript"></script>
     
     <!-- basic rules for styling the emoji images -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0/emojione.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.0/emojione.min.css" type="text/css" media="all" />
     
      <script type="text/javascript">
        // #################################################
