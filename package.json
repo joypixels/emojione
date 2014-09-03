@@ -7,7 +7,9 @@
         "emojione, emoji, emojis, emoticons, smileys, smilies, unicode"
     ],
     "homepage": "http://www.emojione.com",
-    "license" : "https://github.com/Ranks/emojione/blob/master/LICENSE.md",
+    "licenses":{
+        "url": "https://github.com/Ranks/emojione/blob/master/LICENSE.md"
+    },
     "repositories": [
         {
             "type": "git",
