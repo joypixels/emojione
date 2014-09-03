@@ -5,8 +5,6 @@
     "keywords": ["emojione","emoji","emojis","emoticons","smileys","smilies","unicode"],
     "homepage": "http://www.emojione.com",
     "autoload": {
-        "psr-0": {
-            "Emojione": "lib/php/"
-        }
+        "classmap": ["lib/php/"]
     }
 }
