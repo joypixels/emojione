@@ -8,11 +8,11 @@ The web's first and only complete emoji set. It is 100% free and super easy to i
 
 To standardize emojis on the web through the use of common :shortnames:. 
 
-User inputted :shortnames: should be stored as is and then replaced with the matching emoji images when outputting client side. Likewise, Unicode emojis inputted (mainly from mobiles and tablets) should be converted to their corresponding :shortname: before storing in your database.
+User inputted :shortnames: should be stored as-is and then replaced with the matching emoji images when outputting client side. Likewise, Unicode emojis inputted (mainly from mobiles and tablets) should be converted to their corresponding :shortname: before storing in your database.
 
-This allows you to quickly add "emoji support" to your forums, guestbooks, blogs, and other web applications. 
+This allows you to quickly add emoji support to your forums, guestbooks, blogs, and other web applications. 
 
-We've provided simple Javascript and PHP libraries for converting :shortnames: to emoji images and and Unicode emojis to :shortnames:. See below for usage instructions.
+We've provided simple Javascript and PHP libraries for converting :shortnames: to emoji images, and Unicode emojis to :shortnames:. See below for usage instructions.
 
 > **What Shortnames?**
 > 
@@ -21,19 +21,19 @@ We've provided simple Javascript and PHP libraries for converting :shortnames: t
 
 ## Implementation
 
-There's a couple ways to implement Emojione on your website. To make things as easy as possible we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally because when we do updates we'll simply push them to cdnjs and they'll be updated on your applications.
+There are a couple different ways to implement Emojione on your website. To make things as easy as possible, we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally, because when we do updates, we'll simply push them to cdnjs and they'll be updated on your applications.
 
-We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user inputted text, that you make sure you store only the :shortnames:. The flow is as follows:
+We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user-inputted text, you make sure to store only the :shortnames:. The flow is as follows:
 
 1. The user inputs their text using shortnames and/or standard Unicode characters.
-2. Prior to form submission the inputted text is converted to shortnames with the Javascript library **OR** after posting but before storing the text in your database, the text is converted to shortnames using the PHP library.
-3. When you pull the text out of your database you can convert the :shortnames: to images prior to output using the PHP library **OR** after outputting, you can use the Javascript library to convert the :shortnames: to images.
+2. Prior to form submission, the inputted text is converted to shortnames with the Javascript library **OR** after posting but before storing the text in your database, the text is converted to shortnames using the PHP library.
+3. When you pull the text out of your database, you can convert the :shortnames: to images prior to output using the PHP library **OR** after outputting, you can use the Javascript library to convert the :shortnames: to images.
 
 
 
 ## Javascript Example
 
-Below is an example of a Javascript only implemention of Emojione. 
+Below is an example of a Javascript-only implemention of Emojione. 
 
 Include the Javascript library
 ```html
@@ -64,7 +64,7 @@ Include the Javascript library
 
 
 ##### On Input:
-Before text is sent to your server convert any Unicode emojis to shortnames:
+Before text is sent to your server, convert any Unicode emojis to shortnames:
 ```html
 <form onsubmit="convert();">
 	<textarea id="myTextarea">Hello World! 😄</textarea>
@@ -163,11 +163,11 @@ $convertedString =  Emojione::toImage($string);
 ## Considerations
 **Character Encoding &mdash; UTF-8**
 
-If you're getting serious about implementing emojis into your website you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There's a lot of options and configuration possibilies here so you'll have to figure that out depending on your own situation. 
+If you're getting serious about implementing emojis into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There's a lot of options and configuration possibilies here, so you'll have to figure what works best depending on your own situation. 
 
 A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emojis. 
 
-To get you started here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
+To get you started, here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
 
 ## Information
 
@@ -201,7 +201,7 @@ We sincerely hope that you choose to use Emojione and support our project, but i
 
 #### Emojione Artwork
 
-*  Applies to all PNG and SVG files as well as any adaptations to them.
+*  Applies to all PNG and SVG files as well as any adaptations made.
 *  License: Creative Commons Attribution-ShareAlike 4.0 International
 *  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
 *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
