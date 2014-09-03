@@ -9,8 +9,8 @@ Emojione::$imageType = 'svg';
 
 # default is cdnjs but you can also change the paths
 # if you want to host the iamges somewhere else
-Emojione::$imagePathPNG = './../images/png/';
-Emojione::$imagePathSVG = './../images/svg/';
+Emojione::$imagePathPNG = './../assets/png/';
+Emojione::$imagePathSVG = './../assets/svg/';
 ################################################
 
 ?><!doctype html>
@@ -18,7 +18,7 @@ Emojione::$imagePathSVG = './../images/svg/';
 <head>
     <meta charset="UTF-8">
     <title>PHP Demo &mdash; Emojione.com</title>
-    <link rel="stylesheet" href="../css/emojione.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
 
     <style type="text/css">
         html,body {
