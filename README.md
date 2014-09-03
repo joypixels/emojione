@@ -207,8 +207,8 @@ We sincerely hope that you choose to use Emojione and support our project, but i
 *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 
-#### Emojione Code
+#### Emojione Non-Artwork
 
-*  Applies to any and all Javascript, JSON, PHP, CSS, and HTML files.
+*  Applies to any Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
 *  License: GPL v2 or later
 *  Complete Legal Terms: http://www.gnu.org/licenses/gpl-2.0.html
