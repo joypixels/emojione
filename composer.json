@@ -1,10 +1,11 @@
 {
     "name": "emojione/emojione",
     "type": "library",
-    "description": "Emojione is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
-    "keywords": ["emojione","emoji","emojis","emoticons","smileys","smilies","unicode"],
+    "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+    "keywords": ["emojione","Emoji One","emoji","emojis","emoticons","smileys","smilies","unicode"],
     "homepage": "http://www.emojione.com",
     "licenses":{
+        "type": "(CC-BY-SA-4.0 and GPL-2.0+)",
         "url": "https://github.com/Ranks/emojione/blob/master/LICENSE.md"
     },
     "autoload": {
