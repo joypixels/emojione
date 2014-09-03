@@ -1,30 +1,13 @@
-### Emoji Nonexclusive Public License
+#### Emojione Artwork
 
-This Emoji Nonexclusive Public License  (“Public License”) applies to Your use of the Emoji character set known as Emoji One  (“Emoji One”). This Public License is granted by Ranks.com, Inc. (“Ranks.com”), a Nevada corporation, owner of all rights, including the copyright, to Emoji One. By using Emoji One You accept and agree to be bound by the terms of this Public License. You are granted the license set out in Section 1 in consideration of Your acceptance of the terms and conditions of this Public License. 
+*  Applies to all PNG and SVG files as well as any adaptations made.
+*  License: Creative Commons Attribution-ShareAlike 4.0 International
+*  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
+*  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-1.	License Grant. Subject to the terms and conditions of this Public License, Ranks.com hereby grants You a revocable, nonsublicensable, nontransferable, and nonexclusive license to use Emoji One, in whole or in part, as an emoji character set for websites or mobile applications subject to the following conditions applicable wherever Emoji One is used: 
-  * (1) identifying the emoji set as Emoji One; and 
-  * (2) providing an appropriate attribution and if feasible a link to EmojiOne.com. This license grant does not include the right to use Emoji One 
-       * (i) for resale or profit; 
-       * (ii) for print or non-digital use; 
-       * (iii) for non-emoji use, such as web icons or logos; or 
-       * (iv) branding, web interfaces, re-distribution, or the creation of derivative works.
 
-2.	Disclaimer of Warranties and Limitation of Liability.
+#### Emojione Non-Artwork
 
-  * (a)	Ranks.com offers Emoji One as-is and as-available, and makes no representations or warranties of any kind concerning Emoji One, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable.
-  * (b)	In no event will Ranks.com be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of Emoji One, even if Ranks.com has been advised of the possibility of such losses, costs, expenses, or damages.
-  * (c)	The disclaimer of warranties and limitation of liability provided in this Section shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
-
-3.	Miscellaneous.
-  * (a)	Entire Agreement. This Public License constitutes the entire agreement between the parties relating to this subject matter, and supersedes and cancels any and all prior agreements or understandings, written or oral, between  them relating to the subject matter hereof. 
-  * (b)	Assignment. This Public License, or any rights granted under this Public License, may not be assigned by You without the prior written consent of Ranks.com, which may be given or withheld in the absolute discretion of Ranks.com. Ranks.com shall be permitted to assign this Public License or any of its rights under this Public License without restriction.
-  * (c)	Binding Effect. This Public License shall be binding upon and shall inure to the benefit of the parties hereto and their respective successors and permitted assigns.
-  * (d)	Termination. This Public License is revocable by Ranks.com. If You fail to comply with this Public License, then Your rights under this Public License shall terminate automatically. 
-  * (e)	Survival. The parties’ obligations under this Public License, which by their nature are intended to continue beyond the termination or expiration of this Public License, shall survive the termination or expiration of this Public License. 
-  * (f)	Hold Harmless. You agree to indemnify, defend, save, and hold harmless Ranks.com and its members, managers, shareholders, officers, directors, affiliates, and agents from and against all claims, liabilities, causes of action, damages, judgments, attorneys’ fees, court costs, and expenses which arise out of or are related to Your use of Emoji One. Ranks.com shall have the right at all times, in its sole discretion to control the defense of any indemnified claim. You understand and agree that this obligation of indemnification survive the expiration or termination of this Public License.
-  * (g)	Governing Law / Exclusive Jurisdiction. This Public License shall be governed and construed in accordance with the laws of the State of Nevada, and the parties agree that this Public License is executed and delivered in Nevada. In the event any legal action becomes necessary to interpret or enforce the terms of this Public License, the parties agree that such action will be brought in a court of appropriate jurisdiction in Clark County, Nevada. The parties consent to the sole and exclusive jurisdiction of the courts located in Clark County, Nevada, including for acts occurring outside of the United States.
-  * (h)	Attorneys’ Fees and Costs. In any proceeding arising out of or relating to this Public License, the prevailing party shall be entitled to recover an amount equal to reasonable attorneys’ fees and court and costs incurred.
-  * (i)	Waiver. No waiver of any term, provision or condition of this Public License by Ranks.com, whether by conduct or otherwise, in any one or more instances, shall be deemed to be, or shall constitute, a waiver of any other term, provision or condition hereof, whether or not similar, nor shall any waiver constitute a continuing waiver of any such term, provision or condition hereof. 
-  * (j)	Severability. If any provision of this Public License is declared to be invalid, void or unenforceable, the remaining provisions of this Public License shall continue in full force and effect, and the invalid or unenforceable provision shall be replaced by a term or provision that is valid and enforceable and that comes closest to expressing the intention of such invalid or unenforceable term or provision.
-  * (k)	Reservation of Rights. Any and all rights not expressly granted to Licensee hereunder are expressly reserved by Ranks.com. Nothing contained in this Public License may be construed as an assignment or grant to Licensee of any right, title, or interest in or to Emoji One or any copyrights, trademarks or patents therein or associated therewith. This Public License does not authorize or permit any use of Emoji One not expressly set forth herein.
+*  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
+*  License: GPL v2 or later
+*  Complete Legal Terms: http://www.gnu.org/licenses/gpl-2.0.html
