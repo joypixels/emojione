@@ -6,5 +6,8 @@
     "homepage": "http://www.emojione.com",
     "autoload": {
         "classmap": ["lib/php/Emojione.class.php"]
+    },
+    "require": {
+        "php": ">=5.0.0"
     }
 }
