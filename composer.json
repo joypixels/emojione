@@ -5,9 +5,6 @@
     "keywords": ["emojione","emoji","emojis","emoticons","smileys","smilies","unicode"],
     "homepage": "http://www.emojione.com",
     "autoload": {
-        "files": ["lib/php/Emojione.class.php"]
-    },
-    "archive": {
-        "exclude": ["/demos","/assets","/lib/js"]
+        "classmap": ["lib/php/Emojione.class.php"]
     }
 }
