@@ -1,0 +1,7 @@
+{
+    "name": "emojione/emojione",
+    "type": "library",
+    "description": "Emojione is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+    "keywords": ["emojione, emoji, emojis, emoticons, smileys, smilies, unicode"],
+    "homepage": "http://www.emojione.com"
+}
