@@ -1,7 +1,7 @@
-#![Emojione Logo](http://git.emojione.com/assets/png/1F40C.png) Emojione 
+#![Emoji One Logo](http://git.emojione.com/assets/png/1F40C.png) Emoji One 
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes.com/)
 
-The web's first and only complete emoji set. It is 100% free and super easy to integrate.
+The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
 
 
 ## The Idea
@@ -21,7 +21,7 @@ We've provided simple Javascript and PHP libraries for converting :shortnames: t
 
 ## Implementation
 
-There are a couple different ways to implement Emojione on your website. To make things as easy as possible, we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally, because when we do updates, we'll simply push them to cdnjs and they'll be updated on your applications.
+There are a couple different ways to implement Emoji One on your website. To make things as easy as possible, we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally, because when we do updates, we'll simply push them to cdnjs and they'll be updated on your applications.
 
 We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user-inputted text, you make sure to store only the :shortnames:. The flow is as follows:
 
@@ -33,7 +33,7 @@ We recommend using the PHP library for most custom applications, but implementat
 
 ## Javascript Example
 
-Below is an example of a Javascript-only implemention of Emojione. 
+Below is an example of a Javascript-only implemention of Emoji One. 
 
 Include the Javascript library
 ```html
@@ -110,7 +110,7 @@ Before text is sent to your server, convert any Unicode emojis to shortnames:
 
 ## PHP Example
 
-Below is an example of a PHP only implemention of Emojione. 
+Below is an example of a PHP only implemention of Emoji One. 
 
 #### On Input 
 ```php
@@ -187,7 +187,7 @@ If you discover any bugs, feel free to create an issue on GitHub. We also welcom
  *  https://github.com/emojione/issues
 
 ### Alternatives
-We sincerely hope that you choose to use Emojione and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
+We sincerely hope that you choose to use Emoji One and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
 * https://github.com/node-modules/emoji
@@ -199,7 +199,7 @@ We sincerely hope that you choose to use Emojione and support our project, but i
 
 ## Licenses
 
-#### Emojione Artwork
+#### Emoji One Artwork
 
 *  Applies to all PNG and SVG files as well as any adaptations made.
 *  License: Creative Commons Attribution-ShareAlike 4.0 International
@@ -207,7 +207,7 @@ We sincerely hope that you choose to use Emojione and support our project, but i
 *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 
-#### Emojione Non-Artwork
+#### Emoji One Non-Artwork
 
 *  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
 *  License: GPL v2 or later
