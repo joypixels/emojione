@@ -12,11 +12,10 @@
         "type": "(CC-BY-SA-4.0 and GPL-2.0+)",
         "url": "https://github.com/Ranks/emojione/blob/master/LICENSE.md"
     },
-    "repository": [
+    "repository":
         {
             "type": "git",
             "url": "https://github.com/Ranks/emojione.git"
-        }
-    ],
+        },
     "bugs": "https://github.com/Ranks/emojione/issues"
 }
