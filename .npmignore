@@ -3,3 +3,4 @@ lib/php
 composer.json
 .gitignore
 emojis.json
+.idea
