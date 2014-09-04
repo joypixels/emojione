@@ -1,7 +1,11 @@
 .emojione {
   font-size: inherit;
   width: 1em;
-  height: auto;
+  height: 1em;
   margin: 0 .15em;
   vertical-align: middle;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
 }
