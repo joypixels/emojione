@@ -21,7 +21,7 @@ We've provided simple Javascript and PHP libraries for converting :shortnames: t
 
 ## Implementation
 
-There are a couple different ways to implement Emoji One on your website. To make things as easy as possible, we've chosen to host our emoji images and Javascript library on cdnjs. This makes it so that you never have to worry about updating the emoji images locally, because when we do updates, we'll simply push them to cdnjs and they'll be updated on your applications.
+There are a couple different ways to implement Emoji One on your website. To make things as easy as possible, we've chosen to host our emoji images and Javascript library on jsDelivr. This makes it so that you never have to worry about updating the emoji images locally, because when we do updates, we'll simply push them to jsDelivr and they'll be updated on your applications.
 
 We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user-inputted text, you make sure to store only the :shortnames:. The flow is as follows:
 
@@ -38,11 +38,11 @@ Below is an example of a Javascript-only implemention of Emoji One.
 Include the Javascript library
 ```html
 <head>
-	<!-- include via cdnjs (or download and host locally if you prefer) -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.2/emojione.min.js" type="text/javascript"></script>
+	<!-- include via jsDelivr (or download and host locally if you prefer) -->
+    <script src="//cdn.jsdelivr.net/emojione/1.0.3/lib/js/emojione.min.js" type="text/javascript"></script>
     
     <!-- basic rules for styling the emoji images -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.2/emojione.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.0.3/assets/css/emojione.min.css" type="text/css" media="all" />
     
      <script type="text/javascript">
        // #################################################
@@ -51,7 +51,7 @@ Include the Javascript library
        // default is PNG but you may also use SVG
        emojione.imageType = 'svg';
        
-       // default is cdnjs but you can also change the paths 
+       // default is jsDelivr but you can also change the paths 
        // if you want to host the images somewhere else
        emojione.imagePathPNG = './../images/png/';
        emojione.imagePathSVG = './../images/svg/';
@@ -141,7 +141,7 @@ require('Emojione.class.php');
 # default is PNG but you may also use SVG
 Emojione::$imageType = 'svg';
 
-# default is cdnjs but you can also change the paths
+# default is jsDelivr but you can also change the paths
 # if you want to host the iamges somewhere else
 Emojione::$imagePathPNG = './../images/png/';
 Emojione::$imagePathSVG = './../images/svg/';
