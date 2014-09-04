@@ -16,5 +16,6 @@
             "type": "git",
             "url": "https://github.com/Ranks/emojione.git"
         }
-    ]
+    ],
+    "bugs": "https://github.com/Ranks/emojione/issues"
 }
