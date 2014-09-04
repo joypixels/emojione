@@ -7,8 +7,8 @@ require('./../lib/php/Emojione.class.php');
 # default is PNG but you may also use SVG
 Emojione::$imageType = 'svg';
 
-# default is cdnjs but you can also change the paths
-# if you want to host the iamges somewhere else
+# if you want to host the images somewhere else
+# you can easily change the default paths
 Emojione::$imagePathPNG = './../assets/png/';
 Emojione::$imagePathSVG = './../assets/svg/';
 ################################################
