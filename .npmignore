@@ -2,3 +2,4 @@ demos
 lib/php
 composer.json
 .gitignore
+emojis.json
