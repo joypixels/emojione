@@ -39,10 +39,10 @@ Include the Javascript library
 ```html
 <head>
 	<!-- include via cdnjs (or download and host locally if you prefer) -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.0/emojione.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.2/emojione.min.js" type="text/javascript"></script>
     
     <!-- basic rules for styling the emoji images -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.0/emojione.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojione/1.0.2/emojione.min.css" type="text/css" media="all" />
     
      <script type="text/javascript">
        // #################################################
