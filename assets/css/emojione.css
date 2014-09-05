@@ -1,10 +1,18 @@
 .emojione {
-  display: inline-block;
+  /* Emoji Sizing */
   font-size: inherit;
-  width: 1em;
-  height: 1em;
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  top: -.15em; /* Oversize offset, (1.3em - 1em) / 2  */
+
+  /* Inline Text Alignment */
+  position: relative;
   margin: 0 .15em;
-  vertical-align: top;
+  line-height: normal;
+  vertical-align: baseline;
+
+  /* Background Image settings */
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
