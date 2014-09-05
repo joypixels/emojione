@@ -4,18 +4,18 @@
   display: inline-block;
   width: 1.3em;
   height: 1.3em;
+  background-size: 1.25em;
   top: -.15em; /* Oversize offset, (1.3em - 1em) / 2  */
 
   /* Inline Text Alignment */
   position: relative;
   margin: 0 .15em;
   line-height: normal;
-  vertical-align: baseline;
+  vertical-align: middle;
 
   /* Background Image settings */
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
-  background-size: contain;
   text-indent: -999em;
 }
