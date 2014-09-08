@@ -8,6 +8,7 @@ class Emojione {
     static $unicode_replaceWith = false;
 
     private function __construct() {
+
     }
 
     static function toImage($string) {
