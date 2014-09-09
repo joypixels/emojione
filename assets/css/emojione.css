@@ -2,7 +2,7 @@
   /* Emoji Sizing */
   font-size: inherit;
   height: 1.3em;
-  width: auto;
+  width: 1.4em;
 
   /* Inline Text Alignment */
   display: inline-block;
@@ -11,4 +11,9 @@
   margin: 0 .15em;
   line-height: normal;
   vertical-align: middle;
+}
+
+img.emojione {
+  /* prevent img stretch */
+  width: auto;
 }
