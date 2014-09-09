@@ -32,7 +32,7 @@ class Emojione {
         foreach(self::$shortcode_replace AS $shortname => $unicode) {
             $filename = strtoupper($unicode);
             $replace[] = $shortname;
-            $replaceWith[] = '<span class="emojione" title="'.$shortname.'" style="background-image: url(\''.$imagePath.$filename.'.'.$extension.'\');">'.array_search($shortname,self::$unicode_replace).'</span>';
+            $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.$imagePath.$filename.'.'.$extension.'"/>';
         }
 
         return str_replace($replace,$replaceWith,$string);
@@ -54,7 +54,7 @@ class Emojione {
         foreach(self::$unicode_replace AS $unicode => $shortname) {
             $filename = strtoupper(self::$shortcode_replace[$shortname]);
             $replace[] = $unicode;
-            $replaceWith[] = '<span class="emojione" title="'.$shortname.'" style="background-image: url(\''.$imagePath.$filename.'.'.$extension.'\');">'.array_search($shortname,self::$unicode_replace).'</span>';
+            $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.$imagePath.$filename.'.'.$extension.'"/>';
         }
         return str_replace($replace,$replaceWith,$string);
     }
