@@ -5,7 +5,7 @@ require('./../lib/php/Emojione.class.php');
 ################################################
 # Optional:
 # default is PNG but you may also use SVG
-Emojione::$imageType = 'png';
+Emojione::$imageType = 'svg';
 
 # if you want to host the images somewhere else
 # you can easily change the default paths
