@@ -19,42 +19,43 @@ class Emojione {
         return $string;
     }
     static function shortnameToImage($string) {
-        if(self::$imageType == 'png') {
-            $imagePath = self::$imagePathPNG;
-            $extension = 'png';
-        }
-        else {
-            $imagePath = self::$imagePathSVG;
-            $extension = 'svg';
-        }
         $replace = Array();
         $replaceWith = Array();
-        foreach(self::$shortcode_replace AS $shortname => $unicode) {
-            $filename = strtoupper($unicode);
-            $replace[] = $shortname;
-            $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.$imagePath.$filename.'.'.$extension.'"/>';
+        if(self::$imageType == 'png') {
+            foreach(self::$unicode_replace AS $unicode => $shortname) {
+                $filename = strtoupper(self::$shortcode_replace[$shortname]);
+                $replace[] = $unicode;
+                $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathPNG.$filename.'.png"/>';
+            }
         }
-
+        else {
+            foreach(self::$shortcode_replace AS $shortname => $unicode) {
+                $filename = strtoupper($unicode);
+                $replace[] = $shortname;
+                $replaceWith[] = '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.$shortname.'"><img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
+            }
+        }
         return str_replace($replace,$replaceWith,$string);
     }
     static function toShort($string) {
         return str_replace(array_keys(self::$unicode_replace),array_values(self::$unicode_replace),$string);
     }
     static function unicodeToImage($string) {
-        if(self::$imageType == 'png') {
-            $imagePath = self::$imagePathPNG;
-            $extension = 'png';
-        }
-        else {
-            $imagePath = self::$imagePathSVG;
-            $extension = 'svg';
-        }
         $replace = Array();
         $replaceWith = Array();
-        foreach(self::$unicode_replace AS $unicode => $shortname) {
-            $filename = strtoupper(self::$shortcode_replace[$shortname]);
-            $replace[] = $unicode;
-            $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.$imagePath.$filename.'.'.$extension.'"/>';
+        if(self::$imageType == 'png') {
+            foreach(self::$unicode_replace AS $unicode => $shortname) {
+                $filename = strtoupper(self::$shortcode_replace[$shortname]);
+                $replace[] = $unicode;
+                $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathPNG.$filename.'.png"/>';
+            }
+        }
+        else {
+            foreach(self::$unicode_replace AS $unicode => $shortname) {
+                $filename = strtoupper(self::$shortcode_replace[$shortname]);
+                $replace[] = $unicode;
+                $replaceWith[] = '<object data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.$shortname.'"><img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
+            }
         }
         return str_replace($replace,$replaceWith,$string);
     }
