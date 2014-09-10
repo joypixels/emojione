@@ -17,10 +17,5 @@
             "type": "git",
             "url": "https://github.com/Ranks/emojione.git"
         },
-    "bugs": "https://github.com/Ranks/emojione/issues",
-    "dependencies": {
-      "grunt": "^0.4.0",
-      "grunt-contrib-sass": "^0.8.1",
-      "grunt-spritesmith": "^2.1.1"
-    }
+    "bugs": "https://github.com/Ranks/emojione/issues"
 }
