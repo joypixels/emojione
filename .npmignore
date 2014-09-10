@@ -4,3 +4,5 @@ composer.json
 .gitignore
 emojis.json
 .idea
+node_modules
+.sass-cache
