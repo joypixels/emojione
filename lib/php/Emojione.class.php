@@ -68,7 +68,7 @@ class Emojione {
             foreach(self::$unicode_replace AS $unicode => $shortname) {
                 $filename = strtoupper(self::$shortcode_replace[$shortname]);
                 $replace[] = $unicode;
-                $replaceWith[] = '<object data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
+                $replaceWith[] = '<object data="'.self::$imagePathSVG.$filename.'.svg" type= "image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
             }
         }
         return str_replace($replace,$replaceWith,$string);
