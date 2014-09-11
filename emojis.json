@@ -3579,13 +3579,13 @@
             "view"
         ]
     },
-    "city_sunset":{
+    "city_dusk":{
         "unicode":"1F306",
         "unicode_alternates":[
 
         ],
         "name":"cityscape at dusk",
-        "shortname":":city_sunset:",
+        "shortname":":city_dusk:",
         "category":"places",
         "aliases":[
 
@@ -3598,16 +3598,16 @@
             "photo"
         ]
     },
-    "city_sunrise":{
+    "city_sunset":{
         "unicode":"1F307",
         "unicode_alternates":[
 
         ],
         "name":"sunset over buildings",
-        "shortname":":city_sunrise:",
+        "shortname":":city_sunset:",
         "category":"places",
         "aliases":[
-
+            ":city_sunrise:"
         ],
         "aliases_ascii":[
 
