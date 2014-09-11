@@ -26,12 +26,12 @@ class Emojione {
         if(self::$imageType == 'png') {
             foreach(self::$shortcode_replace AS $shortname => $unicode) {
                 $replace[] = $shortname;
-                $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
+                $replaceWith[] = '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
             }
             $string = str_replace($replace,$replaceWith,$string);
             if(self::$ascii) {
                 foreach(self::$ascii_replace AS $shortname => $unicode) {
-                    $string = preg_replace('/(\\s|^)'.preg_quote($shortname,'/').'(\\s|$|[!,\.])/i','$1<img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>$2',$string);
+                    $string = preg_replace('/(\\s|^)'.preg_quote($shortname,'/').'(\\s|$|[!,\.])/i','$1<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>$2',$string);
                 }
             }
         }
@@ -39,12 +39,12 @@ class Emojione {
             foreach(self::$shortcode_replace AS $shortname => $unicode) {
                 $filename = strtoupper($unicode);
                 $replace[] = $shortname;
-                $replaceWith[] = '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.$shortname.'"><img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>';
+                $replaceWith[] = '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>';
             }
             $string = str_replace($replace,$replaceWith,$string);
             if(self::$ascii) {
                 foreach(self::$ascii_replace AS $shortname => $unicode) {
-                    $string = preg_replace('/(\\s|^)'.preg_quote($shortname,'/').'(\\s|$|[!,\.])/i','$1<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.$shortname.'"><img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>$2',$string);
+                    $string = preg_replace('/(\\s|^)'.preg_quote($shortname,'/').'(\\s|$|[!,\.])/i','$1<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>$2',$string);
                 }
             }
         }
@@ -61,14 +61,14 @@ class Emojione {
             foreach(self::$unicode_replace AS $unicode => $shortname) {
                 $filename = strtoupper(self::$shortcode_replace[$shortname]);
                 $replace[] = $unicode;
-                $replaceWith[] = '<img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathPNG.$filename.'.png"/>';
+                $replaceWith[] = '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.$filename.'.png"/>';
             }
         }
         else {
             foreach(self::$unicode_replace AS $unicode => $shortname) {
                 $filename = strtoupper(self::$shortcode_replace[$shortname]);
                 $replace[] = $unicode;
-                $replaceWith[] = '<object data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.$shortname.'"><img class="emojione" alt="'.$shortname.'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
+                $replaceWith[] = '<object data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
             }
         }
         return str_replace($replace,$replaceWith,$string);
