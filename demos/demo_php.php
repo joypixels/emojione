@@ -7,6 +7,9 @@ require('./../lib/php/Emojione.class.php');
 # default is PNG but you may also use SVG
 Emojione::$imageType = 'svg';
 
+# default is ignore ASCII smileys like :) but you can easily turn them on
+Emojione::$ascii = true;
+
 # if you want to host the images somewhere else
 # you can easily change the default paths
 Emojione::$imagePathPNG = './../assets/png/';

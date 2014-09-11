@@ -32,7 +32,7 @@
         }
     </style>
 
-    <script src="./../lib/js/emojione.min.js"></script>
+    <script src="./../lib/js/emojione.js"></script>
 
     <script type="text/javascript">
         // #################################################
@@ -40,6 +40,9 @@
 
         // default is PNG but you may also use SVG
         emojione.imageType = 'svg';
+
+        // default is ignore ASCII smileys like :) but you can easily turn them on
+        emojione.ascii = true;
 
         // if you want to host the images somewhere else
         // you can easily change the default paths
