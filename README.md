@@ -29,7 +29,7 @@ Quick installs can also be done using NPM (for the Javascript toolkit) or Compos
 
 #### Composer
 ```
-> "require": { "emojione/emojione": "dev-master" }
+ "require": { "emojione/emojione": "dev-master" }
 ```
 
 Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.
