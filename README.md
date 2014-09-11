@@ -53,7 +53,7 @@ The basic flow is as follows:
 
 Below is an example of a Javascript-only implemention of Emoji One. 
 
-Include the Javascript library
+Include the Javascript toolkit
 ```html
 <head>
 	<!-- include via jsDelivr (or download and host locally if you prefer) -->
@@ -112,19 +112,59 @@ Before text is sent to your server, convert any Unicode emojis to shortnames:
 ##### On Output:
 
 ```html
-<textarea id="myTextarea">Hello World! :smile:</textarea>
+<div id="myContent">Hello World! :smile:</div>
 
 <script type="text/javascript">
 
   // get the standardized text
-  var inputted = document.getElementById('myTextarea').value;
+  var inputted = document.getElementById('myContent').innerHTML;
   
   // convert shortnames emoji images
   var converted = emojione.toImage(inputted);
   
   // update textarea with new text
-  document.getElementById('myTextarea').innerHTML = converted;
+  document.getElementById('myContent').innerHTML = converted;
 
+</script>
+```
+
+
+## jQuery Example
+
+Below are some examples of things you can do easily with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
+
+#### Automatically convert form fields containing Unicode emojis to :shortnames:
+```html
+<form id="myForm">
+	<input type="text" id="myInput" name="myInput"/> 
+</form>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#myForm").on('submit',function() {
+            var input = $('#myInput').val();
+            var replaced = emojione.toShort(input);
+            $('#myInput').val(replaced);
+        });
+    });
+</script>
+```
+
+### Easily convert :shortnames: in any HTML element by applying an identifying class like this:
+
+```html
+<div class="emojione-convert">
+    I hope you like this Emoji One! :thumbsup: 
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".emojione-convert").each(function() {
+            var original = $(this).html();
+            var converted = emojione.toImage(original);
+            $(this).html(converted);
+        });
+    });
 </script>
 ```
 
@@ -135,7 +175,7 @@ Below is an example of a PHP only implemention of Emoji One.
 
 #### On Input 
 ```php
-# include the PHP library (if not autoloaded)
+# include the PHP toolkit (if not autoloaded)
 require('Emojione.class.php');
   
 # $string would normally be text submitted from a form
@@ -154,7 +194,7 @@ $convertedString =  Emojione::toShort($string);
 
 #### On Output 
 ```php
-# include the PHP library (if not autoloaded)
+# include the PHP toolkit (if not autoloaded)
 require('Emojione.class.php');
 
 ################################################ 
@@ -184,7 +224,7 @@ $convertedString =  Emojione::toImage($string);
 ###
 ```
 
-## Considerations
+## Other Considerations
 **Character Encoding &mdash; UTF-8**
 
 If you're getting serious about implementing emojis into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There's a lot of options and configuration possibilies here, so you'll have to figure what works best depending on your own situation. 
@@ -195,6 +235,13 @@ To get you started, here's a nice guide: [UTF-8: The Secret of Character Encodin
 
 ## Information
 
+### Bug reports
+
+If you discover any bugs, feel free to create an issue on GitHub. We also welcome the open-source community to contribute to the project by forking it and issuing pull requests.
+
+ *  https://github.com/emojione/issues
+
+
 ### Contact
 
 If you have any questions, comments, or concerns you are welcome to contact us.
@@ -202,21 +249,15 @@ If you have any questions, comments, or concerns you are welcome to contact us.
 * [support@emojione.com](mailto:support@emojione.com)
 * http://emojione.com
 * https://twitter.com/emojione
-* https://facebook.com/emojione
 
-### Bug reports
-
-If you discover any bugs, feel free to create an issue on GitHub. We also welcome the open-source community to contribute to the project by forking it and issuing pull requests.
-
- *  https://github.com/emojione/issues
 
 ### Alternatives
 We sincerely hope that you choose to use Emoji One and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
-* https://github.com/node-modules/emoji
-* https://github.com/iamcal/php-emoji
 * https://github.com/Genshin/PhantomOpenEmoji
+* https://github.com/iamcal/php-emoji
+* https://github.com/node-modules/emoji
 * https://github.com/steveklabnik/emoji
 * https://github.com/rockerhieu/emojicon
 
