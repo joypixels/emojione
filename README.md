@@ -20,21 +20,16 @@ When storing user inputted text in your database, say from a guestbook or throug
 
 The easiest, and preferred, method of installation is to use our CDN partner [jsDelivr](http://www.jsdelivr.com/). You can hotlink our CSS and JS files. The toolkits we've provided will use the emoji images hosted on jsDelivr by default. 
 
-Quick installs can also be done using NPM, Bower, or Composer (for the PHP tooklkit).
+Quick installs can also be done using NPM (for the Javascript toolkit) or Composer (for the PHP tooklkit).
 
 #### NPM
 ```
 > npm install emojione
 ```
 
-#### Bower
-```
-> bower install emojione
-```
-
 #### Composer
 ```
-> php composer.phar require emojione/emojione:1.*
+> "require": { "emojione/emojione": "dev-master" }
 ```
 
 Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.
