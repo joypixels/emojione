@@ -133,7 +133,8 @@ Before text is sent to your server, convert any Unicode emojis to shortnames:
 
 Below are some examples of things you can do easily with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
 
-#### Form Submissions
+##### Form Submissions
+
 Automatically convert form fields containing Unicode emojis to :shortnames:
 ```html
 <form id="myForm">
@@ -151,7 +152,8 @@ Automatically convert form fields containing Unicode emojis to :shortnames:
 </script>
 ```
 
-### Automatic Conversion
+##### Automatic Conversion
+
 Easily convert :shortnames: in any HTML element by applying an identifying class like this:
 ```html
 <div class="emojione-convert">
