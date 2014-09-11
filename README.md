@@ -39,10 +39,10 @@ Include the Javascript library
 ```html
 <head>
 	<!-- include via jsDelivr (or download and host locally if you prefer) -->
-    <script src="//cdn.jsdelivr.net/emojione/1.0.6/lib/js/emojione.min.js" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/emojione/1.0.7/lib/js/emojione.min.js" type="text/javascript"></script>
     
     <!-- basic rules for styling the emoji images -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.0.6/assets/css/emojione.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.0.7/assets/css/emojione.min.css" type="text/css" media="all" />
     
      <script type="text/javascript">
        // #################################################
