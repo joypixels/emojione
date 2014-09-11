@@ -41,11 +41,11 @@ Below there are some examples of how you will actually use the libraries to conv
 
 The basic flow is as follows:
 
-1. The user inputs their text using shortnames and/or standard Unicode characters.
-2. (a) Prior to form submission any Unicode emoji characters are converted to :shortnames: with the Javascript toolkit
-2. (b) **OR** after posting but before storing the text in your database ny Unicode emoji characters are converted to shortnames using the PHP toolkit.
-3. (a) When you pull the text out of your database, you can convert the :shortnames: to emoji images server-side using the PHP toolkit
-3. (b) **OR** after outputting you can convert the :shortnames: to emoji images client-side using the Javascript toolkit.
+* The user inputs their text using shortnames and/or standard Unicode characters.
+* (a) Prior to form submission any Unicode emoji characters are converted to :shortnames: with the Javascript toolkit
+* (b) **OR** after posting but before storing the text in your database ny Unicode emoji characters are converted to shortnames using the PHP toolkit.
+* (a) When you pull the text out of your database, you can convert the :shortnames: to emoji images server-side using the PHP toolkit
+* (b) **OR** after outputting you can convert the :shortnames: to emoji images client-side using the Javascript toolkit.
 
 
 
@@ -133,7 +133,8 @@ Before text is sent to your server, convert any Unicode emojis to shortnames:
 
 Below are some examples of things you can do easily with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
 
-#### Automatically convert form fields containing Unicode emojis to :shortnames:
+#### Form Submissions
+Automatically convert form fields containing Unicode emojis to :shortnames:
 ```html
 <form id="myForm">
 	<input type="text" id="myInput" name="myInput"/> 
@@ -150,8 +151,8 @@ Below are some examples of things you can do easily with jQuery. It assumes that
 </script>
 ```
 
-### Easily convert :shortnames: in any HTML element by applying an identifying class like this:
-
+### Automatic Conversion
+Easily convert :shortnames: in any HTML element by applying an identifying class like this:
 ```html
 <div class="emojione-convert">
     I hope you like this Emoji One! :thumbsup: 
