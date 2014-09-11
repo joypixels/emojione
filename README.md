@@ -8,26 +8,44 @@ The web's first and only complete open source emoji set. It is 100% free and sup
 
 To standardize emojis on the web through the use of common :shortnames:. 
 
-User inputted :shortnames: should be stored as-is and then replaced with the matching emoji images when outputting client side. Likewise, Unicode emojis inputted (mainly from mobiles and tablets) should be converted to their corresponding :shortname: before storing in your database.
+When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided or client-side using the Javascript toolkit we also provide. Demos of this process using Javascript, jQuery, and PHP are included in the repo and we have example code snippets below.
 
-This allows you to quickly add emoji support to your forums, guestbooks, blogs, and other web applications. 
-
-We've provided simple Javascript and PHP libraries for converting :shortnames: to emoji images, and Unicode emojis to :shortnames:. See below for usage instructions.
 
 > **What Shortnames?**
 > 
 > [emoji.codes](http://emoji.codes/) has a complete list of shortnames as well as quick copy & search functions.
 
 
-## Implementation
+## Installation
 
-There are a couple different ways to implement Emoji One on your website. To make things as easy as possible, we've chosen to host our emoji images and Javascript library on jsDelivr. This makes it so that you never have to worry about updating the emoji images locally, because when we do updates, we'll simply push them to jsDelivr and they'll be updated on your applications.
+The easiest, and our preferred method of installation is to use our CDN partner [jsDelivr](http://www.jsdelivr.com/). You can hotlink our CSS and JS files. The toolkits we've provided will use the emoji images hosted on jsDelivr by default. 
 
-We recommend using the PHP library for most custom applications, but implementation is completely up to you. You may use only the Javascript or PHP library or a mixture of both. Whatever you decide, we recommend that when you store user-inputted text, you make sure to store only the :shortnames:. The flow is as follows:
+Quick installs can also be done using NPM, Bower, or Composer (for the PHP tooklkit).
+
+#### NPM
+```
+> npm install emojione
+```
+
+#### Bower
+```
+> bower install emojione
+```
+
+#### Composer
+```
+> php composer.phar require emojione/emojione:1.*
+```
+
+Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.
+
+The basic flow is as follows:
 
 1. The user inputs their text using shortnames and/or standard Unicode characters.
-2. Prior to form submission, the inputted text is converted to shortnames with the Javascript library **OR** after posting but before storing the text in your database, the text is converted to shortnames using the PHP library.
-3. When you pull the text out of your database, you can convert the :shortnames: to images prior to output using the PHP library **OR** after outputting, you can use the Javascript library to convert the :shortnames: to images.
+2. (a) Prior to form submission any Unicode emoji characters are converted to :shortnames: with the Javascript toolkit
+2. (b) **OR** after posting but before storing the text in your database ny Unicode emoji characters are converted to shortnames using the PHP toolkit.
+3. (a) When you pull the text out of your database, you can convert the :shortnames: to emoji images server-side using the PHP toolkit
+3. (b) **OR** after outputting you can convert the :shortnames: to emoji images client-side using the Javascript toolkit.
 
 
 
@@ -50,6 +68,9 @@ Include the Javascript library
        
        // default is PNG but you may also use SVG
        emojione.imageType = 'svg';
+       
+       // default is ignore ASCII smileys like :) but you can easily turn them on
+       emojione.ascii = true;
        
        // default is jsDelivr but you can also change the paths 
        // if you want to host the images somewhere else
@@ -140,6 +161,9 @@ require('Emojione.class.php');
 # Optional:
 # default is PNG but you may also use SVG
 Emojione::$imageType = 'svg';
+
+# default is ignore ASCII smileys like :) but you can easily turn them on
+Emojione::$ascii = true;
 
 # default is jsDelivr but you can also change the paths
 # if you want to host the iamges somewhere else
