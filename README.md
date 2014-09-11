@@ -6,9 +6,9 @@ The web's first and only complete open source emoji set. It is 100% free and sup
 
 ## The Idea
 
-To standardize emojis on the web through the use of common :shortnames:. 
+To standardize emoji on the web through the use of common :shortnames:. 
 
-When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided or client-side using the Javascript toolkit we also provide. Demos of this process using Javascript, jQuery, and PHP are included in the repo and we have example code snippets below.
+When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
 
 
 > **What Shortnames?**
@@ -18,7 +18,7 @@ When storing user inputted text in your database, say from a guestbook or throug
 
 ## Installation
 
-The easiest, and our preferred method of installation is to use our CDN partner [jsDelivr](http://www.jsdelivr.com/). You can hotlink our CSS and JS files. The toolkits we've provided will use the emoji images hosted on jsDelivr by default. 
+The easiest, and preferred, method of installation is to use our CDN partner [jsDelivr](http://www.jsdelivr.com/). You can hotlink our CSS and JS files. The toolkits we've provided will use the emoji images hosted on jsDelivr by default. 
 
 Quick installs can also be done using NPM, Bower, or Composer (for the PHP tooklkit).
 
@@ -42,10 +42,10 @@ Below there are some examples of how you will actually use the libraries to conv
 The basic flow is as follows:
 
 * The user inputs their text using shortnames and/or standard Unicode characters.
-* (a) Prior to form submission any Unicode emoji characters are converted to :shortnames: with the Javascript toolkit
-* (b) **OR** after posting but before storing the text in your database ny Unicode emoji characters are converted to shortnames using the PHP toolkit.
+* (a) Prior to form submission, any Unicode emoji characters are converted to :shortnames: with the Javascript toolkit
+* (b) **OR** after posting, but before storing the text in your database, any Unicode emoji characters are converted to shortnames using the PHP toolkit.
 * (a) When you pull the text out of your database, you can convert the :shortnames: to emoji images server-side using the PHP toolkit
-* (b) **OR** after outputting you can convert the :shortnames: to emoji images client-side using the Javascript toolkit.
+* (b) **OR** after outputting, you can convert the :shortnames: to emoji images client-side using the Javascript toolkit.
 
 
 
@@ -85,7 +85,7 @@ Include the Javascript toolkit
 
 
 ##### On Input:
-Before text is sent to your server, convert any Unicode emojis to shortnames:
+Before text is sent to your server, convert any Unicode emoji to shortnames:
 ```html
 <form onsubmit="convert();">
 	<textarea id="myTextarea">Hello World! 😄</textarea>
@@ -131,11 +131,11 @@ Before text is sent to your server, convert any Unicode emojis to shortnames:
 
 ## jQuery Examples
 
-Below are some examples of things you can do easily with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
+Below are some examples of things you can easily do with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
 
 ##### Form Submissions
 
-Automatically convert form fields containing Unicode emojis to :shortnames:
+Automatically convert form fields containing Unicode emoji to :shortnames:
 ```html
 <form id="myForm">
 	<input type="text" id="myInput" name="myInput"/> 
@@ -230,9 +230,9 @@ $convertedString =  Emojione::toImage($string);
 ## Other Considerations
 **Character Encoding &mdash; UTF-8**
 
-If you're getting serious about implementing emojis into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There's a lot of options and configuration possibilies here, so you'll have to figure what works best depending on your own situation. 
+If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilies here, so you'll have to figure what works best for your own situation. 
 
-A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emojis. 
+A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji. 
 
 To get you started, here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
 
@@ -255,7 +255,7 @@ If you have any questions, comments, or concerns you are welcome to contact us.
 
 
 ### Alternatives
-We sincerely hope that you choose to use Emoji One and support our project, but if you feel like it's not for you please have a look at these possible alternatives:
+We sincerely hope that you choose to use Emoji One and support our project, but if you feel like it's not for you, please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
 * https://github.com/Genshin/PhantomOpenEmoji
