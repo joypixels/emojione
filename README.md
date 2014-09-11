@@ -129,7 +129,7 @@ Before text is sent to your server, convert any Unicode emojis to shortnames:
 ```
 
 
-## jQuery Example
+## jQuery Examples
 
 Below are some examples of things you can do easily with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
 
