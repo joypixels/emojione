@@ -9,8 +9,8 @@ class Emojione {
     static $ascii_replace = Array(':\')' => '1f602',':\'-)' => '1f602',':D' => '1f603',':-D' => '1f603',': D' => '1f603','=D' => '1f603',':)' => '1f604',':-)' => '1f604',': )' => '1f604','=]' => '1f604','=)' => '1f604',':]' => '1f604','\':)' => '1f605','\':-)' => '1f605','\'=)' => '1f605','\':D' => '1f605','\':-D' => '1f605','\'=D' => '1f605','>:)' => '1f606','>;)' => '1f606','>:-)' => '1f606','>=)' => '1f606',';)' => '1f609',';-)' => '1f609','; )' => '1f609','*-)' => '1f609','*)' => '1f609',';-]' => '1f609',';]' => '1f609',';D' => '1f609',';^)' => '1f609','\':(' => '1f613','\':-(' => '1f613','\'=(' => '1f613',':*' => '1f618',':-*' => '1f618','=*' => '1f618',': *' => '1f618',':^*' => '1f618','>:P' => '1f61c','X-P' => '1f61c','x-p' => '1f61c','xp' => '1f61c','XP' => '1f61c','>:[' => '1f61e',':-(' => '1f61e',':(' => '1f61e',':-[' => '1f61e',':[' => '1f61e','=(' => '1f61e',': (' => '1f61e','>:(' => '1f620','>:-(' => '1f620',':@' => '1f620',':\'(' => '1f622',':\'-(' => '1f622',';(' => '1f622',';-(' => '1f622',':$' => '1f633','=$' => '1f633','#-)' => '1f635','#)' => '1f635','%-)' => '1f635','%)' => '1f635','X)' => '1f635','X-)' => '1f635','*\\0/*' => '1f646','\\0/' => '1f646','*\\O/*' => '1f646','\\O/' => '1f646','O:-)' => '1f607','0:-3' => '1f607','0:3' => '1f607','0:-)' => '1f607','0:)' => '1f607','0;^)' => '1f607','O:-)' => '1f607','O:)' => '1f607','O;-)' => '1f607','O=)' => '1f607','0;-)' => '1f607','O:-3' => '1f607','O:3' => '1f607','B-)' => '1f60e','B)' => '1f60e','8)' => '1f60e','8-)' => '1f60e','BD' => '1f60e','B-D' => '1f60e','8D' => '1f60e','8-D' => '1f60e','-_-' => '1f611','-__-' => '1f611','-___-' => '1f611','>:\\' => '1f615','>:/' => '1f615',':-/' => '1f615',':-.' => '1f615',':/' => '1f615',':\\' => '1f615','=/' => '1f615','=\\' => '1f615',':L' => '1f615','=L' => '1f615',':P' => '1f61b',':-P' => '1f61b',': P' => '1f61b','=P' => '1f61b',':-p' => '1f61b',':p' => '1f61b','=p' => '1f61b',':-Þ' => '1f61b',':Þ' => '1f61b',':þ' => '1f61b',':-þ' => '1f61b',':-b' => '1f61b',':b' => '1f61b','d:' => '1f61b',':-O' => '1f62e',':O' => '1f62e',':-o' => '1f62e',':o' => '1f62e','O_O' => '1f62e','>:O' => '1f62e',':-X' => '1f636',':X' => '1f636',':-#' => '1f636',':#' => '1f636','=X' => '1f636','=x' => '1f636',':x' => '1f636',':-x' => '1f636','=#' => '1f636');
     static $unicode_replaceWith = false;
     static $unicodeRegexp = '([#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..))S';
-	static $shortcodeRegexp = '(:(\\w+):)';
-	static $asciiRegexp  = '`(?<!\\S)(?>\'(?::-?[()D]|=[()D])|\\*(?:\\\\[O0]/\\*|-?\\))|-__?_?-|0(?::-?[)3]|;[-^]\\))|:(?:[#$()*/@DLOPX[\\\\\\]bopxÞþ]| [()*DP]|\'-?[()]|-[#()*./DOPX[bopxÞþ]|\\^\\*)|;(?>[()D\\]]|-[()\\]]|[ ^]\\))|=[#$()*/DLPX\\\\\\]px]|>(?>:(?>[()/OP[\\\\]|-[()])|[;=]\\))|O(?::-?[)3]|;-\\)|=\\)|_O)|X-?[)P]|\\\\[O0]/|d:|x-?p|[B8]-?[)D]|[#%]-?\\))(?=\\s|$|[!,\.])`Si';
+    static $shortcodeRegexp = '(:(\\w+):)';
+    static $asciiRegexp  = '`(?<!\\S)(?>\'(?::-?[()D]|=[()D])|\\*(?:\\\\[O0]/\\*|-?\\))|-__?_?-|0(?::-?[)3]|;[-^]\\))|:(?:[#$()*/@DLOPX[\\\\\\]bopxÞþ]| [()*DP]|\'-?[()]|-[#()*./DOPX[bopxÞþ]|\\^\\*)|;(?>[()D\\]]|-[()\\]]|[ ^]\\))|=[#$()*/DLPX\\\\\\]px]|>(?>:(?>[()/OP[\\\\]|-[()])|[;=]\\))|O(?::-?[)3]|;-\\)|=\\)|_O)|X-?[)P]|\\\\[O0]/|d:|x-?p|[B8]-?[)D]|[#%]-?\\))(?=\\s|$|[!,\.])`Si';
 
     private function __construct() {
 
@@ -24,79 +24,79 @@ class Emojione {
         return $string;
     }
     static function shortnameToImage($string) {
-		$string = preg_replace_callback(self::$shortcodeRegexp, 'Emojione::shortnameToImageCallback', $string);
-		if(self::$ascii) {
-			$string = preg_replace(self::$asciiRegexp, 'Emojione::asciiToImageCallback', $string);
-		}
+        $string = preg_replace_callback(self::$shortcodeRegexp, 'Emojione::shortnameToImageCallback', $string);
+        if(self::$ascii) {
+            $string = preg_replace(self::$asciiRegexp, 'Emojione::asciiToImageCallback', $string);
+        }
         return $string;
     }
 
-	static function shortnameToImageCallback($m) {
-		$shortname = $m[0];
+    static function shortnameToImageCallback($m) {
+        $shortname = $m[0];
 
-		if(!isset(self::$shortcode_replace[$shortname]))
-		{
-			return $m[0];
-		}
+        if(!isset(self::$shortcode_replace[$shortname]))
+        {
+            return $m[0];
+        }
 
-		$unicode = self::$shortcode_replace[$shortname];
-		$filename = strtoupper($unicode);
+        $unicode = self::$shortcode_replace[$shortname];
+        $filename = strtoupper($unicode);
 
         if(self::$imageType == 'png') {
             return '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
         }
 
         return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>';
-	}
+    }
 
-	static function asciiToImageCallback($m) {
-		$shortname = $m[0];
-		$unicode = self::$ascii_replace[$shortname];
+    static function asciiToImageCallback($m) {
+        $shortname = $m[0];
+        $unicode = self::$ascii_replace[$shortname];
 
         if(self::$imageType == 'png') {
-			return '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
-		}
+            return '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
+        }
 
         return '<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>$2';
-	}
+    }
 
     static function toShort($string) {
-		return preg_replace_callback(self::$unicodeRegexp, 'Emojione::toShortCallback', $string);
+        return preg_replace_callback(self::$unicodeRegexp, 'Emojione::toShortCallback', $string);
     }
 
-	static function toShortCallback($m) {
-		$unicode = $m[0];
-		if (!isset(self::$unicode_replace[$unicode])) {
-			$unicode = substr($m[0], 0, 4);
-			if (!isset(self::$unicode_replace[$unicode])) {
-				return $m[0];
-			}
-		}
+    static function toShortCallback($m) {
+        $unicode = $m[0];
+        if (!isset(self::$unicode_replace[$unicode])) {
+            $unicode = substr($m[0], 0, 4);
+            if (!isset(self::$unicode_replace[$unicode])) {
+                return $m[0];
+            }
+        }
 
-		return self::$unicode_replace[$unicode];
-	}
+        return self::$unicode_replace[$unicode];
+    }
 
     static function unicodeToImage($string) {
-		return preg_replace_callback(self::$unicodeRegexp, 'Emojione::unicodeToImageCallback', $string);
+        return preg_replace_callback(self::$unicodeRegexp, 'Emojione::unicodeToImageCallback', $string);
     }
 
-	static function unicodeToImageCallback($m) {
-		$unicode = $m[0];
-		if (!isset(self::$unicode_replace[$unicode])) {
-			$unicode = substr($m[0], 0, 4);
-			if (!isset(self::$unicode_replace[$unicode])) {
-				return $m[0];
-			}
-		}
+    static function unicodeToImageCallback($m) {
+        $unicode = $m[0];
+        if (!isset(self::$unicode_replace[$unicode])) {
+            $unicode = substr($m[0], 0, 4);
+            if (!isset(self::$unicode_replace[$unicode])) {
+                return $m[0];
+            }
+        }
 
-		$shortname = self::$unicode_replace[$unicode];
-		$filename = strtoupper(self::$shortcode_replace[$shortname]);
+        $shortname = self::$unicode_replace[$unicode];
+        $filename = strtoupper(self::$shortcode_replace[$shortname]);
 
         if(self::$imageType == 'png') {
             return '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.$filename.'.png"/>';
         }
 
         return '<object data="'.self::$imagePathSVG.$filename.'.svg" type= "image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.$filename.'.svg"/></object>';
-	}
+    }
 }
 ?>
