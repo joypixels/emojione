@@ -10,6 +10,7 @@ class Emojione {
     static $unicode_replaceWith = false;
     static $unicodeRegexp = '([#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..))S';
 	static $shortcodeRegexp = '((?<!\\S):(\\w+):(?=\\s|$|[!,\.]))';
+	static $asciiRegexp  = '`(?<!\\S)(?>\'(?::-?[()D]|=[()D])|\\*(?:\\\\[O0]/\\*|-?\\))|-__?_?-|0(?::-?[)3]|;[-^]\\))|:(?:[#$()*/@DLOPX[\\\\\\]bopxÞþ]| [()*DP]|\'-?[()]|-[#()*./DOPX[bopxÞþ]|\\^\\*)|;(?>[()D\\]]|-[()\\]]|[ ^]\\))|=[#$()*/DLPX\\\\\\]px]|>(?>:(?>[()/OP[\\\\]|-[()])|[;=]\\))|O(?::-?[)3]|;-\\)|=\\)|_O)|X-?[)P]|\\\\[O0]/|d:|x-?p|[B8]-?[)D]|[#%]-?\\))(?=\\s|$|[!,\.])`Si';
 
     private function __construct() {
 
@@ -24,20 +25,9 @@ class Emojione {
     }
     static function shortnameToImage($string) {
 		$string = preg_replace_callback(self::$shortcodeRegexp, 'Emojione::shortnameToImageCallback', $string);
-        if(self::$imageType == 'png') {
-            if(self::$ascii) {
-                foreach(self::$ascii_replace AS $shortname => $unicode) {
-                    $string = preg_replace('/(\\s|^)'.preg_quote($shortname,'/').'(\\s|$|[!,\.])/i','$1<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>$2',$string);
-                }
-            }
-        }
-        else {
-            if(self::$ascii) {
-                foreach(self::$ascii_replace AS $shortname => $unicode) {
-                    $string = preg_replace('/(\\s|^)'.preg_quote($shortname,'/').'(\\s|$|[!,\.])/i','$1<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>$2',$string);
-                }
-            }
-        }
+		if(self::$ascii) {
+			$string = preg_replace(self::$asciiRegexp, 'Emojione::asciiToImageCallback', $string);
+		}
         return $string;
     }
 
@@ -57,6 +47,17 @@ class Emojione {
         }
 
         return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>';
+	}
+
+	static function asciiToImageCallback($m) {
+		$shortname = $m[0];
+		$unicode = self::$ascii_replace[$shortname];
+
+        if(self::$imageType == 'png') {
+			return '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
+		}
+
+        return '<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>$2';
 	}
 
     static function toShort($string) {
