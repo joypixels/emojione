@@ -34,8 +34,7 @@ class Emojione {
     static function shortnameToImageCallback($m) {
         $shortname = $m[0];
 
-        if(!isset(self::$shortcode_replace[$shortname]))
-        {
+        if(!isset(self::$shortcode_replace[$shortname])) {
             return $m[0];
         }
 
@@ -66,9 +65,9 @@ class Emojione {
 
     static function toShortCallback($m) {
         $unicode = $m[0];
-        if (!isset(self::$unicode_replace[$unicode])) {
+        if(!isset(self::$unicode_replace[$unicode])) {
             $unicode = substr($m[0], 0, 4);
-            if (!isset(self::$unicode_replace[$unicode])) {
+            if(!isset(self::$unicode_replace[$unicode])) {
                 return $m[0];
             }
         }
@@ -82,9 +81,9 @@ class Emojione {
 
     static function unicodeToImageCallback($m) {
         $unicode = $m[0];
-        if (!isset(self::$unicode_replace[$unicode])) {
+        if(!isset(self::$unicode_replace[$unicode])) {
             $unicode = substr($m[0], 0, 4);
-            if (!isset(self::$unicode_replace[$unicode])) {
+            if(!isset(self::$unicode_replace[$unicode])) {
                 return $m[0];
             }
         }
