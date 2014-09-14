@@ -56,7 +56,7 @@ class Emojione {
             return '<img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
         }
 
-        return '<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>$2';
+        return '<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" alt="'.substr($shortname,1,-1).'"><img class="emojione" alt="'.substr($shortname,1,-1).'" src="'.self::$imagePathSVG.strtoupper($unicode).'.svg"/></object>';
     }
 
     static function toShort($string) {
