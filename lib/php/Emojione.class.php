@@ -26,7 +26,7 @@ class Emojione {
     static function shortnameToImage($string) {
         $string = preg_replace_callback(self::$shortcodeRegexp, 'Emojione::shortnameToImageCallback', $string);
         if(self::$ascii) {
-            $string = preg_replace(self::$asciiRegexp, 'Emojione::asciiToImageCallback', $string);
+            $string = preg_replace_callback(self::$asciiRegexp, 'Emojione::asciiToImageCallback', $string);
         }
         return $string;
     }
