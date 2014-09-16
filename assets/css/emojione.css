@@ -17,3 +17,7 @@ img.emojione {
   /* prevent img stretch */
   width: auto;
 }
+
+object.emojione {
+  text-indent: -9999em;
+}

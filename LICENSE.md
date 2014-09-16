@@ -9,5 +9,5 @@
 #### Emoji One Non-Artwork
 
 *  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
-*  License: GPL v2 or later
-*  Complete Legal Terms: http://www.gnu.org/licenses/gpl-2.0.html
+*  License: MIT
+*  Complete Legal Terms: http://opensource.org/licenses/MIT

@@ -5,7 +5,7 @@
     "keywords": ["emojione","Emoji One","emoji","emojis","emoticons","smileys","smilies","unicode"],
     "homepage": "http://www.emojione.com",
     "licenses":{
-        "type": "(CC-BY-SA-4.0 and GPL-2.0+)",
+        "type": "(CC-BY-SA-4.0 and MIT)",
         "url": "https://github.com/Ranks/emojione/blob/master/LICENSE.md"
     },
     "autoload": {
