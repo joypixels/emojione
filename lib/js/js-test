@@ -1,0 +1,125 @@
+#!/usr/bin/env perl
+#
+# This code generates a file called 'tests.html' to test the
+# JavaScript implementation of Emojione. Please run this program
+# if you update either validate.yml or emojione.js to make sure
+# everything is ok.
+#
+# To update and run the tests, just type "./js-test" on the console.
+#
+
+use strict;
+use warnings;
+
+my $test_file = 'tests.html';
+my $test_src  = parse_validation_file();
+my $qunit     = generate_qunit_code( $test_src );
+
+write_js_test_file( $qunit, $test_file );
+run_test_file( $test_file );
+exit;
+
+
+
+sub generate_qunit_code {
+    my ($test_src) = @_;
+
+    my $js = '';
+    foreach my $function_name ( sort keys %$test_src ) {
+        $js .= generate_qunit_module( $function_name );
+
+        my $test_cases = $test_src->{$function_name};
+        foreach my $test ( @$test_cases ) {
+            $js .= generate_qunit_test(
+                        $function_name,
+                        $test->{description},
+                        $test->{text},
+                        $test->{expected},
+                   );
+        }
+    }
+    return $js;
+}
+
+sub write_js_test_file {
+    my ($qunit_string, $filename) = @_;
+
+    my $code = join '' => <DATA>;
+    $code =~ s/<% tests %>/$qunit_string/;
+
+    open my $fh, '>:encoding(UTF-8)', $filename
+        or die "error writing $filename: $!";
+
+    print $fh $code;
+    close $fh;
+}
+
+sub run_test_file {
+    my ($filename) = @_;
+
+    # $^O contains the name of the operating system
+    if ($^O eq 'darwin') {
+        system "open $filename";
+    }
+    else {
+        system "xdg-open $filename &> /dev/null";
+    }
+}
+
+sub generate_qunit_module {
+    my ($function_name) = @_;
+
+    return qq(
+            QUnit.module("$function_name");
+    );
+}
+
+sub generate_qunit_test {
+    my ($function_name, $description, $text, $expected) = escape( @_ );
+
+    return qq(
+            QUnit.test( "$description", function( assert ) {
+                assert.equal( emojione.$function_name("$text"), "$expected" );
+            });
+    );
+}
+
+sub escape {
+    return map { s/"/\\"/g; s/\n/\\n/g; $_ } @_
+}
+
+sub parse_validation_file {
+    eval 'use YAML';
+    if ($@) {
+        die <<'ERROR';
+We need the YAML library installed to parse the validation test file.
+Please install it by typing on the command line:
+
+    sudo cpan YAML
+
+and try again.
+ERROR
+    }
+
+    my $validate = YAML::LoadFile( '../validate.yml' );
+    return $validate->{tests};
+}
+
+
+__DATA__
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/qunit/1.14.0/qunit.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+        <script src="http://cdn.jsdelivr.net/qunit/1.14.0/qunit.js"></script>
+        <script src="emojione.js"></script>
+        <script>
+        <% tests %>
+        </script>
+    </body>
+</html>

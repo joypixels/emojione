@@ -1,5 +1,8 @@
 demos
 lib/php
+lib/js/tests.html
+lib/js/js-test
+lib/validate.yml
 composer.json
 .gitignore
 emojis.json
