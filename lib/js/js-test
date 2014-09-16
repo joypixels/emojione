@@ -1,25 +1,52 @@
 #!/usr/bin/env perl
-#
-# This code generates a file called 'tests.html' to test the
-# JavaScript implementation of Emojione. Please run this program
-# if you update either validate.yml or emojione.js to make sure
-# everything is ok.
-#
-# To update and run the tests, just type "./js-test" on the console.
-#
+=head1 SYNOPSIS
+
+    js-test [options]
+
+    Options:
+      --output=/some/path      writes to given file (default: ./tests.html)
+      --run                    opens test file in the default browser
+      --help                   shows this help
+
+This code generates a file (defaults to 'tests.html') to test the JavaScript
+implementation of Emojione. Please run this program if you update either
+validate.yml or emojione.js to make sure everything is ok.
+
+To update and run the tests, just type "./js-test" on the console.
+
+=cut
 
 use strict;
 use warnings;
+use Getopt::Long;
+use Pod::Usage;
 
-my $test_file = 'tests.html';
-my $test_src  = parse_validation_file();
-my $qunit     = generate_qunit_code( $test_src );
+my $test_file      = 'tests.html';
+my $run_in_browser = 0;
+my $show_help      = 0;
 
-write_js_test_file( $qunit, $test_file );
-run_test_file( $test_file );
+GetOptions(
+    'output=s' => \$test_file,
+    'run'      => \$run_in_browser,
+    'help|?'   => \$show_help,
+) or pod2usage();
+
+pod2usage() if $show_help;
+
+run_app();
 exit;
 
 
+sub run_app {
+    my $test_src  = parse_validation_file();
+    my $qunit     = generate_qunit_code( $test_src );
+
+    write_js_test_file( $qunit, $test_file );
+
+    if ($run_in_browser) {
+        run_test_file( $test_file );
+    }
+}
 
 sub generate_qunit_code {
     my ($test_src) = @_;
