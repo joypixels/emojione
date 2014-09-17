@@ -1,10 +1,5 @@
-# Unicode Conversion
+## Unicode Conversion
 
-
-
-#### Single Character
-
-Input:
 ```
 # single character
 🐌
