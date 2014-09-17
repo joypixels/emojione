@@ -8,6 +8,53 @@
     <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/0.2.2/jquery.textcomplete.min.js"></script>
 
+    <!-- AutoComplete Styles -->
+    <style>
+      .dropdown-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #B4B4B4;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        font-size: 1em;
+      }
+      .dropdown-menu a:hover {
+        cursor: pointer;
+      }
+      .dropdown-menu li {
+        border-bottom: 1px solid #e1e1e1;
+        letter-spacing: 0;
+        display: block;
+        float: none;
+        margin: 0;
+      }
+      .dropdown-menu li .emojione {
+        position: static;
+        vertical-align: middle;
+      }
+      .dropdown-menu li:first-child {
+        border-top: none;
+      }
+      .dropdown-menu li:last-child {
+        border-bottom: none;
+      }
+      .dropdown-menu li a {
+        line-height: 1.8em;
+        padding: 0 4px;
+        color: #8d8d8d;
+      }
+      .dropdown-menu .active, .dropdown-menu li:hover {
+        border-color: #b1b1b1;
+        background: #ebebeb;
+        color: #4a4a4a;
+      }
+      .dropdown-menu .active a, .dropdown-menu li:hover a {
+        color: inherit;
+      }
+    </style>
+
 
   <style>
     /* Example Page CSS */
@@ -41,6 +88,9 @@
       background: #eee;
       font-size: 21px;
       padding: 1em;
+    }
+    .dropdown-menu {
+      font-size: 1.4em;
     }
   </style>
 </head>
