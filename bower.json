@@ -10,7 +10,8 @@
     "lib/php/",
     ".gitignore",
     ".npmignore",
-    "composer.json"
+    "composer.json",
+    "package.json"
   ],
   "keywords": [
     "emojione",
