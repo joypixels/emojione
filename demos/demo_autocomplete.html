@@ -5,8 +5,7 @@
   <title>Auto-complete Demo - Emoji One</title>
 
     <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
-    <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/0.2.2/jquery.textcomplete.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- AutoComplete Styles -->
     <style>
@@ -18345,16 +18344,49 @@
         $textBox.textcomplete([ {
             match: /\B:([\-+\w]*)$/,
             search: function (term, callback) {
-                callback($.map(emojies, function (data) {
+                var results = $.map(emojies, function (data) {
+                    // check shortnames first
+                   return (data.shortname.indexOf(term) > -1) ? data.shortname : null;
+                });
+                results.sort(function(a,b) { return (a.length > b.length); });
+
+                var results2 = $.map(emojies, function (data) {
+                    // check aliases next
                     var returnVal = null;
-                    if(data.shortname.indexOf(term) > -1) { returnVal = data.shortname; }
-                        else {
-                            $.each(data.keywords,function(k,keyword) {
-                            if(keyword.indexOf(term) > -1) { returnVal = data.shortname; return false; }
+                    if(data.aliases.length) {
+                        $.each(data.aliases,function(k,alias) {
+                            //if(!$.inArray(data.shortname,results)) {
+                                if(alias.indexOf(term) > -1) { returnVal = data.shortname; return false; }
+                            //}
                         });
                     }
                     return returnVal;
-                }));
+                });
+                results2.sort(function(a,b) { return (a.length > b.length); });
+
+
+                var results3 = $.map(emojies, function (data) {
+                    // check keywords last
+                    var returnVal = null;
+                    $.each(data.keywords,function(k,keyword) {
+                        //if(!$.inArray(data.shortname,newResults)) {
+                            if(keyword.indexOf(term) > -1) { returnVal = data.shortname; return false; }
+                       // }
+                    });
+                    return returnVal;
+                });
+                results3.sort();
+                var newResults = results.concat(results2).concat(results3);
+
+//                console.log('shortname matches:');
+//                console.log(results);
+//                console.log('alias matches:');
+//                console.log(results2);
+//                console.log('keyword matches:');
+//                console.log(results3);
+//                console.log('final matches:');
+//                console.log(newResults);
+                callback(newResults);
             },
             template: function (shortname) {
                 shortname = shortname.substring(1,shortname.length-1);
@@ -18366,10 +18398,13 @@
             index: 1,
             maxCount: 10
         }
-        ]);
-
+        ],{
+           footer: '<strong style="text-align: center; display: block;"><img src="http://emoji.codes/images/favicon.ico"/> <a href="http://www.emoji.codes" target="_blank">Browse All</a></strong>'
+        });
     });
 </script>
+
+  <script src="scripts/jquery.textcomplete.min.js"></script>
 
 </body>
 </html>
