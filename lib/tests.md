@@ -102,5 +102,4 @@ Smile <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F60
 # typical username password fail
 Please log-in with user:pass as your credentials :P.
 
-
 ```
