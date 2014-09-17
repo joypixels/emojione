@@ -79,7 +79,7 @@ The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.
 :d
 
 # multiple smileys
-;) :p >.<
+;) :p :*
 
 # smiley to start a sentence
 :\ is our confused smiley.
