@@ -5,7 +5,15 @@
     "author": "Emoji One <ryan@emojione.com> (http://emojione.com)",
     "main:": "lib/js/emojione.js",
     "keywords": [
-        "emojione, Emoji One, emoji, emojis, emoticons, smileys, smilies, unicode"
+        "emojione",
+        "Emoji One",
+        "emoji",
+        "emojis",
+        "emoticons",
+        "smileys",
+        "smilies",
+        "unicode",
+        "emoji set"
     ],
     "homepage": "http://www.emojione.com",
     "licenses":{
