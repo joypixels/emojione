@@ -96,10 +96,13 @@ This is the "flushed" smiley: :8.
 # smiley inside of an IMG tag  (shouldn't convert anything inside of the tag)
 Smile <img class="emojione" alt=":)" src="//cdn.jsdelivr.net/emojione/assets/png/1F604.png" /> because it's going to be a good day.
 
-# smiley inside of OBJECT tag  *(shouldn't convert anything inside of the tag)*
+# smiley inside of OBJECT tag  (shouldn't convert anything inside of the tag)
 Smile <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F604.svg" type="image/svg+xml" standby=":)">:)</object> because it's going to be a good day.
 
 # typical username password fail  (shouldn't convert the user:pass, but should convert the last :p)
 Please log-in with user:pass as your credentials :P.
+
+# shouldn't replace an ascii smiley in a URL (shouldn't replace :/)
+Check out http://www.emojione.com
 
 ```
