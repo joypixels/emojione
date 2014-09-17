@@ -56,7 +56,7 @@ The :snail:, is Emoji One's official mascot.
 Emoji One's official mascot is :snail:.
 
 # shortname at end of sentence with alternate puncuation
-Emoji One's official mascot is :snail:.
+Emoji One's official mascot is :snail:!
 
 # shortname at end of sentence with preceeding colon
 Emoji One's official mascot: :snail:
@@ -89,4 +89,15 @@ Our smiley to represent joy is :')
 
 # smiley to end a sentence with puncuation
 The reverse is the joy smiley is the cry smiley :'(.
+
+# smiley inside of an <IMG> tag
+Smile <img class="emojione" alt=":)" src="//cdn.jsdelivr.net/emojione/assets/png/1F604.png" /> because it's going to be a good day.
+
+# smiley inside of <OBJECT> tag
+Smile <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F604.svg" type="image/svg+xml" standby=":)">:)</object> because it's going to be a good day.
+
+# typical username password fail
+Please log-in with user:pass as your credentials :P.
+
+
 ```
