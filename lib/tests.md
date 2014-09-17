@@ -68,3 +68,25 @@ The <img class="emojione" alt=":snail:" src="//cdn.jsdelivr.net/emojione/assets/
 The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.svg" type="image/svg+xml" standby=":snail:">:snail:</object> is Emoji One's official mascot.
 
 ```
+
+## ASCII Conversion
+
+```html
+# single smiley
+:D
+
+# single smiley with incorrect case
+:d
+
+# multiple smileys
+;) :p >.<
+
+# smiley to start a sentence
+:\ is our confused smiley.
+
+# smiley to end a sentence
+Our smiley to represent joy is :')
+
+# smiley to end a sentence with puncuation
+The reverse is the joy smiley is the cry smiley :'(.
+```
