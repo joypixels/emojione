@@ -1,1 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="#e0e7ec" d="m61.44 31.896c0 16.316-13.228 29.544-29.546 29.544s-29.547-13.228-29.547-29.544c0-16.32 13.229-29.548 29.548-29.548s29.545 13.227 29.545 29.548"/><path fill="#d1d7da" d="m52.13 47.02c-16.319 0-29.547-13.229-29.547-29.548 0-5.425 1.489-10.493 4.04-14.863-13.736 2.538-24.15 14.56-24.15 29.03 0 16.316 13.228 29.544 29.546 29.544 10.892 0 20.382-5.909 25.506-14.682-1.754.323-3.55.517-5.398.517"/><path fill="#98a9b4" d="M0,31.896c0,17.587,14.307,31.896,31.894,31.896c17.585,0,31.896-14.309,31.896-31.896   C63.789,14.309,49.479,0,31.894,0C14.307,0,0,14.309,0,31.896z M6.209,31.896c0-14.164,11.522-25.686,25.684-25.686   c14.163,0,25.687,11.522,25.687,25.686c0,14.161-11.523,25.685-25.687,25.685C17.732,57.58,6.209,46.057,6.209,31.896z"/><path fill="#85939c" d="m30.02 52.786c0 1.433.845 2.598 1.884 2.598l0 0c1.04 0 1.884-1.165 1.884-2.598v-21.02c0-1.433-.845-2.595-1.884-2.595l0 0c-1.04 0-1.884 1.163-1.884 2.595v21.02"/><path fill="#788288" d="m33.793 15.273c0-1.433-.845-2.595-1.882-2.595l0 0c-1.04 0-1.886 1.165-1.886 2.597l-.004 15.207c0 1.433.847 2.596 1.882 2.594l0 0c1.04.002 1.886-1.161 1.886-2.592l.004-15.211"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   enable-background="new 0 0 64 64"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="1F555.svg"
+   inkscape:export-filename="D:\TESTINGEMOJI\SVGTEST\1F555.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata3002"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs3000" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview2998"
+   showgrid="false"
+   inkscape:zoom="7"
+   inkscape:cx="32"
+   inkscape:cy="32"
+   inkscape:window-x="784"
+   inkscape:window-y="379"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<g
+   id="g2986">
+	<path
+   fill="#E0E7EC"
+   d="M61.616,31.985c0,16.362-13.265,29.627-29.629,29.627S2.356,48.348,2.356,31.985   c0-16.366,13.267-29.631,29.631-29.631S61.616,15.619,61.616,31.985z"
+   id="path2988" />
+	<path
+   fill="#D1D7DA"
+   d="M52.277,47.149c-16.368,0-29.629-13.265-29.629-29.631c0-5.44,1.492-10.522,4.05-14.905   C12.924,5.16,2.483,17.215,2.483,31.728c0,16.362,13.265,29.627,29.629,29.627c10.924,0,20.439-5.926,25.578-14.723   C55.932,46.956,54.13,47.149,52.277,47.149z"
+   id="path2990" />
+	<path
+   fill="#98A9B4"
+   d="M0,31.985c0,17.636,14.349,31.985,31.985,31.985c17.634,0,31.985-14.35,31.985-31.985   C63.971,14.349,49.619,0,31.985,0C14.349,0,0,14.349,0,31.985z M6.229,31.985c0-14.203,11.556-25.759,25.757-25.759   c14.204,0,25.759,11.556,25.759,25.759c0,14.202-11.555,25.757-25.759,25.757C17.784,57.742,6.229,46.188,6.229,31.985z"
+   id="path2992" />
+	<path
+   fill="#85939C"
+   d="M33.864,11.034c0-1.436-0.849-2.604-1.89-2.604l0,0c-1.042,0-1.89,1.169-1.89,2.604v21.075   c0,1.436,0.848,2.602,1.89,2.602l0,0c1.042,0,1.89-1.166,1.89-2.602V11.034z"
+   id="path2994" />
+	<path
+   fill="#788288"
+   d="M30.082,48.653c0,1.437,0.846,2.602,1.888,2.602l0,0c1.042,0,1.892-1.167,1.892-2.604l0.004-15.25   c0-1.437-0.851-2.603-1.888-2.601l0,0c-1.043-0.002-1.892,1.164-1.892,2.599L30.082,48.653z"
+   id="path2996" />
+</g>
+</svg>

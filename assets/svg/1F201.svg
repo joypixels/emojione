@@ -1,1 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="#1b75bb" d="M64.195,57.025c0,3.81-3.084,6.894-6.89,6.894H7.166c-3.803,0-6.887-3.084-6.887-6.894V6.889   C0.278,3.086,3.363,0,7.166,0h50.14c3.806,0,6.89,3.086,6.89,6.889V57.025z"/><path fill="#0867a3" d="m.278 48.67v8.355c0 3.81 3.084 6.894 6.887 6.894h50.14c3.806 0 6.89-3.084 6.89-6.894v-50.14c-10.914 39.647-50.15 42.16-63.917 41.781"/><g fill="#fff"><path d="m30.912 20.593c0 1.249-1.01 2.26-2.258 2.26h-22.429c-1.247 0-2.258-1.01-2.258-2.26l0 0c0-1.245 1.01-2.258 2.258-2.258h22.429c1.246 0 2.258 1.013 2.258 2.258l0 0"/><path d="m28.654 18.335c1.247 0 2.258 1.013 2.258 2.258v22.429c0 1.249-1.01 2.258-2.258 2.258l0 0c-1.249 0-2.258-1.01-2.258-2.258v-22.429c0-1.245 1.01-2.258 2.258-2.258l0 0"/><path d="m3.967 43.02c0-1.246 1.013-2.258 2.258-2.258h22.429c1.249 0 2.258 1.012 2.258 2.258l0 0c0 1.249-1.01 2.258-2.258 2.258h-22.429c-1.245 0-2.258-1.01-2.258-2.258l0 0"/><path d="m60.5 20.593c0 1.249-1.01 2.26-2.258 2.26h-22.429c-1.246 0-2.257-1.01-2.257-2.26l0 0c0-1.245 1.01-2.258 2.257-2.258h22.429c1.247 0 2.258 1.013 2.258 2.258l0 0"/><path d="m58.25 18.335c1.247 0 2.258 1.013 2.258 2.258v22.429c0 1.249-1.01 2.258-2.258 2.258l0 0c-1.246 0-2.26-1.01-2.26-2.258v-22.429c0-1.245 1.014-2.258 2.26-2.258l0 0"/><path d="m33.561 43.02c0-1.246 1.01-2.258 2.257-2.258h22.429c1.247 0 2.258 1.012 2.258 2.258l0 0c0 1.249-1.01 2.258-2.258 2.258h-22.43c-1.246 0-2.256-1.01-2.256-2.258l0 0"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   enable-background="new 0 0 64 64"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="1F201.svg"
+   inkscape:export-filename="D:\TESTINGEMOJI\SVGTEST\1F201.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata3307"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs3305" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview3303"
+   showgrid="false"
+   inkscape:zoom="3.6875"
+   inkscape:cx="32"
+   inkscape:cy="32"
+   inkscape:window-x="774"
+   inkscape:window-y="410"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<g
+   id="g3289">
+	<path
+   fill="#1B75BB"
+   d="M63.927,57.036c0,3.81-3.081,6.896-6.887,6.896H6.889C3.087,63.932,0,60.846,0,57.036V6.891   C0,3.087,3.087,0,6.889,0H57.04c3.806,0,6.887,3.087,6.887,6.891V57.036z"
+   id="path3291" />
+</g>
+<g
+   id="g3293">
+	<path
+   fill="#0867A3"
+   d="M0,48.68v8.356c0,3.81,3.087,6.896,6.889,6.896H57.04c3.806,0,6.887-3.086,6.887-6.896V6.891   C53.011,46.545,13.768,49.059,0,48.68z"
+   id="path3295" />
+</g>
+<g
+   id="g3297">
+	<path
+   fill="#FFFFFF"
+   d="M29.628,18.687H3.633c-0.342,0-0.623,0.279-0.623,0.623v3.606c0,0.344,0.281,0.625,0.623,0.625h21.766   v16.027C4.486,39.568,4.484,39.568,4.502,39.572H3.184c-0.344,0-0.625,0.278-0.625,0.625v3.455c0,0.342,0.28,0.622,0.625,0.622   l26.453,0.005c0.338,0,0.614-0.276,0.614-0.615V19.309C30.251,18.965,29.972,18.687,29.628,18.687z"
+   id="path3299" />
+	<path
+   fill="#FFFFFF"
+   d="M59.971,18.684H33.977c-0.343,0-0.624,0.278-0.624,0.623v3.606c0,0.344,0.281,0.625,0.624,0.625h21.766   v16.027c-17.896,0.001-20.488,0.001-20.897,0.009l-1.319-0.005c-0.343,0-0.624,0.279-0.624,0.624v3.457   c0,0.342,0.281,0.622,0.624,0.622l26.454,0.003c0.341,0,0.614-0.275,0.614-0.613V19.306C60.594,18.962,60.315,18.684,59.971,18.684   z"
+   id="path3301" />
+</g>
+</svg>

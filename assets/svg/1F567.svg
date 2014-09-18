@@ -1,1 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="#e0e7ec" d="m61.02 31.673c0 16.202-13.14 29.338-29.34 29.338-16.205 0-29.342-13.14-29.342-29.338 0-16.206 13.14-29.342 29.342-29.342 16.204 0 29.34 13.14 29.34 29.342"/><path fill="#d1d7da" d="m51.767 46.689c-16.208 0-29.34-13.14-29.34-29.342 0-5.387 1.477-10.419 4.01-14.759-13.641 2.521-23.979 14.459-23.979 28.829 0 16.203 13.13 29.338 29.34 29.338 10.817 0 20.239-5.868 25.328-14.579-1.741.322-3.526.513-5.36.513"/><path fill="#98a9b4" d="M0,31.673c0,17.464,14.209,31.673,31.673,31.673c17.462,0,31.673-14.209,31.673-31.673S49.135,0,31.673,0   C14.209,0,0,14.209,0,31.673z M6.168,31.673c0-14.064,11.442-25.507,25.505-25.507c14.064,0,25.507,11.442,25.507,25.507   c0,14.062-11.442,25.505-25.507,25.505C17.61,57.178,6.168,45.735,6.168,31.673z"/><path fill="#85939c" d="m33.533 10.926c0-1.421-.839-2.579-1.872-2.579l0 0c-1.032 0-1.872 1.158-1.872 2.579v20.869c0 1.423.839 2.577 1.872 2.577l0 0c1.032 0 1.872-1.154 1.872-2.577v-20.869"/><path fill="#788288" d="m29.788 48.18c0 1.423.837 2.577 1.87 2.577l0 0c1.033 0 1.874-1.156 1.874-2.579l.004-15.1c0-1.423-.841-2.577-1.87-2.576l0 0c-1.033-.0001-1.874 1.153-1.874 2.574l-.004 15.11"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   enable-background="new 0 0 64 64"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="1F567.svg"
+   inkscape:export-filename="D:\TESTINGEMOJI\SVGTEST\1F567.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata3021"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs3019" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview3017"
+   showgrid="false"
+   inkscape:zoom="3.6875"
+   inkscape:cx="32"
+   inkscape:cy="32"
+   inkscape:window-x="952"
+   inkscape:window-y="353"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<g
+   id="g3005">
+	<path
+   fill="#E0E7EC"
+   d="M61.602,31.979c0,16.358-13.263,29.621-29.623,29.621c-16.361,0-29.625-13.263-29.625-29.621   c0-16.363,13.264-29.625,29.625-29.625C48.339,2.354,61.602,15.616,61.602,31.979z"
+   id="path3007" />
+	<path
+   fill="#D1D7DA"
+   d="M52.264,47.14c-16.362,0-29.625-13.263-29.625-29.625c0-5.439,1.494-10.52,4.052-14.901   C12.919,5.159,2.481,17.212,2.481,31.721c0,16.359,13.262,29.621,29.623,29.621c10.92,0,20.436-5.924,25.573-14.72   C55.918,46.946,54.115,47.14,52.264,47.14z"
+   id="path3009" />
+	<path
+   fill="#98A9B4"
+   d="M0,31.979c0,17.633,14.344,31.979,31.977,31.979c17.631,0,31.979-14.346,31.979-31.979   C63.955,14.346,49.607,0,31.977,0C14.344,0,0,14.346,0,31.979z M6.226,31.979c0-14.2,11.553-25.753,25.751-25.753   c14.2,0,25.753,11.553,25.753,25.753c0,14.198-11.553,25.751-25.753,25.751C17.778,57.729,6.226,46.177,6.226,31.979z"
+   id="path3011" />
+	<path
+   fill="#85939C"
+   d="M30.101,52.924c0,1.437,0.847,2.604,1.889,2.604l0,0c1.042,0,1.889-1.167,1.889-2.604v-21.07   c0-1.437-0.847-2.602-1.889-2.602l0,0c-1.042,0-1.889,1.166-1.889,2.602V52.924z"
+   id="path3013" />
+	<path
+   fill="#788288"
+   d="M33.881,15.312c0-1.437-0.847-2.602-1.887-2.602l0,0c-1.042,0-1.891,1.167-1.891,2.604l-0.004,15.247   c0,1.437,0.849,2.602,1.888,2.6l0,0c1.042,0.002,1.891-1.164,1.891-2.598L33.881,15.312z"
+   id="path3015" />
+</g>
+</svg>
