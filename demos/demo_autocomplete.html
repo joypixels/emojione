@@ -4,131 +4,198 @@
   <meta charset="UTF-8">
   <title>Auto-complete Demo - Emoji One</title>
 
-    <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Emoji One CSS: -->
+  <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
 
-    <!-- AutoComplete Styles -->
-    <style>
-      .dropdown-menu {
-        list-style: none;
-        padding: .3em 0 0;
-        margin: 0;
-        border: 1px solid #6E6E6E;
-        background-color: white;
-        border-radius: 5px;
-        overflow: hidden;
-        font-size: inherit;
-        letter-spacing: .025em;
-        box-shadow: 3px 3px 3px rgba(0,0,0,.2);
-      }
-      .dropdown-menu a:hover {
-        cursor: pointer;
-      }
-      .dropdown-menu li {
-        letter-spacing: 0;
-        display: block;
-        float: none;
-        margin: 0;
-      }
-      .dropdown-menu .textcomplete-footer {
-        margin-top: .3em;
-        background: #e6e6e6;
-      }
-      .dropdown-menu .textcomplete-footer a {
-        color: #999999;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        line-height: 2.1818em;
-        padding-left: 1.8181em;
-        font-size: .84em;
-      }
-      .dropdown-menu .textcomplete-footer .arrow {
-        margin-left: .8em;
-        font-size: 1.3em;
-      }
-      .dropdown-menu li .emojione {
-        vertical-align: middle;
-        font-size: 1.23em;
-        width: 1em;
-        height: 1em;
-        top: -1px;
-        margin: 0 .3em 0 0;
-      }
-      .dropdown-menu li a {
-        display: block;
-        height: 100%;
-        line-height: 1.8em;
-        padding: 0 1.54em 0 .615em;
-        color: #4f4f4f;
-      }
-      .dropdown-menu .active,
-      .dropdown-menu li:hover {
-        background: #6E6E6E;
-        color: white;
-      }
-      .dropdown-menu .active a,
-      .dropdown-menu li:hover a {
-        color: inherit;
-      }
-    </style>
+  <!-- jQuery: -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
+  <!-- AutoComplete Styles -->
   <style>
-    /* Example Page CSS */
-    body {
-      font-family: Sans-Serif;
-      font-size: 62.5%;
-      padding: 0 3em;
-    }
-    header {
-      font-size: 1.6em;
-      padding: 3em 0;
-      border-bottom: 1px solid #eee;
-      width: 80%;
-      margin: 0 auto;
-    }
-    h3 {
-      font-size: 14px;
-      margin: 2em 0 1em;
-    }
-    main {
-      padding: 3em 0 6em;
-      margin: 0 auto 3em;
-      width: 80%;
-      border-bottom: 1px solid #eee;
-    }
-    p {
-      font-size: 18px;
-    }
-    pre {
-      color: #666;
-      background: #eee;
-      font-size: 21px;
-      padding: 1em;
-    }
     .dropdown-menu {
+      list-style: none;
+      padding: .3em 0 0;
+      margin: 0;
+      border: 1px solid #6E6E6E;
+      background-color: white;
+      border-radius: 5px;
+      overflow: hidden;
+      font-size: inherit;
+      letter-spacing: .025em;
+      box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    }
+    .dropdown-menu a:hover {
+      cursor: pointer;
+    }
+    .dropdown-menu li {
+      letter-spacing: 0;
+      display: block;
+      float: none;
+      margin: 0;
+    }
+    .dropdown-menu .textcomplete-footer {
+      margin-top: .3em;
+      background: #e6e6e6;
+    }
+    .dropdown-menu .textcomplete-footer a {
+      color: #999999;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      line-height: 2.1818em;
+      padding-left: 1.8181em;
+      font-size: .84em;
+    }
+    .dropdown-menu .textcomplete-footer .arrow {
+      margin-left: .8em;
       font-size: 1.3em;
     }
+    .dropdown-menu li .emojione {
+      vertical-align: middle;
+      font-size: 1.23em;
+      width: 1em;
+      height: 1em;
+      top: -1px;
+      margin: 0 .3em 0 0;
+    }
+    .dropdown-menu li a {
+      display: block;
+      height: 100%;
+      line-height: 1.8em;
+      padding: 0 1.54em 0 .615em;
+      color: #4f4f4f;
+    }
+    .dropdown-menu .active,
+    .dropdown-menu li:hover {
+      background: #6E6E6E;
+      color: white;
+    }
+    .dropdown-menu .active a,
+    .dropdown-menu li:hover a {
+      color: inherit;
+    }
   </style>
+
+  <!-- Demos Stylesheet: -->
+  <link rel="stylesheet" href="styles/demos.css"/>
+
+  <!-- Typekit: -->
+  <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
 <body>
-  <header>
-    <h1>Auto Complete Example</h1>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container">
+      <h1 class="masthead-title">Emoji One Labs</h1>
+    </div>
   </header>
 
+  <!-- Breadcrum Navigation -->
+  <nav class="breadcrumbs">
+    <div class="container">
+      <a class="breadcrumb-item top-level" href="#">All Demos</a> &rsaquo;
+      <a class="breadcrumb-item active" href="#">Autocomplete example</a>
+    </div>
+  </nav>
+
+  <!-- Page: -->
   <main>
-    <p>
-      Type : followed by a few letters to search for an emoji based on the shortname and related keywords
-    </p>
-    <textarea id="emojione" rows="8" style="width:100%;"></textarea>
+
+    <div class="container">
+
+      <h1>AutoComplete Example</h1>
 
       <p>
-          Uses jQuery and <a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">yuku-t - jquery-textcomplete</a>.
+        Type : followed by a few letters to search for an emoji based on the shortname and related keywords
       </p>
 
+      <textarea id="emojione"></textarea>
+
+      <p>
+        Uses jQuery and <a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">yuku-t - jquery-textcomplete</a>.
+      </p>
+
+      <pre><code>&lt;!-- AutoComplete Styles --&gt;
+&lt;style&gt;
+  .dropdown-menu {
+    list-style: none;
+    padding: .3em 0 0;
+    margin: 0;
+    border: 1px solid #6E6E6E;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: inherit;
+    letter-spacing: .025em;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+  }
+  .dropdown-menu a:hover {
+    cursor: pointer;
+  }
+  .dropdown-menu li {
+    letter-spacing: 0;
+    display: block;
+    float: none;
+    margin: 0;
+  }
+  .dropdown-menu .textcomplete-footer {
+    margin-top: .3em;
+    background: #e6e6e6;
+  }
+  .dropdown-menu .textcomplete-footer a {
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 2.1818em;
+    padding-left: 1.8181em;
+    font-size: .84em;
+  }
+  .dropdown-menu .textcomplete-footer .arrow {
+    margin-left: .8em;
+    font-size: 1.3em;
+  }
+  .dropdown-menu li .emojione {
+    vertical-align: middle;
+    font-size: 1.23em;
+    width: 1em;
+    height: 1em;
+    top: -1px;
+    margin: 0 .3em 0 0;
+  }
+  .dropdown-menu li a {
+    display: block;
+    height: 100%;
+    line-height: 1.8em;
+    padding: 0 1.54em 0 .615em;
+    color: #4f4f4f;
+  }
+  .dropdown-menu .active,
+  .dropdown-menu li:hover {
+    background: #6E6E6E;
+    color: white;
+  }
+  .dropdown-menu .active a,
+  .dropdown-menu li:hover a {
+    color: inherit;
+  }
+&lt;/style&gt;</code></pre>
+
+    </div>
 
   </main>
+
+  <footer class="demo-footer">
+    <div class="container">
+      <small>&copy; Copyright 2014 Ranks.com.</small>
+      <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-SA-4.0</a> License</small>
+      <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
+        href="http://opensource.org/licenses/MIT">MIT</a> License</small>
+    </div>
+  </footer>
 
 <script type="text/javascript">
     var $textBox;
