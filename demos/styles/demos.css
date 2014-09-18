@@ -1,0 +1,315 @@
+/*
+    normalize.css v3.0.1
+    MIT License
+    git.io/normalize
+*/
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      margin: 0;
+    }
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section,
+    summary {
+      display: block;
+    }
+    audio,
+    canvas,
+    progress,
+    video {
+      display: inline-block; /* 1 */
+      vertical-align: baseline; /* 2 */
+    }
+    audio:not([controls]) {
+      display: none;
+      height: 0;
+    }
+    [hidden],
+    template {
+      display: none;
+    }
+    a {
+      background: transparent;
+    }
+    a:active,
+    a:hover {
+      outline: 0;
+    }
+    abbr[title] {
+      border-bottom: 1px dotted;
+    }
+    b,
+    strong {
+      font-weight: bold;
+    }
+    dfn {
+      font-style: italic;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+    mark {
+      background: #ff0;
+      color: #000;
+    }
+    small {
+      font-size: 80%;
+    }
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+    sup {
+      top: -0.5em;
+    }
+    sub {
+      bottom: -0.25em;
+    }
+    img {
+      border: 0;
+    }
+    svg:not(:root) {
+      overflow: hidden;
+    }
+    figure {
+      margin: 1em 40px;
+    }
+    hr {
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 0;
+    }
+    pre {
+      overflow: auto;
+    }
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+    }
+    button {
+      overflow: visible;
+    }
+    button,
+    select {
+      text-transform: none;
+    }
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+    button[disabled],
+    html input[disabled] {
+      cursor: default;
+    }
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+    input {
+      line-height: normal;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
+    input[type="search"] {
+      -webkit-appearance: textfield;
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+    fieldset {
+      border: 1px solid #c0c0c0;
+      margin: 0 2px;
+      padding: 0.35em 0.625em 0.75em;
+    }
+    legend {
+      border: 0;
+      padding: 0;
+    }
+    textarea {
+      overflow: auto;
+    }
+    optgroup {
+      font-weight: bold;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td,
+    th {
+      padding: 0;
+    }
+
+
+/*
+    ////////////////////////////////
+      Emoji One Demo Styles
+    ////////////////////////////////
+*/
+
+    /* Typography */
+    html {
+      font-size: 62.5%;
+      font-family: Sans-Serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "proxima-nova";
+    }
+    h3 {
+      font-size: 14px;
+      margin: 2em 0 1em;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      text-decoration: none;
+      color: #ff8111;
+    }
+    a:hover {
+      color: #ab5000;
+    }
+    a:active {
+      color: #35acff;
+    }
+    /* Entry Typogrpahy */
+    main h1 {
+      font-size: 3.6em;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.6em;
+      line-height: 1.5em;
+    }
+    small {
+      text-align: center;
+      display: block;
+      font-size: 1.4em;
+      color: #333;
+      margin-bottom: 1em;
+    }
+
+    /*Infrastructure */
+    .container {
+      padding: 0 3rem;
+      margin: 0 auto;
+      max-width: 78rem;
+    }
+    main {
+      padding: 3em 0 6em;
+      margin: 0 auto 3em;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* Header */
+    .masthead {
+      font-size: 1.6em;
+      padding: 1em 0;
+      border-bottom: 1px solid #eee;
+      background-color: #434343;
+      color: white;
+      margin: 0;
+    }
+
+    .masthead-title {
+      margin: 0;
+    }
+
+    /* UI Breadcrumbs */
+    .breadcrumbs {
+      color: #b8b8b8;
+      padding: 1em 0;
+      font-size: 1.8em;
+      background: #efefef;
+    }
+
+    .breadcrumbs a {
+      margin: 0 1ex;
+    }
+
+    .breadcrumbs .top-level {
+      margin-left: 0;
+    }
+
+    .breadcrumbs .active {
+      color: #616060;
+    }
+
+    /* UI Forms */
+
+    input, textarea {
+      padding: 1em;
+      font-size: 1.6rem;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    textarea {
+      display: block;
+      width: 100%;
+      min-height: 5em;
+    }
+
+    /* Code Block */
+    pre {
+      color: #666;
+      background: #eee;
+      font-size: 1.5em;
+      line-height: 1.2em;
+      padding: 1em;
+    }
+
+    /* Autocomplete Size Adjustment */
+    .dropdown-menu {
+      font-size: 1.3em;
+    }
+
+
+    /* Demo Footer */
+    .demo-footer {
+      padding-bottom: 2em;
+    }
