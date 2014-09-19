@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Index - Emoji One Labs</title>
+
+  <!-- Emoji One CSS: -->
+  <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
+
+  <!-- jQuery: -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Demos Stylesheet: -->
+  <link rel="stylesheet" href="styles/demos.css"/>
+
+  <!-- Typekit: -->
+  <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container">
+    <h1 class="masthead-title">Emoji One Labs</h1>
+  </div>
+</header>
+
+<!-- Breadcrum Navigation -->
+<nav class="breadcrumbs">
+  <div class="container">
+    <a class="breadcrumb-item top-level" href="#">All Demos</a> &rsaquo;
+    <a class="breadcrumb-item active" href="#">Index</a>
+  </div>
+</nav>
+
+<!-- Page: -->
+<main>
+
+  <div class="container">
+
+    <h1>All Demos</h1>
+
+    <p>
+      The following demos are provided to show how to use Emoji One to it's fullest potential. Feel free to dig in and take these demos apart to see how it all works.
+    </p>
+
+    <h3 id="js">
+      Javascript Conversion
+    </h3>
+
+    <ul>
+      <li>
+        <a class="demo-name" href="jstoshortname.html">Convert Unicodes to Shortnames</a>
+        <p>
+          Using our JS conversion script, this demo shows you how to take unicode input from a device and translate it to emoji shortnames for database storage.
+        </p>
+      </li>
+      <li>
+        <a href="jstoimage.html">Convert Shortnames and Unicodes to IMG</a>
+
+        <p>
+          Also using our JS conversion, this demo shows you how to take unicode or shortnames, and translate them into Emoji One images for display.
+        </p>
+      </li>
+    </ul>
+    
+    <h3 id="php">PHP Conversion <span class="notice">(Requires PHP server)</span></h3>
+    <ul>
+      <li>
+        <a href="phptoshortname.php">Convert Unicodes to Shortnames</a>
+        <p>Instead using the PHP version of our conversion script, this demo shows you how to take unicode input from a device and translate it to emoji shortnames for database storage.</p>
+      </li>
+      <li>
+        <a href="phptoimage.php">Convert Shortnames/Unicode to IMG</a>
+        <p>
+          Also using our PHP conversion, this demo shows you how to take unicode or shortnames, and translate them into Emoji One images for display.
+        </p>
+      </li>
+    </ul>
+
+    <h3 id="extras">Extras</h3>
+    <ul>
+      <li>
+        <a href="autocomplete.html">Emoji AutoComplete</a>
+        <p>
+          An autocomplete module for Emoji One that can be added to inputs and textareas.
+        </p>
+      </li>
+      <li>
+        <a href="live-preview.html">Live Preview Box</a>
+        <p>Display converted Emoji in a preview box as the user is typing.</p>
+      </li>
+      <li>
+        <a href="class-convert.html">Conversion HTML Class</a>
+        <p>Stick a class of .emojione-convert on any HTML element and automatically convert shortnames after page load.</p>
+      </li>
+      <li>
+        <a href="convert-on-submit.html">Convert on Form Submission</a>
+        <p>Converts unicode input to shortnames once the user submits the form.</p>
+      </li>
+      <li>
+        <a href="sprites-png.html">Sprites (PNG)</a>
+        <p>
+          With an additional CSS file you can use Emoji One as resizeable PNG sprites (up to 64x64).
+        </p>
+      </li>
+      <li>
+        <a href="sprites-svg.html">Sprites (SVG)</a>
+        <p>
+          This sprite method requires no extra CSS, and is infinitely resizeable.
+        </p>
+      </li>
+    </ul>
+
+  </div>
+
+</main>
+
+<footer class="demo-footer">
+  <div class="container">
+    <small>&copy; Copyright 2014 Ranks.com.</small>
+    <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-SA-4.0</a> License</small>
+    <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
+      href="http://opensource.org/licenses/MIT">MIT</a> License</small>
+  </div>
+</footer>
+
+</body>
+</html>

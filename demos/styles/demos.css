@@ -198,9 +198,24 @@
     h1, h2, h3, h4, h5, h6 {
       font-family: "proxima-nova";
     }
+    h2 {
+      font-size: 2.8em;
+    }
     h3 {
-      font-size: 14px;
+      position: relative;
+      font-size: 2em;
       margin: 2em 0 1em;
+    }
+    h3:focus:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: .5em 0 .5em 1em;
+      border-color: transparent transparent transparent #999;
+      left: -.5em;
     }
     p {
       font-size: 18px;
@@ -231,6 +246,48 @@
       color: #333;
       margin-bottom: 1em;
     }
+    .example-gif {
+      display: block;
+      margin: 0 auto 4em;
+      box-shadow: 0px 1px 3px rgba(0,0,0,.15);
+    }
+    ul, ol {
+      font-size: 1.6em;
+      color: #444;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      position: relative;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 1em 0;
+      padding-left: 1.5em;
+    }
+    li:before {
+      content: " ";
+      position: absolute;
+      height: .2em;
+      width: .2em;
+      border-radius: 50%;
+      background: #DDD;
+      border: 1px solid #BBB;
+      left: .5em;
+      top: 1.4em;
+      display: block;
+    }
+    li:last-child {
+      border: none;
+    }
+    li p {
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+    .notice {
+      font-size: .8em;
+      color: #333;
+      font-weight: 400;
+      padding-left: 1em;
+    }
 
     /*Infrastructure */
     .container {
@@ -242,6 +299,39 @@
       padding: 3em 0 6em;
       margin: 0 auto 3em;
       border-bottom: 1px solid #eee;
+    }
+    .clearfix:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+    .column-1-2 {
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      padding-right: 30px;
+    }
+    .column-1-2.output {
+      padding: 0;
+    }
+    input[type=button], [type=submit] {
+      max-width: 6em;
+      padding: .9em;
+      float: right;
+    }
+    .input input {
+      width: 72%;
+    }
+    .output p {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: #fafafa;
+      padding: .5em;
+      min-height: 2.5em;
     }
 
     /* Header */
@@ -256,6 +346,11 @@
 
     .masthead-title {
       margin: 0;
+      padding-left: 1.5em;
+      background-image: url(//cdn.jsdelivr.net/emojione/assets/svg/1F4A1.svg);
+      background-size: 1em;
+      background-position: left;
+      background-repeat: no-repeat;
     }
 
     /* UI Breadcrumbs */
@@ -265,15 +360,12 @@
       font-size: 1.8em;
       background: #efefef;
     }
-
     .breadcrumbs a {
       margin: 0 1ex;
     }
-
     .breadcrumbs .top-level {
       margin-left: 0;
     }
-
     .breadcrumbs .active {
       color: #616060;
     }
@@ -287,7 +379,9 @@
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
     }
-
+    input {
+      width: 100%;
+    }
     textarea {
       display: block;
       width: 100%;
@@ -307,7 +401,11 @@
     .dropdown-menu {
       font-size: 1.3em;
     }
-
+    body .syntaxhighlighter {
+      font-size: 1.4em !important;
+      border-radius: 10px;
+      padding: 1em 0px;
+    }
 
     /* Demo Footer */
     .demo-footer {

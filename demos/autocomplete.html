@@ -32,6 +32,10 @@
       display: block;
       float: none;
       margin: 0;
+      padding: 0;
+    }
+    .dropdown-menu li:before {
+      display: none;
     }
     .dropdown-menu .textcomplete-footer {
       margin-top: .3em;
@@ -76,6 +80,14 @@
     }
   </style>
 
+  <!-- Syntax Highlighting -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <link rel="stylesheet" href="styles/shCoreRDark.css"/>
+
   <!-- Demos Stylesheet: -->
   <link rel="stylesheet" href="styles/demos.css"/>
 
@@ -96,8 +108,9 @@
   <!-- Breadcrum Navigation -->
   <nav class="breadcrumbs">
     <div class="container">
-      <a class="breadcrumb-item top-level" href="#">All Demos</a> &rsaquo;
-      <a class="breadcrumb-item active" href="#">Autocomplete example</a>
+      <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
+      <a class="breadcrumb-item" href="index.html#extras">Extras</a> &rsaquo;
+      <a class="breadcrumb-item active" href="autocomplete.html">Autocomplete example</a>
     </div>
   </nav>
 
@@ -108,81 +121,102 @@
 
       <h1>AutoComplete Example</h1>
 
+      <img class="example-gif" src="images/autocomplete.gif" alt="Example graphic demonstrating use"/>
+
+
+
+      <h3>Try it yourself!</h3>
       <p>
-        Type : followed by a few letters to search for an emoji based on the shortname and related keywords
+        Type ':' followed by a few letters to search for an emoji based on the shortname and related keywords.
       </p>
 
       <textarea id="emojione"></textarea>
 
-      <p>
-        Uses jQuery and <a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">yuku-t - jquery-textcomplete</a>.
-      </p>
 
-      <pre><code>&lt;!-- AutoComplete Styles --&gt;
-&lt;style&gt;
+
+      <h3>Required extras</h3>
+      <p>
+        To get this example working correctly we needed to include a few extra pieces, including:
+      </p>
+      <ul>
+        <li><a href="http://jquery.com/">jQuery</a></li>
+        <li><a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">jquery-textcomplete</a></li>
+        <li>Custom JS (see below)</li>
+        <li>Custom CSS (see below)</li>
+      </ul>
+
+
+      <h3>Custom CSS:</h3>
+      <pre class="brush: css">
+/* AutoComplete styles for Emoji One */
+
   .dropdown-menu {
-    list-style: none;
-    padding: .3em 0 0;
-    margin: 0;
-    border: 1px solid #6E6E6E;
-    background-color: white;
-    border-radius: 5px;
-    overflow: hidden;
-    font-size: inherit;
-    letter-spacing: .025em;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
-  }
-  .dropdown-menu a:hover {
-    cursor: pointer;
-  }
-  .dropdown-menu li {
-    letter-spacing: 0;
-    display: block;
-    float: none;
-    margin: 0;
-  }
-  .dropdown-menu .textcomplete-footer {
-    margin-top: .3em;
-    background: #e6e6e6;
-  }
-  .dropdown-menu .textcomplete-footer a {
-    color: #999999;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    line-height: 2.1818em;
-    padding-left: 1.8181em;
-    font-size: .84em;
-  }
-  .dropdown-menu .textcomplete-footer .arrow {
-    margin-left: .8em;
-    font-size: 1.3em;
-  }
-  .dropdown-menu li .emojione {
-    vertical-align: middle;
-    font-size: 1.23em;
-    width: 1em;
-    height: 1em;
-    top: -1px;
-    margin: 0 .3em 0 0;
-  }
-  .dropdown-menu li a {
-    display: block;
-    height: 100%;
-    line-height: 1.8em;
-    padding: 0 1.54em 0 .615em;
-    color: #4f4f4f;
-  }
-  .dropdown-menu .active,
-  .dropdown-menu li:hover {
-    background: #6E6E6E;
-    color: white;
-  }
-  .dropdown-menu .active a,
-  .dropdown-menu li:hover a {
-    color: inherit;
-  }
-&lt;/style&gt;</code></pre>
+      list-style: none;
+      padding: .3em 0 0;
+      margin: 0;
+      border: 1px solid #6E6E6E;
+      background-color: white;
+      border-radius: 5px;
+      overflow: hidden;
+      font-size: inherit;
+      letter-spacing: .025em;
+      box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    }
+    .dropdown-menu a:hover {
+      cursor: pointer;
+    }
+    .dropdown-menu li {
+      letter-spacing: 0;
+      display: block;
+      float: none;
+      margin: 0;
+      padding: 0;
+    }
+    .dropdown-menu li:before {
+      display: none;
+    }
+    .dropdown-menu .textcomplete-footer {
+      margin-top: .3em;
+      background: #e6e6e6;
+    }
+    .dropdown-menu .textcomplete-footer a {
+      color: #999999;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      line-height: 2.1818em;
+      padding-left: 1.8181em;
+      font-size: .84em;
+    }
+    .dropdown-menu .textcomplete-footer .arrow {
+      margin-left: .8em;
+      font-size: 1.3em;
+    }
+    .dropdown-menu li .emojione {
+      vertical-align: middle;
+      font-size: 1.23em;
+      width: 1em;
+      height: 1em;
+      top: -1px;
+      margin: 0 .3em 0 0;
+    }
+    .dropdown-menu li a {
+      display: block;
+      height: 100%;
+      line-height: 1.8em;
+      padding: 0 1.54em 0 .615em;
+      color: #4f4f4f;
+    }
+    .dropdown-menu .active,
+    .dropdown-menu li:hover {
+      background: #6E6E6E;
+      color: white;
+    }
+    .dropdown-menu .active a,
+    .dropdown-menu li:hover a {
+      color: inherit;
+    }
+</pre>
 
     </div>
 

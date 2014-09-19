@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Convert on Form Submission - Emoji One Labs</title>
+
+  <!-- Emoji One CSS: -->
+  <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
+
+  <!-- jQuery: -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Demos Stylesheet: -->
+  <link rel="stylesheet" href="styles/demos.css"/>
+
+  <!-- Typekit: -->
+  <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- Syntax Highlighting -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <link rel="stylesheet" href="styles/shCoreRDark.css"/>
+
+  <!-- Emoji One JS -->
+
+  <script src="./../lib/js/emojione.js"></script>
+
+  <script type="text/javascript">
+    // #################################################
+    // # Optional
+
+    // default is PNG but you may also use SVG
+    emojione.imageType = 'svg';
+
+    // default is ignore ASCII smileys like :) but you can easily turn them on
+    emojione.ascii = true;
+
+    // if you want to host the images somewhere else
+    // you can easily change the default paths
+    emojione.imagePathPNG = './../assets/png/';
+    emojione.imagePathSVG = './../assets/svg/';
+
+    // #################################################
+  </script>
+
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container">
+    <h1 class="masthead-title">Emoji One Labs</h1>
+  </div>
+</header>
+
+<!-- Breadcrum Navigation -->
+<nav class="breadcrumbs">
+  <div class="container">
+    <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
+    <a href="index.html#js">Javascript</a> &rsaquo;
+    <a class="breadcrumb-item active" href="convert-on-submit.html">Convert on Form Submission</a>
+  </div>
+</nav>
+
+<!-- Page: -->
+<main>
+
+  <div class="container">
+
+    <h1>Convert on Form Submission</h1>
+
+    <p>Requires jQuery. Automatically convert Unicode characters to shortnames upon form submission.</p>
+
+
+    <h3>Input:</h3>
+    <form id="demo6-form" name="demo6-form">
+      <input type="text" id="demo6-input" name="demo6-input" style="width: auto" size="50" value="Hello world! &#x1f604;"/>
+      <input type="submit" value="Submit" style="float: none"/>
+    </form>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#demo6-form").on('submit',function(e) {
+          var input = $('#demo6-input').val();
+          var replaced = emojione.toShort(input);
+          $('#demo6-input').val(replaced);
+
+          // prevent form submission
+          // normally you wouldn't do this but we don't want your page to reload for this demo
+          e.preventDefault();
+        });
+      });
+    </script>
+
+
+
+
+    <h3>jQuery Snippet:</h3>
+        <pre class="brush: js">
+&lt;script type="text/javascript"&gt;
+    $("#demo6-form").on('submit',function(e) {
+        var input = $('#demo6-input').val();
+        var replaced = emojione.toShort(input);
+        $('#demo6-input').val(replaced);
+
+        // prevent form submission
+        // normally you wouldn't do this but we don't want your page to reload for this demo
+        e.preventDefault();
+    });
+&lt;/script&gt;
+        </pre>
+
+  </div>
+
+</main>
+
+<footer class="demo-footer">
+  <div class="container">
+    <small>&copy; Copyright 2014 Ranks.com.</small>
+    <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-SA-4.0</a> License</small>
+    <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
+      href="http://opensource.org/licenses/MIT">MIT</a> License</small>
+  </div>
+</footer>
+
+</body>
+</html>

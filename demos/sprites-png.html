@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PNG Sprites Demo - Emoji One</title>
+
+  <!-- Emoji One Sprites CSS: -->
+  <link rel="stylesheet" href="./../assets/sprites/emojione.sprites.css"/>
+
+  <!-- jQuery: -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <!-- Syntax Highlighting -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <link rel="stylesheet" href="styles/shCoreMidnight.css"/>
+
+  <!-- Demos Stylesheet: -->
+  <link rel="stylesheet" href="styles/demos.css"/>
+
+  <!-- Typekit: -->
+  <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container">
+      <h1 class="masthead-title">Emoji One Labs</h1>
+    </div>
+  </header>
+
+  <!-- Breadcrum Navigation -->
+  <nav class="breadcrumbs">
+    <div class="container">
+      <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
+      <a class="breadcrumb-item" href="index.html#extras">Extras</a> &rsaquo;
+      <a class="breadcrumb-item active" href="sprites-png.html">Sprites (PNG)</a>
+    </div>
+  </nav>
+
+  <!-- Page: -->
+  <main>
+
+    <div class="container">
+
+      <h1>Emoji One PNG Sprites</h1>
+
+      <p style="font-size: 24px; text-align: center">
+        <span class="emojione-1F352">&#x1f352;</span>
+        <span class="emojione-1F353">&#x1f353;</span>
+        <span class="emojione-1F354">&#x1f354;</span>
+        <span class="emojione-1F355">&#x1f355;</span>
+        <span class="emojione-1F356">&#x1f356;</span>
+        <span class="emojione-1F357">&#x1f357;</span>
+      </p>
+
+      <p>
+        We've setup a <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.png">spritesheet</a> for people to use. These sprites are resizeable up to 64x64 pixels, (at which point they will begin to stretch).
+      </p>
+
+      <h3>Some Considerations</h3>
+      <ul>
+        <li><a href="http://caniuse.com/#feat=background-img-opts">background-size</a> is not supported in IE8, which these resizeable sprites rely on.</li>
+        <li>Depending on the amount of emoji you're actually using on a page, loading an entire spritesheet here could be overkill.</li>
+      </ul>
+
+      <h3>1. Attach Sprite CSS Stylesheet:</h3>
+      <p>
+        To get PNG sprites working you first need to link the Sprites stylesheet in your &lt;head&gt;. This file is available in our <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.css">git repo under /assets/sprites</a>. Make sure to include the accompanying <em>emojione.sprites.png</em> file in the same directory, or update its path in the css file if you move it.
+      </p>
+      <pre class="brush: php">&lt;link rel="stylesheet" href="path/to/emojione.sprites.css"/&gt;</pre>
+
+      <h3>2. Enable PNG Sprite mode</h3>
+
+      <p>Once the stylesheet is attached, it's just a matter of enabling PNG Sprites in your Emoji One configuration</p>
+
+      <p>Javascript Example</p>
+      <pre class="brush: php">//JS Example goes here</pre>
+
+      <p>PHP Example</p>
+      <pre class="brush: php">//PHP Example goes here</pre>
+
+      <p>If you are not using our conversion scripts, PNG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <span class="emojione-1F433">&#x1f433;</span></p>
+      <pre class="brush: php">
+&lt;span class="emojione-1F433"&gt;
+  &amp;#x1f433;
+&lt;/span&gt;</pre>
+
+
+    </div>
+
+  </main>
+
+  <footer class="demo-footer">
+    <div class="container">
+      <small>&copy; Copyright 2014 Ranks.com.</small>
+      <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-SA-4.0</a> License</small>
+      <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
+        href="http://opensource.org/licenses/MIT">MIT</a> License</small>
+    </div>
+  </footer>
+
+</body>
+</html>
