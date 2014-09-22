@@ -258,6 +258,8 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
 * https://github.com/node-modules/emoji
 * https://github.com/steveklabnik/emoji
 * https://github.com/rockerhieu/emojicon
+* https://github.com/HenrikJoreteg/emoji-images
+* https://github.com/frissdiegurke/emoji-parser
 
 
 ## Licenses
