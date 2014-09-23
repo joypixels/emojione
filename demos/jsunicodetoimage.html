@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>.toImage(str) - Javascript - Emoji One Labs</title>
+  <title>.unicodeToImage(str) - Javascript - Emoji One Labs</title>
 
   <!-- Emoji One CSS: -->
   <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
@@ -62,7 +62,7 @@
   <div class="container">
     <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
     <a href="index.html#js">Javascript</a> &rsaquo;
-    <a class="breadcrumb-item active" href="jstoimage.html">.toImage(str)</a>
+    <a class="breadcrumb-item active" href="jstoimage.html">.unicodeToImage(str)</a>
   </div>
 </nav>
 
@@ -71,18 +71,20 @@
 
   <div class="container">
 
-      <h1>.toImage(str)</h1>
-      <h2>convert native unicode emoji and shortnames directly to images</h2>
+      <h1>.unicodeToImage(str)</h1>
+      <h2>convert native unicode emoji directly to images</h2>
 
-      <p>This function is simply a shorthand for <a href="./jsunicodetoimage.html">.unicodeToImage(str)</a> and <a href="./jsshortnametoimage.html">.shortnameToImage(str)</a>. First it will convert native unicode emoji directly to images and then convert any shortnames to images. This function can be useful to take mixed input and convert it directly to images if, for example, you wanted to give clients a live preview of their inputted text. Also, if your source text contains both unicode characters and shortnames (you didn't unify it) then this function will be useful to you.</p>
+      <p>If you have native unicode emoji characters that you want to convert directly to images, you can use this function. It should be noted that once your input text has been converted to images it cannot be converted back using the provided functions.</p>
 
-      <p>Feel free to enter native unicode emoji  and/or shortnames in the input below to test the conversion process. For a complete list of emoji and their shortnames check out <a href="http://emoji.codes/" target="_blank">emoji.codes</a>.</p>
+      <p>For that reason, we recommend only converting input text to images when it's ready to display to the client. The better alternative, in our opinion, is to convert native unicode emoji to their corresponding shortname using <a href="jstoshort.html">.toShort(str)</a> for database storage.</p>
+
+      <p>Feel free to enter native unicode emoji in the input below to test the conversion process. For a complete list of emoji and their shortnames check out <a href="http://emoji.codes/" target="_blank">emoji.codes</a>.</p>
 
     <div class="clearfix">
 
       <div class="column-1-2 input">
         <h3>Input:</h3>
-        <input type="text" id="inputText" name="inputText" value="Hello world! &#x1f604; :smile:"/>
+        <input type="text" id="inputText" name="inputText" value="Hello world! &#x1f604;"/>
         <input type="button" value="Convert" onclick="convert()"/>
       </div>
 
@@ -92,7 +94,7 @@
         <script type="text/javascript">
           function convert() {
             var input = document.getElementById('inputText').value;
-            var output = emojione.toImage(input);
+            var output = emojione.unicodeToImage(input);
             document.getElementById('outputText').innerHTML = output;
           }
         </script>
@@ -107,11 +109,11 @@
     // &lt;input type="button" value="Convert" onclick="convert()"/&gt;
 
     &lt;script type="text/javascript"&gt;
-   function convert() {
+    function convert() {
         var input = document.getElementById('inputText').value;
-        var output = emojione.toImage(input);
+        var output = emojione.unicodeToImage(input);
         document.getElementById('outputText').innerHTML = output;
-    }
+      }
     &lt;/script&gt;
         </pre>
 

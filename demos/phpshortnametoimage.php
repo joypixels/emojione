@@ -20,7 +20,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PHP: Convert Unicodes to Shortnames - Emoji One Labs</title>
+  <title>::shortnameToImage($str) - PHP - Emoji One Labs</title>
 
   <!-- Emoji One CSS: -->
   <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
@@ -58,24 +58,29 @@ Emojione::$imagePathSVG = './../assets/svg/';
   <div class="container">
     <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
     <a href="index.html#php">PHP</a> &rsaquo;
-    <a class="breadcrumb-item active" href="phptoshortname.php">Convert Unicodes to Shortnames</a>
+    <a class="breadcrumb-item active" href="./phpshortnametoimage.php">::shortnameToImage($str)</a>
   </div>
 </nav>
 
 <!-- Page: -->
 <main>
 
-  <div class="container">
+  <div class="container" id="output">
 
-    <h1>PHP: Convert Unicodes to Shortnames</h1>
+      <h1>::shortnameToImage($str)</h1>
+      <h2>convert shortnames to images</h2>
 
-    <p>Convert Emoji Unicode characters to :shortnames:. You can also try inputting an emoji from a mobile device here</p>
+      <p>If you've chosen to unify your inputted text so that it contains only shortnames then this is the function (or its matching Javascript function) you will want to use to convert the shortnames images when displaying it to the client.</p>
 
-    <div class="clearfix">
+      <p>Feel free to enter other shortnames in the input below to test the conversion process. For a complete list of emoji and their shortnames check out <a href="http://emoji.codes/" target="_blank">emoji.codes</a>.</p>
+
+      <p class="notice"><strong>Note: </strong> Once you start dealing with native unicode characters server side, it's important to ensure that your web stack is set up to handle UTF-8 character encoding. That is outside of the scope of our demos, but a quick <a href="http://lmgtfy.com/?q=web+stack+utf-8" target="_blank">Google Search</a> will guide you in the right direction.</p>
+
+      <div class="clearfix">
       <div class="column-1-2 input">
         <h3>Input:</h3>
-        <form method="post" action="phptoshortname.php#demo3">
-          <input type="text" id="demo3-input" name="demo3-input" value="Hello world! &#x1f604;"/>
+        <form method="post" action="phpshortnametoimage.php#output">
+          <input type="text" id="inputText" name="inputText" value="<?php echo (isset($_POST['inputText'])) ? $_POST['inputText'] : 'Hello world! :smile:'; ?>"/>
           <input type="submit" value="Convert"/>
         </form>
       </div>
@@ -83,8 +88,8 @@ Emojione::$imagePathSVG = './../assets/svg/';
         <h3>Output:</h3>
         <p>
           <?php
-          if(isset($_POST['demo3-input'])) {
-            echo Emojione::toShort($_POST['demo3-input']);
+          if(isset($_POST['inputText'])) {
+            echo Emojione::shortnameToImage($_POST['inputText']);
           }
           ?>
         </p>
@@ -96,9 +101,23 @@ Emojione::$imagePathSVG = './../assets/svg/';
     <h3>PHP Snippet:</h3>
         <pre class="brush: php">
 &lt;?php
-if(isset($_POST['demo3-input'])) {
-  echo Emojione::toShort($_POST['demo3-input']);
-}
+    // include the PHP library (if not autoloaded)
+    require('./../lib/php/Emojione.class.php');
+
+    // ###############################################
+    // Optional:
+    // default is PNG but you may also use SVG
+    Emojione::$imageType = 'svg'; // or png (default)
+
+    // if you want to host the images somewhere else
+    // you can easily change the default paths
+    Emojione::$imagePathPNG = './../assets/png/'; // defaults to jsdelivr's free CDN
+    Emojione::$imagePathSVG = './../assets/svg/'; // defaults to jsdelivr's free CDN
+    // ###############################################
+
+    if(isset($_POST['inputText'])) {
+    echo Emojione::shortnameToImage($_POST['inputText']);
+    }
 ?&gt;
         </pre>
 

@@ -43,7 +43,7 @@
     <h1>All Demos</h1>
 
     <p>
-      The following demos are provided to show how to use Emoji One to it's fullest potential. Feel free to dig in and take these demos apart to see how it all works.
+      The following demos are provided to show how to use Emoji One to its fullest potential. Feel free to dig in and take these demos apart to see how it all works.
     </p>
 
     <h3 id="js">
@@ -52,31 +52,56 @@
 
     <ul>
       <li>
-        <a class="demo-name" href="jstoshortname.html">Convert Unicodes to Shortnames</a>
+        <a class="demo-name" href="jstoshort.html"><strong>.toShort(str)</strong></a> - <em>native unicode -> shortnames</em>
         <p>
-          Using our JS conversion script, this demo shows you how to take unicode input from a device and translate it to emoji shortnames for database storage.
+          This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
+        </p>
+      </li>
+        <li>
+            <a class="demo-name" href="jsshortnametoimage.html"><strong>.shortnameToImage(str)</strong></a> - <em>shortname -> images</em>
+            <p>
+                This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
+            </p>
+        </li>
+      <li>
+        <a class="demo-name" href="jsunicodetoimage.html"><strong>.unicodeToImage(str)</strong></a> - <em>native unicode -> images</em>
+        <p>
+          This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
         </p>
       </li>
       <li>
-        <a href="jstoimage.html">Convert Shortnames and Unicodes to IMG</a>
-
+        <a href="jstoimage.html"><strong>.toImage(str)</strong></a> - <em>native unicode + shortnames -> images (mixed input)</em>
         <p>
-          Also using our JS conversion, this demo shows you how to take unicode or shortnames, and translate them into Emoji One images for display.
+          This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
         </p>
       </li>
     </ul>
     
-    <h3 id="php">PHP Conversion <span class="notice">(Requires PHP server)</span></h3>
+    <h3 id="php">PHP Conversion <span class="notice">(recommended)</span></h3>
     <ul>
       <li>
-        <a href="phptoshortname.php">Convert Unicodes to Shortnames</a>
-        <p>Instead using the PHP version of our conversion script, this demo shows you how to take unicode input from a device and translate it to emoji shortnames for database storage.</p>
+        <a href="phptoshort.php"><strong>::toShort($str)</strong></a> - <em>native unicode -> shortnames</em>
+      <p>
+          This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
+      </p>
       </li>
+        <li>
+            <a href="phpshortnametoimage.php"><strong>::shortnameToImage($str)</strong></a> - <em>shortname -> images</em>
+            <p>
+                This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
+            </p>
+        </li>
+        <li>
+            <a href="phpunicodetoimage.php"><strong>::unicodeToImage($str)</strong></a> - <em>native unicode -> images</em>
+            <p>
+                This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
+            </p>
+        </li>
       <li>
-        <a href="phptoimage.php">Convert Shortnames/Unicode to IMG</a>
-        <p>
-          Also using our PHP conversion, this demo shows you how to take unicode or shortnames, and translate them into Emoji One images for display.
-        </p>
+        <a href="phptoimage.php"><strong>::toImage($str)</strong></a> - <em>native unicode + shortnames -> images (mixed input)</em>
+      <p>
+          This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
+      </p>
       </li>
     </ul>
 

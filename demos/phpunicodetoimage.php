@@ -20,7 +20,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>::toImage($str) - PHP - Emoji One Labs</title>
+  <title>::unicodeToImage($str) - PHP - Emoji One Labs</title>
 
   <!-- Emoji One CSS: -->
   <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
@@ -58,7 +58,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
   <div class="container">
     <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
     <a href="index.html#php">PHP</a> &rsaquo;
-    <a class="breadcrumb-item active" href="./phptoimage.php">::toImage($str)</a>
+    <a class="breadcrumb-item active" href="./phpunicodetoimage.php">::unicodeToImage($str)</a>
   </div>
 </nav>
 
@@ -67,20 +67,23 @@ Emojione::$imagePathSVG = './../assets/svg/';
 
   <div class="container" id="output">
 
-      <h1>::toImage($str)</h1>
-      <h2>convert native unicode emoji and shortnames directly to images</h2>
+      <h1>::unicodeToImage($str)</h1>
 
-      <p>This function is simply a shorthand for <a href="./phpunicodetoimage.php">::unicodeToImage($str)</a> and <a href="./phpshortnametoimage.php">::shortnameToImage($str)</a>. First it will convert native unicode emoji directly to images and then convert any shortnames to images. This function can be useful to take mixed input and convert it directly to images if, for example, you have native unicode emoji stored in your database alongside shortnames.</p>
+      <h2>convert native unicode emoji directly to images</h2>
 
-      <p>Feel free to enter native unicode emoji  and/or shortnames in the input below to test the conversion process. For a complete list of emoji and their shortnames check out <a href="http://emoji.codes/" target="_blank">emoji.codes</a>.</p>
+      <p>If you have native unicode emoji characters that you want to convert directly to images, you can use this function. It should be noted that once your input text has been converted to images it cannot be converted back using the provided functions.</p>
+
+      <p>For that reason, we recommend only converting input text to images when it's ready to display to the client. The better alternative, in our opinion, is to convert native unicode emoji to their corresponding shortname using <a href="./phptoshort.php">::toShort($str)</a> for database storage.</p>
+
+      <p>Feel free to enter native unicode emoji in the input below to test the conversion process. For a complete list of emoji and their shortnames check out <a href="http://emoji.codes/" target="_blank">emoji.codes</a>.</p>
 
       <p class="notice"><strong>Note: </strong> Once you start dealing with native unicode characters server side, it's important to ensure that your web stack is set up to handle UTF-8 character encoding. That is outside of the scope of our demos, but a quick <a href="http://lmgtfy.com/?q=web+stack+utf-8" target="_blank">Google Search</a> will guide you in the right direction.</p>
 
       <div class="clearfix">
       <div class="column-1-2 input">
         <h3>Input:</h3>
-        <form method="post" action="phptoimage.php#output">
-          <input type="text" id="inputText" name="inputText" value="<?php echo (isset($_POST['inputText'])) ? $_POST['inputText'] : 'Hello world! :smile: &#x1f604;'; ?>"/>
+        <form method="post" action="phpunicodetoimage.php#output">
+          <input type="text" id="inputText" name="inputText" value="<?php echo (isset($_POST['inputText'])) ? $_POST['inputText'] : 'Hello world! &#x1f604;'; ?>"/>
           <input type="submit" value="Convert"/>
         </form>
       </div>
@@ -89,7 +92,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
         <p>
           <?php
           if(isset($_POST['inputText'])) {
-            echo Emojione::toImage($_POST['inputText']);
+            echo Emojione::unicodeToImage($_POST['inputText']);
           }
           ?>
         </p>
@@ -116,7 +119,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
     // ###############################################
 
     if(isset($_POST['inputText'])) {
-    echo Emojione::toImage($_POST['inputText']);
+    echo Emojione::unicodeToImage($_POST['inputText']);
     }
 ?&gt;
         </pre>
