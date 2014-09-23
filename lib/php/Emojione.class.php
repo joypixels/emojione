@@ -26,6 +26,29 @@ class Emojione {
         $string = self::shortnameToImage($string);
         return $string;
     }
+    //Uses toShort to transform all unicode into a standard shortname
+    //then transforms the shortname into unicode
+    //This is done for standardization when converting several unicode types
+    static function unifyUnicode($string) {
+        $string = self::toShort($string);
+        $string = self::shortnameToUnicode($string);
+        return $string;
+    }
+    //will output unicode from shortname
+    //useful for sending emojis back to mobile devices
+    static function shortnameToUnicode($string) {
+        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToUnicodeCallback', $string);
+        if(self::$ascii) {
+            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(\\s|$|[!,\.]))/S', 'Emojione::asciiToUnicodeCallback', $string);
+        }
+        return $string;
+    }
+    //Replace shortnames (:wink:) with Ascii equivalents ( ;^) )
+    //Useful for systems that dont support unicode nor images
+    static function shortnameToAscii($string) {
+        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToAsciiCallback', $string);
+        return $string;
+    }
     static function shortnameToImage($string) {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToImageCallback', $string);
         if(self::$ascii) {
@@ -43,6 +66,42 @@ class Emojione {
     // ##########################################
     // ######## preg_replace callbacks
     // ##########################################
+    static function shortnameToAsciiCallback($m) {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+            return $m[0];
+        }
+        else {
+            $aflipped = array_flip(self::$ascii_replace);
+
+            $shortname = $m[0];
+
+            if(!isset(self::$shortcode_replace[$shortname])) {
+                return $m[0];
+            }
+
+            $unicode = strtolower(self::$shortcode_replace[$shortname]);
+
+            return isset($aflipped[$unicode]) ? $aflipped[$unicode] : $m[0];
+        }
+    }
+    static function shortnameToUnicodeCallback($m) {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+            return $m[0];
+        }
+        else {
+            $flipped = array_flip(self::$unicode_replace);
+
+            $shortname = $m[1];
+
+            if(!isset($flipped[$shortname])) {
+                return $m[0];
+            }
+
+
+            $unicode = $flipped[$shortname];
+            return $unicode;
+        }
+    }
     static function shortnameToImageCallback($m) {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
             return $m[0];
@@ -66,6 +125,16 @@ class Emojione {
             }
 
             return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+        }
+    }
+    static function asciiToUnicodeCallback($m) {
+        if((!is_array($m)) || (!isset($m[3])) || (empty($m[3]))) {
+            return $m[0];
+        }
+        else {
+            $shortname = $m[3];
+            $unicode = self::$ascii_replace[$shortname];
+            return self::convert($unicode);
         }
     }
     static function asciiToImageCallback($m) {

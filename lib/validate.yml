@@ -7,7 +7,7 @@
 # test cases as defined here. DO NOT CONVERT THIS FILE STATICALLY! The
 # tests defined here are supposed to be updated over time.
 tests:
-  toUnicode:
+  unifyUnicode:
     - description: "single unicode character conversion"
       text: ":snail:"
       expected: "🐌"
