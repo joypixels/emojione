@@ -235,6 +235,7 @@
     main h1 {
       font-size: 3.6em;
       font-weight: 600;
+      word-break: break-all;
     }
     p {
       font-size: 1.6em;
@@ -296,7 +297,7 @@
       background: rgba(255, 171, 60, 0.12);
       padding: 1.5em;
       border-radius: .5em;
-      margin: 2em 0 1.5em;
+      margin: 2em 0 0;
     }
     .copy-text {
       position: relative;
@@ -366,7 +367,7 @@
       float: right;
     }
     .input input {
-      width: 65%;
+      width: calc(100% - 110px);
     }
     .output p {
       box-sizing: border-box;
@@ -401,6 +402,7 @@
       padding: 1em 0;
       font-size: 1.8em;
       background: #efefef;
+      white-space: nowrap;
     }
     .breadcrumbs a {
       margin: 0 1ex;
