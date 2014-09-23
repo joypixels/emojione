@@ -237,7 +237,7 @@ To get you started, here's a nice guide: [UTF-8: The Secret of Character Encodin
 
 If you discover any bugs, feel free to create an issue on GitHub. We also welcome the open-source community to contribute to the project by forking it and issuing pull requests.
 
- *  https://github.com/emojione/issues
+ *  https://github.com/Ranks/emojione/issues
 
 
 ### Contact
