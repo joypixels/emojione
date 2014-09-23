@@ -61,7 +61,7 @@
 <nav class="breadcrumbs">
   <div class="container">
     <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
-    <a href="index.html#js">Javascript</a> &rsaquo;
+      <a href="index.html#extras">Extras</a> &rsaquo;
     <a class="breadcrumb-item active" href="convert-on-submit.html">Convert on Form Submission</a>
   </div>
 </nav>
@@ -73,21 +73,20 @@
 
     <h1>Convert on Form Submission</h1>
 
-    <p>Requires jQuery. Automatically convert Unicode characters to shortnames upon form submission.</p>
-
+    <p>This demo shows how you can use jQuery to automatically convert native unicode emoji to their shortnames upon form submission.</p>
 
     <h3>Input:</h3>
-    <form id="demo6-form" name="demo6-form">
-      <input type="text" id="demo6-input" name="demo6-input" style="width: auto" size="50" value="Hello world! &#x1f604;"/>
+    <form id="myForm" name="myForm">
+      <input type="text" id="myInput" name="myInput" style="width: auto" size="50" value="Hello world! &#x1f604;"/>
       <input type="submit" value="Submit" style="float: none"/>
     </form>
 
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#demo6-form").on('submit',function(e) {
-          var input = $('#demo6-input').val();
+        $("#myForm").on('submit',function(e) {
+          var input = $('#myInput').val();
           var replaced = emojione.toShort(input);
-          $('#demo6-input').val(replaced);
+          $('#myInput').val(replaced);
 
           // prevent form submission
           // normally you wouldn't do this but we don't want your page to reload for this demo
@@ -97,15 +96,23 @@
     </script>
 
 
+      <h3>Required extras</h3>
+      <p>
+          To get this example working correctly we needed to include a few extra pieces, including:
+      </p>
+      <ul>
+          <li><a href="http://jquery.com/">jQuery</a></li>
+          <li>Custom JS (see below)</li>
+      </ul>
 
 
     <h3>jQuery Snippet:</h3>
         <pre class="brush: js">
 &lt;script type="text/javascript"&gt;
-    $("#demo6-form").on('submit',function(e) {
-        var input = $('#demo6-input').val();
+    $("#myForm").on('submit',function(e) {
+        var input = $('#myInput').val();
         var replaced = emojione.toShort(input);
-        $('#demo6-input').val(replaced);
+        $('#myInput').val(replaced);
 
         // prevent form submission
         // normally you wouldn't do this but we don't want your page to reload for this demo
