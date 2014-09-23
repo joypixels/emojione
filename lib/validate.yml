@@ -7,6 +7,19 @@
 # test cases as defined here. DO NOT CONVERT THIS FILE STATICALLY! The
 # tests defined here are supposed to be updated over time.
 tests:
+  toUnicode:
+    - description: "single unicode character conversion"
+      text: ":snail:"
+      expected: "🐌"
+    - description: "mixed ascii, regular unicode and duplicate emoji"
+      text: ":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"
+      expected: "👽 is 👽 and 저 is not 👽 or 👽 also :randomy: is not emoji"
+    - description: "multiline emoji string"
+      text: ":dancer:\n:dancer:"
+      expected: "💃\n💃"
+    - description: "triple emoji string"
+      text: ":dancer::dancer::alien:"
+      expected: "💃💃👽"
   toShort:
     - description: "single unicode character conversion"
       text: "🐌"
