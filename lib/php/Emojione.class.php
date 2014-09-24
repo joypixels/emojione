@@ -29,7 +29,7 @@ class Emojione {
     static function shortnameToImage($string) {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToImageCallback', $string);
         if(self::$ascii) {
-            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(\\s|$|[!,\.]))/S', 'Emojione::asciiToImageCallback', $string);
+            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'Emojione::asciiToImageCallback', $string);
         }
         return $string;
     }
@@ -73,22 +73,23 @@ class Emojione {
             return $m[0];
         }
         else {
-            $shortname = $m[3];
+            $shortname = html_entity_decode($m[3]);
             $unicode = self::$ascii_replace[$shortname];
 
             // unicode char or shortname for the alt tag? (unicode is better for copying and pasting the resulting text)
-            $alt = htmlspecialchars($shortname);
+            if(self::$unicodeAlt) { $alt = self::convert($unicode); }
+            else { $alt = htmlspecialchars($shortname); }
 
             if(self::$imageType == 'png') {
-                return $m[2].'<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>'.$m[4];
+                return $m[2].'<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
             }
 
-            return $m[2].'<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>'.$m[4];
+            return $m[2].'<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
         }
     }
     static function toShortCallback($m) {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
-            return $m[1];
+            return $m[0];
         }
         else {
             $unicode = $m[1];
@@ -104,7 +105,7 @@ class Emojione {
     }
     static function unicodeToImageCallback($m) {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
-            return $m[1];
+            return $m[0];
         }
         else {
             $unicode = $m[1];
