@@ -10,6 +10,8 @@
   <!-- Emoji One CSS: -->
   <link rel="stylesheet" href="./../assets/css/emojione.css"/>
 
+  <!-- jQuery: -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <!-- Syntax Highlighting -->
   <script type="text/javascript" src="scripts/shCore.js"></script>
@@ -25,6 +27,41 @@
   <!-- Typekit: -->
   <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <script src="./../lib/js/emojione.js"></script>
+
+  <script type="text/javascript">
+    // #################################################
+    // # Optional
+
+    // default is PNG but you may also use SVG
+    emojione.imageType = 'svg';
+
+    //Turn on sprites
+    emojione.sprites = true;
+
+    // default is ignore ASCII smileys like :) but you can easily turn them on
+    emojione.ascii = true;
+
+    // if you want to host the images somewhere else
+    // you can easily change the default paths
+    emojione.imagePathPNG = './../assets/png/';
+    emojione.imagePathSVG = './../assets/svg/';
+    emojione.imagePathSVGSprites = './../assets/sprites/emojione.sprites.svg'
+
+    // #################################################
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".convert-emoji").each(function() {
+        var original = $(this).html();
+        // use .shortnameToImage if only converting shortnames (for slightly better performance)
+        var converted = emojione.toImage(original);
+        $(this).html(converted);
+      });
+    });
+  </script>
 
 </head>
 <body>
@@ -52,26 +89,18 @@
 
     <h1>Emoji One SVG Sprites</h1>
 
-    <p style="font-size: 64px; text-align: center">
-      <svg class="emojione">
-        <use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F350"></use>
-      </svg>
+    <p class="convert-emoji" style="font-size: 48px; text-align: center">
+      &#x1f352;
 
-      <svg class="emojione">
-        <use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F351"></use>
-      </svg>
+      :)
 
-      <svg class="emojione">
-        <use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F352"></use>
-      </svg>
+      :coffee:
 
-      <svg class="emojione">
-        <use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F353"></use>
-      </svg>
+      :(
 
-      <svg class="emojione">
-        <use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F355"></use>
-      </svg>
+      :fire:
+
+      &#x1f354;
     </p>
 
     <p>
@@ -90,20 +119,30 @@
     <pre class="brush: php">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
 &lt;script src=&quot;svg4everybody.min.js&quot;&gt;&lt;/script&gt;</pre>
 
-    <h3>2. Enable SVG Sprite mode</h3>
+    <h3>2. Enable SVG Sprite mode &amp;</h3>
 
     <p>Once that's done, it's just a matter of enabling SVG Sprites in your Emoji One configuration</p>
 
+    <p class="notice" style="margin-bottom: 2em">
+      <strong>Note: </strong> SVG sprites require a third configuration variable: <code>emojione.imagePathSVGSprites</code>. This is in contrast to the PNG sprites, which set the path within the sprite CSS file. Thankfully with SVG Sprites we don't need to include additional CSS, so it needs to be set as a variable in the script.
+    </p>
+
     <p>Javascript Example</p>
-    <pre class="brush: php">//JS Example goes here</pre>
+
+      <pre class="brush: php">emojione.imageType = 'svg';
+emojione.sprites = true;
+emojione.imagePathSVGSprites = './../assets/sprites/emojione.sprites.svg';</pre>
 
     <p>PHP Example</p>
-    <pre class="brush: php">//PHP Example goes here</pre>
+      <pre class="brush: php">Emojione::$imageType = 'svg';
+Emojione::$sprites = true;
+Emojione::$imagePathSVGSprites = './../assets/sprites/emojione.sprites.svg'; </pre>
 
-    <p>If you are not using our conversion scripts, SVG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <svg class="emojione"><use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F433"></use></svg>
+    <p>If you are not using our conversion scripts, SVG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <svg class="emojione"><description>&#x1f433;</description><use xlink:href="../assets/sprites/emojione.sprites.svg#emoji-1F433"></use></svg>
     </p>
       <pre class="brush: php">
 &lt;svg class=&quot;emojione&quot;&gt;
+    &lt;description&gt;&amp;#x1f433;&lt;/description&gt;
     &lt;use xlink:href=&quot;path/to/emojione.sprites.svg#emoji-1F433&quot;&gt;&lt;/use&gt;
 &lt;/svg&gt;</pre>
 
