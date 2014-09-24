@@ -74,14 +74,14 @@
 
     <h1>Conversion HTML Class</h1>
 
-    <p>Using jQuery, this demo shows you how you can stick a class of <em>.emojione-convert</em> on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.</p>
+    <p>Using jQuery, this demo shows you how you can stick a class of <em>.convert-emoji</em> on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.</p>
 
     <div class="clearfix">
 
       <div class="input">
         <h3>Input:</h3>
         <pre class="brush: xhtml">
-&lt;p class"emojione-convert"&gt;
+&lt;p class"convert-emoji"&gt;
     Welcome to this Emoji One :snail: demo! &#x1f604;
     I hope you like what we've put together here for you. :thumbsup: :smile:
 &lt;/p&gt;
@@ -90,14 +90,14 @@
 
       <div class="output">
         <h3>Output:</h3>
-        <p class="emojione-convert">
+        <p class="convert-emoji">
             Welcome to this Emoji One :snail: demo! &#x1f604;
             I hope you like what we've put together here for you. :thumbsup: :smile:
         </p>
 
         <script type="text/javascript">
           $(document).ready(function() {
-            $(".emojione-convert").each(function() {
+            $(".convert-emoji").each(function() {
               var original = $(this).html();
               // use .shortnameToImage if only converting shortnames (for slightly better performance)
               var converted = emojione.toImage(original);
@@ -122,7 +122,7 @@
         <pre class="brush: js">
 &lt;script type="text/javascript"&gt;
      $(document).ready(function() {
-        $(".emojione-convert").each(function() {
+        $(".convert-emoji").each(function() {
             var original = $(this).html();
             // use .shortnameToImage if only converting shortnames (for slightly better performance)
             var converted = emojione.toImage(original);
