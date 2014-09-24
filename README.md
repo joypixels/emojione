@@ -11,219 +11,122 @@ To standardize emoji on the web through the use of common :shortnames:.
 When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
 
 
-> **What Shortnames?**
-> 
-> [emoji.codes](http://emoji.codes/) has a complete list of shortnames as well as quick copy & search functions.
+#### _What are Shortnames?_
+ 
+ Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We've compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.
+
+
 
 
 ## Installation
 
-The easiest, and preferred, method of installation is to use our CDN partner [jsDelivr](http://www.jsdelivr.com/). You can hotlink our CSS and JS files. The toolkits we've provided will use the emoji images hosted on jsDelivr by default. 
+We've teamed up with JSDelivr to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
-Quick installs can also be done using NPM (for the Javascript toolkit) or Composer (for the PHP toolkit).
+```
+<script src="//cdn.jsdelivr.net/emojione/1.1.0/lib/js/emojione.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.1.0/assets/css/emojione.min.css" type="text/css" media="all" />
+```
+
+Quick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit).
 
 #### NPM
 ```
 > npm install emojione
 ```
 
+#### Bower
+```
+> bower install emojione
+```
+
+
 #### Composer
 ```
  "require": { "emojione/emojione": "dev-master" }
 ```
 
+
+##Usage Examples
+
 Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.
 
-The basic flow is as follows:
 
-* The user inputs their text using shortnames and/or standard Unicode characters.
-* (a) Prior to form submission, any Unicode emoji characters are converted to :shortnames: with the Javascript toolkit
-* (b) **OR** after posting, but before storing the text in your database, any Unicode emoji characters are converted to shortnames using the PHP toolkit.
-* (a) When you pull the text out of your database, you can convert the :shortnames: to emoji images server-side using the PHP toolkit
-* (b) **OR** after outputting, you can convert the :shortnames: to emoji images client-side using the Javascript toolkit.
+###Javascript Conversion
 
 
+**[.toShort\(str\)](http://git.emojione.com/demos/jstoshort.html)** - _native unicode -> shortnames_ 
 
-## Javascript Example
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
-Below is an example of a Javascript-only implemention of Emoji One. 
+**[.shortnameToImage\(str\)](http://git.emojione.com/demos/jsshortnametoimage.html)** - _shortname -> images_
 
-Include the Javascript toolkit
-```html
-<head>
-	<!-- include via jsDelivr (or download and host locally if you prefer) -->
-    <script src="//cdn.jsdelivr.net/emojione/1.1.0/lib/js/emojione.min.js" type="text/javascript"></script>
-    
-    <!-- basic rules for styling the emoji images -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.1.0/assets/css/emojione.min.css" type="text/css" media="all" />
-    
-     <script type="text/javascript">
-       // #################################################
-       // # Optional
-       
-       // default is PNG but you may also use SVG
-       emojione.imageType = 'svg';
-       
-       // default is ignore ASCII smileys like :) but you can easily turn them on
-       emojione.ascii = true;
-       
-       // default is jsDelivr but you can also change the paths 
-       // if you want to host the images somewhere else
-       emojione.imagePathPNG = './../images/png/';
-       emojione.imagePathSVG = './../images/svg/';
-       
-       // #################################################
-    </script>
+This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
 
-</head>
-```
+**[.unicodeToImage\(str\)](http://git.emojione.com/demos/jsunicodetoimage.html)** - _native unicode -> images_
+
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
 
 
-##### On Input:
-Before text is sent to your server, convert any Unicode emoji to shortnames:
-```html
-<form onsubmit="convert();">
-	<textarea id="myTextarea">Hello World! 😄</textarea>
-</form>
+**[.toImage\(str\)](http://git.emojione.com/demos/jstoimage.html)** - _native unicode + shortnames -> images (mixed input)_
 
-<script type="text/javascript">
-
-  function convert() {
-    // get the inputted text
-    var inputted = document.getElementById('myTextarea').value;
-    
-    // convert to shortnames to standardize the text
-    var converted = emojione.toShort(inputted);
-  
-    // update textarea with new text
-    document.getElementById('myTextarea').innerHTML = converted;
-  }
-
-</script>
-```
+This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
 
+###PHP Conversion
 
-##### On Output:
+**[::toShort\($str\)](http://git.emojione.com/demos/phptoshort.php)** - _native unicode -> shortnames_
 
-```html
-<div id="myContent">Hello World! :smile:</div>
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
-<script type="text/javascript">
+**[::shortnameToImage\($str\)](http://git.emojione.com/demos/phpshortnametoimage.php)** - _shortname -> images_
 
-  // get the standardized text
-  var inputted = document.getElementById('myContent').innerHTML;
-  
-  // convert shortnames emoji images
-  var converted = emojione.toImage(inputted);
-  
-  // update textarea with new text
-  document.getElementById('myContent').innerHTML = converted;
+This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
 
-</script>
-```
+**[::unicodeToImage\($str\)](http://git.emojione.com/demos/phpunicodetoimage.php)** - _native unicode -> images_
 
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
 
-## jQuery Examples
+**[::toImage\($str\)](http://git.emojione.com/demos/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 
-Below are some examples of things you can easily do with jQuery. It assumes that both our Javascript toolkit and jQuery are already included in your page.
+This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
-##### Form Submissions
+###Extras
 
-Automatically convert form fields containing Unicode emoji to :shortnames:
-```html
-<form id="myForm">
-	<input type="text" id="myInput" name="myInput"/> 
-</form>
+**[Shortname Autocomplete](http://git.emojione.com/demos/autocomplete.html)**
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#myForm").on('submit',function() {
-            var input = $('#myInput').val();
-            var replaced = emojione.toShort(input);
-            $('#myInput').val(replaced);
-        });
-    });
-</script>
-```
+Easily add shortname autocomplete functionality to any text input on your page.
 
-##### Automatic Conversion
+**[ASCII Smiley Conversion](http://git.emojione.com/demos/ascii-smileys.html)**
 
-Easily convert :shortnames: in any HTML element by applying an identifying class like this:
-```html
-<div class="emojione-convert">
-    I hope you like this Emoji One! :thumbsup: 
-</div>
+With one quick step you can start converting common ASCII smileys to their corresponding images.
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(".emojione-convert").each(function() {
-            var original = $(this).html();
-            var converted = emojione.toImage(original);
-            $(this).html(converted);
-        });
-    });
-</script>
-```
+**[Alternate Alt Tags](http://git.emojione.com/demos/alternate-alt-tags.html)**
 
+Change from the native unicode emoji in the resulting alt tags to their shortnames insteads.
 
-## PHP Example
+**[Live Preview Box](http://git.emojione.com/demos/live-preview.html)**
 
-Below is an example of a PHP only implemention of Emoji One. 
+Display converted Emoji in a preview box as the user is typing.
 
-#### On Input 
-```php
-# include the PHP toolkit (if not autoloaded)
-require('Emojione.class.php');
-  
-# $string would normally be text submitted from a form
-$string = 'Hello world! 😄';
+**[Conversion HTML Class](http://git.emojione.com/demos/class-convert.html)**
 
-# convert text to shortnames
-$convertedString =  Emojione::toShort($string); 
+Stick a class of .emojione-convert on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.
 
-###
+**[Convert on Form Submission](http://git.emojione.com/demos/convert-on-submit.html)**
 
-# This is where you'd now store the standardized text in your database
+Converts unicode input to shortnames once the user submits the form.
 
-###
-```
+**[Sprites (PNG)](http://git.emojione.com/demos/sprites-png.html)**
 
+With an additional CSS file you can use Emoji One as resizeable PNG sprites (up to 64x64).
 
-#### On Output 
-```php
-# include the PHP toolkit (if not autoloaded)
-require('Emojione.class.php');
+**[Sprites (SVG)](http://git.emojione.com/demos/sprites-svg.html)**
 
-################################################ 
-# Optional:
-# default is PNG but you may also use SVG
-Emojione::$imageType = 'svg';
+This sprite method requires no extra CSS, and is infinitely resizeable.
 
-# default is ignore ASCII smileys like :) but you can easily turn them on
-Emojione::$ascii = true;
-
-# default is jsDelivr but you can also change the paths
-# if you want to host the iamges somewhere else
-Emojione::$imagePathPNG = './../images/png/';
-Emojione::$imagePathSVG = './../images/svg/';
-################################################ 
-
-# $string would normally standardized text retrieve from your database
-$string = 'Hello world! :smile:';
-
-# convert shortnames to images
-$convertedString =  Emojione::toImage($string); 
-
-###
-
-# This is where you'd now output the converted text to the browser
-
-###
-```
 
 ## Other Considerations
-**Character Encoding &mdash; UTF-8**
+###Character Encoding &mdash; UTF-8
 
 If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilies here, so you'll have to figure what works best for your own situation. 
 
@@ -261,10 +164,9 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
 * https://github.com/HenrikJoreteg/emoji-images
 * https://github.com/frissdiegurke/emoji-parser
 
-
 ## Licenses
 
-#### Emoji One Artwork
+### Emoji One Artwork
 
 *  Applies to all PNG and SVG files as well as any adaptations made.
 *  License: Creative Commons Attribution-ShareAlike 4.0 International
@@ -272,7 +174,7 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
 *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 
-#### Emoji One Non-Artwork
+### Emoji One Non-Artwork
 
 *  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
 *  License: MIT
