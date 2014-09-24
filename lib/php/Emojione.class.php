@@ -26,25 +26,25 @@ class Emojione {
         $string = self::shortnameToImage($string);
         return $string;
     }
-    //Uses toShort to transform all unicode into a standard shortname
-    //then transforms the shortname into unicode
-    //This is done for standardization when converting several unicode types
+    // Uses toShort to transform all unicode into a standard shortname
+    // then transforms the shortname into unicode
+    // This is done for standardization when converting several unicode types
     static function unifyUnicode($string) {
         $string = self::toShort($string);
         $string = self::shortnameToUnicode($string);
         return $string;
     }
-    //will output unicode from shortname
-    //useful for sending emojis back to mobile devices
+    // will output unicode from shortname
+    // useful for sending emojis back to mobile devices
     static function shortnameToUnicode($string) {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToUnicodeCallback', $string);
         if(self::$ascii) {
-            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(\\s|$|[!,\.]))/S', 'Emojione::asciiToUnicodeCallback', $string);
+            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'Emojione::asciiToUnicodeCallback', $string);
         }
         return $string;
     }
-    //Replace shortnames (:wink:) with Ascii equivalents ( ;^) )
-    //Useful for systems that dont support unicode nor images
+    // Replace shortnames (:wink:) with Ascii equivalents ( ;^) )
+    // Useful for systems that dont support unicode nor images
     static function shortnameToAscii($string) {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToAsciiCallback', $string);
         return $string;
