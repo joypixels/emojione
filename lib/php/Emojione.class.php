@@ -43,7 +43,7 @@ class Emojione {
         }
         return $string;
     }
-    // Replace shortnames (:wink:) with Ascii equivalents ( ;^) )
+    // Replace shortnames (:wink:) with Ascii equivalents ;^)
     // Useful for systems that dont support unicode nor images
     static function shortnameToAscii($string) {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToAsciiCallback', $string);
