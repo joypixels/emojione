@@ -239,7 +239,7 @@
         "name":"copyright sign",
         "shortname":":copyright:",
         "category":"other",
-        "category_order":"130",
+        "category_order":"131",
         "aliases":[
 
         ],
@@ -259,7 +259,7 @@
         "name":"registered sign",
         "shortname":":registered:",
         "category":"other",
-        "category_order":"131",
+        "category_order":"132",
         "aliases":[
 
         ],
@@ -279,7 +279,7 @@
         "name":"double exclamation mark",
         "shortname":":bangbang:",
         "category":"other",
-        "category_order":"146",
+        "category_order":"147",
         "aliases":[
 
         ],
@@ -299,7 +299,7 @@
         "name":"exclamation question mark",
         "shortname":":interrobang:",
         "category":"other",
-        "category_order":"147",
+        "category_order":"148",
         "aliases":[
 
         ],
@@ -320,7 +320,7 @@
         "name":"trade mark sign",
         "shortname":":tm:",
         "category":"other",
-        "category_order":"132",
+        "category_order":"133",
         "aliases":[
 
         ],
@@ -515,7 +515,7 @@
         "name":"watch",
         "shortname":":watch:",
         "category":"objects",
-        "category_order":"49",
+        "category_order":"50",
         "aliases":[
 
         ],
@@ -535,7 +535,7 @@
         "name":"hourglass",
         "shortname":":hourglass:",
         "category":"objects",
-        "category_order":"47",
+        "category_order":"48",
         "aliases":[
 
         ],
@@ -635,7 +635,7 @@
         "name":"alarm clock",
         "shortname":":alarm_clock:",
         "category":"objects",
-        "category_order":"48",
+        "category_order":"49",
         "aliases":[
 
         ],
@@ -655,7 +655,7 @@
         "name":"hourglass with flowing sand",
         "shortname":":hourglass_flowing_sand:",
         "category":"objects",
-        "category_order":"46",
+        "category_order":"47",
         "aliases":[
 
         ],
@@ -697,7 +697,7 @@
         "name":"black small square",
         "shortname":":black_small_square:",
         "category":"other",
-        "category_order":"195",
+        "category_order":"196",
         "aliases":[
 
         ],
@@ -716,7 +716,7 @@
         "name":"white small square",
         "shortname":":white_small_square:",
         "category":"other",
-        "category_order":"196",
+        "category_order":"197",
         "aliases":[
 
         ],
@@ -775,7 +775,7 @@
         "name":"white medium square",
         "shortname":":white_medium_square:",
         "category":"other",
-        "category_order":"192",
+        "category_order":"193",
         "aliases":[
 
         ],
@@ -794,7 +794,7 @@
         "name":"black medium square",
         "shortname":":black_medium_square:",
         "category":"other",
-        "category_order":"191",
+        "category_order":"192",
         "aliases":[
 
         ],
@@ -813,7 +813,7 @@
         "name":"white medium small square",
         "shortname":":white_medium_small_square:",
         "category":"other",
-        "category_order":"194",
+        "category_order":"195",
         "aliases":[
 
         ],
@@ -832,7 +832,7 @@
         "name":"black medium small square",
         "shortname":":black_medium_small_square:",
         "category":"other",
-        "category_order":"193",
+        "category_order":"194",
         "aliases":[
 
         ],
@@ -912,7 +912,7 @@
         "name":"ballot box with check",
         "shortname":":ballot_box_with_check:",
         "category":"other",
-        "category_order":"184",
+        "category_order":"185",
         "aliases":[
 
         ],
@@ -952,7 +952,7 @@
         "name":"hot beverage",
         "shortname":":coffee:",
         "category":"objects",
-        "category_order":"171",
+        "category_order":"172",
         "aliases":[
 
         ],
@@ -1018,7 +1018,7 @@
         "name":"aries",
         "shortname":":aries:",
         "category":"other",
-        "category_order":"112",
+        "category_order":"113",
         "aliases":[
 
         ],
@@ -1048,7 +1048,7 @@
         "name":"taurus",
         "shortname":":taurus:",
         "category":"other",
-        "category_order":"113",
+        "category_order":"114",
         "aliases":[
 
         ],
@@ -1078,7 +1078,7 @@
         "name":"gemini",
         "shortname":":gemini:",
         "category":"other",
-        "category_order":"114",
+        "category_order":"115",
         "aliases":[
 
         ],
@@ -1107,7 +1107,7 @@
         "name":"cancer",
         "shortname":":cancer:",
         "category":"other",
-        "category_order":"115",
+        "category_order":"116",
         "aliases":[
 
         ],
@@ -1136,7 +1136,7 @@
         "name":"leo",
         "shortname":":leo:",
         "category":"other",
-        "category_order":"116",
+        "category_order":"117",
         "aliases":[
 
         ],
@@ -1166,7 +1166,7 @@
         "name":"virgo",
         "shortname":":virgo:",
         "category":"other",
-        "category_order":"117",
+        "category_order":"118",
         "aliases":[
 
         ],
@@ -1195,7 +1195,7 @@
         "name":"libra",
         "shortname":":libra:",
         "category":"other",
-        "category_order":"118",
+        "category_order":"119",
         "aliases":[
 
         ],
@@ -1225,7 +1225,7 @@
         "name":"scorpius",
         "shortname":":scorpius:",
         "category":"other",
-        "category_order":"119",
+        "category_order":"120",
         "aliases":[
 
         ],
@@ -1255,7 +1255,7 @@
         "name":"sagittarius",
         "shortname":":sagittarius:",
         "category":"other",
-        "category_order":"120",
+        "category_order":"121",
         "aliases":[
 
         ],
@@ -1285,7 +1285,7 @@
         "name":"capricorn",
         "shortname":":capricorn:",
         "category":"other",
-        "category_order":"121",
+        "category_order":"122",
         "aliases":[
 
         ],
@@ -1315,7 +1315,7 @@
         "name":"aquarius",
         "shortname":":aquarius:",
         "category":"other",
-        "category_order":"122",
+        "category_order":"123",
         "aliases":[
 
         ],
@@ -1346,7 +1346,7 @@
         "name":"pisces",
         "shortname":":pisces:",
         "category":"other",
-        "category_order":"123",
+        "category_order":"124",
         "aliases":[
 
         ],
@@ -1376,7 +1376,7 @@
         "name":"black spade suit",
         "shortname":":spades:",
         "category":"other",
-        "category_order":"177",
+        "category_order":"178",
         "aliases":[
 
         ],
@@ -1396,7 +1396,7 @@
         "name":"black club suit",
         "shortname":":clubs:",
         "category":"other",
-        "category_order":"179",
+        "category_order":"180",
         "aliases":[
 
         ],
@@ -1416,7 +1416,7 @@
         "name":"black heart suit",
         "shortname":":hearts:",
         "category":"other",
-        "category_order":"178",
+        "category_order":"179",
         "aliases":[
 
         ],
@@ -1436,7 +1436,7 @@
         "name":"black diamond suit",
         "shortname":":diamonds:",
         "category":"other",
-        "category_order":"180",
+        "category_order":"181",
         "aliases":[
 
         ],
@@ -1456,7 +1456,7 @@
         "name":"hot springs",
         "shortname":":hotsprings:",
         "category":"places",
-        "category_order":"85",
+        "category_order":"86",
         "aliases":[
 
         ],
@@ -1477,7 +1477,7 @@
         "name":"black universal recycling symbol",
         "shortname":":recycle:",
         "category":"other",
-        "category_order":"111",
+        "category_order":"112",
         "aliases":[
 
         ],
@@ -1540,7 +1540,7 @@
         "name":"warning sign",
         "shortname":":warning:",
         "category":"places",
-        "category_order":"79",
+        "category_order":"80",
         "aliases":[
 
         ],
@@ -1581,7 +1581,7 @@
         "name":"medium white circle",
         "shortname":":white_circle:",
         "category":"other",
-        "category_order":"201",
+        "category_order":"202",
         "aliases":[
 
         ],
@@ -1600,7 +1600,7 @@
         "name":"medium black circle",
         "shortname":":black_circle:",
         "category":"other",
-        "category_order":"200",
+        "category_order":"201",
         "aliases":[
 
         ],
@@ -1619,7 +1619,7 @@
         "name":"soccer ball",
         "shortname":":soccer:",
         "category":"objects",
-        "category_order":"154",
+        "category_order":"155",
         "aliases":[
 
         ],
@@ -1642,7 +1642,7 @@
         "name":"baseball",
         "shortname":":baseball:",
         "category":"objects",
-        "category_order":"155",
+        "category_order":"156",
         "aliases":[
 
         ],
@@ -1709,7 +1709,7 @@
         "name":"ophiuchus",
         "shortname":":ophiuchus:",
         "category":"other",
-        "category_order":"124",
+        "category_order":"125",
         "aliases":[
 
         ],
@@ -1802,7 +1802,7 @@
         "name":"flag in hole",
         "shortname":":golf:",
         "category":"objects",
-        "category_order":"160",
+        "category_order":"161",
         "aliases":[
 
         ],
@@ -1863,7 +1863,7 @@
         "name":"fuel pump",
         "shortname":":fuelpump:",
         "category":"places",
-        "category_order":"82",
+        "category_order":"83",
         "aliases":[
 
         ],
@@ -1883,7 +1883,7 @@
         "name":"black scissors",
         "shortname":":scissors:",
         "category":"objects",
-        "category_order":"112",
+        "category_order":"113",
         "aliases":[
 
         ],
@@ -1946,7 +1946,7 @@
         "name":"envelope",
         "shortname":":envelope:",
         "category":"objects",
-        "category_order":"88",
+        "category_order":"89",
         "aliases":[
 
         ],
@@ -2034,7 +2034,7 @@
         "name":"pencil",
         "shortname":":pencil2:",
         "category":"objects",
-        "category_order":"116",
+        "category_order":"117",
         "aliases":[
 
         ],
@@ -2055,7 +2055,7 @@
         "name":"black nib",
         "shortname":":black_nib:",
         "category":"objects",
-        "category_order":"115",
+        "category_order":"116",
         "aliases":[
 
         ],
@@ -2075,7 +2075,7 @@
         "name":"heavy check mark",
         "shortname":":heavy_check_mark:",
         "category":"other",
-        "category_order":"183",
+        "category_order":"184",
         "aliases":[
 
         ],
@@ -2095,7 +2095,7 @@
         "name":"heavy multiplication x",
         "shortname":":heavy_multiplication_x:",
         "category":"other",
-        "category_order":"173",
+        "category_order":"174",
         "aliases":[
 
         ],
@@ -2222,7 +2222,7 @@
         "name":"cross mark",
         "shortname":":x:",
         "category":"other",
-        "category_order":"140",
+        "category_order":"141",
         "aliases":[
 
         ],
@@ -2265,7 +2265,7 @@
         "name":"black question mark ornament",
         "shortname":":question:",
         "category":"other",
-        "category_order":"143",
+        "category_order":"144",
         "aliases":[
 
         ],
@@ -2285,7 +2285,7 @@
         "name":"white question mark ornament",
         "shortname":":grey_question:",
         "category":"other",
-        "category_order":"145",
+        "category_order":"146",
         "aliases":[
 
         ],
@@ -2304,7 +2304,7 @@
         "name":"white exclamation mark ornament",
         "shortname":":grey_exclamation:",
         "category":"other",
-        "category_order":"144",
+        "category_order":"145",
         "aliases":[
 
         ],
@@ -2323,7 +2323,7 @@
         "name":"heavy exclamation mark symbol",
         "shortname":":exclamation:",
         "category":"other",
-        "category_order":"142",
+        "category_order":"143",
         "aliases":[
 
         ],
@@ -2375,7 +2375,7 @@
         "name":"heavy plus sign",
         "shortname":":heavy_plus_sign:",
         "category":"other",
-        "category_order":"174",
+        "category_order":"175",
         "aliases":[
 
         ],
@@ -2395,7 +2395,7 @@
         "name":"heavy minus sign",
         "shortname":":heavy_minus_sign:",
         "category":"other",
-        "category_order":"175",
+        "category_order":"176",
         "aliases":[
 
         ],
@@ -2415,7 +2415,7 @@
         "name":"heavy division sign",
         "shortname":":heavy_division_sign:",
         "category":"other",
-        "category_order":"176",
+        "category_order":"177",
         "aliases":[
 
         ],
@@ -2456,7 +2456,7 @@
         "name":"curly loop",
         "shortname":":curly_loop:",
         "category":"other",
-        "category_order":"187",
+        "category_order":"188",
         "aliases":[
 
         ],
@@ -2575,7 +2575,7 @@
         "name":"black large square",
         "shortname":":black_large_square:",
         "category":"other",
-        "category_order":"199",
+        "category_order":"200",
         "aliases":[
 
         ],
@@ -2594,7 +2594,7 @@
         "name":"white large square",
         "shortname":":white_large_square:",
         "category":"other",
-        "category_order":"198",
+        "category_order":"199",
         "aliases":[
 
         ],
@@ -2633,7 +2633,7 @@
         "name":"heavy large circle",
         "shortname":":o:",
         "category":"other",
-        "category_order":"141",
+        "category_order":"142",
         "aliases":[
 
         ],
@@ -2653,7 +2653,7 @@
         "name":"wavy dash",
         "shortname":":wavy_dash:",
         "category":"other",
-        "category_order":"134",
+        "category_order":"135",
         "aliases":[
 
         ],
@@ -2673,7 +2673,7 @@
         "name":"part alternation mark",
         "shortname":":part_alternation_mark:",
         "category":"other",
-        "category_order":"133",
+        "category_order":"134",
         "aliases":[
 
         ],
@@ -2733,7 +2733,7 @@
         "name":"mahjong tile red dragon",
         "shortname":":mahjong:",
         "category":"objects",
-        "category_order":"149",
+        "category_order":"150",
         "aliases":[
 
         ],
@@ -2754,7 +2754,7 @@
         "name":"playing card black joker",
         "shortname":":black_joker:",
         "category":"objects",
-        "category_order":"147",
+        "category_order":"148",
         "aliases":[
 
         ],
@@ -3082,7 +3082,7 @@
         "name":"china",
         "shortname":":cn:",
         "category":"places",
-        "category_order":"94",
+        "category_order":"95",
         "aliases":[
 
         ],
@@ -3103,7 +3103,7 @@
         "name":"germany",
         "shortname":":de:",
         "category":"places",
-        "category_order":"93",
+        "category_order":"94",
         "aliases":[
 
         ],
@@ -3124,7 +3124,7 @@
         "name":"spain",
         "shortname":":es:",
         "category":"places",
-        "category_order":"97",
+        "category_order":"98",
         "aliases":[
 
         ],
@@ -3145,7 +3145,7 @@
         "name":"france",
         "shortname":":fr:",
         "category":"places",
-        "category_order":"96",
+        "category_order":"97",
         "aliases":[
 
         ],
@@ -3168,7 +3168,7 @@
         "name":"great britain",
         "shortname":":gb:",
         "category":"places",
-        "category_order":"100",
+        "category_order":"101",
         "aliases":[
 
         ],
@@ -3191,7 +3191,7 @@
         "name":"italy",
         "shortname":":it:",
         "category":"places",
-        "category_order":"98",
+        "category_order":"99",
         "aliases":[
 
         ],
@@ -3211,7 +3211,7 @@
         "name":"japan",
         "shortname":":jp:",
         "category":"places",
-        "category_order":"91",
+        "category_order":"92",
         "aliases":[
 
         ],
@@ -3232,7 +3232,7 @@
         "name":"korea",
         "shortname":":kr:",
         "category":"places",
-        "category_order":"92",
+        "category_order":"93",
         "aliases":[
 
         ],
@@ -3253,7 +3253,7 @@
         "name":"united states",
         "shortname":":us:",
         "category":"places",
-        "category_order":"95",
+        "category_order":"96",
         "aliases":[
 
         ],
@@ -3276,7 +3276,7 @@
         "name":"russia",
         "shortname":":ru:",
         "category":"places",
-        "category_order":"99",
+        "category_order":"100",
         "aliases":[
 
         ],
@@ -4315,7 +4315,7 @@
         "name":"ear of maize",
         "shortname":":corn:",
         "category":"objects",
-        "category_order":"229",
+        "category_order":"230",
         "aliases":[
 
         ],
@@ -4498,7 +4498,7 @@
         "name":"tomato",
         "shortname":":tomato:",
         "category":"objects",
-        "category_order":"228",
+        "category_order":"229",
         "aliases":[
 
         ],
@@ -4521,7 +4521,7 @@
         "name":"aubergine",
         "shortname":":eggplant:",
         "category":"objects",
-        "category_order":"227",
+        "category_order":"228",
         "aliases":[
 
         ],
@@ -4544,7 +4544,7 @@
         "name":"grapes",
         "shortname":":grapes:",
         "category":"objects",
-        "category_order":"218",
+        "category_order":"219",
         "aliases":[
 
         ],
@@ -4565,7 +4565,7 @@
         "name":"melon",
         "shortname":":melon:",
         "category":"objects",
-        "category_order":"222",
+        "category_order":"223",
         "aliases":[
 
         ],
@@ -4587,7 +4587,7 @@
         "name":"watermelon",
         "shortname":":watermelon:",
         "category":"objects",
-        "category_order":"219",
+        "category_order":"220",
         "aliases":[
 
         ],
@@ -4608,7 +4608,7 @@
         "name":"tangerine",
         "shortname":":tangerine:",
         "category":"objects",
-        "category_order":"215",
+        "category_order":"216",
         "aliases":[
 
         ],
@@ -4630,7 +4630,7 @@
         "name":"banana",
         "shortname":":banana:",
         "category":"objects",
-        "category_order":"223",
+        "category_order":"224",
         "aliases":[
 
         ],
@@ -4651,7 +4651,7 @@
         "name":"pineapple",
         "shortname":":pineapple:",
         "category":"objects",
-        "category_order":"225",
+        "category_order":"226",
         "aliases":[
 
         ],
@@ -4673,7 +4673,7 @@
         "name":"red apple",
         "shortname":":apple:",
         "category":"objects",
-        "category_order":"213",
+        "category_order":"214",
         "aliases":[
 
         ],
@@ -4694,7 +4694,7 @@
         "name":"green apple",
         "shortname":":green_apple:",
         "category":"objects",
-        "category_order":"214",
+        "category_order":"215",
         "aliases":[
 
         ],
@@ -4715,7 +4715,7 @@
         "name":"peach",
         "shortname":":peach:",
         "category":"objects",
-        "category_order":"221",
+        "category_order":"222",
         "aliases":[
 
         ],
@@ -4737,7 +4737,7 @@
         "name":"cherries",
         "shortname":":cherries:",
         "category":"objects",
-        "category_order":"217",
+        "category_order":"218",
         "aliases":[
 
         ],
@@ -4758,7 +4758,7 @@
         "name":"strawberry",
         "shortname":":strawberry:",
         "category":"objects",
-        "category_order":"220",
+        "category_order":"221",
         "aliases":[
 
         ],
@@ -4780,7 +4780,7 @@
         "name":"hamburger",
         "shortname":":hamburger:",
         "category":"objects",
-        "category_order":"182",
+        "category_order":"183",
         "aliases":[
 
         ],
@@ -4801,7 +4801,7 @@
         "name":"slice of pizza",
         "shortname":":pizza:",
         "category":"objects",
-        "category_order":"181",
+        "category_order":"182",
         "aliases":[
 
         ],
@@ -4822,7 +4822,7 @@
         "name":"meat on bone",
         "shortname":":meat_on_bone:",
         "category":"objects",
-        "category_order":"185",
+        "category_order":"186",
         "aliases":[
 
         ],
@@ -4843,7 +4843,7 @@
         "name":"poultry leg",
         "shortname":":poultry_leg:",
         "category":"objects",
-        "category_order":"184",
+        "category_order":"185",
         "aliases":[
 
         ],
@@ -4864,7 +4864,7 @@
         "name":"rice cracker",
         "shortname":":rice_cracker:",
         "category":"objects",
-        "category_order":"193",
+        "category_order":"194",
         "aliases":[
 
         ],
@@ -4885,7 +4885,7 @@
         "name":"rice ball",
         "shortname":":rice_ball:",
         "category":"objects",
-        "category_order":"192",
+        "category_order":"193",
         "aliases":[
 
         ],
@@ -4906,7 +4906,7 @@
         "name":"cooked rice",
         "shortname":":rice:",
         "category":"objects",
-        "category_order":"194",
+        "category_order":"195",
         "aliases":[
 
         ],
@@ -4926,7 +4926,7 @@
         "name":"curry and rice",
         "shortname":":curry:",
         "category":"objects",
-        "category_order":"187",
+        "category_order":"188",
         "aliases":[
 
         ],
@@ -4949,7 +4949,7 @@
         "name":"steaming bowl",
         "shortname":":ramen:",
         "category":"objects",
-        "category_order":"195",
+        "category_order":"196",
         "aliases":[
 
         ],
@@ -4972,7 +4972,7 @@
         "name":"spaghetti",
         "shortname":":spaghetti:",
         "category":"objects",
-        "category_order":"186",
+        "category_order":"187",
         "aliases":[
 
         ],
@@ -4994,7 +4994,7 @@
         "name":"bread",
         "shortname":":bread:",
         "category":"objects",
-        "category_order":"200",
+        "category_order":"201",
         "aliases":[
 
         ],
@@ -5017,7 +5017,7 @@
         "name":"french fries",
         "shortname":":fries:",
         "category":"objects",
-        "category_order":"183",
+        "category_order":"184",
         "aliases":[
 
         ],
@@ -5038,7 +5038,7 @@
         "name":"roasted sweet potato",
         "shortname":":sweet_potato:",
         "category":"objects",
-        "category_order":"226",
+        "category_order":"227",
         "aliases":[
 
         ],
@@ -5059,7 +5059,7 @@
         "name":"dango",
         "shortname":":dango:",
         "category":"objects",
-        "category_order":"198",
+        "category_order":"199",
         "aliases":[
 
         ],
@@ -5079,7 +5079,7 @@
         "name":"oden",
         "shortname":":oden:",
         "category":"objects",
-        "category_order":"197",
+        "category_order":"198",
         "aliases":[
 
         ],
@@ -5100,7 +5100,7 @@
         "name":"sushi",
         "shortname":":sushi:",
         "category":"objects",
-        "category_order":"190",
+        "category_order":"191",
         "aliases":[
 
         ],
@@ -5121,7 +5121,7 @@
         "name":"fried shrimp",
         "shortname":":fried_shrimp:",
         "category":"objects",
-        "category_order":"188",
+        "category_order":"189",
         "aliases":[
 
         ],
@@ -5142,7 +5142,7 @@
         "name":"fish cake with swirl design",
         "shortname":":fish_cake:",
         "category":"objects",
-        "category_order":"191",
+        "category_order":"192",
         "aliases":[
 
         ],
@@ -5162,7 +5162,7 @@
         "name":"soft ice cream",
         "shortname":":icecream:",
         "category":"objects",
-        "category_order":"203",
+        "category_order":"204",
         "aliases":[
 
         ],
@@ -5184,7 +5184,7 @@
         "name":"shaved ice",
         "shortname":":shaved_ice:",
         "category":"objects",
-        "category_order":"205",
+        "category_order":"206",
         "aliases":[
 
         ],
@@ -5205,7 +5205,7 @@
         "name":"ice cream",
         "shortname":":ice_cream:",
         "category":"objects",
-        "category_order":"204",
+        "category_order":"205",
         "aliases":[
 
         ],
@@ -5227,7 +5227,7 @@
         "name":"doughnut",
         "shortname":":doughnut:",
         "category":"objects",
-        "category_order":"201",
+        "category_order":"202",
         "aliases":[
 
         ],
@@ -5250,7 +5250,7 @@
         "name":"cookie",
         "shortname":":cookie:",
         "category":"objects",
-        "category_order":"208",
+        "category_order":"209",
         "aliases":[
 
         ],
@@ -5273,7 +5273,7 @@
         "name":"chocolate bar",
         "shortname":":chocolate_bar:",
         "category":"objects",
-        "category_order":"209",
+        "category_order":"210",
         "aliases":[
 
         ],
@@ -5281,7 +5281,7 @@
 
         ],
         "keywords":[
-            "chocolate, bar, candy, coca, hershey's",
+            "chocolate, bar, candy, coca, hershey&amp;#039;s",
             "desert",
             "food",
             "snack"
@@ -5295,7 +5295,7 @@
         "name":"candy",
         "shortname":":candy:",
         "category":"objects",
-        "category_order":"210",
+        "category_order":"211",
         "aliases":[
 
         ],
@@ -5316,7 +5316,7 @@
         "name":"lollipop",
         "shortname":":lollipop:",
         "category":"objects",
-        "category_order":"211",
+        "category_order":"212",
         "aliases":[
 
         ],
@@ -5339,7 +5339,7 @@
         "name":"custard",
         "shortname":":custard:",
         "category":"objects",
-        "category_order":"202",
+        "category_order":"203",
         "aliases":[
 
         ],
@@ -5360,7 +5360,7 @@
         "name":"honey pot",
         "shortname":":honey_pot:",
         "category":"objects",
-        "category_order":"212",
+        "category_order":"213",
         "aliases":[
 
         ],
@@ -5381,7 +5381,7 @@
         "name":"shortcake",
         "shortname":":cake:",
         "category":"objects",
-        "category_order":"207",
+        "category_order":"208",
         "aliases":[
 
         ],
@@ -5402,7 +5402,7 @@
         "name":"bento box",
         "shortname":":bento:",
         "category":"objects",
-        "category_order":"189",
+        "category_order":"190",
         "aliases":[
 
         ],
@@ -5424,7 +5424,7 @@
         "name":"pot of food",
         "shortname":":stew:",
         "category":"objects",
-        "category_order":"196",
+        "category_order":"197",
         "aliases":[
 
         ],
@@ -5445,7 +5445,7 @@
         "name":"cooking",
         "shortname":":egg:",
         "category":"objects",
-        "category_order":"199",
+        "category_order":"200",
         "aliases":[
 
         ],
@@ -5466,7 +5466,7 @@
         "name":"fork and knife",
         "shortname":":fork_and_knife:",
         "category":"objects",
-        "category_order":"180",
+        "category_order":"181",
         "aliases":[
 
         ],
@@ -5487,7 +5487,7 @@
         "name":"teacup without handle",
         "shortname":":tea:",
         "category":"objects",
-        "category_order":"172",
+        "category_order":"173",
         "aliases":[
 
         ],
@@ -5511,7 +5511,7 @@
         "name":"sake bottle and cup",
         "shortname":":sake:",
         "category":"objects",
-        "category_order":"173",
+        "category_order":"174",
         "aliases":[
 
         ],
@@ -5534,7 +5534,7 @@
         "name":"wine glass",
         "shortname":":wine_glass:",
         "category":"objects",
-        "category_order":"179",
+        "category_order":"180",
         "aliases":[
 
         ],
@@ -5564,7 +5564,7 @@
         "name":"cocktail glass",
         "shortname":":cocktail:",
         "category":"objects",
-        "category_order":"177",
+        "category_order":"178",
         "aliases":[
 
         ],
@@ -5587,7 +5587,7 @@
         "name":"tropical drink",
         "shortname":":tropical_drink:",
         "category":"objects",
-        "category_order":"178",
+        "category_order":"179",
         "aliases":[
 
         ],
@@ -5607,7 +5607,7 @@
         "name":"beer mug",
         "shortname":":beer:",
         "category":"objects",
-        "category_order":"175",
+        "category_order":"176",
         "aliases":[
 
         ],
@@ -5632,7 +5632,7 @@
         "name":"clinking beer mugs",
         "shortname":":beers:",
         "category":"objects",
-        "category_order":"176",
+        "category_order":"177",
         "aliases":[
 
         ],
@@ -5703,7 +5703,7 @@
         "name":"birthday cake",
         "shortname":":birthday:",
         "category":"objects",
-        "category_order":"206",
+        "category_order":"207",
         "aliases":[
 
         ],
@@ -6165,7 +6165,7 @@
         "name":"fishing pole and fish",
         "shortname":":fishing_pole_and_fish:",
         "category":"objects",
-        "category_order":"170",
+        "category_order":"171",
         "aliases":[
 
         ],
@@ -6186,7 +6186,7 @@
         "name":"microphone",
         "shortname":":microphone:",
         "category":"objects",
-        "category_order":"135",
+        "category_order":"136",
         "aliases":[
 
         ],
@@ -6252,7 +6252,7 @@
         "name":"headphone",
         "shortname":":headphones:",
         "category":"objects",
-        "category_order":"136",
+        "category_order":"137",
         "aliases":[
 
         ],
@@ -6274,7 +6274,7 @@
         "name":"artist palette",
         "shortname":":art:",
         "category":"objects",
-        "category_order":"133",
+        "category_order":"134",
         "aliases":[
 
         ],
@@ -6318,7 +6318,7 @@
         "name":"circus tent",
         "shortname":":circus_tent:",
         "category":"places",
-        "category_order":"87",
+        "category_order":"88",
         "aliases":[
 
         ],
@@ -6340,7 +6340,7 @@
         "name":"ticket",
         "shortname":":ticket:",
         "category":"places",
-        "category_order":"76",
+        "category_order":"77",
         "aliases":[
 
         ],
@@ -6362,7 +6362,7 @@
         "name":"clapper board",
         "shortname":":clapper:",
         "category":"objects",
-        "category_order":"134",
+        "category_order":"135",
         "aliases":[
 
         ],
@@ -6384,7 +6384,7 @@
         "name":"performing arts",
         "shortname":":performing_arts:",
         "category":"places",
-        "category_order":"88",
+        "category_order":"89",
         "aliases":[
 
         ],
@@ -6406,7 +6406,7 @@
         "name":"video game",
         "shortname":":video_game:",
         "category":"objects",
-        "category_order":"146",
+        "category_order":"147",
         "aliases":[
 
         ],
@@ -6429,7 +6429,7 @@
         "name":"direct hit",
         "shortname":":dart:",
         "category":"objects",
-        "category_order":"151",
+        "category_order":"152",
         "aliases":[
 
         ],
@@ -6450,7 +6450,7 @@
         "name":"slot machine",
         "shortname":":slot_machine:",
         "category":"places",
-        "category_order":"84",
+        "category_order":"85",
         "aliases":[
 
         ],
@@ -6472,7 +6472,7 @@
         "name":"billiards",
         "shortname":":8ball:",
         "category":"objects",
-        "category_order":"157",
+        "category_order":"158",
         "aliases":[
 
         ],
@@ -6492,7 +6492,7 @@
         "name":"game die",
         "shortname":":game_die:",
         "category":"objects",
-        "category_order":"150",
+        "category_order":"151",
         "aliases":[
 
         ],
@@ -6512,7 +6512,7 @@
         "name":"bowling",
         "shortname":":bowling:",
         "category":"objects",
-        "category_order":"159",
+        "category_order":"160",
         "aliases":[
 
         ],
@@ -6534,7 +6534,7 @@
         "name":"flower playing cards",
         "shortname":":flower_playing_cards:",
         "category":"objects",
-        "category_order":"148",
+        "category_order":"149",
         "aliases":[
 
         ],
@@ -6553,7 +6553,7 @@
         "name":"musical note",
         "shortname":":musical_note:",
         "category":"objects",
-        "category_order":"138",
+        "category_order":"139",
         "aliases":[
 
         ],
@@ -6573,7 +6573,7 @@
         "name":"multiple musical notes",
         "shortname":":notes:",
         "category":"objects",
-        "category_order":"139",
+        "category_order":"140",
         "aliases":[
 
         ],
@@ -6594,7 +6594,7 @@
         "name":"saxophone",
         "shortname":":saxophone:",
         "category":"objects",
-        "category_order":"143",
+        "category_order":"144",
         "aliases":[
 
         ],
@@ -6615,7 +6615,7 @@
         "name":"guitar",
         "shortname":":guitar:",
         "category":"objects",
-        "category_order":"144",
+        "category_order":"145",
         "aliases":[
 
         ],
@@ -6636,7 +6636,7 @@
         "name":"musical keyboard",
         "shortname":":musical_keyboard:",
         "category":"objects",
-        "category_order":"140",
+        "category_order":"141",
         "aliases":[
 
         ],
@@ -6657,7 +6657,7 @@
         "name":"trumpet",
         "shortname":":trumpet:",
         "category":"objects",
-        "category_order":"142",
+        "category_order":"143",
         "aliases":[
 
         ],
@@ -6678,7 +6678,7 @@
         "name":"violin",
         "shortname":":violin:",
         "category":"objects",
-        "category_order":"141",
+        "category_order":"142",
         "aliases":[
 
         ],
@@ -6699,7 +6699,7 @@
         "name":"musical score",
         "shortname":":musical_score:",
         "category":"objects",
-        "category_order":"137",
+        "category_order":"138",
         "aliases":[
 
         ],
@@ -6741,7 +6741,7 @@
         "name":"tennis racquet and ball",
         "shortname":":tennis:",
         "category":"objects",
-        "category_order":"156",
+        "category_order":"157",
         "aliases":[
 
         ],
@@ -6763,7 +6763,7 @@
         "name":"ski and ski boot",
         "shortname":":ski:",
         "category":"objects",
-        "category_order":"166",
+        "category_order":"167",
         "aliases":[
 
         ],
@@ -6785,7 +6785,7 @@
         "name":"basketball and hoop",
         "shortname":":basketball:",
         "category":"objects",
-        "category_order":"153",
+        "category_order":"154",
         "aliases":[
 
         ],
@@ -6807,7 +6807,7 @@
         "name":"chequered flag",
         "shortname":":checkered_flag:",
         "category":"objects",
-        "category_order":"163",
+        "category_order":"164",
         "aliases":[
 
         ],
@@ -6830,7 +6830,7 @@
         "name":"snowboarder",
         "shortname":":snowboarder:",
         "category":"objects",
-        "category_order":"167",
+        "category_order":"168",
         "aliases":[
 
         ],
@@ -6873,7 +6873,7 @@
         "name":"surfer",
         "shortname":":surfer:",
         "category":"objects",
-        "category_order":"169",
+        "category_order":"170",
         "aliases":[
 
         ],
@@ -6895,7 +6895,7 @@
         "name":"trophy",
         "shortname":":trophy:",
         "category":"objects",
-        "category_order":"165",
+        "category_order":"166",
         "aliases":[
 
         ],
@@ -6920,7 +6920,7 @@
         "name":"american football",
         "shortname":":football:",
         "category":"objects",
-        "category_order":"152",
+        "category_order":"153",
         "aliases":[
 
         ],
@@ -6942,7 +6942,7 @@
         "name":"swimmer",
         "shortname":":swimmer:",
         "category":"objects",
-        "category_order":"168",
+        "category_order":"169",
         "aliases":[
 
         ],
@@ -7087,7 +7087,7 @@
         "name":"automated teller machine",
         "shortname":":atm:",
         "category":"other",
-        "category_order":"126",
+        "category_order":"127",
         "aliases":[
 
         ],
@@ -7245,7 +7245,7 @@
         "name":"izakaya lantern",
         "shortname":":izakaya_lantern:",
         "category":"places",
-        "category_order":"83",
+        "category_order":"84",
         "aliases":[
 
         ],
@@ -8717,7 +8717,7 @@
         ],
         "keywords":[
             "fashion",
-            "jeans, pants, blue, denim, levi's, levi, designer, work, skinny",
+            "jeans, pants, blue, denim, levi&amp;#039;s, levi, designer, work, skinny",
             "shopping"
         ]
     },
@@ -9511,7 +9511,7 @@
         "name":"alien monster",
         "shortname":":space_invader:",
         "category":"objects",
-        "category_order":"145",
+        "category_order":"146",
         "aliases":[
 
         ],
@@ -9575,7 +9575,7 @@
         "name":"card index",
         "shortname":":card_index:",
         "category":"objects",
-        "category_order":"109",
+        "category_order":"110",
         "aliases":[
 
         ],
@@ -9706,7 +9706,7 @@
         "name":"ledger",
         "shortname":":ledger:",
         "category":"objects",
-        "category_order":"125",
+        "category_order":"126",
         "aliases":[
 
         ],
@@ -9747,7 +9747,7 @@
         "name":"notebook",
         "shortname":":notebook:",
         "category":"objects",
-        "category_order":"123",
+        "category_order":"124",
         "aliases":[
 
         ],
@@ -9790,7 +9790,7 @@
         "name":"notebook with decorative cover",
         "shortname":":notebook_with_decorative_cover:",
         "category":"objects",
-        "category_order":"124",
+        "category_order":"125",
         "aliases":[
 
         ],
@@ -9812,7 +9812,7 @@
         "name":"barber pole",
         "shortname":":barber:",
         "category":"places",
-        "category_order":"74",
+        "category_order":"75",
         "aliases":[
 
         ],
@@ -9833,7 +9833,7 @@
         "name":"closed book",
         "shortname":":closed_book:",
         "category":"objects",
-        "category_order":"119",
+        "category_order":"120",
         "aliases":[
 
         ],
@@ -9854,7 +9854,7 @@
         "name":"syringe",
         "shortname":":syringe:",
         "category":"objects",
-        "category_order":"76",
+        "category_order":"77",
         "aliases":[
 
         ],
@@ -9878,7 +9878,7 @@
         "name":"open book",
         "shortname":":book:",
         "category":"objects",
-        "category_order":"127",
+        "category_order":"128",
         "aliases":[
 
         ],
@@ -9898,7 +9898,7 @@
         "name":"pill",
         "shortname":":pill:",
         "category":"objects",
-        "category_order":"75",
+        "category_order":"76",
         "aliases":[
 
         ],
@@ -9918,7 +9918,7 @@
         "name":"green book",
         "shortname":":green_book:",
         "category":"objects",
-        "category_order":"120",
+        "category_order":"121",
         "aliases":[
 
         ],
@@ -9963,7 +9963,7 @@
         "name":"blue book",
         "shortname":":blue_book:",
         "category":"objects",
-        "category_order":"121",
+        "category_order":"122",
         "aliases":[
 
         ],
@@ -10008,7 +10008,7 @@
         "name":"orange book",
         "shortname":":orange_book:",
         "category":"objects",
-        "category_order":"122",
+        "category_order":"123",
         "aliases":[
 
         ],
@@ -10051,7 +10051,7 @@
         "name":"books",
         "shortname":":books:",
         "category":"objects",
-        "category_order":"126",
+        "category_order":"127",
         "aliases":[
 
         ],
@@ -10091,7 +10091,7 @@
         "name":"name badge",
         "shortname":":name_badge:",
         "category":"objects",
-        "category_order":"129",
+        "category_order":"130",
         "aliases":[
 
         ],
@@ -10134,7 +10134,7 @@
         "name":"scroll",
         "shortname":":scroll:",
         "category":"objects",
-        "category_order":"105",
+        "category_order":"106",
         "aliases":[
 
         ],
@@ -10173,7 +10173,7 @@
         "name":"memo",
         "shortname":":pencil:",
         "category":"objects",
-        "category_order":"98",
+        "category_order":"99",
         "aliases":[
 
         ],
@@ -10347,7 +10347,7 @@
         "name":"public address loudspeaker",
         "shortname":":loudspeaker:",
         "category":"objects",
-        "category_order":"44",
+        "category_order":"45",
         "aliases":[
 
         ],
@@ -10387,7 +10387,7 @@
         "name":"cheering megaphone",
         "shortname":":mega:",
         "category":"objects",
-        "category_order":"45",
+        "category_order":"46",
         "aliases":[
 
         ],
@@ -10408,7 +10408,7 @@
         "name":"outbox tray",
         "shortname":":outbox_tray:",
         "category":"objects",
-        "category_order":"87",
+        "category_order":"88",
         "aliases":[
 
         ],
@@ -10451,7 +10451,7 @@
         "name":"inbox tray",
         "shortname":":inbox_tray:",
         "category":"objects",
-        "category_order":"86",
+        "category_order":"87",
         "aliases":[
 
         ],
@@ -10471,7 +10471,7 @@
         "name":"package",
         "shortname":":package:",
         "category":"objects",
-        "category_order":"97",
+        "category_order":"98",
         "aliases":[
 
         ],
@@ -10513,7 +10513,7 @@
         "name":"e-mail symbol",
         "shortname":":e-mail:",
         "category":"objects",
-        "category_order":"85",
+        "category_order":"86",
         "aliases":[
             ":email:"
         ],
@@ -10533,7 +10533,7 @@
         "name":"incoming envelope",
         "shortname":":incoming_envelope:",
         "category":"objects",
-        "category_order":"90",
+        "category_order":"91",
         "aliases":[
 
         ],
@@ -10575,7 +10575,7 @@
         "name":"envelope with downwards arrow above",
         "shortname":":envelope_with_arrow:",
         "category":"objects",
-        "category_order":"89",
+        "category_order":"90",
         "aliases":[
 
         ],
@@ -10594,7 +10594,7 @@
         "name":"closed mailbox with lowered flag",
         "shortname":":mailbox_closed:",
         "category":"objects",
-        "category_order":"93",
+        "category_order":"94",
         "aliases":[
 
         ],
@@ -10638,7 +10638,7 @@
         "name":"closed mailbox with raised flag",
         "shortname":":mailbox:",
         "category":"objects",
-        "category_order":"92",
+        "category_order":"93",
         "aliases":[
 
         ],
@@ -10659,7 +10659,7 @@
         "name":"postbox",
         "shortname":":postbox:",
         "category":"objects",
-        "category_order":"96",
+        "category_order":"97",
         "aliases":[
 
         ],
@@ -10703,7 +10703,7 @@
         "name":"newspaper",
         "shortname":":newspaper:",
         "category":"objects",
-        "category_order":"132",
+        "category_order":"133",
         "aliases":[
 
         ],
@@ -10768,7 +10768,7 @@
         "name":"mobile phone with rightwards arrow at left",
         "shortname":":calling:",
         "category":"objects",
-        "category_order":"84",
+        "category_order":"85",
         "aliases":[
 
         ],
@@ -11040,7 +11040,7 @@
         "name":"clockwise downwards and upwards open circle arrows",
         "shortname":":arrows_clockwise:",
         "category":"other",
-        "category_order":"148",
+        "category_order":"149",
         "aliases":[
 
         ],
@@ -11099,7 +11099,7 @@
         "name":"battery",
         "shortname":":battery:",
         "category":"objects",
-        "category_order":"61",
+        "category_order":"62",
         "aliases":[
 
         ],
@@ -11139,7 +11139,7 @@
         "name":"electric plug",
         "shortname":":electric_plug:",
         "category":"objects",
-        "category_order":"60",
+        "category_order":"61",
         "aliases":[
 
         ],
@@ -11159,7 +11159,7 @@
         "name":"left-pointing magnifying glass",
         "shortname":":mag:",
         "category":"objects",
-        "category_order":"62",
+        "category_order":"63",
         "aliases":[
 
         ],
@@ -11180,7 +11180,7 @@
         "name":"electric light bulb",
         "shortname":":bulb:",
         "category":"objects",
-        "category_order":"56",
+        "category_order":"57",
         "aliases":[
 
         ],
@@ -11201,7 +11201,7 @@
         "name":"right-pointing magnifying glass",
         "shortname":":mag_right:",
         "category":"objects",
-        "category_order":"55",
+        "category_order":"56",
         "aliases":[
 
         ],
@@ -11222,7 +11222,7 @@
         "name":"lock with ink pen",
         "shortname":":lock_with_ink_pen:",
         "category":"objects",
-        "category_order":"52",
+        "category_order":"53",
         "aliases":[
 
         ],
@@ -11263,7 +11263,7 @@
         "name":"closed lock with key",
         "shortname":":closed_lock_with_key:",
         "category":"objects",
-        "category_order":"53",
+        "category_order":"54",
         "aliases":[
 
         ],
@@ -11283,7 +11283,7 @@
         "name":"key",
         "shortname":":key:",
         "category":"objects",
-        "category_order":"54",
+        "category_order":"55",
         "aliases":[
 
         ],
@@ -11304,7 +11304,7 @@
         "name":"bomb",
         "shortname":":bomb:",
         "category":"objects",
-        "category_order":"72",
+        "category_order":"73",
         "aliases":[
 
         ],
@@ -11324,7 +11324,7 @@
         "name":"lock",
         "shortname":":lock:",
         "category":"objects",
-        "category_order":"51",
+        "category_order":"52",
         "aliases":[
 
         ],
@@ -11344,7 +11344,7 @@
         "name":"open lock",
         "shortname":":unlock:",
         "category":"objects",
-        "category_order":"50",
+        "category_order":"51",
         "aliases":[
 
         ],
@@ -11384,7 +11384,7 @@
         "name":"bell",
         "shortname":":bell:",
         "category":"objects",
-        "category_order":"42",
+        "category_order":"43",
         "aliases":[
 
         ],
@@ -11407,7 +11407,7 @@
         "name":"bookmark",
         "shortname":":bookmark:",
         "category":"objects",
-        "category_order":"128",
+        "category_order":"129",
         "aliases":[
 
         ],
@@ -11448,7 +11448,7 @@
         "name":"link symbol",
         "shortname":":link:",
         "category":"other",
-        "category_order":"186",
+        "category_order":"187",
         "aliases":[
 
         ],
@@ -11468,7 +11468,7 @@
         "name":"radio button",
         "shortname":":radio_button:",
         "category":"other",
-        "category_order":"185",
+        "category_order":"186",
         "aliases":[
 
         ],
@@ -11506,7 +11506,7 @@
         "name":"back with leftwards arrow above",
         "shortname":":back:",
         "category":"other",
-        "category_order":"137",
+        "category_order":"138",
         "aliases":[
 
         ],
@@ -11525,7 +11525,7 @@
         "name":"end with leftwards arrow above",
         "shortname":":end:",
         "category":"other",
-        "category_order":"136",
+        "category_order":"137",
         "aliases":[
 
         ],
@@ -11567,7 +11567,7 @@
         "name":"on with exclamation mark with left right arrow abo",
         "shortname":":on:",
         "category":"other",
-        "category_order":"138",
+        "category_order":"139",
         "aliases":[
 
         ],
@@ -11587,7 +11587,7 @@
         "name":"soon with rightwards arrow above",
         "shortname":":soon:",
         "category":"other",
-        "category_order":"139",
+        "category_order":"140",
         "aliases":[
 
         ],
@@ -11629,7 +11629,7 @@
         "name":"top with upwards arrow above",
         "shortname":":top:",
         "category":"other",
-        "category_order":"135",
+        "category_order":"136",
         "aliases":[
 
         ],
@@ -11903,7 +11903,7 @@
         "name":"white flower",
         "shortname":":white_flower:",
         "category":"other",
-        "category_order":"181",
+        "category_order":"182",
         "aliases":[
 
         ],
@@ -11923,7 +11923,7 @@
         "name":"electric torch",
         "shortname":":flashlight:",
         "category":"objects",
-        "category_order":"57",
+        "category_order":"58",
         "aliases":[
 
         ],
@@ -11942,7 +11942,7 @@
         "name":"wrench",
         "shortname":":wrench:",
         "category":"objects",
-        "category_order":"67",
+        "category_order":"68",
         "aliases":[
 
         ],
@@ -11963,7 +11963,7 @@
         "name":"hundred points symbol",
         "shortname":":100:",
         "category":"other",
-        "category_order":"182",
+        "category_order":"183",
         "aliases":[
 
         ],
@@ -11985,7 +11985,7 @@
         "name":"hammer",
         "shortname":":hammer:",
         "category":"objects",
-        "category_order":"69",
+        "category_order":"70",
         "aliases":[
 
         ],
@@ -12009,7 +12009,7 @@
         "name":"nut and bolt",
         "shortname":":nut_and_bolt:",
         "category":"objects",
-        "category_order":"68",
+        "category_order":"69",
         "aliases":[
 
         ],
@@ -12029,7 +12029,7 @@
         "name":"money bag",
         "shortname":":moneybag:",
         "category":"objects",
-        "category_order":"77",
+        "category_order":"78",
         "aliases":[
 
         ],
@@ -12050,7 +12050,7 @@
         "name":"hocho",
         "shortname":":knife:",
         "category":"objects",
-        "category_order":"74",
+        "category_order":"75",
         "aliases":[
 
         ],
@@ -12069,7 +12069,7 @@
         "name":"pistol",
         "shortname":":gun:",
         "category":"objects",
-        "category_order":"73",
+        "category_order":"74",
         "aliases":[
 
         ],
@@ -12089,7 +12089,7 @@
         "name":"currency exchange",
         "shortname":":currency_exchange:",
         "category":"other",
-        "category_order":"129",
+        "category_order":"130",
         "aliases":[
 
         ],
@@ -12130,7 +12130,7 @@
         "name":"heavy dollar sign",
         "shortname":":heavy_dollar_sign:",
         "category":"other",
-        "category_order":"128",
+        "category_order":"129",
         "aliases":[
 
         ],
@@ -12152,7 +12152,7 @@
         "name":"six pointed star with middle dot",
         "shortname":":six_pointed_star:",
         "category":"other",
-        "category_order":"125",
+        "category_order":"126",
         "aliases":[
 
         ],
@@ -12171,7 +12171,7 @@
         "name":"credit card",
         "shortname":":credit_card:",
         "category":"objects",
-        "category_order":"82",
+        "category_order":"83",
         "aliases":[
 
         ],
@@ -12195,7 +12195,7 @@
         "name":"japanese symbol for beginner",
         "shortname":":beginner:",
         "category":"places",
-        "category_order":"81",
+        "category_order":"82",
         "aliases":[
 
         ],
@@ -12215,7 +12215,7 @@
         "name":"trident emblem",
         "shortname":":trident:",
         "category":"other",
-        "category_order":"188",
+        "category_order":"189",
         "aliases":[
 
         ],
@@ -12235,7 +12235,7 @@
         "name":"banknote with yen sign",
         "shortname":":yen:",
         "category":"objects",
-        "category_order":"78",
+        "category_order":"79",
         "aliases":[
 
         ],
@@ -12258,7 +12258,7 @@
         "name":"black square button",
         "shortname":":black_square_button:",
         "category":"other",
-        "category_order":"189",
+        "category_order":"190",
         "aliases":[
 
         ],
@@ -12277,7 +12277,7 @@
         "name":"white square button",
         "shortname":":white_square_button:",
         "category":"other",
-        "category_order":"190",
+        "category_order":"191",
         "aliases":[
 
         ],
@@ -12296,7 +12296,7 @@
         "name":"banknote with dollar sign",
         "shortname":":dollar:",
         "category":"objects",
-        "category_order":"79",
+        "category_order":"80",
         "aliases":[
 
         ],
@@ -12318,7 +12318,7 @@
         "name":"large red circle",
         "shortname":":red_circle:",
         "category":"other",
-        "category_order":"202",
+        "category_order":"203",
         "aliases":[
 
         ],
@@ -12337,7 +12337,7 @@
         "name":"large blue circle",
         "shortname":":large_blue_circle:",
         "category":"other",
-        "category_order":"203",
+        "category_order":"204",
         "aliases":[
 
         ],
@@ -12356,7 +12356,7 @@
         "name":"money with wings",
         "shortname":":money_with_wings:",
         "category":"objects",
-        "category_order":"83",
+        "category_order":"84",
         "aliases":[
 
         ],
@@ -12378,7 +12378,7 @@
         "name":"large orange diamond",
         "shortname":":large_orange_diamond:",
         "category":"other",
-        "category_order":"205",
+        "category_order":"206",
         "aliases":[
 
         ],
@@ -12397,7 +12397,7 @@
         "name":"large blue diamond",
         "shortname":":large_blue_diamond:",
         "category":"other",
-        "category_order":"206",
+        "category_order":"207",
         "aliases":[
 
         ],
@@ -12416,7 +12416,7 @@
         "name":"chart with upwards trend and yen sign",
         "shortname":":chart:",
         "category":"other",
-        "category_order":"127",
+        "category_order":"128",
         "aliases":[
 
         ],
@@ -12436,7 +12436,7 @@
         "name":"small orange diamond",
         "shortname":":small_orange_diamond:",
         "category":"other",
-        "category_order":"207",
+        "category_order":"208",
         "aliases":[
 
         ],
@@ -12455,7 +12455,7 @@
         "name":"small blue diamond",
         "shortname":":small_blue_diamond:",
         "category":"other",
-        "category_order":"208",
+        "category_order":"209",
         "aliases":[
 
         ],
@@ -12493,7 +12493,7 @@
         "name":"up-pointing red triangle",
         "shortname":":small_red_triangle:",
         "category":"other",
-        "category_order":"197",
+        "category_order":"198",
         "aliases":[
 
         ],
@@ -12512,7 +12512,7 @@
         "name":"down-pointing red triangle",
         "shortname":":small_red_triangle_down:",
         "category":"other",
-        "category_order":"204",
+        "category_order":"205",
         "aliases":[
 
         ],
@@ -12611,7 +12611,7 @@
         "name":"clock face one oclock",
         "shortname":":clock1:",
         "category":"other",
-        "category_order":"151",
+        "category_order":"152",
         "aliases":[
 
         ],
@@ -12654,7 +12654,7 @@
         "name":"clock face two oclock",
         "shortname":":clock2:",
         "category":"other",
-        "category_order":"153",
+        "category_order":"154",
         "aliases":[
 
         ],
@@ -12696,7 +12696,7 @@
         "name":"clock face three oclock",
         "shortname":":clock3:",
         "category":"other",
-        "category_order":"155",
+        "category_order":"156",
         "aliases":[
 
         ],
@@ -12738,7 +12738,7 @@
         "name":"clock face four oclock",
         "shortname":":clock4:",
         "category":"other",
-        "category_order":"157",
+        "category_order":"158",
         "aliases":[
 
         ],
@@ -12779,7 +12779,7 @@
         "name":"clock face five oclock",
         "shortname":":clock5:",
         "category":"other",
-        "category_order":"159",
+        "category_order":"160",
         "aliases":[
 
         ],
@@ -12799,7 +12799,7 @@
         "name":"clock face six oclock",
         "shortname":":clock6:",
         "category":"other",
-        "category_order":"161",
+        "category_order":"162",
         "aliases":[
 
         ],
@@ -12819,7 +12819,7 @@
         "name":"file folder",
         "shortname":":file_folder:",
         "category":"objects",
-        "category_order":"110",
+        "category_order":"111",
         "aliases":[
 
         ],
@@ -12838,7 +12838,7 @@
         "name":"clock face seven oclock",
         "shortname":":clock7:",
         "category":"other",
-        "category_order":"162",
+        "category_order":"163",
         "aliases":[
 
         ],
@@ -12858,7 +12858,7 @@
         "name":"clock face eight oclock",
         "shortname":":clock8:",
         "category":"other",
-        "category_order":"163",
+        "category_order":"164",
         "aliases":[
 
         ],
@@ -12878,7 +12878,7 @@
         "name":"open file folder",
         "shortname":":open_file_folder:",
         "category":"objects",
-        "category_order":"111",
+        "category_order":"112",
         "aliases":[
 
         ],
@@ -12898,7 +12898,7 @@
         "name":"clock face nine oclock",
         "shortname":":clock9:",
         "category":"other",
-        "category_order":"164",
+        "category_order":"165",
         "aliases":[
 
         ],
@@ -12918,7 +12918,7 @@
         "name":"clock face ten oclock",
         "shortname":":clock10:",
         "category":"other",
-        "category_order":"165",
+        "category_order":"166",
         "aliases":[
 
         ],
@@ -12938,7 +12938,7 @@
         "name":"page with curl",
         "shortname":":page_with_curl:",
         "category":"objects",
-        "category_order":"100",
+        "category_order":"101",
         "aliases":[
 
         ],
@@ -12957,7 +12957,7 @@
         "name":"clock face eleven oclock",
         "shortname":":clock11:",
         "category":"other",
-        "category_order":"166",
+        "category_order":"167",
         "aliases":[
 
         ],
@@ -12977,7 +12977,7 @@
         "name":"clock face twelve oclock",
         "shortname":":clock12:",
         "category":"other",
-        "category_order":"149",
+        "category_order":"150",
         "aliases":[
 
         ],
@@ -12997,7 +12997,7 @@
         "name":"page facing up",
         "shortname":":page_facing_up:",
         "category":"objects",
-        "category_order":"99",
+        "category_order":"100",
         "aliases":[
 
         ],
@@ -13058,7 +13058,7 @@
         "name":"calendar",
         "shortname":":date:",
         "category":"objects",
-        "category_order":"107",
+        "category_order":"108",
         "aliases":[
 
         ],
@@ -13117,7 +13117,7 @@
         "name":"tear-off calendar",
         "shortname":":calendar:",
         "category":"objects",
-        "category_order":"108",
+        "category_order":"109",
         "aliases":[
 
         ],
@@ -13136,7 +13136,7 @@
         "name":"moyai",
         "shortname":":moyai:",
         "category":"places",
-        "category_order":"86",
+        "category_order":"87",
         "aliases":[
 
         ],
@@ -13215,7 +13215,6 @@
         "aliases_ascii":[
             ":D",
             ":-D",
-            ": D",
             "=D"
         ],
         "keywords":[
@@ -13236,7 +13235,7 @@
         "name":"chart with upwards trend",
         "shortname":":chart_with_upwards_trend:",
         "category":"objects",
-        "category_order":"103",
+        "category_order":"104",
         "aliases":[
 
         ],
@@ -13262,7 +13261,6 @@
         "aliases_ascii":[
             ":)",
             ":-)",
-            ": )",
             "=]",
             "=)",
             ":]"
@@ -13317,7 +13315,7 @@
         "name":"chart with downwards trend",
         "shortname":":chart_with_downwards_trend:",
         "category":"objects",
-        "category_order":"104",
+        "category_order":"105",
         "aliases":[
 
         ],
@@ -13370,7 +13368,6 @@
         "aliases_ascii":[
             ";)",
             ";-)",
-            "; )",
             "*-)",
             "*)",
             ";-]",
@@ -13397,7 +13394,7 @@
         "name":"bar chart",
         "shortname":":bar_chart:",
         "category":"objects",
-        "category_order":"102",
+        "category_order":"103",
         "aliases":[
 
         ],
@@ -13470,7 +13467,7 @@
         "name":"clipboard",
         "shortname":":clipboard:",
         "category":"objects",
-        "category_order":"106",
+        "category_order":"107",
         "aliases":[
 
         ],
@@ -13540,7 +13537,7 @@
         "name":"pushpin",
         "shortname":":pushpin:",
         "category":"objects",
-        "category_order":"113",
+        "category_order":"114",
         "aliases":[
 
         ],
@@ -13606,7 +13603,7 @@
         "name":"round pushpin",
         "shortname":":round_pushpin:",
         "category":"places",
-        "category_order":"89",
+        "category_order":"90",
         "aliases":[
 
         ],
@@ -13676,7 +13673,7 @@
         "name":"paperclip",
         "shortname":":paperclip:",
         "category":"objects",
-        "category_order":"114",
+        "category_order":"115",
         "aliases":[
 
         ],
@@ -13727,7 +13724,6 @@
             ":*",
             ":-*",
             "=*",
-            ": *",
             ":^*"
         ],
         "keywords":[
@@ -13752,7 +13748,7 @@
         "name":"straight ruler",
         "shortname":":straight_ruler:",
         "category":"objects",
-        "category_order":"117",
+        "category_order":"118",
         "aliases":[
 
         ],
@@ -13803,9 +13799,7 @@
         "aliases_ascii":[
             "&gt;:P",
             "X-P",
-            "x-p",
-            "xp",
-            "XP"
+            "x-p"
         ],
         "keywords":[
             "childish",
@@ -13830,7 +13824,7 @@
         "name":"triangular ruler",
         "shortname":":triangular_ruler:",
         "category":"objects",
-        "category_order":"118",
+        "category_order":"119",
         "aliases":[
 
         ],
@@ -13885,8 +13879,7 @@
             ":(",
             ":-[",
             ":[",
-            "=(",
-            ": ("
+            "=("
         ],
         "keywords":[
             "disappointed",
@@ -13907,7 +13900,7 @@
         "name":"bookmark tabs",
         "shortname":":bookmark_tabs:",
         "category":"objects",
-        "category_order":"101",
+        "category_order":"102",
         "aliases":[
 
         ],
@@ -14547,7 +14540,7 @@
         "keywords":[
             "female",
             "girl",
-            "no, stop, nope, don't, not",
+            "no, stop, nope, don&amp;#039;t, not",
             "woman"
         ]
     },
@@ -14707,7 +14700,7 @@
         "keywords":[
             "gesture",
             "hooray",
-            "winning, woot, yay, banzai"
+            "winning, woot, yay,  banzai"
         ]
     },
     "person_frowning":{
@@ -14808,7 +14801,7 @@
         "name":"railway car",
         "shortname":":railway_car:",
         "category":"places",
-        "category_order":"52",
+        "category_order":"53",
         "aliases":[
 
         ],
@@ -14916,7 +14909,7 @@
         "name":"bus",
         "shortname":":bus:",
         "category":"places",
-        "category_order":"54",
+        "category_order":"55",
         "aliases":[
 
         ],
@@ -14938,7 +14931,7 @@
         "name":"bus stop",
         "shortname":":busstop:",
         "category":"places",
-        "category_order":"75",
+        "category_order":"76",
         "aliases":[
 
         ],
@@ -14958,7 +14951,7 @@
         "name":"ambulance",
         "shortname":":ambulance:",
         "category":"places",
-        "category_order":"67",
+        "category_order":"68",
         "aliases":[
 
         ],
@@ -14979,7 +14972,7 @@
         "name":"fire engine",
         "shortname":":fire_engine:",
         "category":"places",
-        "category_order":"66",
+        "category_order":"67",
         "aliases":[
 
         ],
@@ -15001,7 +14994,7 @@
         "name":"police car",
         "shortname":":police_car:",
         "category":"places",
-        "category_order":"64",
+        "category_order":"65",
         "aliases":[
 
         ],
@@ -15025,7 +15018,7 @@
         "name":"taxi",
         "shortname":":taxi:",
         "category":"places",
-        "category_order":"59",
+        "category_order":"60",
         "aliases":[
 
         ],
@@ -15048,7 +15041,7 @@
         "name":"automobile",
         "shortname":":red_car:",
         "category":"places",
-        "category_order":"58",
+        "category_order":"59",
         "aliases":[
 
         ],
@@ -15068,7 +15061,7 @@
         "name":"recreational vehicle",
         "shortname":":blue_car:",
         "category":"places",
-        "category_order":"56",
+        "category_order":"57",
         "aliases":[
 
         ],
@@ -15088,7 +15081,7 @@
         "name":"delivery truck",
         "shortname":":truck:",
         "category":"places",
-        "category_order":"62",
+        "category_order":"63",
         "aliases":[
 
         ],
@@ -15152,7 +15145,7 @@
         "name":"horizontal traffic light",
         "shortname":":traffic_light:",
         "category":"places",
-        "category_order":"78",
+        "category_order":"79",
         "aliases":[
 
         ],
@@ -15173,7 +15166,7 @@
         "name":"construction sign",
         "shortname":":construction:",
         "category":"places",
-        "category_order":"80",
+        "category_order":"81",
         "aliases":[
 
         ],
@@ -15194,7 +15187,7 @@
         "name":"police cars revolving light",
         "shortname":":rotating_light:",
         "category":"places",
-        "category_order":"63",
+        "category_order":"64",
         "aliases":[
 
         ],
@@ -15217,7 +15210,7 @@
         "name":"triangular flag on post",
         "shortname":":triangular_flag_on_post:",
         "category":"places",
-        "category_order":"90",
+        "category_order":"91",
         "aliases":[
 
         ],
@@ -15236,7 +15229,7 @@
         "name":"door",
         "shortname":":door:",
         "category":"objects",
-        "category_order":"70",
+        "category_order":"71",
         "aliases":[
 
         ],
@@ -15282,7 +15275,7 @@
         "name":"smoking symbol",
         "shortname":":smoking:",
         "category":"objects",
-        "category_order":"71",
+        "category_order":"72",
         "aliases":[
 
         ],
@@ -15324,7 +15317,7 @@
         "name":"bicycle",
         "shortname":":bike:",
         "category":"places",
-        "category_order":"69",
+        "category_order":"70",
         "aliases":[
 
         ],
@@ -15451,7 +15444,7 @@
         "name":"toilet",
         "shortname":":toilet:",
         "category":"objects",
-        "category_order":"66",
+        "category_order":"67",
         "aliases":[
 
         ],
@@ -15494,7 +15487,7 @@
         "name":"bath",
         "shortname":":bath:",
         "category":"objects",
-        "category_order":"64",
+        "category_order":"65",
         "aliases":[
 
         ],
@@ -15607,9 +15600,7 @@
             "B)",
             "8)",
             "8-)",
-            "BD",
             "B-D",
-            "8D",
             "8-D"
         ],
         "keywords":[
@@ -15775,7 +15766,6 @@
         "aliases_ascii":[
             ":P",
             ":-P",
-            ": P",
             "=P",
             ":-p",
             ":p",
@@ -16110,7 +16100,7 @@
         "name":"oncoming bus",
         "shortname":":oncoming_bus:",
         "category":"places",
-        "category_order":"55",
+        "category_order":"56",
         "aliases":[
 
         ],
@@ -16131,7 +16121,7 @@
         "name":"trolleybus",
         "shortname":":trolleybus:",
         "category":"places",
-        "category_order":"53",
+        "category_order":"54",
         "aliases":[
 
         ],
@@ -16153,7 +16143,7 @@
         "name":"minibus",
         "shortname":":minibus:",
         "category":"places",
-        "category_order":"68",
+        "category_order":"69",
         "aliases":[
 
         ],
@@ -16175,7 +16165,7 @@
         "name":"oncoming police car",
         "shortname":":oncoming_police_car:",
         "category":"places",
-        "category_order":"65",
+        "category_order":"66",
         "aliases":[
 
         ],
@@ -16197,7 +16187,7 @@
         "name":"oncoming taxi",
         "shortname":":oncoming_taxi:",
         "category":"places",
-        "category_order":"60",
+        "category_order":"61",
         "aliases":[
 
         ],
@@ -16219,7 +16209,7 @@
         "name":"oncoming automobile",
         "shortname":":oncoming_automobile:",
         "category":"places",
-        "category_order":"57",
+        "category_order":"58",
         "aliases":[
 
         ],
@@ -16241,7 +16231,7 @@
         "name":"articulated lorry",
         "shortname":":articulated_lorry:",
         "category":"places",
-        "category_order":"61",
+        "category_order":"62",
         "aliases":[
 
         ],
@@ -16263,7 +16253,7 @@
         "name":"tractor",
         "shortname":":tractor:",
         "category":"places",
-        "category_order":"73",
+        "category_order":"74",
         "aliases":[
 
         ],
@@ -16327,7 +16317,7 @@
         "name":"suspension railway",
         "shortname":":suspension_railway:",
         "category":"places",
-        "category_order":"71",
+        "category_order":"72",
         "aliases":[
 
         ],
@@ -16348,7 +16338,7 @@
         "name":"mountain cableway",
         "shortname":":mountain_cableway:",
         "category":"places",
-        "category_order":"72",
+        "category_order":"73",
         "aliases":[
 
         ],
@@ -16369,7 +16359,7 @@
         "name":"aerial tramway",
         "shortname":":aerial_tramway:",
         "category":"places",
-        "category_order":"70",
+        "category_order":"71",
         "aliases":[
 
         ],
@@ -16413,7 +16403,7 @@
         "name":"vertical traffic light",
         "shortname":":vertical_traffic_light:",
         "category":"places",
-        "category_order":"77",
+        "category_order":"78",
         "aliases":[
 
         ],
@@ -16542,7 +16532,7 @@
         "name":"bicyclist",
         "shortname":":bicyclist:",
         "category":"objects",
-        "category_order":"162",
+        "category_order":"163",
         "aliases":[
 
         ],
@@ -16565,7 +16555,7 @@
         "name":"mountain bicyclist",
         "shortname":":mountain_bicyclist:",
         "category":"objects",
-        "category_order":"161",
+        "category_order":"162",
         "aliases":[
 
         ],
@@ -16629,7 +16619,7 @@
         "name":"shower",
         "shortname":":shower:",
         "category":"objects",
-        "category_order":"65",
+        "category_order":"66",
         "aliases":[
 
         ],
@@ -16650,7 +16640,7 @@
         "name":"bathtub",
         "shortname":":bathtub:",
         "category":"objects",
-        "category_order":"63",
+        "category_order":"64",
         "aliases":[
 
         ],
@@ -17025,7 +17015,7 @@
         "name":"lemon",
         "shortname":":lemon:",
         "category":"objects",
-        "category_order":"216",
+        "category_order":"217",
         "aliases":[
 
         ],
@@ -17046,7 +17036,7 @@
         "name":"pear",
         "shortname":":pear:",
         "category":"objects",
-        "category_order":"224",
+        "category_order":"225",
         "aliases":[
 
         ],
@@ -17067,7 +17057,7 @@
         "name":"baby bottle",
         "shortname":":baby_bottle:",
         "category":"objects",
-        "category_order":"174",
+        "category_order":"175",
         "aliases":[
 
         ],
@@ -17088,7 +17078,7 @@
         "name":"horse racing",
         "shortname":":horse_racing:",
         "category":"objects",
-        "category_order":"164",
+        "category_order":"165",
         "aliases":[
 
         ],
@@ -17110,7 +17100,7 @@
         "name":"rugby football",
         "shortname":":rugby_football:",
         "category":"objects",
-        "category_order":"158",
+        "category_order":"159",
         "aliases":[
 
         ],
@@ -17638,7 +17628,7 @@
         "name":"banknote with euro sign",
         "shortname":":euro:",
         "category":"objects",
-        "category_order":"81",
+        "category_order":"82",
         "aliases":[
 
         ],
@@ -17660,7 +17650,7 @@
         "name":"banknote with pound sign",
         "shortname":":pound:",
         "category":"objects",
-        "category_order":"80",
+        "category_order":"81",
         "aliases":[
 
         ],
@@ -17686,7 +17676,7 @@
         "name":"open mailbox with raised flag",
         "shortname":":mailbox_with_mail:",
         "category":"objects",
-        "category_order":"94",
+        "category_order":"95",
         "aliases":[
 
         ],
@@ -17707,7 +17697,7 @@
         "name":"open mailbox with lowered flag",
         "shortname":":mailbox_with_no_mail:",
         "category":"objects",
-        "category_order":"95",
+        "category_order":"96",
         "aliases":[
 
         ],
@@ -17727,7 +17717,7 @@
         "name":"postal horn",
         "shortname":":postal_horn:",
         "category":"objects",
-        "category_order":"91",
+        "category_order":"92",
         "aliases":[
 
         ],
@@ -17846,7 +17836,7 @@
         "name":"low brightness symbol",
         "shortname":":low_brightness:",
         "category":"objects",
-        "category_order":"59",
+        "category_order":"60",
         "aliases":[
 
         ],
@@ -17866,7 +17856,7 @@
         "name":"high brightness symbol",
         "shortname":":high_brightness:",
         "category":"objects",
-        "category_order":"58",
+        "category_order":"59",
         "aliases":[
 
         ],
@@ -17887,7 +17877,7 @@
         "name":"speaker with cancellation stroke",
         "shortname":":mute:",
         "category":"objects",
-        "category_order":"41",
+        "category_order":"42",
         "aliases":[
 
         ],
@@ -17927,7 +17917,7 @@
         "name":"bell with cancellation stroke",
         "shortname":":no_bell:",
         "category":"objects",
-        "category_order":"43",
+        "category_order":"44",
         "aliases":[
 
         ],
@@ -17948,7 +17938,7 @@
         "name":"microscope",
         "shortname":":microscope:",
         "category":"objects",
-        "category_order":"130",
+        "category_order":"131",
         "aliases":[
 
         ],
@@ -17969,7 +17959,7 @@
         "name":"telescope",
         "shortname":":telescope:",
         "category":"objects",
-        "category_order":"131",
+        "category_order":"132",
         "aliases":[
 
         ],
@@ -17989,7 +17979,7 @@
         "name":"clock face one-thirty",
         "shortname":":clock130:",
         "category":"other",
-        "category_order":"152",
+        "category_order":"153",
         "aliases":[
 
         ],
@@ -18009,7 +17999,7 @@
         "name":"clock face two-thirty",
         "shortname":":clock230:",
         "category":"other",
-        "category_order":"154",
+        "category_order":"155",
         "aliases":[
 
         ],
@@ -18029,7 +18019,7 @@
         "name":"clock face three-thirty",
         "shortname":":clock330:",
         "category":"other",
-        "category_order":"156",
+        "category_order":"157",
         "aliases":[
 
         ],
@@ -18049,7 +18039,7 @@
         "name":"clock face four-thirty",
         "shortname":":clock430:",
         "category":"other",
-        "category_order":"158",
+        "category_order":"159",
         "aliases":[
 
         ],
@@ -18069,7 +18059,7 @@
         "name":"clock face five-thirty",
         "shortname":":clock530:",
         "category":"other",
-        "category_order":"160",
+        "category_order":"161",
         "aliases":[
 
         ],
@@ -18089,7 +18079,7 @@
         "name":"clock face six-thirty",
         "shortname":":clock630:",
         "category":"other",
-        "category_order":"167",
+        "category_order":"168",
         "aliases":[
 
         ],
@@ -18109,7 +18099,7 @@
         "name":"clock face seven-thirty",
         "shortname":":clock730:",
         "category":"other",
-        "category_order":"168",
+        "category_order":"169",
         "aliases":[
 
         ],
@@ -18129,7 +18119,7 @@
         "name":"clock face eight-thirty",
         "shortname":":clock830:",
         "category":"other",
-        "category_order":"169",
+        "category_order":"170",
         "aliases":[
 
         ],
@@ -18149,7 +18139,7 @@
         "name":"clock face nine-thirty",
         "shortname":":clock930:",
         "category":"other",
-        "category_order":"170",
+        "category_order":"171",
         "aliases":[
 
         ],
@@ -18169,7 +18159,7 @@
         "name":"clock face ten-thirty",
         "shortname":":clock1030:",
         "category":"other",
-        "category_order":"171",
+        "category_order":"172",
         "aliases":[
 
         ],
@@ -18189,7 +18179,7 @@
         "name":"clock face eleven-thirty",
         "shortname":":clock1130:",
         "category":"other",
-        "category_order":"172",
+        "category_order":"173",
         "aliases":[
 
         ],
@@ -18209,7 +18199,7 @@
         "name":"clock face twelve-thirty",
         "shortname":":clock1230:",
         "category":"other",
-        "category_order":"150",
+        "category_order":"151",
         "aliases":[
 
         ],
@@ -18219,6 +18209,63 @@
         "keywords":[
             "clock",
             "time"
+        ]
+    },
+    "speaker":{
+        "unicode":"1F508",
+        "unicode_alternates":[
+
+        ],
+        "name":"speaker",
+        "shortname":":speaker:",
+        "category":"objects",
+        "category_order":"41",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "sound, listen, hear, noise"
+        ]
+    },
+    "train":{
+        "unicode":"1F68B",
+        "unicode_alternates":[
+
+        ],
+        "name":"Tram Car",
+        "shortname":":train:",
+        "category":"places",
+        "category_order":"52",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "tram, rail"
+        ]
+    },
+    "loop":{
+        "unicode":"27BF",
+        "unicode_alternates":[
+
+        ],
+        "name":"double curly loop",
+        "shortname":":loop:",
+        "category":"other",
+        "category_order":"111",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "curly"
         ]
     }
 }
