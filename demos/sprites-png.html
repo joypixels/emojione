@@ -26,6 +26,40 @@
   <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+  <script src="./../lib/js/emojione.js"></script>
+
+  <script type="text/javascript">
+    // #################################################
+    // # Optional
+
+    // default is PNG but you may also use SVG
+    emojione.imageType = 'png';
+
+    //Turn on sprites
+    emojione.sprites = true;
+
+    // default is ignore ASCII smileys like :) but you can easily turn them on
+    emojione.ascii = true;
+
+    // if you want to host the images somewhere else
+    // you can easily change the default paths
+    emojione.imagePathPNG = './../assets/png/';
+    emojione.imagePathSVG = './../assets/svg/';
+
+    // #################################################
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".convert-emoji").each(function() {
+        var original = $(this).html();
+        // use .shortnameToImage if only converting shortnames (for slightly better performance)
+        var converted = emojione.toImage(original);
+        $(this).html(converted);
+      });
+    });
+  </script>
+
 </head>
 <body>
 
@@ -52,13 +86,18 @@
 
       <h1>Emoji One PNG Sprites</h1>
 
-      <p style="font-size: 24px; text-align: center">
-        <span class="emojione-1F352">&#x1f352;</span>
-        <span class="emojione-1F353">&#x1f353;</span>
-        <span class="emojione-1F354">&#x1f354;</span>
-        <span class="emojione-1F355">&#x1f355;</span>
-        <span class="emojione-1F356">&#x1f356;</span>
-        <span class="emojione-1F357">&#x1f357;</span>
+      <p class="convert-emoji" style="font-size: 27px; text-align: center">
+        &#x1f352;
+
+        :)
+
+        :coffee:
+
+        :(
+
+        :fire:
+
+        &#x1f354;
       </p>
 
       <p>
@@ -82,10 +121,12 @@
       <p>Once the stylesheet is attached, it's just a matter of enabling PNG Sprites in your Emoji One configuration</p>
 
       <p>Javascript Example</p>
-      <pre class="brush: php">//JS Example goes here</pre>
+      <pre class="brush: php">emojione.imageType = 'png';
+emojione.sprites = true;</pre>
 
       <p>PHP Example</p>
-      <pre class="brush: php">//PHP Example goes here</pre>
+      <pre class="brush: php">Emojione::$imageType = 'png';
+Emojione::$sprites = true;</pre>
 
       <p>If you are not using our conversion scripts, PNG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <span class="emojione-1F433">&#x1f433;</span></p>
       <pre class="brush: php">
