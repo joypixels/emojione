@@ -1,16 +1,16 @@
 .emojione {
   /* Emoji Sizing */
   font-size: inherit;
-  height: 2.4ex;
-  width: 2.6ex;
+  height: 3ex;
+  width: 3.1ex;
   min-height: 20px;
   min-width: 20px;
 
-  /* Inline Text Alignment */
+  /* Inline alignment adjust the margins  */
   display: inline-block;
-  margin: 0 .15em;
+  margin: -.4ex .15em .2ex;
   line-height: normal;
-  vertical-align: -.4ex;
+  vertical-align: sub;
 }
 
 img.emojione {
