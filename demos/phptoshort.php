@@ -1,16 +1,16 @@
 <?php
 # include the PHP library (if not autoloaded)
-require('./../lib/php/Emojione.class.php');
+require('./../lib/php/autoload.php');
 
 ################################################
 # Optional:
 # default is PNG but you may also use SVG
-Emojione::$imageType = 'svg';
+Emojione\Emojione::$imageType = 'svg';
 
 # if you want to host the images somewhere else
 # you can easily change the default paths
-Emojione::$imagePathPNG = './../assets/png/';
-Emojione::$imagePathSVG = './../assets/svg/';
+Emojione\Emojione::$imagePathPNG = './../assets/png/';
+Emojione\Emojione::$imagePathSVG = './../assets/svg/';
 ################################################
 
 ?><!doctype html>
@@ -86,7 +86,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
                 <p>
                     <?php
                     if(isset($_POST['inputText'])) {
-                        echo Emojione::toShort($_POST['inputText']);
+                        echo Emojione\Emojione::toShort($_POST['inputText']);
                     }
                     ?>
                 </p>
@@ -99,10 +99,10 @@ Emojione::$imagePathSVG = './../assets/svg/';
         <pre class="brush: php">
 &lt;?php
     // include the PHP library (if not autoloaded)
-    require('./../lib/php/Emojione.class.php');
+    require('./../lib/php/autoload.php');
 
     if(isset($_POST['inputText'])) {
-      echo Emojione::toShort($_POST['inputText']);
+      echo Emojione\Emojione::toShort($_POST['inputText']);
     }
 ?&gt;
         </pre>

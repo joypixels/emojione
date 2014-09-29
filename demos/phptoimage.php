@@ -1,19 +1,19 @@
 <?php
 # include the PHP library (if not autoloaded)
-require('./../lib/php/Emojione.class.php');
+require('./../lib/php/autoload.php');
 
 ################################################
 # Optional:
 # default is PNG but you may also use SVG
-Emojione::$imageType = 'svg';
+Emojione\Emojione::$imageType = 'svg';
 
 # default is ignore ASCII smileys like :) but you can easily turn them on
-Emojione::$ascii = true;
+Emojione\Emojione::$ascii = true;
 
 # if you want to host the images somewhere else
 # you can easily change the default paths
-Emojione::$imagePathPNG = './../assets/png/';
-Emojione::$imagePathSVG = './../assets/svg/';
+Emojione\Emojione::$imagePathPNG = './../assets/png/';
+Emojione\Emojione::$imagePathSVG = './../assets/svg/';
 ################################################
 
 ?><!doctype html>
@@ -89,7 +89,7 @@ Emojione::$imagePathSVG = './../assets/svg/';
         <p>
           <?php
           if(isset($_POST['inputText'])) {
-            echo Emojione::toImage($_POST['inputText']);
+            echo Emojione\Emojione::toImage($_POST['inputText']);
           }
           ?>
         </p>
@@ -102,21 +102,21 @@ Emojione::$imagePathSVG = './../assets/svg/';
         <pre class="brush: php">
 &lt;?php
     // include the PHP library (if not autoloaded)
-    require('./../lib/php/Emojione.class.php');
+    require('./../lib/php/autoload.php');
 
     // ###############################################
     // Optional:
     // default is PNG but you may also use SVG
-    Emojione::$imageType = 'svg'; // or png (default)
+    Emojione\Emojione::$imageType = 'svg'; // or png (default)
 
     // if you want to host the images somewhere else
     // you can easily change the default paths
-    Emojione::$imagePathPNG = './../assets/png/'; // defaults to jsdelivr's free CDN
-    Emojione::$imagePathSVG = './../assets/svg/'; // defaults to jsdelivr's free CDN
+    Emojione\Emojione::$imagePathPNG = './../assets/png/'; // defaults to jsdelivr's free CDN
+    Emojione\Emojione::$imagePathSVG = './../assets/svg/'; // defaults to jsdelivr's free CDN
     // ###############################################
 
     if(isset($_POST['inputText'])) {
-    echo Emojione::toImage($_POST['inputText']);
+    echo Emojione\Emojione::toImage($_POST['inputText']);
     }
 ?&gt;
         </pre>
