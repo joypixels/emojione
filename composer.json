@@ -9,9 +9,11 @@
         "url": "https://github.com/Ranks/emojione/blob/master/LICENSE.md"
     },
     "autoload": {
-        "classmap": ["lib/php/Emojione.class.php"]
+        "psr-4": {
+            "Emojione\\": "lib/php/src"
+        }
     },
     "require": {
-        "php": ">=5.0.0"
+        "php": ">=5.3"
     }
 }

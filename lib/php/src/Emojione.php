@@ -1,4 +1,5 @@
 <?php
+namespace Emojione;
 class Emojione {
     static $ascii = false; // convert ascii smileys?
     static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
@@ -1979,30 +1980,30 @@ class Emojione {
     // will output unicode from shortname
     // useful for sending emojis back to mobile devices
     static function shortnameToUnicode($string) {
-        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToUnicodeCallback', $string);
+        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'static::shortnameToUnicodeCallback', $string);
         if(self::$ascii) {
-            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'Emojione::asciiToUnicodeCallback', $string);
+            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'static::asciiToUnicodeCallback', $string);
         }
         return $string;
     }
     // Replace shortnames (:wink:) with Ascii equivalents ;^)
     // Useful for systems that dont support unicode nor images
     static function shortnameToAscii($string) {
-        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToAsciiCallback', $string);
+        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'static::shortnameToAsciiCallback', $string);
         return $string;
     }
     static function shortnameToImage($string) {
-        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'Emojione::shortnameToImageCallback', $string);
+        $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'static::shortnameToImageCallback', $string);
         if(self::$ascii) {
-            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'Emojione::asciiToImageCallback', $string);
+            $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.self::$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'static::asciiToImageCallback', $string);
         }
         return $string;
     }
     static function toShort($string) {
-        return preg_replace_callback('/'.self::$ignoredRegexp.'|'.self::$unicodeRegexp.'/S', 'Emojione::toShortCallback', $string);
+        return preg_replace_callback('/'.self::$ignoredRegexp.'|'.self::$unicodeRegexp.'/S', 'static::toShortCallback', $string);
     }
     static function unicodeToImage($string) {
-        return preg_replace_callback('/'.self::$ignoredRegexp.'|'.self::$unicodeRegexp.'/S', 'Emojione::unicodeToImageCallback', $string);
+        return preg_replace_callback('/'.self::$ignoredRegexp.'|'.self::$unicodeRegexp.'/S', 'static::unicodeToImageCallback', $string);
     }
 
     // ##########################################
