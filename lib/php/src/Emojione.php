@@ -7,11 +7,12 @@ class Emojione {
     static $sprites = false;
     static $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
     static $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
-    static $imagePathSVGSprites = './../assets/sprites/emojione.sprites.svg';
+    static $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
     static $unicode_replaceWith = false;
     static $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
     static $unicodeRegexp = '([#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..))';
     static $shortcodeRegexp = ':([-+\\w]+):';
+
     static $shortcode_replace = Array(
         ':hash:' => '0023-20e3',
         ':zero:' => '0030-20e3',
