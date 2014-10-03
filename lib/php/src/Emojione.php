@@ -4,6 +4,7 @@ class Emojione {
     static $ascii = false; // convert ascii smileys?
     static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     static $imageType = 'png';
+    static $cacheBustParam = '?v=1.2.3';
     static $sprites = false;
     static $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
     static $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
@@ -12,6 +13,8 @@ class Emojione {
     static $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
     static $unicodeRegexp = '([#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..))';
     static $shortcodeRegexp = ':([-+\\w]+):';
+
+
 
     static $shortcode_replace = Array(
         ':hash:' => '0023-20e3',
@@ -2069,7 +2072,7 @@ class Emojione {
                     return '<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else {
-                    return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png"/>';
+                    return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png'.self::$cacheBustParam.'"/>';
                 }
             }
 
@@ -2077,7 +2080,7 @@ class Emojione {
                 return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
             }
             else {
-                return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+                return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
             }
         }
     }
@@ -2108,7 +2111,7 @@ class Emojione {
                     return $m[2].'<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else {
-                    return $m[2].'<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png"/>';
+                    return $m[2].'<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png'.self::$cacheBustParam.'"/>';
                 }
             }
 
@@ -2116,7 +2119,7 @@ class Emojione {
                 return $m[2].'<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
             }
             else {
-                return $m[2].'<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+                return $m[2].'<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
             }
         }
     }
@@ -2161,7 +2164,7 @@ class Emojione {
                     return '<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else {
-                    return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png"/>';
+                    return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png'.self::$cacheBustParam.'"/>';
                 }
             }
 
@@ -2169,7 +2172,7 @@ class Emojione {
                 return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
             }
             else {
-                return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+                return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
             }
         }
     }
