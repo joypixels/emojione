@@ -4,7 +4,7 @@ class Emojione {
     static $ascii = false; // convert ascii smileys?
     static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     static $imageType = 'png';
-    static $cacheBustParam = '?v=1.2.3';
+    static $cacheBustParam = '?v=1.2.4';
     static $sprites = false;
     static $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
     static $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
