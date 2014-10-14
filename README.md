@@ -4,6 +4,7 @@
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
 
 
+
 ## The Idea
 
 To standardize emoji on the web through the use of common :shortnames:. 
@@ -147,6 +148,7 @@ If you discover any bugs, feel free to create an issue on GitHub. We also welcom
 
 If you have any questions, comments, or concerns you are welcome to contact us.
 
+*  [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Ranks/emojione?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 * [support@emojione.com](mailto:support@emojione.com)
 * http://emojione.com
 * https://twitter.com/emojione
