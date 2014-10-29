@@ -313,14 +313,14 @@
         ]
     },
     "tm":{
-        "unicode":"2122",
+        "unicode":"1F1F9-1F1F2",
         "unicode_alternates":[
 
         ],
-        "name":"trade mark sign",
+        "name":"turkmenistan",
         "shortname":":tm:",
-        "category":"other",
-        "category_order":"133",
+        "category":"places",
+        "category_order":"273",
         "aliases":[
 
         ],
@@ -328,8 +328,8 @@
 
         ],
         "keywords":[
-            "brand",
-            "trademark"
+            "country",
+            "nation"
         ]
     },
     "information_source":{
@@ -2873,14 +2873,14 @@
         ]
     },
     "cl":{
-        "unicode":"1F191",
+        "unicode":"1F1E8-1F1F1",
         "unicode_alternates":[
 
         ],
-        "name":"squared cl",
+        "name":"chile",
         "shortname":":cl:",
-        "category":"other",
-        "category_order":"85",
+        "category":"places",
+        "category_order":"136",
         "aliases":[
 
         ],
@@ -2888,9 +2888,8 @@
 
         ],
         "keywords":[
-            "alphabet",
-            "red-square",
-            "words"
+            "country",
+            "nation"
         ]
     },
     "cool":{
@@ -2934,14 +2933,14 @@
         ]
     },
     "id":{
-        "unicode":"1F194",
+        "unicode":"1F1EE-1F1E9",
         "unicode_alternates":[
 
         ],
-        "name":"squared id",
+        "name":"indonesia",
         "shortname":":id:",
-        "category":"other",
-        "category_order":"87",
+        "category":"places",
+        "category_order":"175",
         "aliases":[
 
         ],
@@ -2949,8 +2948,8 @@
 
         ],
         "keywords":[
-            "purple-square",
-            "words"
+            "country",
+            "nation"
         ]
     },
     "new":{
@@ -2973,14 +2972,14 @@
         ]
     },
     "ng":{
-        "unicode":"1F196",
+        "unicode":"1F1F3-1F1EC",
         "unicode_alternates":[
 
         ],
-        "name":"squared ng",
+        "name":"nigeria",
         "shortname":":ng:",
-        "category":"other",
-        "category_order":"50",
+        "category":"places",
+        "category_order":"223",
         "aliases":[
 
         ],
@@ -2988,7 +2987,8 @@
 
         ],
         "keywords":[
-            "blue-square"
+            "country",
+            "nation"
         ]
     },
     "ok":{
@@ -3314,14 +3314,14 @@
         ]
     },
     "sa":{
-        "unicode":"1F202",
+        "unicode":"1F1F8-1F1E6",
         "unicode_alternates":[
 
         ],
-        "name":"squared katakana sa",
+        "name":"saudi arabia",
         "shortname":":sa:",
-        "category":"other",
-        "category_order":"76",
+        "category":"places",
+        "category_order":"247",
         "aliases":[
 
         ],
@@ -3329,8 +3329,8 @@
 
         ],
         "keywords":[
-            "blue-square",
-            "japanese"
+            "country",
+            "nation"
         ]
     },
     "u7121":{
@@ -10945,14 +10945,14 @@
         ]
     },
     "tv":{
-        "unicode":"1F4FA",
+        "unicode":"1F1F9-1F1FB",
         "unicode_alternates":[
 
         ],
-        "name":"television",
+        "name":"tuvalu",
         "shortname":":tv:",
-        "category":"objects",
-        "category_order":"37",
+        "category":"places",
+        "category_order":"274",
         "aliases":[
 
         ],
@@ -10960,10 +10960,8 @@
 
         ],
         "keywords":[
-            "oldschool",
-            "program",
-            "show",
-            "technology"
+            "country",
+            "nation"
         ]
     },
     "radio":{
@@ -12709,14 +12707,14 @@
         ]
     },
     "cd":{
-        "unicode":"1F4BF",
+        "unicode":"1F1E8-1F1E9",
         "unicode_alternates":[
 
         ],
-        "name":"optical disc",
+        "name":"the democratic republic of the congo",
         "shortname":":cd:",
-        "category":"objects",
-        "category_order":"26",
+        "category":"places",
+        "category_order":"145",
         "aliases":[
 
         ],
@@ -12724,10 +12722,8 @@
 
         ],
         "keywords":[
-            "disc",
-            "disk",
-            "dvd",
-            "technology"
+            "country",
+            "nation"
         ]
     },
     "clock4":{
@@ -18266,6 +18262,3586 @@
         ],
         "keywords":[
             "curly"
+        ]
+    },
+    "af":{
+        "unicode":"1F1E6-1F1EB",
+        "unicode_alternates":[
+
+        ],
+        "name":"afghanistan",
+        "shortname":":af:",
+        "category":"places",
+        "category_order":"102",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "al":{
+        "unicode":"1F1E6-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"albania",
+        "shortname":":al:",
+        "category":"places",
+        "category_order":"103",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "dz":{
+        "unicode":"1F1E9-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"algeria",
+        "shortname":":dz:",
+        "category":"places",
+        "category_order":"104",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ad":{
+        "unicode":"1F1E6-1F1E9",
+        "unicode_alternates":[
+
+        ],
+        "name":"andorra",
+        "shortname":":ad:",
+        "category":"places",
+        "category_order":"105",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ao":{
+        "unicode":"1F1E6-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"angola",
+        "shortname":":ao:",
+        "category":"places",
+        "category_order":"106",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ag":{
+        "unicode":"1F1E6-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"antigua and barbuda",
+        "shortname":":ag:",
+        "category":"places",
+        "category_order":"107",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ar":{
+        "unicode":"1F1E6-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"argentina",
+        "shortname":":ar:",
+        "category":"places",
+        "category_order":"108",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "am":{
+        "unicode":"1F1E6-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"armenia",
+        "shortname":":am:",
+        "category":"places",
+        "category_order":"109",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "au":{
+        "unicode":"1F1E6-1F1FA",
+        "unicode_alternates":[
+
+        ],
+        "name":"australia",
+        "shortname":":au:",
+        "category":"places",
+        "category_order":"110",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "at":{
+        "unicode":"1F1E6-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"austria",
+        "shortname":":at:",
+        "category":"places",
+        "category_order":"111",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "az":{
+        "unicode":"1F1E6-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"azerbaijan",
+        "shortname":":az:",
+        "category":"places",
+        "category_order":"112",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bs":{
+        "unicode":"1F1E7-1F1F8",
+        "unicode_alternates":[
+
+        ],
+        "name":"the bahamas",
+        "shortname":":bs:",
+        "category":"places",
+        "category_order":"113",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bh":{
+        "unicode":"1F1E7-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"bahrain",
+        "shortname":":bh:",
+        "category":"places",
+        "category_order":"114",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bd":{
+        "unicode":"1F1E7-1F1E9",
+        "unicode_alternates":[
+
+        ],
+        "name":"bangladesh",
+        "shortname":":bd:",
+        "category":"places",
+        "category_order":"115",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bb":{
+        "unicode":"1F1E7-1F1E7",
+        "unicode_alternates":[
+
+        ],
+        "name":"barbados",
+        "shortname":":bb:",
+        "category":"places",
+        "category_order":"116",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "by":{
+        "unicode":"1F1E7-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"belarus",
+        "shortname":":by:",
+        "category":"places",
+        "category_order":"117",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "be":{
+        "unicode":"1F1E7-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"belgium",
+        "shortname":":be:",
+        "category":"places",
+        "category_order":"118",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bz":{
+        "unicode":"1F1E7-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"belize",
+        "shortname":":bz:",
+        "category":"places",
+        "category_order":"119",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bj":{
+        "unicode":"1F1E7-1F1EF",
+        "unicode_alternates":[
+
+        ],
+        "name":"benin",
+        "shortname":":bj:",
+        "category":"places",
+        "category_order":"120",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bt":{
+        "unicode":"1F1E7-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"bhutan",
+        "shortname":":bt:",
+        "category":"places",
+        "category_order":"121",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bo":{
+        "unicode":"1F1E7-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"bolivia",
+        "shortname":":bo:",
+        "category":"places",
+        "category_order":"122",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ba":{
+        "unicode":"1F1E7-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"bosnia and herzegovina",
+        "shortname":":ba:",
+        "category":"places",
+        "category_order":"123",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bw":{
+        "unicode":"1F1E7-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"botswana",
+        "shortname":":bw:",
+        "category":"places",
+        "category_order":"124",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "br":{
+        "unicode":"1F1E7-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"brazil",
+        "shortname":":br:",
+        "category":"places",
+        "category_order":"125",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bn":{
+        "unicode":"1F1E7-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"brunei",
+        "shortname":":bn:",
+        "category":"places",
+        "category_order":"126",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bg":{
+        "unicode":"1F1E7-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"bulgaria",
+        "shortname":":bg:",
+        "category":"places",
+        "category_order":"127",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bf":{
+        "unicode":"1F1E7-1F1EB",
+        "unicode_alternates":[
+
+        ],
+        "name":"burkina faso",
+        "shortname":":bf:",
+        "category":"places",
+        "category_order":"128",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "bi":{
+        "unicode":"1F1E7-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"burundi",
+        "shortname":":bi:",
+        "category":"places",
+        "category_order":"129",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "kh":{
+        "unicode":"1F1F0-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"cambodia",
+        "shortname":":kh:",
+        "category":"places",
+        "category_order":"130",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cm":{
+        "unicode":"1F1E8-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"cameroon",
+        "shortname":":cm:",
+        "category":"places",
+        "category_order":"131",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ca":{
+        "unicode":"1F1E8-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"canada",
+        "shortname":":ca:",
+        "category":"places",
+        "category_order":"132",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cv":{
+        "unicode":"1F1E8-1F1FB",
+        "unicode_alternates":[
+
+        ],
+        "name":"cape verde",
+        "shortname":":cv:",
+        "category":"places",
+        "category_order":"133",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cf":{
+        "unicode":"1F1E8-1F1EB",
+        "unicode_alternates":[
+
+        ],
+        "name":"central african republic",
+        "shortname":":cf:",
+        "category":"places",
+        "category_order":"134",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "td":{
+        "unicode":"1F1F9-1F1E9",
+        "unicode_alternates":[
+
+        ],
+        "name":"chad",
+        "shortname":":td:",
+        "category":"places",
+        "category_order":"135",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "co":{
+        "unicode":"1F1E8-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"colombia",
+        "shortname":":co:",
+        "category":"places",
+        "category_order":"137",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "km":{
+        "unicode":"1F1F0-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"the comoros",
+        "shortname":":km:",
+        "category":"places",
+        "category_order":"138",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cr":{
+        "unicode":"1F1E8-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"costa rica",
+        "shortname":":cr:",
+        "category":"places",
+        "category_order":"139",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ci":{
+        "unicode":"1F1E8-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"cote d'ivoire",
+        "shortname":":ci:",
+        "category":"places",
+        "category_order":"140",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "hr":{
+        "unicode":"1F1ED-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"croatia",
+        "shortname":":hr:",
+        "category":"places",
+        "category_order":"141",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cu":{
+        "unicode":"1F1E8-1F1FA",
+        "unicode_alternates":[
+
+        ],
+        "name":"cuba",
+        "shortname":":cu:",
+        "category":"places",
+        "category_order":"142",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cy":{
+        "unicode":"1F1E8-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"cyprus",
+        "shortname":":cy:",
+        "category":"places",
+        "category_order":"143",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cz":{
+        "unicode":"1F1E8-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"the czech republic",
+        "shortname":":cz:",
+        "category":"places",
+        "category_order":"144",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "dk":{
+        "unicode":"1F1E9-1F1F0",
+        "unicode_alternates":[
+
+        ],
+        "name":"denmark",
+        "shortname":":dk:",
+        "category":"places",
+        "category_order":"146",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "dj":{
+        "unicode":"1F1E9-1F1EF",
+        "unicode_alternates":[
+
+        ],
+        "name":"djibouti",
+        "shortname":":dj:",
+        "category":"places",
+        "category_order":"147",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "dm":{
+        "unicode":"1F1E9-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"dominica",
+        "shortname":":dm:",
+        "category":"places",
+        "category_order":"148",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "do":{
+        "unicode":"1F1E9-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"the dominican republic",
+        "shortname":":do:",
+        "category":"places",
+        "category_order":"149",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tl":{
+        "unicode":"1F1F9-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"east timor",
+        "shortname":":tl:",
+        "category":"places",
+        "category_order":"150",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ec":{
+        "unicode":"1F1EA-1F1E8",
+        "unicode_alternates":[
+
+        ],
+        "name":"ecuador",
+        "shortname":":ec:",
+        "category":"places",
+        "category_order":"151",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "eg":{
+        "unicode":"1F1EA-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"egypt",
+        "shortname":":eg:",
+        "category":"places",
+        "category_order":"152",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sv":{
+        "unicode":"1F1F8-1F1FB",
+        "unicode_alternates":[
+
+        ],
+        "name":"el salvador",
+        "shortname":":sv:",
+        "category":"places",
+        "category_order":"153",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gq":{
+        "unicode":"1F1EC-1F1F6",
+        "unicode_alternates":[
+
+        ],
+        "name":"equatorial guinea",
+        "shortname":":gq:",
+        "category":"places",
+        "category_order":"154",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "er":{
+        "unicode":"1F1EA-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"eritrea",
+        "shortname":":er:",
+        "category":"places",
+        "category_order":"155",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ee":{
+        "unicode":"1F1EA-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"estonia",
+        "shortname":":ee:",
+        "category":"places",
+        "category_order":"156",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "et":{
+        "unicode":"1F1EA-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"ethiopia",
+        "shortname":":et:",
+        "category":"places",
+        "category_order":"157",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "fj":{
+        "unicode":"1F1EB-1F1EF",
+        "unicode_alternates":[
+
+        ],
+        "name":"fiji",
+        "shortname":":fj:",
+        "category":"places",
+        "category_order":"158",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "fi":{
+        "unicode":"1F1EB-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"finland",
+        "shortname":":fi:",
+        "category":"places",
+        "category_order":"159",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ga":{
+        "unicode":"1F1EC-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"gabon",
+        "shortname":":ga:",
+        "category":"places",
+        "category_order":"160",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gm":{
+        "unicode":"1F1EC-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"the gambia",
+        "shortname":":gm:",
+        "category":"places",
+        "category_order":"161",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ge":{
+        "unicode":"1F1EC-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"georgia",
+        "shortname":":ge:",
+        "category":"places",
+        "category_order":"162",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gh":{
+        "unicode":"1F1EC-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"ghana",
+        "shortname":":gh:",
+        "category":"places",
+        "category_order":"163",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gr":{
+        "unicode":"1F1EC-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"greece",
+        "shortname":":gr:",
+        "category":"places",
+        "category_order":"164",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gd":{
+        "unicode":"1F1EC-1F1E9",
+        "unicode_alternates":[
+
+        ],
+        "name":"grenada",
+        "shortname":":gd:",
+        "category":"places",
+        "category_order":"165",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gt":{
+        "unicode":"1F1EC-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"guatemala",
+        "shortname":":gt:",
+        "category":"places",
+        "category_order":"166",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gn":{
+        "unicode":"1F1EC-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"guinea",
+        "shortname":":gn:",
+        "category":"places",
+        "category_order":"167",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gw":{
+        "unicode":"1F1EC-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"guinea-bissau",
+        "shortname":":gw:",
+        "category":"places",
+        "category_order":"168",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "gy":{
+        "unicode":"1F1EC-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"guyana",
+        "shortname":":gy:",
+        "category":"places",
+        "category_order":"169",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ht":{
+        "unicode":"1F1ED-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"haiti",
+        "shortname":":ht:",
+        "category":"places",
+        "category_order":"170",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "hn":{
+        "unicode":"1F1ED-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"honduras",
+        "shortname":":hn:",
+        "category":"places",
+        "category_order":"171",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "hu":{
+        "unicode":"1F1ED-1F1FA",
+        "unicode_alternates":[
+
+        ],
+        "name":"hungary",
+        "shortname":":hu:",
+        "category":"places",
+        "category_order":"172",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "is":{
+        "unicode":"1F1EE-1F1F8",
+        "unicode_alternates":[
+
+        ],
+        "name":"iceland",
+        "shortname":":is:",
+        "category":"places",
+        "category_order":"173",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "in":{
+        "unicode":"1F1EE-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"india",
+        "shortname":":in:",
+        "category":"places",
+        "category_order":"174",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ir":{
+        "unicode":"1F1EE-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"iran",
+        "shortname":":ir:",
+        "category":"places",
+        "category_order":"176",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "iq":{
+        "unicode":"1F1EE-1F1F6",
+        "unicode_alternates":[
+
+        ],
+        "name":"iraq",
+        "shortname":":iq:",
+        "category":"places",
+        "category_order":"177",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ie":{
+        "unicode":"1F1EE-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"ireland",
+        "shortname":":ie:",
+        "category":"places",
+        "category_order":"178",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "il":{
+        "unicode":"1F1EE-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"israel",
+        "shortname":":il:",
+        "category":"places",
+        "category_order":"179",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "jm":{
+        "unicode":"1F1EF-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"jamaica",
+        "shortname":":jm:",
+        "category":"places",
+        "category_order":"180",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "jo":{
+        "unicode":"1F1EF-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"jordan",
+        "shortname":":jo:",
+        "category":"places",
+        "category_order":"181",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "kz":{
+        "unicode":"1F1F0-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"kazakhstan",
+        "shortname":":kz:",
+        "category":"places",
+        "category_order":"182",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ke":{
+        "unicode":"1F1F0-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"kenya",
+        "shortname":":ke:",
+        "category":"places",
+        "category_order":"183",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ki":{
+        "unicode":"1F1F0-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"kiribati",
+        "shortname":":ki:",
+        "category":"places",
+        "category_order":"184",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "xk":{
+        "unicode":"1F1FD-1F1F0",
+        "unicode_alternates":[
+
+        ],
+        "name":"kosovo",
+        "shortname":":xk:",
+        "category":"places",
+        "category_order":"185",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "kw":{
+        "unicode":"1F1F0-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"kuwait",
+        "shortname":":kw:",
+        "category":"places",
+        "category_order":"186",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "kg":{
+        "unicode":"1F1F0-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"kyrgyzstan",
+        "shortname":":kg:",
+        "category":"places",
+        "category_order":"187",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "la":{
+        "unicode":"1F1F1-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"laos",
+        "shortname":":la:",
+        "category":"places",
+        "category_order":"188",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lv":{
+        "unicode":"1F1F1-1F1FB",
+        "unicode_alternates":[
+
+        ],
+        "name":"latvia",
+        "shortname":":lv:",
+        "category":"places",
+        "category_order":"189",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lb":{
+        "unicode":"1F1F1-1F1E7",
+        "unicode_alternates":[
+
+        ],
+        "name":"lebanon",
+        "shortname":":lb:",
+        "category":"places",
+        "category_order":"190",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ls":{
+        "unicode":"1F1F1-1F1F8",
+        "unicode_alternates":[
+
+        ],
+        "name":"lesotho",
+        "shortname":":ls:",
+        "category":"places",
+        "category_order":"191",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lr":{
+        "unicode":"1F1F1-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"liberia",
+        "shortname":":lr:",
+        "category":"places",
+        "category_order":"192",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ly":{
+        "unicode":"1F1F1-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"libya",
+        "shortname":":ly:",
+        "category":"places",
+        "category_order":"193",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "li":{
+        "unicode":"1F1F1-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"liechtenstein",
+        "shortname":":li:",
+        "category":"places",
+        "category_order":"194",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lt":{
+        "unicode":"1F1F1-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"lithuania",
+        "shortname":":lt:",
+        "category":"places",
+        "category_order":"195",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lu":{
+        "unicode":"1F1F1-1F1FA",
+        "unicode_alternates":[
+
+        ],
+        "name":"luxembourg",
+        "shortname":":lu:",
+        "category":"places",
+        "category_order":"196",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mk":{
+        "unicode":"1F1F2-1F1F0",
+        "unicode_alternates":[
+
+        ],
+        "name":"macedonia",
+        "shortname":":mk:",
+        "category":"places",
+        "category_order":"197",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mg":{
+        "unicode":"1F1F2-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"madagascar",
+        "shortname":":mg:",
+        "category":"places",
+        "category_order":"198",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mw":{
+        "unicode":"1F1F2-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"malawi",
+        "shortname":":mw:",
+        "category":"places",
+        "category_order":"199",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "my":{
+        "unicode":"1F1F2-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"malaysia",
+        "shortname":":my:",
+        "category":"places",
+        "category_order":"200",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mv":{
+        "unicode":"1F1F2-1F1FB",
+        "unicode_alternates":[
+
+        ],
+        "name":"maldives",
+        "shortname":":mv:",
+        "category":"places",
+        "category_order":"201",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ml":{
+        "unicode":"1F1F2-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"mali",
+        "shortname":":ml:",
+        "category":"places",
+        "category_order":"202",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mt":{
+        "unicode":"1F1F2-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"malta",
+        "shortname":":mt:",
+        "category":"places",
+        "category_order":"203",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mh":{
+        "unicode":"1F1F2-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"the marshall islands",
+        "shortname":":mh:",
+        "category":"places",
+        "category_order":"204",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mr":{
+        "unicode":"1F1F2-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"mauritania",
+        "shortname":":mr:",
+        "category":"places",
+        "category_order":"205",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mu":{
+        "unicode":"1F1F2-1F1FA",
+        "unicode_alternates":[
+
+        ],
+        "name":"mauritius",
+        "shortname":":mu:",
+        "category":"places",
+        "category_order":"206",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mx":{
+        "unicode":"1F1F2-1F1FD",
+        "unicode_alternates":[
+
+        ],
+        "name":"mexico",
+        "shortname":":mx:",
+        "category":"places",
+        "category_order":"207",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "fm":{
+        "unicode":"1F1EB-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"micronesia",
+        "shortname":":fm:",
+        "category":"places",
+        "category_order":"208",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "md":{
+        "unicode":"1F1F2-1F1E9",
+        "unicode_alternates":[
+
+        ],
+        "name":"moldova",
+        "shortname":":md:",
+        "category":"places",
+        "category_order":"209",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mc":{
+        "unicode":"1F1F2-1F1E8",
+        "unicode_alternates":[
+
+        ],
+        "name":"monaco",
+        "shortname":":mc:",
+        "category":"places",
+        "category_order":"210",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mn":{
+        "unicode":"1F1F2-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"mongolia",
+        "shortname":":mn:",
+        "category":"places",
+        "category_order":"211",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "me":{
+        "unicode":"1F1F2-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"montenegro",
+        "shortname":":me:",
+        "category":"places",
+        "category_order":"212",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ma":{
+        "unicode":"1F1F2-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"morocco",
+        "shortname":":ma:",
+        "category":"places",
+        "category_order":"213",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mz":{
+        "unicode":"1F1F2-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"mozambique",
+        "shortname":":mz:",
+        "category":"places",
+        "category_order":"214",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "mm":{
+        "unicode":"1F1F2-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"myanmar",
+        "shortname":":mm:",
+        "category":"places",
+        "category_order":"215",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "na":{
+        "unicode":"1F1F3-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"namibia",
+        "shortname":":na:",
+        "category":"places",
+        "category_order":"216",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "nr":{
+        "unicode":"1F1F3-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"nauru",
+        "shortname":":nr:",
+        "category":"places",
+        "category_order":"217",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "np":{
+        "unicode":"1F1F3-1F1F5",
+        "unicode_alternates":[
+
+        ],
+        "name":"nepal",
+        "shortname":":np:",
+        "category":"places",
+        "category_order":"218",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "nl":{
+        "unicode":"1F1F3-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"the netherlands",
+        "shortname":":nl:",
+        "category":"places",
+        "category_order":"219",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "nz":{
+        "unicode":"1F1F3-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"new zealand",
+        "shortname":":nz:",
+        "category":"places",
+        "category_order":"220",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ni":{
+        "unicode":"1F1F3-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"nicaragua",
+        "shortname":":ni:",
+        "category":"places",
+        "category_order":"221",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ne":{
+        "unicode":"1F1F3-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"niger",
+        "shortname":":ne:",
+        "category":"places",
+        "category_order":"222",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "kp":{
+        "unicode":"1F1F0-1F1F5",
+        "unicode_alternates":[
+
+        ],
+        "name":"north korea",
+        "shortname":":kp:",
+        "category":"places",
+        "category_order":"224",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "no":{
+        "unicode":"1F1F3-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"norway",
+        "shortname":":no:",
+        "category":"places",
+        "category_order":"225",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "om":{
+        "unicode":"1F1F4-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"oman",
+        "shortname":":om:",
+        "category":"places",
+        "category_order":"226",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pk":{
+        "unicode":"1F1F5-1F1F0",
+        "unicode_alternates":[
+
+        ],
+        "name":"pakistan",
+        "shortname":":pk:",
+        "category":"places",
+        "category_order":"227",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pw":{
+        "unicode":"1F1F5-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"palau",
+        "shortname":":pw:",
+        "category":"places",
+        "category_order":"228",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pa":{
+        "unicode":"1F1F5-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"panama",
+        "shortname":":pa:",
+        "category":"places",
+        "category_order":"229",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pg":{
+        "unicode":"1F1F5-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"papua new guinea",
+        "shortname":":pg:",
+        "category":"places",
+        "category_order":"230",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "py":{
+        "unicode":"1F1F5-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"paraguay",
+        "shortname":":py:",
+        "category":"places",
+        "category_order":"231",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pe":{
+        "unicode":"1F1F5-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"peru",
+        "shortname":":pe:",
+        "category":"places",
+        "category_order":"232",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ph":{
+        "unicode":"1F1F5-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"the philippines",
+        "shortname":":ph:",
+        "category":"places",
+        "category_order":"233",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pl":{
+        "unicode":"1F1F5-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"poland",
+        "shortname":":pl:",
+        "category":"places",
+        "category_order":"234",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "pt":{
+        "unicode":"1F1F5-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"portugal",
+        "shortname":":pt:",
+        "category":"places",
+        "category_order":"235",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "qa":{
+        "unicode":"1F1F6-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"qatar",
+        "shortname":":qa:",
+        "category":"places",
+        "category_order":"236",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tw":{
+        "unicode":"1F1F9-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"the republic of china",
+        "shortname":":tw:",
+        "category":"places",
+        "category_order":"237",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "cg":{
+        "unicode":"1F1E8-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"the republic of the congo",
+        "shortname":":cg:",
+        "category":"places",
+        "category_order":"238",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ro":{
+        "unicode":"1F1F7-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"romania",
+        "shortname":":ro:",
+        "category":"places",
+        "category_order":"239",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "rw":{
+        "unicode":"1F1F7-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"rwanda",
+        "shortname":":rw:",
+        "category":"places",
+        "category_order":"240",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "kn":{
+        "unicode":"1F1F0-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"saint kitts and nevis",
+        "shortname":":kn:",
+        "category":"places",
+        "category_order":"241",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lc":{
+        "unicode":"1F1F1-1F1E8",
+        "unicode_alternates":[
+
+        ],
+        "name":"saint lucia",
+        "shortname":":lc:",
+        "category":"places",
+        "category_order":"242",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "vc":{
+        "unicode":"1F1FB-1F1E8",
+        "unicode_alternates":[
+
+        ],
+        "name":"saint vincent and the grenadines",
+        "shortname":":vc:",
+        "category":"places",
+        "category_order":"243",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ws":{
+        "unicode":"1F1FC-1F1F8",
+        "unicode_alternates":[
+
+        ],
+        "name":"samoa",
+        "shortname":":ws:",
+        "category":"places",
+        "category_order":"244",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sm":{
+        "unicode":"1F1F8-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"san marino",
+        "shortname":":sm:",
+        "category":"places",
+        "category_order":"245",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "st":{
+        "unicode":"1F1F8-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"sao tome and principe",
+        "shortname":":st:",
+        "category":"places",
+        "category_order":"246",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sn":{
+        "unicode":"1F1F8-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"senegal",
+        "shortname":":sn:",
+        "category":"places",
+        "category_order":"248",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "rs":{
+        "unicode":"1F1F7-1F1F8",
+        "unicode_alternates":[
+
+        ],
+        "name":"serbia",
+        "shortname":":rs:",
+        "category":"places",
+        "category_order":"249",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sc":{
+        "unicode":"1F1F8-1F1E8",
+        "unicode_alternates":[
+
+        ],
+        "name":"the seychelles",
+        "shortname":":sc:",
+        "category":"places",
+        "category_order":"250",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sl":{
+        "unicode":"1F1F8-1F1F1",
+        "unicode_alternates":[
+
+        ],
+        "name":"sierra leone",
+        "shortname":":sl:",
+        "category":"places",
+        "category_order":"251",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sg":{
+        "unicode":"1F1F8-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"singapore",
+        "shortname":":sg:",
+        "category":"places",
+        "category_order":"252",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sk":{
+        "unicode":"1F1F8-1F1F0",
+        "unicode_alternates":[
+
+        ],
+        "name":"slovakia",
+        "shortname":":sk:",
+        "category":"places",
+        "category_order":"253",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "si":{
+        "unicode":"1F1F8-1F1EE",
+        "unicode_alternates":[
+
+        ],
+        "name":"slovenia",
+        "shortname":":si:",
+        "category":"places",
+        "category_order":"254",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sb":{
+        "unicode":"1F1F8-1F1E7",
+        "unicode_alternates":[
+
+        ],
+        "name":"the solomon islands",
+        "shortname":":sb:",
+        "category":"places",
+        "category_order":"255",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "so":{
+        "unicode":"1F1F8-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"somalia",
+        "shortname":":so:",
+        "category":"places",
+        "category_order":"256",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "za":{
+        "unicode":"1F1FF-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"south africa",
+        "shortname":":za:",
+        "category":"places",
+        "category_order":"257",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "lk":{
+        "unicode":"1F1F1-1F1F0",
+        "unicode_alternates":[
+
+        ],
+        "name":"sri lanka",
+        "shortname":":lk:",
+        "category":"places",
+        "category_order":"258",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sd":{
+        "unicode":"1F1F8-1F1E9",
+        "unicode_alternates":[
+
+        ],
+        "name":"sudan",
+        "shortname":":sd:",
+        "category":"places",
+        "category_order":"259",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sr":{
+        "unicode":"1F1F8-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"suriname",
+        "shortname":":sr:",
+        "category":"places",
+        "category_order":"260",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sz":{
+        "unicode":"1F1F8-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"swaziland",
+        "shortname":":sz:",
+        "category":"places",
+        "category_order":"261",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "se":{
+        "unicode":"1F1F8-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"sweden",
+        "shortname":":se:",
+        "category":"places",
+        "category_order":"262",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ch":{
+        "unicode":"1F1E8-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"switzerland",
+        "shortname":":ch:",
+        "category":"places",
+        "category_order":"263",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "sy":{
+        "unicode":"1F1F8-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"syria",
+        "shortname":":sy:",
+        "category":"places",
+        "category_order":"264",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tj":{
+        "unicode":"1F1F9-1F1EF",
+        "unicode_alternates":[
+
+        ],
+        "name":"tajikistan",
+        "shortname":":tj:",
+        "category":"places",
+        "category_order":"265",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tz":{
+        "unicode":"1F1F9-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"tanzania",
+        "shortname":":tz:",
+        "category":"places",
+        "category_order":"266",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "th":{
+        "unicode":"1F1F9-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"thailand",
+        "shortname":":th:",
+        "category":"places",
+        "category_order":"267",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tg":{
+        "unicode":"1F1F9-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"togo",
+        "shortname":":tg:",
+        "category":"places",
+        "category_order":"268",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "to":{
+        "unicode":"1F1F9-1F1F4",
+        "unicode_alternates":[
+
+        ],
+        "name":"tonga",
+        "shortname":":to:",
+        "category":"places",
+        "category_order":"269",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tt":{
+        "unicode":"1F1F9-1F1F9",
+        "unicode_alternates":[
+
+        ],
+        "name":"trinidad and tobago",
+        "shortname":":tt:",
+        "category":"places",
+        "category_order":"270",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tn":{
+        "unicode":"1F1F9-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"tunisia",
+        "shortname":":tn:",
+        "category":"places",
+        "category_order":"271",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "tr":{
+        "unicode":"1F1F9-1F1F7",
+        "unicode_alternates":[
+
+        ],
+        "name":"turkey",
+        "shortname":":tr:",
+        "category":"places",
+        "category_order":"272",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ug":{
+        "unicode":"1F1FA-1F1EC",
+        "unicode_alternates":[
+
+        ],
+        "name":"uganda",
+        "shortname":":ug:",
+        "category":"places",
+        "category_order":"275",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ua":{
+        "unicode":"1F1FA-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"ukraine",
+        "shortname":":ua:",
+        "category":"places",
+        "category_order":"276",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ae":{
+        "unicode":"1F1E6-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"the united arab emirates",
+        "shortname":":ae:",
+        "category":"places",
+        "category_order":"277",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "uy":{
+        "unicode":"1F1FA-1F1FE",
+        "unicode_alternates":[
+
+        ],
+        "name":"uruguay",
+        "shortname":":uy:",
+        "category":"places",
+        "category_order":"278",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "uz":{
+        "unicode":"1F1FA-1F1FF",
+        "unicode_alternates":[
+
+        ],
+        "name":"uzbekistan",
+        "shortname":":uz:",
+        "category":"places",
+        "category_order":"279",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "vu":{
+        "unicode":"1F1FB-1F1FA",
+        "unicode_alternates":[
+
+        ],
+        "name":"vanuatu",
+        "shortname":":vu:",
+        "category":"places",
+        "category_order":"280",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "va":{
+        "unicode":"1F1FB-1F1E6",
+        "unicode_alternates":[
+
+        ],
+        "name":"the vatican city",
+        "shortname":":va:",
+        "category":"places",
+        "category_order":"281",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ve":{
+        "unicode":"1F1FB-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"venezuela",
+        "shortname":":ve:",
+        "category":"places",
+        "category_order":"282",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "vn":{
+        "unicode":"1F1FB-1F1F3",
+        "unicode_alternates":[
+
+        ],
+        "name":"vietnam",
+        "shortname":":vn:",
+        "category":"places",
+        "category_order":"283",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "eh":{
+        "unicode":"1F1EA-1F1ED",
+        "unicode_alternates":[
+
+        ],
+        "name":"western sahara",
+        "shortname":":eh:",
+        "category":"places",
+        "category_order":"284",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "ye":{
+        "unicode":"1F1FE-1F1EA",
+        "unicode_alternates":[
+
+        ],
+        "name":"yemen",
+        "shortname":":ye:",
+        "category":"places",
+        "category_order":"285",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "zm":{
+        "unicode":"1F1FF-1F1F2",
+        "unicode_alternates":[
+
+        ],
+        "name":"zambia",
+        "shortname":":zm:",
+        "category":"places",
+        "category_order":"286",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
+        ]
+    },
+    "zw":{
+        "unicode":"1F1FF-1F1FC",
+        "unicode_alternates":[
+
+        ],
+        "name":"zimbabwe",
+        "shortname":":zw:",
+        "category":"places",
+        "category_order":"287",
+        "aliases":[
+
+        ],
+        "aliases_ascii":[
+
+        ],
+        "keywords":[
+            "country",
+            "nation"
         ]
     }
 }
