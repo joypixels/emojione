@@ -24,8 +24,8 @@ When storing user inputted text in your database, say from a guestbook or throug
 We've teamed up with [JSDelivr](http://jsdelivr.com) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
-<script src="//cdn.jsdelivr.net/emojione/1.2.5/lib/js/emojione.min.js"></script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.2.5/assets/css/emojione.min.css"/>
+<script src="//cdn.jsdelivr.net/emojione/1.3.0/lib/js/emojione.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.3.0/assets/css/emojione.min.css"/>
 ```
 
 Quick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit).
