@@ -28,6 +28,8 @@ We've teamed up with [JSDelivr](http://jsdelivr.com) to provide a simple way to 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.3.0/assets/css/emojione.min.css"/>
 ```
 
+Alternatively, CDNjs is also available as a [CDN Host for Emoji One](https://cdnjs.com/libraries/emojione).
+
 Quick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit).
 
 #### NPM
