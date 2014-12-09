@@ -2503,7 +2503,7 @@ class Emojione {
         else {
             $shortname = $m[3];
             $unicode = self::$ascii_replace[$shortname];
-            return self::convert($unicode);
+            return $m[2].self::convert($unicode);
         }
     }
     static function asciiToImageCallback($m) {
