@@ -27,26 +27,26 @@
 
     NSAssert(!error, @"Unable to create regex: ", error);
 
-    [regex enumerateMatchesInString:unicodeString
-                            options:0
-                              range:NSMakeRange(0, [unicodeString length])
-                         usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+    NSArray * matches = [regex matchesInString:unicodeString
+                                       options:0
+                                         range:NSMakeRange(0, [unicodeString length])];
+    
+    for (NSTextCheckingResult * result in [matches reverseObjectEnumerator]) {
 
-                             if ([result numberOfRanges] < 2) {
-                                 return;
-                             }
-
-                             // Range 0: full shortname
-                             // Range 1: shortname without :
-
-                             NSString * shortname = [string substringWithRange:[result rangeAtIndex:1]];
-                             NSString * emoji = [emojiMapping objectForKey:shortname];
-                             if (emoji) {
-                                 [unicodeString replaceCharactersInRange:[result rangeAtIndex:0]
-                                                              withString:emoji];
-                             }
-
-                         }];
+        if ([result numberOfRanges] < 2) {
+            continue;
+        }
+        
+        // Range 0: full shortname
+        // Range 1: shortname without :
+        
+        NSString * shortname = [string substringWithRange:[result rangeAtIndex:1]];
+        NSString * emoji = [emojiMapping objectForKey:shortname];
+        if (emoji) {
+            [unicodeString replaceCharactersInRange:[result rangeAtIndex:0]
+                                         withString:emoji];
+        }
+    }
 
     return unicodeString;
 }
@@ -754,24 +754,24 @@
         @"koko" : @"\U0001F201",
         @"u7533" : @"\U0001F238",
         @"u6708" : @"\U0001F237",
-        @"hash" : @"\U00000023\U000020E3",
-        @"zero" : @"\U00000030\U000020E3",
-        @"one" : @"\U00000031\U000020E3",
-        @"two" : @"\U00000032\U000020E3",
-        @"three" : @"\U00000033\U000020E3",
-        @"four" : @"\U00000034\U000020E3",
-        @"five" : @"\U00000035\U000020E3",
+        @"hash" : @"#\U000020E3",
+        @"zero" : @"0\U000020E3",
+        @"one" : @"1\U000020E3",
+        @"two" : @"2\U000020E3",
+        @"three" : @"3\U000020E3",
+        @"four" : @"4\U000020E3",
+        @"five" : @"5\U000020E3",
         @"speaker" : @"\U0001F508",
-        @"six" : @"\U00000036\U000020E3",
+        @"six" : @"6\U000020E3",
         @"train" : @"\U0001F68B",
         @"loop" : @"\U000027BF",
-        @"seven" : @"\U00000037\U000020E3",
+        @"seven" : @"7\U000020E3",
         @"af" : @"\U0001F1E6\U0001F1EB",
         @"al" : @"\U0001F1E6\U0001F1F1",
-        @"eight" : @"\U00000038\U000020E3",
+        @"eight" : @"8\U000020E3",
         @"dz" : @"\U0001F1E9\U0001F1FF",
         @"ad" : @"\U0001F1E6\U0001F1E9",
-        @"nine" : @"\U00000039\U000020E3",
+        @"nine" : @"9\U000020E3",
         @"ao" : @"\U0001F1E6\U0001F1F4",
         @"ag" : @"\U0001F1E6\U0001F1EC",
         @"ar" : @"\U0001F1E6\U0001F1F7",
