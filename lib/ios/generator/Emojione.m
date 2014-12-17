@@ -27,26 +27,26 @@
 
     NSAssert(!error, @"Unable to create regex: ", error);
 
-    [regex enumerateMatchesInString:unicodeString
-                            options:0
-                              range:NSMakeRange(0, [unicodeString length])
-                         usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+    NSArray * matches = [regex matchesInString:unicodeString
+                                       options:0
+                                         range:NSMakeRange(0, [unicodeString length])];
+    
+    for (NSTextCheckingResult * result in [matches reverseObjectEnumerator]) {
 
-                             if ([result numberOfRanges] < 2) {
-                                 return;
-                             }
-
-                             // Range 0: full shortname
-                             // Range 1: shortname without :
-
-                             NSString * shortname = [string substringWithRange:[result rangeAtIndex:1]];
-                             NSString * emoji = [emojiMapping objectForKey:shortname];
-                             if (emoji) {
-                                 [unicodeString replaceCharactersInRange:[result rangeAtIndex:0]
-                                                              withString:emoji];
-                             }
-
-                         }];
+        if ([result numberOfRanges] < 2) {
+            continue;
+        }
+        
+        // Range 0: full shortname
+        // Range 1: shortname without :
+        
+        NSString * shortname = [string substringWithRange:[result rangeAtIndex:1]];
+        NSString * emoji = [emojiMapping objectForKey:shortname];
+        if (emoji) {
+            [unicodeString replaceCharactersInRange:[result rangeAtIndex:0]
+                                         withString:emoji];
+        }
+    }
 
     return unicodeString;
 }
