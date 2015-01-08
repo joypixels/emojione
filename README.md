@@ -48,6 +48,11 @@ Quick installs can also be done using NPM and Bower (for the Javascript toolkit)
  "require": { "emojione/emojione": "dev-master" }
 ```
 
+#### Meteor
+```
+meteor add qnub:emojione
+```
+
 
 ##Usage Examples
 
@@ -92,6 +97,20 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 **[::toImage\($str\)](http://git.emojione.com/demos/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
+
+###Meteor Conversion
+
+#### Template helpers
+
+```
+My emoji {{emojione ':beers:'}} text.
+```
+
+Or
+
+```
+{{#emojione}}My emoji :beers: text.{{/emojione}}
+```
 
 ###Extras
 
