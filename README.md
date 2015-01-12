@@ -45,7 +45,7 @@ Quick installs can also be done using NPM and Bower (for the Javascript toolkit)
 
 #### Composer
 ```
- "require": { "emojione/emojione": "dev-master" }
+$ composer require emojione/emojione
 ```
 
 #### Meteor
