@@ -4,6 +4,11 @@ module.exports = function(grunt) {
         jshint: {
             files: ['gruntfile.js', 'lib/js/emojione.js']
         },
+        jsonlint: {
+            files: {
+                src: ['emoji.json','emoji_strategy.json']
+            }
+        },
         uglify: {
             options: {
                 // the banner is inserted at the top of the output
@@ -22,6 +27,7 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-jsonlint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['uglify','jshint']);
+    grunt.registerTask('default', ['jshint','jsonlint','uglify']);
 };
