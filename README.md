@@ -21,7 +21,7 @@ When storing user inputted text in your database, say from a guestbook or throug
 
 ## Installation
 
-We've teamed up with [JSDelivr](http://jsdelivr.com) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
+We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
 <script src="//cdn.jsdelivr.net/emojione/1.3.0/lib/js/emojione.min.js"></script>
