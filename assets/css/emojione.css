@@ -8,9 +8,9 @@
 
   /* Inline alignment adjust the margins  */
   display: inline-block;
-  margin: -.4ex .15em .2ex;
+  margin: -.2ex .15em .2ex;
   line-height: normal;
-  vertical-align: sub;
+  vertical-align: middle;
 }
 
 img.emojione {
