@@ -26,6 +26,26 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * test shortname mid sentence
+     *
+     * @return void
+     */
+    public function testShortnameMidSentence()
+    {
+        $unicode   = 'The 🐌 is Emoji One\'s official mascot.';
+        $shortname = 'The :snail: is Emoji One\'s official mascot.';
+        $image     = 'The <img class="emojione" alt="🐌" src="//cdn.jsdelivr.net/emojione/assets/png/1F40C.png?v=1.2.4"/> is Emoji One\'s official mascot.';
+        $image_fix = 'The <img class="emojione" alt="&#x1f40c;" src="//cdn.jsdelivr.net/emojione/assets/png/1F40C.png?v=1.2.4"/> is Emoji One\'s official mascot.';
+
+        $this->assertEquals(Emojione::toShort($unicode), $shortname);
+        $this->assertEquals(Emojione::shortnameToImage($shortname), $image_fix);
+        $this->assertEquals(Emojione::shortnameToUnicode($shortname), $unicode);
+        $this->assertEquals(Emojione::unicodeToImage($unicode), $image);
+        $this->assertEquals(Emojione::toImage($unicode), $image);
+        $this->assertEquals(Emojione::toImage($shortname), $image_fix);
+    }
+
+    /**
      * test single ascii character
         *
      * @return void
