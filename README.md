@@ -1,4 +1,4 @@
-#![Emoji One Logo](http://git.emojione.com/assets/png/1F40C.png) Emoji One
+#![Emoji One Logo](http://git.emojione.com/assets/png/1F40C.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
 
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
