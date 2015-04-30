@@ -1,5 +1,9 @@
 <?php
 
+/*
+Tests based on lib/tests.md
+*/
+
 namespace Emojione\Test;
 
 use Emojione\Emojione;
@@ -186,7 +190,6 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
 
     /**
      * # characters inside of OBJECT tag
-The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.svg" type="image/svg+xml" standby="🐌">🐌</object> is Emoji One's official mascot.
      *
      * @return void
      */
@@ -205,7 +208,7 @@ The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.
 
     /**
      * test single ascii character
-        *
+     *
      * @return void
      */
     public function testSingleSmiley()
@@ -225,6 +228,117 @@ The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.
         $this->assertEquals(Emojione::toImage($shortname), $image);
         $this->assertEquals(Emojione::toImage($ascii), $image);
         $this->assertEquals(Emojione::shortnameToAscii($shortname), ':]');
+        $this->assertEquals(Emojione::unifyUnicode($ascii), $unicode_fix);
+        $this->assertEquals(Emojione::unifyUnicode($shortname), $unicode);
+
+        // back to default ASCII conversion
+        Emojione::$ascii = $default_ascii;
+    }
+
+    /**
+     * test single smiley with incorrect case (shouldn't convert)
+     *
+     * @return void
+     */
+    public function testSingleSmileyWithIncorrectCase()
+    {
+        // enable ASCII conversion
+        $default_ascii = Emojione::$ascii;
+        Emojione::$ascii = true;
+
+        $ascii = ':d';
+
+        $this->assertEquals(Emojione::shortnameToImage($ascii), $ascii);
+        $this->assertEquals(Emojione::toImage($ascii), $ascii);
+        $this->assertEquals(Emojione::unifyUnicode($ascii), $ascii);
+
+        // back to default ASCII conversion
+        Emojione::$ascii = $default_ascii;
+    }
+
+    /**
+     * test multiple smileys
+     *
+     * @return void
+     */
+    public function testMultipleSmilies()
+    {
+        // enable ASCII conversion
+        $default_ascii = Emojione::$ascii;
+        Emojione::$ascii = true;
+
+        $ascii     = ';) :p :*';
+        $ascii_fix = ';^) d: :^*';
+        $unicode   = '😉 😛 😘';
+        $unicode_fix = '&#x1f609; &#x1f61b; &#x1f618;';
+        $shortname = ':wink: :stuck_out_tongue: :kissing_heart:';
+        $image     = '<img class="emojione" alt="&#x1f609;" src="//cdn.jsdelivr.net/emojione/assets/png/1F609.png?v=1.2.4"/> <img class="emojione" alt="&#x1f61b;" src="//cdn.jsdelivr.net/emojione/assets/png/1F61B.png?v=1.2.4"/> <img class="emojione" alt="&#x1f618;" src="//cdn.jsdelivr.net/emojione/assets/png/1F618.png?v=1.2.4"/>';
+
+        $this->assertEquals(Emojione::shortnameToImage($shortname), $image);
+        $this->assertEquals(Emojione::shortnameToImage($ascii), $image);
+        $this->assertEquals(Emojione::toImage($shortname), $image);
+        $this->assertEquals(Emojione::toImage($ascii), $image);
+        $this->assertEquals(Emojione::shortnameToAscii($shortname), $ascii_fix);
+        $this->assertEquals(Emojione::unifyUnicode($ascii), $unicode_fix);
+        $this->assertEquals(Emojione::unifyUnicode($shortname), $unicode);
+
+        // back to default ASCII conversion
+        Emojione::$ascii = $default_ascii;
+    }
+
+    /**
+     * test smiley to start a sentence
+     *
+     * @return void
+     */
+    public function testSmileyAtSentenceStart()
+    {
+        // enable ASCII conversion
+        $default_ascii = Emojione::$ascii;
+        Emojione::$ascii = true;
+
+        $ascii     = ':\\ is our confused smiley.';
+        $ascii_fix = '=L is our confused smiley.';
+        $unicode   = '😕 is our confused smiley.';
+        $unicode_fix = '&#x1f615; is our confused smiley.';
+        $shortname = ':confused: is our confused smiley.';
+        $image     = '<img class="emojione" alt="&#x1f615;" src="//cdn.jsdelivr.net/emojione/assets/png/1F615.png?v=1.2.4"/> is our confused smiley.';
+
+        $this->assertEquals(Emojione::shortnameToImage($shortname), $image);
+        $this->assertEquals(Emojione::shortnameToImage($ascii), $image);
+        $this->assertEquals(Emojione::toImage($shortname), $image);
+        $this->assertEquals(Emojione::toImage($ascii), $image);
+        $this->assertEquals(Emojione::shortnameToAscii($shortname), $ascii_fix);
+        $this->assertEquals(Emojione::unifyUnicode($ascii), $unicode_fix);
+        $this->assertEquals(Emojione::unifyUnicode($shortname), $unicode);
+
+        // back to default ASCII conversion
+        Emojione::$ascii = $default_ascii;
+    }
+
+    /**
+     * test smiley to end a sentence
+     *
+     * @return void
+     */
+    public function testSmileyAtSentenceEnd()
+    {
+        // enable ASCII conversion
+        $default_ascii = Emojione::$ascii;
+        Emojione::$ascii = true;
+
+        $ascii     = 'Our smiley to represent joy is :\')';
+        $ascii_fix = 'Our smiley to represent joy is :\'-)';
+        $unicode   = 'Our smiley to represent joy is 😂';
+        $unicode_fix = 'Our smiley to represent joy is &#x1f602;';
+        $shortname = 'Our smiley to represent joy is :joy:';
+        $image     = 'Our smiley to represent joy is <img class="emojione" alt="&#x1f602;" src="//cdn.jsdelivr.net/emojione/assets/png/1F602.png?v=1.2.4"/>';
+
+        $this->assertEquals(Emojione::shortnameToImage($shortname), $image);
+        $this->assertEquals(Emojione::shortnameToImage($ascii), $image);
+        $this->assertEquals(Emojione::toImage($shortname), $image);
+        $this->assertEquals(Emojione::toImage($ascii), $image);
+        $this->assertEquals(Emojione::shortnameToAscii($shortname), $ascii_fix);
         $this->assertEquals(Emojione::unifyUnicode($ascii), $unicode_fix);
         $this->assertEquals(Emojione::unifyUnicode($shortname), $unicode);
 
