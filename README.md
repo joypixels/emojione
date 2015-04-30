@@ -1,4 +1,4 @@
-#![Emoji One Logo](http://git.emojione.com/assets/png/1F40C.png) Emoji One
+#![Emoji One Logo](http://git.emojione.com/assets/png/1F40C.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
 
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
@@ -21,7 +21,7 @@ When storing user inputted text in your database, say from a guestbook or throug
 
 ## Installation
 
-We've teamed up with [JSDelivr](http://jsdelivr.com) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
+We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
 <script src="//cdn.jsdelivr.net/emojione/1.4.0/lib/js/emojione.min.js"></script>
