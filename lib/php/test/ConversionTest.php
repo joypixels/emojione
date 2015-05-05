@@ -345,4 +345,34 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         // back to default ASCII conversion
         Emojione::$ascii = $default_ascii;
     }
+
+    /**
+     * test smiley to end a sentence with puncuation
+     *
+     * @return void
+     */
+    public function testSmileyAtSentenceEndWithPunctuation()
+    {
+        // enable ASCII conversion
+        $default_ascii = Emojione::$ascii;
+        Emojione::$ascii = true;
+        
+        $ascii       = 'The reverse is the joy smiley is the cry smiley :\'(.';
+        $ascii_fix   = 'The reverse is the joy smiley is the cry smiley ;-(.';
+        $unicode     = 'The reverse is the joy smiley is the cry smiley 😢.';
+        $unicode_fix = 'The reverse is the joy smiley is the cry smiley &#x1f622;.';
+        $shortname   = 'The reverse is the joy smiley is the cry smiley :cry:.';
+        $image       = 'The reverse is the joy smiley is the cry smiley <img class="emojione" alt="&#x1f622;" src="//cdn.jsdelivr.net/emojione/assets/png/1F622.png?v=1.2.4"/>.';
+        
+        $this->assertEquals(Emojione::shortnameToImage($shortname), $image);
+        $this->assertEquals(Emojione::shortnameToImage($ascii), $image);
+        $this->assertEquals(Emojione::toImage($shortname), $image);
+        $this->assertEquals(Emojione::toImage($ascii), $image);
+        $this->assertEquals(Emojione::shortnameToAscii($shortname), $ascii_fix);
+        $this->assertEquals(Emojione::unifyUnicode($ascii), $unicode_fix);
+        $this->assertEquals(Emojione::unifyUnicode($shortname), $unicode);
+        
+        // back to default ASCII conversion
+        Emojione::$ascii = $default_ascii;
+    }
 }
