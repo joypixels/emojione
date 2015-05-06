@@ -4,6 +4,9 @@ namespace Emojione\Test;
 
 use Emojione\Emojione;
 
+/**
+ * Tests all Emojis from emoji.json
+ */
 class EmojiTest extends \PHPUnit_Framework_TestCase
 {
     public function emojiProvider()
@@ -28,7 +31,7 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * test Emojione::toImage()
+     * test all Emojis and shortcodes
      *
      * @dataProvider emojiProvider
      *
@@ -40,11 +43,17 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
 
         $this->assertNotTrue($unicode === $shortname);
 
-        $convert_unicode = Emojione::convert($simple_unicode);
-
         $this->assertTrue(isset(Emojione::$shortcode_replace[$shortname]));
         $this->assertEquals(strtoupper(Emojione::$shortcode_replace[$shortname]), $simple_unicode);
         $this->assertTrue(isset(Emojione::$unicode_replace[$unicode]));
         $this->assertEquals(Emojione::$unicode_replace[$unicode], $shortname);
+
+        $convert_unicode = strtolower(Emojione::convert($simple_unicode));
+
+        $image_template = '<img class="emojione" alt="%1$s" src="//cdn.jsdelivr.net/emojione/assets/png/%2$s.png?v=1.2.4"/>';
+
+        $image = sprintf($image_template, $convert_unicode, $simple_unicode);
+
+        $this->assertEquals(Emojione::toImage($shortname), $image);
     }
 }
