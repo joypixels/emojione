@@ -4,84 +4,105 @@ namespace Emojione;
 
 class Emojione
 {
-    static $ascii = false; // convert ascii smileys?
-    static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
-    static $imageType = 'png';
-    static $cacheBustParam = '?v=1.2.4';
-    static $sprites = false;
-    static $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
-    static $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
-    static $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
-    static $unicode_replaceWith = false;
-    static $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
-    static $unicodeRegexp = '([#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..))';
-    static $shortcodeRegexp = ':([-+\\w]+):';
+    public static $ascii = false; // convert ascii smileys?
+    public static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
+    public static $imageType = 'png';
+    public static $cacheBustParam = '?v=1.2.4';
+    public static $sprites = false;
+    public static $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
+    public static $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
+    public static $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
+    public static $unicode_replaceWith = false;
+    public static $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
+    public static $unicodeRegexp = '([#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..))';
+    public static $shortcodeRegexp = ':([-+\\w]+):';
 
     protected static $ruleset = null;
 
-    private function __construct() {
-
-    }
+    private function __construct() {}
 
     // ##########################################
     // ######## core methods
     // ##########################################
-    static function toImage($string) {
+    public static function toImage($string)
+    {
         $string = self::unicodeToImage($string);
         $string = self::shortnameToImage($string);
         return $string;
     }
+
     // Uses toShort to transform all unicode into a standard shortname
     // then transforms the shortname into unicode
     // This is done for standardization when converting several unicode types
-    static function unifyUnicode($string) {
+    public static function unifyUnicode($string)
+    {
         $string = self::toShort($string);
         $string = self::shortnameToUnicode($string);
         return $string;
     }
+
     // will output unicode from shortname
     // useful for sending emojis back to mobile devices
-    static function shortnameToUnicode($string) {
+    public static function shortnameToUnicode($string)
+    {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'static::shortnameToUnicodeCallback', $string);
-        if(self::$ascii) {
+
+        if(self::$ascii)
+        {
             $ruleset = static::getRuleset();
             $asciiRegexp = $ruleset->getAsciiRegexp();
 
             $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'static::asciiToUnicodeCallback', $string);
         }
+
         return $string;
     }
+
     // Replace shortnames (:wink:) with Ascii equivalents ;^)
     // Useful for systems that dont support unicode nor images
-    static function shortnameToAscii($string) {
+    public static function shortnameToAscii($string)
+    {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'static::shortnameToAsciiCallback', $string);
+
         return $string;
     }
-    static function shortnameToImage($string) {
+
+    public static function shortnameToImage($string)
+    {
         $string = preg_replace_callback('/'.self::$ignoredRegexp.'|('.self::$shortcodeRegexp.')/Si', 'static::shortnameToImageCallback', $string);
-        if(self::$ascii) {
+
+        if(self::$ascii)
+        {
             $ruleset = static::getRuleset();
             $asciiRegexp = $ruleset->getAsciiRegexp();
 
             $string = preg_replace_callback('/'.self::$ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,\.]))/S', 'static::asciiToImageCallback', $string);
         }
+
         return $string;
     }
-    static function toShort($string) {
+
+    public static function toShort($string)
+    {
         return preg_replace_callback('/'.self::$ignoredRegexp.'|'.self::$unicodeRegexp.'/S', 'static::toShortCallback', $string);
     }
-    static function unicodeToImage($string) {
+
+    public static function unicodeToImage($string)
+    {
         return preg_replace_callback('/'.self::$ignoredRegexp.'|'.self::$unicodeRegexp.'/S', 'static::unicodeToImageCallback', $string);
     }
 
     // ##########################################
     // ######## preg_replace callbacks
     // ##########################################
-    static function shortnameToAsciiCallback($m) {
-        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+    public static function shortnameToAsciiCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $shortcode_replace = $ruleset->getShortcodeReplace();
             $ascii_replace = $ruleset->getAsciiReplace();
@@ -90,7 +111,8 @@ class Emojione
 
             $shortname = $m[0];
 
-            if(!isset($shortcode_replace[$shortname])) {
+            if(!isset($shortcode_replace[$shortname]))
+            {
                 return $m[0];
             }
 
@@ -99,11 +121,15 @@ class Emojione
             return isset($aflipped[$unicode]) ? $aflipped[$unicode] : $m[0];
         }
     }
-    static function shortnameToUnicodeCallback($m) {
-        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+
+    public static function shortnameToUnicodeCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $unicode_replace = $ruleset->getUnicodeReplace();
 
@@ -111,7 +137,8 @@ class Emojione
 
             $shortname = $m[1];
 
-            if(!isset($flipped[$shortname])) {
+            if(!isset($flipped[$shortname]))
+            {
                 return $m[0];
             }
 
@@ -120,17 +147,22 @@ class Emojione
             return $unicode;
         }
     }
-    static function shortnameToImageCallback($m) {
-        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+
+    public static function shortnameToImageCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $shortcode_replace = $ruleset->getShortcodeReplace();
 
             $shortname = $m[1];
 
-            if(!isset($shortcode_replace[$shortname])) {
+            if(!isset($shortcode_replace[$shortname]))
+            {
                 return $m[0];
             }
 
@@ -138,31 +170,46 @@ class Emojione
             $unicode = $shortcode_replace[$shortname];
             $filename = strtoupper($unicode);
 
-            if(self::$unicodeAlt) { $alt = self::convert($unicode); }
-            else { $alt = $shortname; }
+            if(self::$unicodeAlt)
+            {
+                $alt = self::convert($unicode);
+            }
+            else
+            {
+                $alt = $shortname;
+            }
 
-            if(self::$imageType == 'png') {
-                if(self::$sprites) {
+            if(self::$imageType == 'png')
+            {
+                if(self::$sprites)
+                {
                     return '<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
-                else {
+                else
+                {
                     return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png'.self::$cacheBustParam.'"/>';
                 }
             }
 
-            if(self::$sprites) {
+            if(self::$sprites)
+            {
                 return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
             }
-            else {
+            else
+            {
                 return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
             }
         }
     }
-    static function asciiToUnicodeCallback($m) {
-        if((!is_array($m)) || (!isset($m[3])) || (empty($m[3]))) {
+
+    public static function asciiToUnicodeCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[3])) || (empty($m[3])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $ascii_replace = $ruleset->getAsciiReplace();
 
@@ -171,11 +218,15 @@ class Emojione
             return $m[2].self::convert($unicode);
         }
     }
-    static function asciiToImageCallback($m) {
-        if((!is_array($m)) || (!isset($m[3])) || (empty($m[3]))) {
+
+    public static function asciiToImageCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[3])) || (empty($m[3])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $ascii_replace = $ruleset->getAsciiReplace();
 
@@ -183,38 +234,57 @@ class Emojione
             $unicode = $ascii_replace[$shortname];
 
             // unicode char or shortname for the alt tag? (unicode is better for copying and pasting the resulting text)
-            if(self::$unicodeAlt) { $alt = self::convert($unicode); }
-            else { $alt = htmlspecialchars($shortname); }
+            if(self::$unicodeAlt)
+            {
+                $alt = self::convert($unicode);
+            }
+            else
+            {
+                $alt = htmlspecialchars($shortname);
+            }
 
-            if(self::$imageType == 'png') {
-                if(self::$sprites) {
+            if(self::$imageType == 'png')
+            {
+                if(self::$sprites)
+                {
                     return $m[2].'<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
-                else {
+                else
+                {
                     return $m[2].'<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.strtoupper($unicode).'.png'.self::$cacheBustParam.'"/>';
                 }
             }
 
-            if(self::$sprites) {
+            if(self::$sprites)
+            {
                 return $m[2].'<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
             }
-            else {
+            else
+            {
                 return $m[2].'<object class="emojione" data="'.self::$imagePathSVG.strtoupper($unicode).'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
             }
         }
     }
-    static function toShortCallback($m) {
-        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+
+    public static function toShortCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $unicode_replace = $ruleset->getUnicodeReplace();
 
             $unicode = $m[1];
-            if(!isset($unicode_replace[$unicode])) {
+
+            if(!isset($unicode_replace[$unicode]))
+            {
                 $unicode = substr($m[1], 0, 4);
-                if(!isset($unicode_replace[$unicode])) {
+
+                if(!isset($unicode_replace[$unicode]))
+                {
                     return $m[0];
                 }
             }
@@ -222,20 +292,27 @@ class Emojione
             return $unicode_replace[$unicode];
         }
     }
-    static function unicodeToImageCallback($m) {
-        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1]))) {
+
+    public static function unicodeToImageCallback($m)
+    {
+        if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
+        {
             return $m[0];
         }
-        else {
+        else
+        {
             $ruleset = static::getRuleset();
             $shortcode_replace = $ruleset->getShortcodeReplace();
             $unicode_replace = $ruleset->getUnicodeReplace();
 
             $unicode = $m[1];
 
-            if(!isset($unicode_replace[$unicode])) {
+            if(!isset($unicode_replace[$unicode]))
+            {
                 $unicode = substr($m[1], 0, 4);
-                if(!isset($unicode_replace[$unicode])) {
+
+                if(!isset($unicode_replace[$unicode]))
+                {
                     return $m[0];
                 }
             }
@@ -243,22 +320,33 @@ class Emojione
             $shortname = $unicode_replace[$unicode];
             $filename = strtoupper($shortcode_replace[$shortname]);
 
-            if(self::$unicodeAlt) { $alt = $unicode; }
-            else { $alt = $shortname; }
+            if(self::$unicodeAlt)
+            {
+                $alt = $unicode;
+            }
+            else
+            {
+                $alt = $shortname;
+            }
 
-            if(self::$imageType == 'png') {
-                if(self::$sprites) {
+            if(self::$imageType == 'png')
+            {
+                if(self::$sprites)
+                {
                     return '<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
-                else {
+                else
+                {
                     return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png'.self::$cacheBustParam.'"/>';
                 }
             }
 
-            if(self::$sprites) {
+            if(self::$sprites)
+            {
                 return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
             }
-            else {
+            else
+            {
                 return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
             }
         }
@@ -267,18 +355,21 @@ class Emojione
     // ##########################################
     // ######## helper methods
     // ##########################################
-    static function convert($unicode) {
-        if(stristr($unicode,'-')) {
+    public static function convert($unicode)
+    {
+        if(stristr($unicode,'-'))
+        {
             $pairs = explode('-',$unicode);
             return '&#x'.implode(';&#x',$pairs).';';
         }
-        else {
+        else
+        {
             return '&#x'.$unicode.';';
         }
     }
 
     /**
-     * Get the Rulese
+     * Get the Ruleset
      *
      * @return RulesetInterface The Ruleset
      */
