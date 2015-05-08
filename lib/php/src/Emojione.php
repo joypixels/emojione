@@ -8,15 +8,20 @@ class Emojione
 
     /**
      * Magic caller
+     *
+     * @throws \BadMethodCallException If the method doesn't exists in client
      */
-    public static function __callStatic($name, $args)
+    public static function __callStatic($method, $args)
     {
         $client = static::getClient();
 
-        if ( method_exists($client, $name) )
+        if ( ! method_exists($client, $method) )
         {
-            return $client->$name($args);
+            throw new \BadMethodCallException('The method "' . $method . '" does not exist.');
         }
+
+        return call_user_func_array(array($client, $method), $args);
+
     }
 
     /**
@@ -28,7 +33,7 @@ class Emojione
     {
         if ( static::$client === null )
         {
-            static::$client = new Client;
+            static::setClient(new Client);
         }
 
         return static::$client;
@@ -38,7 +43,7 @@ class Emojione
      * Set the Client
      *
      * @param  ClientInterface $client The Client
-     * @return self
+     * @return void
      */
     public static function setClient(ClientInterface $client)
     {
