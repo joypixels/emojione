@@ -9,6 +9,8 @@ use Emojione\Emojione;
  */
 class EmojiTest extends \PHPUnit_Framework_TestCase
 {
+    private $cacheBustParam = '?v=1.2.4';
+
     public function emojiProvider()
     {
         $file = dirname (__FILE__).'/../../../emoji.json';
@@ -50,7 +52,7 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
 
         $convert_unicode = strtolower(Emojione::convert($simple_unicode));
 
-        $image_template = '<img class="emojione" alt="%1$s" src="//cdn.jsdelivr.net/emojione/assets/png/%2$s.png?v=1.2.4"/>';
+        $image_template = '<img class="emojione" alt="%1$s" src="//cdn.jsdelivr.net/emojione/assets/png/%2$s.png' . $this->cacheBustParam . '"/>';
 
         $image = sprintf($image_template, $convert_unicode, $simple_unicode);
 
