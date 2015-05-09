@@ -90,8 +90,8 @@ Our smiley to represent joy is :')
 # smiley to end a sentence with puncuation
 The reverse is the joy smiley is the cry smiley :'(.
 
-# smiley to end a sentence with preceeding puncuration
-This is the "flushed" smiley: :8.
+# smiley to end a sentence with preceeding punctuation
+This is the "flushed" smiley: :$.
 
 # smiley inside of an IMG tag  (shouldn't convert anything inside of the tag)
 Smile <img class="emojione" alt=":)" src="//cdn.jsdelivr.net/emojione/assets/png/1F604.png" /> because it's going to be a good day.
