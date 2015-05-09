@@ -41,14 +41,17 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
      */
     public function testEmojis($shortname, $simple_unicode)
     {
+        $shortcode_replace = Emojione::getClient()->getRuleset()->getShortcodeReplace();
+        $unicode_replace = Emojione::getClient()->getRuleset()->getUnicodeReplace();
+
         $unicode = Emojione::shortnameToUnicode($shortname);
 
         $this->assertNotTrue($unicode === $shortname);
 
-        $this->assertTrue(isset(Emojione::$shortcode_replace[$shortname]));
-        $this->assertEquals(strtoupper(Emojione::$shortcode_replace[$shortname]), $simple_unicode);
-        $this->assertTrue(isset(Emojione::$unicode_replace[$unicode]));
-        $this->assertEquals(Emojione::$unicode_replace[$unicode], $shortname);
+        $this->assertTrue(isset($shortcode_replace[$shortname]));
+        $this->assertEquals(strtoupper($shortcode_replace[$shortname]), $simple_unicode);
+        $this->assertTrue(isset($unicode_replace[$unicode]));
+        $this->assertEquals($unicode_replace[$unicode], $shortname);
 
         $convert_unicode = strtolower(Emojione::convert($simple_unicode));
 

@@ -383,7 +383,7 @@ class Client implements ClientInterface
      *
      * @return RulesetInterface The Ruleset
      */
-    protected function getRuleset()
+    public function getRuleset()
     {
         if ( $this->ruleset === null )
         {
