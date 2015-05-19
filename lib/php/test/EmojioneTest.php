@@ -10,16 +10,6 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
     private $cacheBustParam = '?v=1.2.4';
 
     /**
-     * prepare EmojioneTest
-     */
-    protected function setUp()
-    {
-        Emojione::$sprites = false;
-        Emojione::$imageType = 'png';
-        Emojione::$unicodeAlt = true;
-    }
-
-    /**
      * test Emojione::toImage()
      *
      * @return void

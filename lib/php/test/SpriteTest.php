@@ -3,6 +3,7 @@
 namespace Emojione\Test;
 
 use Emojione\Emojione;
+use Emojione\Client;
 
 class SpriteTest extends \PHPUnit_Framework_TestCase
 {
@@ -12,9 +13,19 @@ class SpriteTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        Emojione::$sprites = true;
-        Emojione::$imageType = 'png';
-        Emojione::$unicodeAlt = true;
+        $client = new Client;
+        $client->sprites = true;
+        $client->imageType = 'png';
+        $client->unicodeAlt = true;
+        Emojione::setClient($client);
+    }
+
+    /**
+     * prepare SpriteTest
+     */
+    protected function tearDown()
+    {
+        Emojione::setClient(new Client);
     }
 
     /**
