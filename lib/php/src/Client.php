@@ -343,7 +343,7 @@ class Client implements ClientInterface
             {
                 if($this->sprites)
                 {
-                    return '<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return '<span class="emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {
@@ -353,7 +353,7 @@ class Client implements ClientInterface
 
             if($this->sprites)
             {
-                return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.$this->imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
+                return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.$this->imagePathSVGSprites.'#emoji-'.$filename.'"></use></svg>';
             }
             else
             {
