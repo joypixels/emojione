@@ -2572,7 +2572,7 @@ class Emojione {
 
             if(self::$imageType == 'png') {
                 if(self::$sprites) {
-                    return '<span class="emojione-'.strtoupper($unicode).'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return '<span class="emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else {
                     return '<img class="emojione" alt="'.$alt.'" src="'.self::$imagePathPNG.$filename.'.png'.self::$cacheBustParam.'"/>';
@@ -2580,7 +2580,7 @@ class Emojione {
             }
 
             if(self::$sprites) {
-                return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.strtoupper($unicode).'"></use></svg>';
+                return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.self::$imagePathSVGSprites.'#emoji-'.$filename.'"></use></svg>';
             }
             else {
                 return '<object class="emojione" data="'.self::$imagePathSVG.$filename.'.svg'.self::$cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
