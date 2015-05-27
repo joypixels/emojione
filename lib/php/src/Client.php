@@ -34,6 +34,14 @@ class Client implements ClientInterface
     // ##########################################
     // ######## core methods
     // ##########################################
+
+    /**
+     * First pass changes unicode characters into emoji markup.
+     * Second pass changes any shortnames into emoji markup.
+     *
+     * @param   string  $string The input string.
+     * @return  string  String with appropriate html for rendering emoji.
+     */
     public function toImage($string)
     {
         $string = $this->unicodeToImage($string);
@@ -41,9 +49,14 @@ class Client implements ClientInterface
         return $string;
     }
 
-    // Uses toShort to transform all unicode into a standard shortname
-    // then transforms the shortname into unicode
-    // This is done for standardization when converting several unicode types
+    /**
+     * Uses toShort to transform all unicode into a standard shortname
+     * then transforms the shortname into unicode.
+     * This is done for standardization when converting several unicode types.
+     *
+     * @param   string  $string The input string.
+     * @return  string  String with standardized unicode.
+     */
     public function unifyUnicode($string)
     {
         $string = $this->toShort($string);
@@ -51,8 +64,14 @@ class Client implements ClientInterface
         return $string;
     }
 
-    // will output unicode from shortname
-    // useful for sending emojis back to mobile devices
+    /**
+     * This will output unicode from shortname input.
+     * If Client/$ascii is true it will also output unicode from ascii.
+     * This is useful for sending emojis back to mobile devices.
+     *
+     * @param   string  $string The input string.
+     * @return  string  String with unicode replacements.
+     */
     public function shortnameToUnicode($string)
     {
         $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToUnicodeCallback'), $string);
@@ -68,8 +87,14 @@ class Client implements ClientInterface
         return $string;
     }
 
-    // Replace shortnames (:wink:) with Ascii equivalents ;^)
-    // Useful for systems that dont support unicode nor images
+    /**
+     * This will replace shortnames with their ascii equivalent.
+     * ex. :wink: --> ;^)
+     * This is useful for systems that don't support unicode or images.
+     *
+     * @param   string  $string The input string.
+     * @return  string  String with ascii replacements.
+     */
     public function shortnameToAscii($string)
     {
         $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToAsciiCallback'), $string);
@@ -77,6 +102,12 @@ class Client implements ClientInterface
         return $string;
     }
 
+    /**
+     * This will output image markup (for png or svg) from shortname input.
+     *
+     * @param   string  $string The input string.
+     * @return  string  String with appropriate html for rendering emoji.
+     */
     public function shortnameToImage($string)
     {
         $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToImageCallback'), $string);
@@ -92,11 +123,23 @@ class Client implements ClientInterface
         return $string;
     }
 
+    /**
+     * This will return the shortname from unicode input.
+     *
+     * @param   string  $string The input string.
+     * @return  string  shortname
+     */
     public function toShort($string)
     {
         return preg_replace_callback('/'.$this->ignoredRegexp.'|'.$this->unicodeRegexp.'/S', array($this, 'toShortCallback'), $string);
     }
 
+    /**
+     * This will output image markup (for png or svg) from unicode input.
+     *
+     * @param   string  $string The input string.
+     * @return  string  String with appropriate html for rendering emoji.
+     */
     public function unicodeToImage($string)
     {
         return preg_replace_callback('/'.$this->ignoredRegexp.'|'.$this->unicodeRegexp.'/S', array($this, 'unicodeToImageCallback'), $string);
@@ -105,6 +148,11 @@ class Client implements ClientInterface
     // ##########################################
     // ######## preg_replace callbacks
     // ##########################################
+
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Ascii replacement result.
+     */
     public function shortnameToAsciiCallback($m)
     {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
@@ -132,6 +180,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Unicode replacement result.
+     */
     public function shortnameToUnicodeCallback($m)
     {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
@@ -158,6 +210,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Image HTML replacement result.
+     */
     public function shortnameToImageCallback($m)
     {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
@@ -212,6 +268,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Unicode replacement result.
+     */
     public function asciiToUnicodeCallback($m)
     {
         if((!is_array($m)) || (!isset($m[3])) || (empty($m[3])))
@@ -229,6 +289,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Image HTML replacement result.
+     */
     public function asciiToImageCallback($m)
     {
         if((!is_array($m)) || (!isset($m[3])) || (empty($m[3])))
@@ -276,6 +340,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  shortname result
+     */
     public function toShortCallback($m)
     {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
@@ -303,6 +371,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Image HTML replacement result.
+     */
     public function unicodeToImageCallback($m)
     {
         if((!is_array($m)) || (!isset($m[1])) || (empty($m[1])))
@@ -365,6 +437,13 @@ class Client implements ClientInterface
     // ##########################################
     // ######## helper methods
     // ##########################################
+
+    /**
+     * Converts from unicode to hexadecimal NCR.
+     *
+     * @param   string  $unicode unicode character/s
+     * @return  string  hexadecimal NCR
+     * */
     public function convert($unicode)
     {
         if(stristr($unicode,'-'))
