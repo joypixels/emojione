@@ -5,10 +5,6 @@ namespace Emojione;
 
 interface ClientInterface
 {
-    // ##########################################
-    // ######## core methods
-    // ##########################################
-
     /**
      * First pass changes unicode characters into emoji markup.
      * Second pass changes any shortnames into emoji markup.
@@ -71,51 +67,4 @@ interface ClientInterface
      * @return  string  String with appropriate html for rendering emoji.
      */
     public function unicodeToImage($string);
-
-
-    // ##########################################
-    // ######## preg_replace callbacks
-    // ##########################################
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  Ascii replacement result.
-     */
-    public function shortnameToAsciiCallback($m);
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  Unicode replacement result.
-     */
-    public function shortnameToUnicodeCallback($m);
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  Image HTML replacement result.
-     */
-    public function shortnameToImageCallback($m);
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  Unicode replacement result.
-     */
-    public function asciiToUnicodeCallback($m);
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  Image HTML replacement result.
-     */
-    public function asciiToImageCallback($m);
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  shortname result
-     */
-    public function toShortCallback($m);
-
-    /**
-     * @param   array   $m  Results of preg_replace_callback().
-     * @return  string  Image HTML replacement result.
-     */
-    public function unicodeToImageCallback($m);
 }
