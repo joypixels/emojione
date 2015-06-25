@@ -103,7 +103,7 @@ This demo shows you how to take input containing both native unicode emoji and s
 #### Template helpers
 
 ```
-My emoji {{emojione ':beers:'}} text.
+My emoji {{> emojione ':beers:'}} text.
 ```
 
 Or
