@@ -394,6 +394,12 @@
       background-size: 1em;
       background-position: left;
       background-repeat: no-repeat;
+      display: inline-block;
+    }
+
+    .version {
+        float: right;
+        padding-top: .6em;
     }
 
     /* UI Breadcrumbs */
@@ -475,4 +481,31 @@
     }
     tr:nth-child(odd) td{
       background: rgba(0,0,0,.03);
+    }
+
+    /* Version Notices */
+    .new-version {
+        margin: 0;
+        padding-left: 3.5em;
+        height: 4em;
+        background-image: url('//cdn.jsdelivr.net/emojione/assets/svg/2757.svg');
+        background-size: 2.5em;
+        background-position: left;
+        background-repeat: no-repeat;
+        font-size: 1.6em;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .deprecated {
+        margin: 0;
+        padding-left: 3.5em;
+        height: 4em;
+        background-image: url('//cdn.jsdelivr.net/emojione/assets/svg/26A0.svg');
+        background-size: 2.5em;
+        background-position: left;
+        background-repeat: no-repeat;
+        font-size: 1.6em;
+        line-height: 1.5em;
+        display: table-cell;
+        vertical-align: middle;"
     }

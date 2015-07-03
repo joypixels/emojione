@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
 
   <!-- jQuery: -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <!-- Demos Stylesheet: -->
   <link rel="stylesheet" href="styles/demos.css"/>
@@ -23,7 +23,7 @@
 <!-- Masthead -->
 <header class="masthead">
   <div class="container">
-    <h1 class="masthead-title">Emoji One Labs</h1>
+    <h1 class="masthead-title">Emoji One Labs</h1><span class="version">version <span>1.4.1</span></span>
   </div>
 </header>
 
@@ -45,6 +45,8 @@
     <p>
       The following demos are provided to show how to use Emoji One to its fullest potential. Feel free to dig in and take these demos apart to see how it all works.
     </p>
+
+    <p class="notice"><b>Note:</b> As of version 1.4.1 the PHP library syntax has changed. The previous syntax is still in place for backward compatibility but will be removed at a later date.</p>
 
     <h3 id="js">
       Javascript Conversion
@@ -80,25 +82,25 @@
     <h3 id="php">PHP Conversion <span class="notice">(recommended)</span></h3>
     <ul>
       <li>
-        <a href="phptoshort.php"><strong>::toShort($str)</strong></a> - <em>native unicode -> shortnames</em>
+        <a href="phptoshort.php"><strong>toShort($str)</strong></a> - <em>native unicode -> shortnames</em>
       <p>
           This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
       </p>
       </li>
         <li>
-            <a href="phpshortnametoimage.php"><strong>::shortnameToImage($str)</strong></a> - <em>shortname -> images</em>
+            <a href="phpshortnametoimage.php"><strong>shortnameToImage($str)</strong></a> - <em>shortname -> images</em>
             <p>
                 This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
             </p>
         </li>
         <li>
-            <a href="phpunicodetoimage.php"><strong>::unicodeToImage($str)</strong></a> - <em>native unicode -> images</em>
+            <a href="phpunicodetoimage.php"><strong>unicodeToImage($str)</strong></a> - <em>native unicode -> images</em>
             <p>
                 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
             </p>
         </li>
       <li>
-        <a href="phptoimage.php"><strong>::toImage($str)</strong></a> - <em>native unicode + shortnames -> images (mixed input)</em>
+        <a href="phptoimage.php"><strong>toImage($str)</strong></a> - <em>native unicode + shortnames -> images (mixed input)</em>
       <p>
           This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
       </p>
@@ -157,7 +159,7 @@
 
 <footer class="demo-footer">
   <div class="container">
-    <small>&copy; Copyright 2014 Ranks.com.</small>
+    <small>&copy; Copyright 2014-2015 Ranks.com.</small>
     <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-SA-4.0</a> License</small>
     <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
       href="http://opensource.org/licenses/MIT">MIT</a> License</small>

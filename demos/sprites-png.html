@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./../assets/sprites/emojione.sprites.css"/>
 
   <!-- jQuery: -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <!-- Syntax Highlighting -->
   <script type="text/javascript" src="scripts/shCore.js"></script>
@@ -65,7 +65,7 @@
   <!-- Masthead -->
   <header class="masthead">
     <div class="container">
-      <h1 class="masthead-title">Emoji One Labs</h1>
+      <h1 class="masthead-title">Emoji One Labs</h1><span class="version">version <span>1.4.1</span></span>
     </div>
   </header>
 
@@ -124,8 +124,9 @@
 emojione.sprites = true;</pre>
 
       <p>PHP Example</p>
-      <pre class="brush: php">Emojione::$imageType = 'png';
-Emojione::$sprites = true;</pre>
+      <pre class="brush: php">$client = new Client(new Ruleset());
+$client->imageType = 'png';
+$client->sprites = true;</pre>
 
       <p>If you are not using our conversion scripts, PNG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <span class="emojione-1F433">&#x1f433;</span></p>
       <pre class="brush: php">
@@ -140,7 +141,7 @@ Emojione::$sprites = true;</pre>
 
   <footer class="demo-footer">
     <div class="container">
-      <small>&copy; Copyright 2014 Ranks.com.</small>
+      <small>&copy; Copyright 2014-2015 Ranks.com.</small>
       <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-SA-4.0</a> License</small>
       <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
         href="http://opensource.org/licenses/MIT">MIT</a> License</small>
