@@ -82,19 +82,40 @@ This demo shows you how to take input containing both native unicode emoji and s
 
 ###PHP Conversion
 
-**[::toShort\($str\)](http://git.emojione.com/demos/phptoshort.php)** - _native unicode -> shortnames_
+#####As of version 1.4.1 this library syntax has changed.
+
+**[toShort\($str\)](http://git.emojione.com/demos/1.4.1/phptoshort.php)** - _native unicode -> shortnames_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
-**[::shortnameToImage\($str\)](http://git.emojione.com/demos/phpshortnametoimage.php)** - _shortname -> images_
+**[shortnameToImage\($str\)](http://git.emojione.com/demos/1.4.1/phpshortnametoimage.php)** - _shortname -> images_
 
 This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
 
-**[::unicodeToImage\($str\)](http://git.emojione.com/demos/phpunicodetoimage.php)** - _native unicode -> images_
+**[unicodeToImage\($str\)](http://git.emojione.com/demos/1.4.1/phpunicodetoimage.php)** - _native unicode -> images_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
 
-**[::toImage\($str\)](http://git.emojione.com/demos/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
+**[toImage\($str\)](http://git.emojione.com/demos/1.4.1/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
+
+This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
+
+
+#####Note: As of version 1.4.1 the following implementation has been deprecated. It's included in the library for backwards compatibility but will be removed at a later date.
+
+**[::toShort\($str\)](http://git.emojione.com/demos/1.4.0/phptoshort.php)** - _native unicode -> shortnames_
+
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
+
+**[::shortnameToImage\($str\)](http://git.emojione.com/demos/1.4.0/phpshortnametoimage.php)** - _shortname -> images_
+
+This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
+
+**[::unicodeToImage\($str\)](http://git.emojione.com/demos/1.4.0/phpunicodetoimage.php)** - _native unicode -> images_
+
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
+
+**[::toImage\($str\)](http://git.emojione.com/demos/1.4.0/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
