@@ -27,6 +27,14 @@ tests:
     - description: "mixed ascii, regular unicode and duplicate emoji"
       text: "👽 is not :alien: and 저 is not 👽 or 👽"
       expected: ":alien: is not :alien: and 저 is not :alien: or :alien:"
+    - description: "ascii art parsing doesn't work in toShort"
+      setup:
+        - ascii: true
+      text: ":)"
+      expected: ":)"
+    - description: "ascii art not parsed by default"
+      text: ":)"
+      expected: ":)"
     - description: "multiline emoji string"
       text: "💃\n💃"
       expected: ":dancer:\n:dancer:"
@@ -36,10 +44,37 @@ tests:
   toImage:
     - description: "single character shortname conversion"
       text: ":snail:"
-      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png\"/>"
+      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png?v=1.2.3\"/>"
     - description: "shortname shares a colon"
       text: ":invalid:snail:"
       expected: ":invalid:snail:"
     - description: "single unicode character conversion"
       text: "🐌"
-      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png\"/>"
+      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png?v=1.2.3\"/>"
+    - description: "ascii art disabled by default in toImage"
+      text: ":)"
+      expected: ":)"
+    - description: "ascii art parsing works in toImage"
+      setup:
+        - ascii: true
+      text: ":)"
+      expected: "<img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F604.png?v=1.2.3\"/>"
+    - description: "setting images to svg"
+      setup:
+        - imageType: "'svg'"
+        - ascii: true
+      text: ":)"
+      expected: "<object class=\"emojione\" data=\"//cdn.jsdelivr.net/emojione/assets/svg/1F604.svg?v=1.2.3\" type=\"image/svg+xml\" standby=\"😄\">😄</object>"
+  shortnameToImage:
+    - description: "basic conversion"
+      setup:
+        - imageType: "'png'"
+        - ascii: false
+      text: "Hello, :snowman:"
+      expected: "Hello, <img class=\"emojione\" alt=\"⛄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/26C4.png?v=1.2.3\"/>"
+  unicodeToImage:
+    - description: "basic conversion from unicode to image"
+      setup:
+        - imageType: "'png'"
+      text: "Hello, 😄!"
+      expected: "Hello, <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F604.png?v=1.2.3\"/>!"

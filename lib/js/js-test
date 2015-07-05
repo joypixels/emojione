@@ -58,6 +58,7 @@ sub generate_qunit_code {
         my $test_cases = $test_src->{$function_name};
         foreach my $test ( @$test_cases ) {
             $js .= generate_qunit_test(
+                        $test->{setup},
                         $function_name,
                         $test->{description},
                         $test->{text},
@@ -96,19 +97,25 @@ sub run_test_file {
 sub generate_qunit_module {
     my ($function_name) = @_;
 
-    return qq(
-            QUnit.module("$function_name");
-    );
+    return qq(\n        QUnit.module("$function_name");\n);
 }
 
 sub generate_qunit_test {
+    my $setup = shift;
     my ($function_name, $description, $text, $expected) = escape( @_ );
 
-    return qq(
-            QUnit.test( "$description", function( assert ) {
+    my $str = qq|\n            QUnit.test( "$description", function( assert ) {|;
+    if ($setup) {
+        foreach my $item (@$setup) {
+            my ($function, $value) = each (%$item);
+            $str .= qq|\n                emojione.$function = $value|;
+        }
+    }
+    $str .= qq|
                 assert.equal( emojione.$function_name("$text"), "$expected" );
-            });
-    );
+            });\n|;
+
+    return $str;
 }
 
 sub escape {
