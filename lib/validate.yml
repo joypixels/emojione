@@ -36,10 +36,10 @@ tests:
   toImage:
     - description: "single character shortname conversion"
       text: ":snail:"
-      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png\"/>"
+      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png?v=1.2.4\"/>"
     - description: "shortname shares a colon"
       text: ":invalid:snail:"
       expected: ":invalid:snail:"
     - description: "single unicode character conversion"
       text: "🐌"
-      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png\"/>"
+      expected: "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1F40C.png?v=1.2.4\"/>"
