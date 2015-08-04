@@ -1,0 +1,37 @@
+[class*=e1a-] {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin: -.2ex .05em 0 .1em;
+	line-height: normal;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1em 1em;
+}
+
+$size-map: (
+	"lg": 1.25,
+	"2x": 2,
+	"3x": 3,
+	"4x": 4,
+	"5x": 5
+);
+
+@each $name, $size in $size-map {
+	.e1a-#{$name} {
+		width: 1em * $size;
+		height: 1em * $size;
+		margin: -.2ex * $size .05em * $size 0 .1em * $size;
+		background-size: 1em * $size 1em * $size;
+	}
+}
+
+@import '_emojione-awesome.map';
+
+@each $code, $name in $emoji-map {
+
+	.e1a-#{$name} {
+		background-image: url("//cdn.jsdelivr.net/emojione/assets/svg/#{$code}.svg");
+	}
+}

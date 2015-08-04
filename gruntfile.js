@@ -30,7 +30,8 @@ module.exports = function(grunt) {
                     'sourcemap': 'none'
                 },
                 files: {
-                    'assets/sprites/emojione.sprites.css': 'assets/sprites/emojione.sprites.scss'
+                    'assets/sprites/emojione.sprites.css': 'assets/sprites/emojione.sprites.scss',
+                    'assets/css/emojione-awesome.css': 'lib/emojione-awesome/emojione-awesome.scss'
                 }
             }
         },
