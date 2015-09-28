@@ -1,0 +1,27 @@
+{
+  // Default options
+  'functions': true
+}
+
+[class*=emojione-] {
+  text-indent:-9999em;
+  image-rendering: optimizeQuality;
+  font-size: inherit;
+  height: 1.3em;
+  width: 1.3em;
+  top: -3px;
+  position: relative;
+  display: inline-block;
+  margin: 0 .15em;
+  line-height: normal;
+  vertical-align: middle;
+  background-image: url('emojione.sprites.png');
+  background-size: 3600%;
+  background-repeat: no-repeat;
+}
+
+{{#items}}
+.{{name}} {
+  background-position: (({{px.x}} * 100 / ({{px.total_width}} * (35/36))))#{"%"} (({{px.y}} * 100 / ({{px.total_height}} * (35/36))))#{"%"};
+}
+{{/items}}

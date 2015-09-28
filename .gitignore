@@ -6,3 +6,8 @@ node_modules/
 node_modules
 .sass-cache
 lib/js/tests.html
+*.pyc
+.tox/
+build/
+emojipy-*/
+emojipy.egg-info/
