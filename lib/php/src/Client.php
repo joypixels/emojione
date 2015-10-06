@@ -81,7 +81,7 @@ class Client implements ClientInterface
             $ruleset = $this->getRuleset();
             $asciiRegexp = $ruleset->getAsciiRegexp();
 
-            $string = preg_replace_callback('/'.$this->ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,\.]))/S', array($this, 'asciiToUnicodeCallback'), $string);
+            $string = preg_replace_callback('/'.$this->ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,.?]))/S', array($this, 'asciiToUnicodeCallback'), $string);
         }
 
         return $string;
@@ -117,7 +117,7 @@ class Client implements ClientInterface
             $ruleset = $this->getRuleset();
             $asciiRegexp = $ruleset->getAsciiRegexp();
 
-            $string = preg_replace_callback('/'.$this->ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,\.]))/S', array($this, 'asciiToImageCallback'), $string);
+            $string = preg_replace_callback('/'.$this->ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,.?]))/S', array($this, 'asciiToImageCallback'), $string);
         }
 
         return $string;
