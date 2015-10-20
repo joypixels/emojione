@@ -1415,7 +1415,7 @@ class Ruleset implements RulesetInterface
         ':three_networked_computers:' => '1f5a7',
         ':printer:' => '1f5a8',
         ':calculator:' => '1f5a9',
-        ':pocket calculator:' => '1f5a9',
+        ':pocket_calculator:' => '1f5a9',
         ':floppy_black:' => '1f5aa',
         ':black_hard_shell_floppy_disk:' => '1f5aa',
         ':floppy_white:' => '1f5ab',
