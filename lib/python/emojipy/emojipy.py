@@ -24,7 +24,7 @@ class Emoji(object):
     sprites = False
     image_png_path = 'https://cdn.jsdelivr.net/emojione/assets/png/'
     image_svg_path = 'https://cdn.jsdelivr.net/emojione/assets/svg/'
-    image_path_svg_sprites = './asserts/sprites/emojione.sprites.svg'
+    image_path_svg_sprites = './../../assets/sprites/emojione.sprites.svg'
     ignored_regexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>'
     unicode_regexp = "(" + '|'.join([x.decode('utf-8') for x in unicode_replace]) + ")"
     shortcode_regexp = ':([-+\\w]+):'
