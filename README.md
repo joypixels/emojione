@@ -50,7 +50,7 @@ $ composer require emojione/emojione
 
 #### Meteor
 ```
-meteor add qnub:emojione
+meteor add emojione:emojione
 ```
 
 
