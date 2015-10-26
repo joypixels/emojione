@@ -7,13 +7,13 @@ The web's first and only complete open source emoji set. It is 100% free and sup
 
 ## The Idea
 
-To standardize emoji on the web through the use of common :shortnames:. 
+To standardize emoji on the web through the use of common :shortnames:.
 
 When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
 
 
 #### _What are Shortnames?_
- 
+
  Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We've compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.
 
 
@@ -62,7 +62,7 @@ Below there are some examples of how you will actually use the libraries to conv
 ###Javascript Conversion
 
 
-**[.toShort\(str\)](http://git.emojione.com/demos/jstoshort.html)** - _native unicode -> shortnames_ 
+**[.toShort\(str\)](http://git.emojione.com/demos/jstoshort.html)** - _native unicode -> shortnames_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
@@ -145,7 +145,7 @@ With one quick step you can start converting common ASCII smileys to their corre
 
 **[Alternate Alt Tags](http://git.emojione.com/demos/alternate-alt-tags.html)**
 
-Change from the native unicode emoji in the resulting alt tags to their shortnames insteads.
+Change from the native unicode emoji in the resulting alt tags to their shortnames instead.
 
 **[Live Preview Box](http://git.emojione.com/demos/live-preview.html)**
 
@@ -161,19 +161,19 @@ Converts unicode input to shortnames once the user submits the form.
 
 **[Sprites (PNG)](http://git.emojione.com/demos/sprites-png.html)**
 
-With an additional CSS file you can use Emoji One as resizeable PNG sprites (up to 64x64).
+With an additional CSS file you can use Emoji One as resizable PNG sprites (up to 64x64).
 
 **[Sprites (SVG)](http://git.emojione.com/demos/sprites-svg.html)**
 
-This sprite method requires no extra CSS, and is infinitely resizeable.
+This sprite method requires no extra CSS, and is infinitely resizable.
 
 
 ## Other Considerations
 ###Character Encoding &mdash; UTF-8
 
-If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilies here, so you'll have to figure what works best for your own situation. 
+If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilities here, so you'll have to figure what works best for your own situation. 
 
-A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji. 
+A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji.
 
 To get you started, here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
 
