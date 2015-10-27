@@ -50,7 +50,7 @@ $ composer require emojione/emojione
 
 #### Meteor
 ```
-meteor add qnub:emojione
+meteor add emojione:emojione
 ```
 
 
@@ -123,13 +123,13 @@ This demo shows you how to take input containing both native unicode emoji and s
 
 #### Template helpers
 
-```
+```handlebars
 My emoji {{> emojione ':beers:'}} text.
 ```
 
 Or
 
-```
+```handlebars
 {{#emojione}}My emoji :beers: text.{{/emojione}}
 ```
 
