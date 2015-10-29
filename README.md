@@ -54,12 +54,12 @@ meteor add emojione:emojione
 ```
 
 
-##Usage Examples
+## Usage Examples
 
 Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.
 
 
-###Javascript Conversion
+### Javascript Conversion
 
 
 **[.toShort\(str\)](http://git.emojione.com/demos/jstoshort.html)** - _native unicode -> shortnames_
@@ -80,9 +80,9 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
 
-###PHP Conversion
+### PHP Conversion
 
-#####As of version 1.4.1 this library syntax has changed.
+##### As of version 1.4.1 this library syntax has changed.
 
 **[toShort\($str\)](http://git.emojione.com/demos/1.4.1/phptoshort.php)** - _native unicode -> shortnames_
 
@@ -101,7 +101,7 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
 
-#####Note: As of version 1.4.1 the following implementation has been deprecated. It's included in the library for backwards compatibility but will be removed at a later date.
+##### Note: As of version 1.4.1 the following implementation has been deprecated. It's included in the library for backwards compatibility but will be removed at a later date.
 
 **[::toShort\($str\)](http://git.emojione.com/demos/1.4.0/phptoshort.php)** - _native unicode -> shortnames_
 
@@ -119,7 +119,7 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
-###Meteor Conversion
+### Meteor Conversion
 
 #### Template helpers
 
@@ -133,7 +133,7 @@ Or
 {{#emojione}}My emoji :beers: text.{{/emojione}}
 ```
 
-###Extras
+### Extras
 
 **[Shortname Autocomplete](http://git.emojione.com/demos/autocomplete.html)**
 
@@ -169,7 +169,7 @@ This sprite method requires no extra CSS, and is infinitely resizable.
 
 
 ## Other Considerations
-###Character Encoding &mdash; UTF-8
+### Character Encoding &mdash; UTF-8
 
 If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilities here, so you'll have to figure what works best for your own situation. 
 
