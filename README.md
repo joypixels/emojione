@@ -7,13 +7,13 @@ The web's first and only complete open source emoji set. It is 100% free and sup
 
 ## The Idea
 
-To standardize emoji on the web through the use of common :shortnames:. 
+To standardize emoji on the web through the use of common :shortnames:.
 
 When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
 
 
 #### _What are Shortnames?_
- 
+
  Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We've compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.
 
 
@@ -54,15 +54,15 @@ meteor add emojione:emojione
 ```
 
 
-##Usage Examples
+## Usage Examples
 
 Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.
 
 
-###Javascript Conversion
+### Javascript Conversion
 
 
-**[.toShort\(str\)](http://git.emojione.com/demos/jstoshort.html)** - _native unicode -> shortnames_ 
+**[.toShort\(str\)](http://git.emojione.com/demos/jstoshort.html)** - _native unicode -> shortnames_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
@@ -80,9 +80,9 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
 
-###PHP Conversion
+### PHP Conversion
 
-#####As of version 1.4.1 this library syntax has changed.
+##### As of version 1.4.1 this library syntax has changed.
 
 **[toShort\($str\)](http://git.emojione.com/demos/1.4.1/phptoshort.php)** - _native unicode -> shortnames_
 
@@ -101,7 +101,7 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
 
-#####Note: As of version 1.4.1 the following implementation has been deprecated. It's included in the library for backwards compatibility but will be removed at a later date.
+##### Note: As of version 1.4.1 the following implementation has been deprecated. It's included in the library for backwards compatibility but will be removed at a later date.
 
 **[::toShort\($str\)](http://git.emojione.com/demos/1.4.0/phptoshort.php)** - _native unicode -> shortnames_
 
@@ -119,7 +119,7 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
-###Meteor Conversion
+### Meteor Conversion
 
 #### Template helpers
 
@@ -133,7 +133,7 @@ Or
 {{#emojione}}My emoji :beers: text.{{/emojione}}
 ```
 
-###Extras
+### Extras
 
 **[Shortname Autocomplete](http://git.emojione.com/demos/autocomplete.html)**
 
@@ -169,11 +169,11 @@ This sprite method requires no extra CSS, and is infinitely resizeable.
 
 
 ## Other Considerations
-###Character Encoding &mdash; UTF-8
+### Character Encoding &mdash; UTF-8
 
-If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilies here, so you'll have to figure what works best for your own situation. 
+If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilies here, so you'll have to figure what works best for your own situation.
 
-A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji. 
+A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji.
 
 To get you started, here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
 
