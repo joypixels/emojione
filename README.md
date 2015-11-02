@@ -134,35 +134,35 @@ Or
 
 ### Extras
 
-**[Shortname Autocomplete](http://git.emojione.com/demos/autocomplete.html)**
+**[Shortname Autocomplete](http://git.emojione.com/demos/1.5.2/autocomplete.html)**
 
 Easily add shortname autocomplete functionality to any text input on your page.
 
-**[ASCII Smiley Conversion](http://git.emojione.com/demos/ascii-smileys.html)**
+**[ASCII Smiley Conversion](http://git.emojione.com/demos/1.5.2/ascii-smileys.html)**
 
 With one quick step you can start converting common ASCII smileys to their corresponding images.
 
-**[Alternate Alt Tags](http://git.emojione.com/demos/alternate-alt-tags.html)**
+**[Alternate Alt Tags](http://git.emojione.com/demos/1.5.2/alternate-alt-tags.html)**
 
 Change from the native unicode emoji in the resulting alt tags to their shortnames instead.
 
-**[Live Preview Box](http://git.emojione.com/demos/live-preview.html)**
+**[Live Preview Box](http://git.emojione.com/demos/1.5.2/live-preview.html)**
 
 Display converted Emoji in a preview box as the user is typing.
 
-**[Conversion HTML Class](http://git.emojione.com/demos/class-convert.html)**
+**[Conversion HTML Class](http://git.emojione.com/demos/1.5.2/class-convert.html)**
 
 Stick a class of .emojione-convert on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.
 
-**[Convert on Form Submission](http://git.emojione.com/demos/convert-on-submit.html)**
+**[Convert on Form Submission](http://git.emojione.com/demos/1.5.2/convert-on-submit.html)**
 
 Converts unicode input to shortnames once the user submits the form.
 
-**[Sprites (PNG)](http://git.emojione.com/demos/sprites-png.html)**
+**[Sprites (PNG)](http://git.emojione.com/demos/1.5.2/sprites-png.html)**
 
 With an additional CSS file you can use Emoji One as resizable PNG sprites (up to 64x64).
 
-**[Sprites (SVG)](http://git.emojione.com/demos/sprites-svg.html)**
+**[Sprites (SVG)](http://git.emojione.com/demos/1.5.2/sprites-svg.html)**
 
 This sprite method requires no extra CSS, and is infinitely resizable.
 
