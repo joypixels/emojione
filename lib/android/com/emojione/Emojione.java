@@ -1066,7 +1066,7 @@ public abstract class Emojione
         _shortNameToUnicode.put("homes", new String(new int[] {0x1F3D8}, 0, 1));
         _shortNameToUnicode.put("house_with_garden", new String(new int[] {0x1F3E1}, 0, 1));
         _shortNameToUnicode.put("house_abandoned", new String(new int[] {0x1F3DA}, 0, 1));
-        _shortNameToUnicode.put("contruction_site", new String(new int[] {0x1F3D7}, 0, 1));
+        _shortNameToUnicode.put("construction_site", new String(new int[] {0x1F3D7}, 0, 1));
         _shortNameToUnicode.put("office", new String(new int[] {0x1F3E2}, 0, 1));
         _shortNameToUnicode.put("department_store", new String(new int[] {0x1F3EC}, 0, 1));
         _shortNameToUnicode.put("factory", new String(new int[] {0x1F3ED}, 0, 1));

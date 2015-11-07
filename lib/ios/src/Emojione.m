@@ -1085,7 +1085,7 @@
         @"homes" : @"\U0001F3D8",
         @"house_with_garden" : @"\U0001F3E1",
         @"house_abandoned" : @"\U0001F3DA",
-        @"contruction_site" : @"\U0001F3D7",
+        @"construction_site" : @"\U0001F3D7",
         @"office" : @"\U0001F3E2",
         @"department_store" : @"\U0001F3EC",
         @"factory" : @"\U0001F3ED",
