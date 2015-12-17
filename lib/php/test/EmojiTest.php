@@ -49,9 +49,9 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
         $this->assertNotTrue($unicode === $shortname);
 
         $this->assertTrue(isset($shortcode_replace[$shortname]));
-        $this->assertEquals(strtoupper($shortcode_replace[$shortname]), $simple_unicode);
-        $this->assertTrue(isset($unicode_replace[$unicode]));
-        $this->assertEquals($unicode_replace[$unicode], $shortname);
+        $this->assertEquals($shortcode_replace[$shortname], $simple_unicode);
+        $this->assertTrue(in_array($unicode, $unicode_replace));
+        $this->assertEquals($unicode_replace[$shortname], $unicode);
 
         $convert_unicode = strtolower(Emojione::convert($simple_unicode));
 
