@@ -1,4 +1,4 @@
-#![Emoji One Logo](http://git.emojione.com/assets/png/1F40C.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
+#![Emoji One Logo](http://git.emojione.com/assets/logo.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
 
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
@@ -24,8 +24,8 @@ When storing user inputted text in your database, say from a guestbook or throug
 We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
-<script src="//cdn.jsdelivr.net/emojione/1.5.2/lib/js/emojione.min.js"></script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/1.5.2/assets/css/emojione.min.css"/>
+<script src="//cdn.jsdelivr.net/emojione/2.0.0/lib/js/emojione.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.0.0/assets/css/emojione.min.css"/>
 ```
 
 Alternatively, CDNjs is also available as a [CDN Host for Emoji One](https://cdnjs.com/libraries/emojione).
@@ -62,19 +62,19 @@ Below there are some examples of how you will actually use the libraries to conv
 ### Javascript Conversion
 
 
-**[.toShort\(str\)](http://git.emojione.com/demos/1.5.2/jstoshort.html)** - _native unicode -> shortnames_
+**[.toShort\(str\)](http://git.emojione.com/demos/2.0.0/jstoshort.html)** - _native unicode -> shortnames_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
-**[.shortnameToImage\(str\)](http://git.emojione.com/demos/1.5.2/jsshortnametoimage.html)** - _shortname -> images_
+**[.shortnameToImage\(str\)](http://git.emojione.com/demos/2.0.0/jsshortnametoimage.html)** - _shortname -> images_
 
 This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
 
-**[.unicodeToImage\(str\)](http://git.emojione.com/demos/1.5.2/jsunicodetoimage.html)** - _native unicode -> images_
+**[.unicodeToImage\(str\)](http://git.emojione.com/demos/2.0.0/jsunicodetoimage.html)** - _native unicode -> images_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
 
-**[.toImage\(str\)](http://git.emojione.com/demos/1.5.2/jstoimage.html)** - _native unicode + shortnames -> images (mixed input)_
+**[.toImage\(str\)](http://git.emojione.com/demos/2.0.0/jstoimage.html)** - _native unicode + shortnames -> images (mixed input)_
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
@@ -83,19 +83,19 @@ This demo shows you how to take input containing both native unicode emoji and s
 
 ##### As of version 1.4.1 this library syntax has changed.
 
-**[toShort\($str\)](http://git.emojione.com/demos/1.5.2/phptoshort.php)** - _native unicode -> shortnames_
+**[toShort\($str\)](http://git.emojione.com/demos/2.0.0/phptoshort.php)** - _native unicode -> shortnames_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)
 
-**[shortnameToImage\($str\)](http://git.emojione.com/demos/1.5.2/phpshortnametoimage.php)** - _shortname -> images_
+**[shortnameToImage\($str\)](http://git.emojione.com/demos/2.0.0/phpshortnametoimage.php)** - _shortname -> images_
 
 This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
 
-**[unicodeToImage\($str\)](http://git.emojione.com/demos/1.5.2/phpunicodetoimage.php)** - _native unicode -> images_
+**[unicodeToImage\($str\)](http://git.emojione.com/demos/2.0.0/phpunicodetoimage.php)** - _native unicode -> images_
 
 This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
 
-**[toImage\($str\)](http://git.emojione.com/demos/1.5.2/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
+**[toImage\($str\)](http://git.emojione.com/demos/2.0.0/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
 
@@ -134,35 +134,35 @@ Or
 
 ### Extras
 
-**[Shortname Autocomplete](http://git.emojione.com/demos/1.5.2/autocomplete.html)**
+**[Shortname Autocomplete](http://git.emojione.com/demos/2.0.0/autocomplete.html)**
 
 Easily add shortname autocomplete functionality to any text input on your page.
 
-**[ASCII Smiley Conversion](http://git.emojione.com/demos/1.5.2/ascii-smileys.html)**
+**[ASCII Smiley Conversion](http://git.emojione.com/demos/2.0.0/ascii-smileys.html)**
 
 With one quick step you can start converting common ASCII smileys to their corresponding images.
 
-**[Alternate Alt Tags](http://git.emojione.com/demos/1.5.2/alternate-alt-tags.html)**
+**[Alternate Alt Tags](http://git.emojione.com/demos/2.0.0/alternate-alt-tags.html)**
 
 Change from the native unicode emoji in the resulting alt tags to their shortnames instead.
 
-**[Live Preview Box](http://git.emojione.com/demos/1.5.2/live-preview.html)**
+**[Live Preview Box](http://git.emojione.com/demos/2.0.0/live-preview.html)**
 
 Display converted Emoji in a preview box as the user is typing.
 
-**[Conversion HTML Class](http://git.emojione.com/demos/1.5.2/class-convert.html)**
+**[Conversion HTML Class](http://git.emojione.com/demos/2.0.0/class-convert.html)**
 
 Stick a class of .emojione-convert on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.
 
-**[Convert on Form Submission](http://git.emojione.com/demos/1.5.2/convert-on-submit.html)**
+**[Convert on Form Submission](http://git.emojione.com/demos/2.0.0/convert-on-submit.html)**
 
 Converts unicode input to shortnames once the user submits the form.
 
-**[Sprites (PNG)](http://git.emojione.com/demos/1.5.2/sprites-png.html)**
+**[Sprites (PNG)](http://git.emojione.com/demos/2.0.0/sprites-png.html)**
 
 With an additional CSS file you can use Emoji One as resizable PNG sprites (up to 64x64).
 
-**[Sprites (SVG)](http://git.emojione.com/demos/1.5.2/sprites-svg.html)**
+**[Sprites (SVG)](http://git.emojione.com/demos/2.0.0/sprites-svg.html)**
 
 This sprite method requires no extra CSS, and is infinitely resizable.
 
@@ -212,9 +212,14 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
 ### Emoji One Artwork
 
 *  Applies to all PNG and SVG files as well as any adaptations made.
-*  License: Creative Commons Attribution-ShareAlike 4.0 International
-*  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
-*  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
+*  The following applies to artwork included in Emoji One GitHub libraries versions < 2.0.0.
+  *  License: Creative Commons Attribution-ShareAlike 4.0 International
+  *  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
+  *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
+*  The following applies to artwork included in Emoji One GitHub libraries versions >= 2.0.0.
+  *  License: Creative Commons Attribution 4.0 International
+  *  Human Readable License: http://creativecommons.org/licenses/by/4.0/
+  *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
 
 
 ### Emoji One Non-Artwork
