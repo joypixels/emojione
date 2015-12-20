@@ -7,7 +7,8 @@ There's no better way to port our emoji into your device than through a native f
   a. Known Issue:  https://github.com/Ranks/emojione/issues/166
 
 ###Apple Font
-  a. Coming Soon, tested files needed.
+  a. Compatible with Mac OSX (located in System/Library/Fonts, requires manual file switching)
+  b. Compatible with iOS (Requires jailbreak, download EmojiOne from Cydia and apply with BytaFont3)
   
 ###Linux Fonts
   a. Coming Soon, tested files needed.
