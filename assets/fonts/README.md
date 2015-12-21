@@ -1,0 +1,40 @@
+##Emoji One Fonts
+
+There's no better way to port our emoji into your device than through a native font.  We don't have the resources ourselves to construct fonts, so we'll depend on helpful contributions from the open source community.
+
+###Google Font - emojione-android.ttf
+https://github.com/Ranks/emojione/raw/master/assets/font/emojione-android.ttf
+
+  * Compatible with Android devices.
+  * Issue Resolved:  https://github.com/Ranks/emojione/issues/166
+  * Updated Dec 21, 2015
+
+###Apple Font
+https://github.com/Ranks/emojione/raw/master/assets/font/emojione-apple.ttf
+
+  * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
+  * Rename font to Apple Color Emoji.ttf for Mac OSX.
+  * Rename font to AppleColorEmoji@2x.ttf for iOS, jailbreak required.
+  * Known Issue: Levitating Man emoji does not display properly.
+  * Brand New as of Dec 21, 2015
+  
+Mac OS Setup:
+Using the latest OS (El Capitan), I was able to load this emoji file in less than a minute.  The original emoji ttf is located in system/library/fonts, do not touch this.  You can safely upload the renamed file (from emojione-apple.ttf, to Apple Color Emoji.ttf) to the /library/fonts folder.  That file will override the default.  This was my experience, but yours may vary.  If someone could create a video and/or web-site guide, we'd gladly link to it.
+
+###Linux Fonts
+  * Coming Soon, tested files needed.
+
+---
+  
+###Contributions
+  * If you have a font to add, please submit a pull request.  
+  * Please thoroughly test the files the best you can.  
+  * Let us know how you'd like to be acknowledged.  
+
+###Warranty & Disclaimer
+  * These files are very raw and not fully tested.  
+  * We provide no guarantees that the font will function on your device.
+  
+###Acknowledgements
+  * Google Font: Thanks to Miguel Sousa from Adobe Systems.
+  * Apple Font: Thanks to Philip (@pw5a29) and Cody (@vXBaKeRXv).
