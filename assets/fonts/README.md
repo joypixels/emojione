@@ -5,9 +5,14 @@ There's no better way to port our emoji into your device than through a native f
 ###Google Font - emojione-android.ttf
 https://github.com/Ranks/emojione/raw/master/assets/font/emojione-android.ttf
 
-  * Compatible with Android devices.
+  * Compatible with rooted Android devices.
   * Issue Resolved:  https://github.com/Ranks/emojione/issues/166
   * Updated Dec 21, 2015
+
+Android Setup Help:
+* We recommend Emoji Switcher (now free for Emoji One): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
+* Reddit Thread: https://www.reddit.com/r/Android/comments/3xezb9/emojione_on_android/
+* Must have a rooted Android phone.
 
 ###Apple Font
 https://github.com/Ranks/emojione/raw/master/assets/font/emojione-apple.ttf
@@ -18,8 +23,11 @@ https://github.com/Ranks/emojione/raw/master/assets/font/emojione-apple.ttf
   * Known Issue: Levitating Man emoji does not display properly.
   * Brand New as of Dec 21, 2015
   
-Mac OS Setup:
+Mac OS Instructions:
 Using the latest OS (El Capitan), I was able to load this emoji file in less than a minute.  The original emoji ttf is located in system/library/fonts, do not touch this.  You can safely upload the renamed file (from emojione-apple.ttf, to Apple Color Emoji.ttf) to the /library/fonts folder.  That file will override the default.  This was my experience, but yours may vary.  If someone could create a video and/or web-site guide, we'd gladly link to it.
+
+iOS Instructions:
+Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a software application for iOS that enables a user to find and install software packages on jailbroken iOS devices (iPhone, iPod, iPad).
 
 ###Linux Fonts
   * Coming Soon, tested files needed.
