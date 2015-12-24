@@ -3,7 +3,7 @@
 There's no better way to port our emoji into your device than through a native font.  We don't have the resources ourselves to construct fonts, so we'll depend on helpful contributions from the open source community.
 
 ###Google Font - emojione-android.ttf
-https://github.com/Ranks/emojione/raw/master/assets/font/emojione-android.ttf
+https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-android.ttf
 
   * Compatible with rooted Android devices.
   * Issue Resolved:  https://github.com/Ranks/emojione/issues/166
@@ -15,7 +15,7 @@ Android Setup Help:
 * Must have a rooted Android phone.
 
 ###Apple Font
-https://github.com/Ranks/emojione/raw/master/assets/font/emojione-apple.ttf
+https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-apple.ttf
 
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
