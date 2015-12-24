@@ -20,7 +20,8 @@ https://github.com/Ranks/emojione/raw/master/assets/font/emojione-apple.ttf
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
   * Rename font to AppleColorEmoji@2x.ttf for iOS, jailbreak required.
-  * Known Issue: Levitating Man emoji does not display properly.
+  * Known Issue: Spy emoji does not display properly.
+  * Known Issue: On Mac OSX, emoji may display significantly smaller than normal (system wide).
   * Brand New as of Dec 21, 2015
   
 Mac OS Instructions:
