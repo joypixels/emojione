@@ -1,7 +1,6 @@
 language: php
 
 php:
-- 5.3
 - 5.4
 - 5.5
 - 5.6
@@ -9,6 +8,9 @@ php:
 before_script:
 - travis_retry composer self-update
 - travis_retry composer install --no-interaction --prefer-source
+- npm install grunt-cli
+- npm install grunt-contrib-qunit
 
 script:
 - vendor/bin/phpunit -c lib/php/phpunit.xml.dist
+- npm test
