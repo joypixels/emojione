@@ -37,5 +37,8 @@
     "grunt-jsonlint": "^1.0.4",
     "grunt-spritesmith": "^4.6.0",
     "grunt-svgstore": "^0.5.0"
+  },
+  "scripts": {
+    "test": "grunt travis"
   }
 }
