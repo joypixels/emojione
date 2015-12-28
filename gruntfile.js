@@ -83,6 +83,10 @@ module.exports = function(grunt) {
         watch: {
             files: ['<%= jshint.files %>'],
             tasks: ['jshint']
+        },
+        // run QUnit tests
+        qunit: {
+            all: ['lib/js/tests/tests.html']
         }
 
     });
@@ -95,5 +99,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-imageoptim');
+    grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.registerTask('default', ['jshint','jsonlint', 'sprite:pngsprites', 'sass', 'svgstore', 'uglify', 'cssmin', 'imageoptim']);
+    grunt.registerTask('travis', ['qunit']);
 };
