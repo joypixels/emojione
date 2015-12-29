@@ -20,14 +20,8 @@ https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-apple.ttf
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
   * Rename font to AppleColorEmoji@2x.ttf for iOS, jailbreak required.
-<<<<<<< HEAD
-  * Known Issue: Emoji displays smaller than normal at lower font sizes.
-  * Updated Dec 29, 2015
-=======
-  * Known Issue: Spy emoji does not display properly.
   * Known Issue: On Mac OSX, emoji may display significantly smaller than normal (system wide).
-  * Brand New as of Dec 21, 2015
->>>>>>> origin/master
+  * Updated Dec 29, 2015
   
 Mac OS Instructions:
 Using the latest OS (El Capitan), I was able to load this emoji file in less than a minute.  The original emoji ttf is located in system/library/fonts, do not touch this.  You can safely upload the renamed file (from emojione-apple.ttf, to Apple Color Emoji.ttf) to the /library/fonts folder.  That file will override the default.  This was my experience, but yours may vary.  If someone could create a video and/or web-site guide, we'd gladly link to it.
