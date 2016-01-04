@@ -24,7 +24,7 @@ $client->imagePathSVG = './../assets/svg/';
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>::toImage($str) - PHP - Emoji One Labs</title>
+  <title>toImage($str) - PHP - Emoji One Labs</title>
 
   <!-- Emoji One CSS: -->
   <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
