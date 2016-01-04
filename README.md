@@ -134,6 +134,10 @@ Or
 
 ### Extras
 
+**[shortnameToUnicode(str)](http://git.emojione.com/demos/2.0.0/shortnametounicode.html)**
+
+Change from shortnames to native unicode emoji.
+
 **[Shortname Autocomplete](http://git.emojione.com/demos/2.0.0/autocomplete.html)**
 
 Easily add shortname autocomplete functionality to any text input on your page.

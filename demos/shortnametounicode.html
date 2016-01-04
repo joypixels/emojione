@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>shortnameToUnicode(str) - Emoji One Labs</title>
+
+  <!-- jQuery: -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Demos Stylesheet: -->
+  <link rel="stylesheet" href="styles/demos.css"/>
+
+  <!-- Typekit: -->
+  <script type="text/javascript" src="//use.typekit.net/ivu8ilu.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- Syntax Highlighting -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <link rel="stylesheet" href="styles/shCoreRDark.css"/>
+
+  <!-- Emoji One JS -->
+
+  <script src="./../lib/js/emojione.js"></script>
+
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container">
+    <h1 class="masthead-title">Emoji One Labs</h1><span class="version">version <span>2.0.0</span></span>
+  </div>
+</header>
+
+<!-- Breadcrum Navigation -->
+<nav class="breadcrumbs">
+  <div class="container">
+    <a class="breadcrumb-item top-level" href="index.html">All Demos</a> &rsaquo;
+    <a href="index.html#extras">Extras</a> &rsaquo;
+    <a class="breadcrumb-item active" href="shortnametounicode.php">shortnameToUnicode(str)</a>
+  </div>
+</nav>
+
+<!-- Page: -->
+<main>
+
+  <div class="container" id="output">
+
+      <h1>shortnameToUnicode(str)</h1>
+
+      <h2>convert shortnames to native unicode</h2>
+
+      <p>If you'd like to convert shortnames back to native unicode emoji characters, you can use this function. It's available in both the Javascript and PHP libraries.</p>
+
+      <p>Feel free to enter shortnames in the input below to test the conversion process. For a complete list of emoji and their shortnames check out <a href="http://emoji.codes/" target="_blank">emoji.codes</a>.</p>
+
+      <p class="notice"><strong>Note: </strong> Once you start dealing with native unicode characters server side, it's important to ensure that your web stack is set up to handle UTF-8 character encoding. That is outside of the scope of our demos, but a quick <a href="http://lmgtfy.com/?q=web+stack+utf-8" target="_blank">Google Search</a> will guide you in the right direction.</p>
+
+      <div class="clearfix">
+
+          <div class="column-1-2 input">
+              <h3>Input:</h3>
+              <input type="text" id="inputText" name="inputText" value="Hello world! :smile:"/>
+              <input type="button" value="Convert" onclick="convert()"/>
+          </div>
+
+          <div class="column-1-2 output">
+              <h3>Output:</h3>
+              <p id="outputText"></p>
+              <script type="text/javascript">
+                  function convert() {
+                      var input = document.getElementById('inputText').value;
+                      var output = emojione.shortnameToUnicode(input);
+                      document.getElementById('outputText').innerHTML = output;
+                  }
+              </script>
+          </div>
+
+      </div>
+
+          <h3>JS Snippet:</h3>
+        <pre class="brush: js">
+    // &lt;input type="button" value="Convert" onclick="convert()"/&gt;
+
+    &lt;script type="text/javascript"&gt;
+    function convert() {
+        var input = document.getElementById('inputText').value;
+        var output = emojione.shortnameToUnicode(input);
+        document.getElementById('outputText').innerHTML = output;
+      }
+    &lt;/script&gt;
+        </pre>
+
+
+    <h3>PHP Snippet:</h3>
+      <pre class="brush: php">
+&lt;?php
+    namespace Emojione;
+
+    // include the PHP library (if not autoloaded)
+    require('./../lib/php/autoload.php');
+
+    $client = new Client(new Ruleset());
+
+    if(isset($_POST['inputText'])) {
+    echo $client->shortnameToUnicode($_POST['inputText']);
+    }
+?&gt;
+      </pre>
+
+
+  </div>
+
+</main>
+
+<footer class="demo-footer">
+  <div class="container">
+    <small>&copy; Copyright 2014-2016 Ranks.com.</small>
+    <small>Emoji One artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-4.0</a> License</small>
+    <small>Emoji One demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
+          href="http://opensource.org/licenses/MIT">MIT</a> License</small>
+  </div>
+</footer>
+
+</body>
+</html>
