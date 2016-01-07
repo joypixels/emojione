@@ -1,6 +1,6 @@
 {
   "name": "emojione",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": [
     "assets/css/emojione.css",
     "lib/js/emojione.js"
