@@ -6,8 +6,7 @@ There's no better way to port our emoji into your device than through a native f
 https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-android.ttf
 
   * Compatible with rooted Android devices.
-  * Issue Resolved:  https://github.com/Ranks/emojione/issues/166
-  * Updated Dec 21, 2015
+  * Updated Feb 3, 2016
 
 Android Setup Help:
 * We recommend Emoji Switcher (now free for Emoji One): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
