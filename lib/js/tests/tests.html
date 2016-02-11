@@ -115,6 +115,10 @@
                     assert.equal(emojione.toShort("💃\n💃"), ":dancer:\n:dancer:");
                 });
             
+                QUnit.test( "Alias vs. canonical", function( assert ) {
+                    assert.equal(emojione.toShort("🇯🇵 どうもありがとう"), ":flag_jp: どうもありがとう");
+                });
+            
         
             QUnit.module("toImage");
             
