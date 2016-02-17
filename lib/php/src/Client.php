@@ -355,11 +355,16 @@ class Client implements ClientInterface
 
             if (!in_array($unicode, $unicode_replace))
             {
-                $unicode = substr($m[1], 0, 4);
+                $unicode .= "\xEF\xB8\x8F";
 
                 if (!in_array($unicode, $unicode_replace))
                 {
-                    return $m[0];
+                    $unicode = substr($m[1], 0, 4);
+
+                    if (!in_array($unicode, $unicode_replace))
+                    {
+                        return $m[0];
+                    }
                 }
             }
 
