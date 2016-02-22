@@ -59,7 +59,7 @@ class Emoji(object):
 
             if cls.image_type == 'png':
                 if cls.sprites:
-                    return '<span class="emojione-%s" title="%s">%s</span>'\
+                    return '<span class="emojione emojione-%s" title="%s">%s</span>'\
                         % (filename, escape(shortcode), alt)
                 else:
                     return '<img class="emojione" alt="%s" src="%s"/>' % (
@@ -93,7 +93,7 @@ class Emoji(object):
             filename = shortcode_replace[shortcode].upper()
             if cls.image_type == 'png':
                 if cls.sprites:
-                    return '<span class="emojione-%s" title="%s">%s</span>'\
+                    return '<span class="emojione emojione-%s" title="%s">%s</span>'\
                         % (filename, escape(shortcode), alt)
                 else:
                     return '<img class="emojione" alt="%s" src="%s"/>' % (
@@ -168,7 +168,7 @@ class Emoji(object):
                 alt = escape(ascii)
             if cls.image_type == 'png':
                 if cls.sprites:
-                    return '<span class="emojione-%s" title="%s">%s</span>'\
+                    return '<span class="emojione emojione-%s" title="%s">%s</span>'\
                         % (unicode, escape(ascii), alt)
                 else:
                     return '<img class="emojione" alt="%s" src="%s"/>' % (

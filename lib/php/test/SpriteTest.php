@@ -36,7 +36,7 @@ class SpriteTest extends \PHPUnit_Framework_TestCase
     public function testToImage()
     {
         $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! <span class="emojione-1f604" title=":smile:">😄</span> <span class="emojione-1f604" title=":smile:">&#x1f604;</span>';
+        $expected = 'Hello world! <span class="emojione emojione-1f604" title=":smile:">😄</span> <span class="emojione emojione-1f604" title=":smile:">&#x1f604;</span>';
 
         $this->assertEquals(Emojione::toImage($test), $expected);
     }
@@ -49,7 +49,7 @@ class SpriteTest extends \PHPUnit_Framework_TestCase
     public function testShortnameToImage()
     {
         $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! 😄 <span class="emojione-1f604" title=":smile:">&#x1f604;</span>';
+        $expected = 'Hello world! 😄 <span class="emojione emojione-1f604" title=":smile:">&#x1f604;</span>';
 
         $this->assertEquals(Emojione::shortnameToImage($test), $expected);
     }
@@ -62,7 +62,7 @@ class SpriteTest extends \PHPUnit_Framework_TestCase
     public function testUnicodeToImage()
     {
         $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! <span class="emojione-1f604" title=":smile:">😄</span> :smile:';
+        $expected = 'Hello world! <span class="emojione emojione-1f604" title=":smile:">😄</span> :smile:';
 
         $this->assertEquals(Emojione::unicodeToImage($test), $expected);
     }
