@@ -245,7 +245,7 @@ class Client implements ClientInterface
             {
                 if ($this->sprites)
                 {
-                    return '<span class="emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return '<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {
@@ -317,7 +317,7 @@ class Client implements ClientInterface
             {
                 if ($this->sprites)
                 {
-                    return $m[2].'<span class="emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return $m[2].'<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {
@@ -416,7 +416,7 @@ class Client implements ClientInterface
             {
                 if ($this->sprites)
                 {
-                    return '<span class="emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return '<span class="emojione emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {
