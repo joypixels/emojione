@@ -7,7 +7,7 @@ use Emojione\Emojione;
 class EmojioneTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $cacheBustParam = '?v=2.0.1';
+    private $cacheBustParam = '?v=2.1.1';
 
     /**
      * test Emojione::toImage()
