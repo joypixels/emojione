@@ -28,8 +28,11 @@ Using the latest OS (El Capitan), I was able to load this emoji file in less tha
 iOS Instructions:
 Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a software application for iOS that enables a user to find and install software packages on jailbroken iOS devices (iPhone, iPod, iPad).
 
-###Linux Fonts
-  * Coming Soon, tested files needed.
+###Linux Font
+#####Emoji One SVGinOT Color Font
+A color and B&W emoji SVGinOT font built primarily from Emoji One artwork with full support for ZWJ, skin tone modifiers and country flags. Developed by @eosrei
+
+https://github.com/eosrei/emojione-color-font
 
 ---
   
