@@ -7,7 +7,7 @@ use Emojione\Emojione;
 class EmojioneTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $cacheBustParam = '?v=2.1.1';
+    private $cacheBustParam = '?v=2.1.2';
 
     /**
      * test Emojione::toImage()
@@ -56,8 +56,8 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
      */
     public function testShortnameToAscii()
     {
-        $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! 😄 :]';
+        $test     = 'Hello world! 🙂 :slight_smile:';
+        $expected = 'Hello world! 🙂 :]';
 
         $this->assertEquals(Emojione::shortnameToAscii($test), $expected);
     }

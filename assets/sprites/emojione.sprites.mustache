@@ -4,11 +4,11 @@
 }
 
 .emojione {
-  text-indent:-9999em;
+  text-indent: -9999em;
   image-rendering: optimizeQuality;
   font-size: inherit;
-  height: 1.3em;
-  width: 1.3em;
+  height: 64px;
+  width: 64px;
   top: -3px;
   position: relative;
   display: inline-block;
@@ -16,12 +16,11 @@
   line-height: normal;
   vertical-align: middle;
   background-image: url('emojione.sprites.png');
-  background-size: 4100% 4000%;
   background-repeat: no-repeat;
 }
 
 {{#items}}
 .{{name}} {
-  background-position: (({{px.x}} * 100 / ({{px.total_width}} * (40/41))))#{"%"} (({{px.y}} * 100 / ({{px.total_height}} * (39/40))))#{"%"};
+  background-position: {{px.offset_x}} {{px.offset_y}};
 }
 {{/items}}

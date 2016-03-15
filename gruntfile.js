@@ -14,23 +14,23 @@ module.exports = function(grunt) {
             pngsprites: {
                 src: 'assets/png/*.png',
                 dest: 'assets/sprites/emojione.sprites.png',
-                destCss: 'assets/sprites/emojione.sprites.scss',
+                destCss: 'assets/sprites/emojione.sprites.css',
                 'cssTemplate': 'assets/sprites/emojione.sprites.mustache',
                 'algorithm': 'binary-tree',
                 'cssVarMap': function (sprite) {
                     sprite.name = 'emojione-' + sprite.name;
-                }
+                },
+                padding: 1
             }
 
         },
-        // BUILD PNG SPRITES (SASS -> CSS)
+        // BUILD EMOJI ONE AWESOME CSS (SASS -> CSS)
         sass: {
             dist: {
                 options: {
                     'sourcemap': 'none'
                 },
                 files: {
-                    'assets/sprites/emojione.sprites.css': 'assets/sprites/emojione.sprites.scss',
                     'assets/css/emojione-awesome.css': 'lib/emojione-awesome/emojione-awesome.scss'
                 }
             }
