@@ -1,6 +1,6 @@
 {
   "name": "emojione",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
   "author": "Emoji One <ryan@emojione.com> (http://emojione.com)",
   "main": "lib/js/emojione.js",
