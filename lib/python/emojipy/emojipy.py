@@ -55,7 +55,7 @@ class Emoji(object):
                 alt = unicode_char
             else:
                 alt = shortcode
-            filename = shortcode_replace[shortcode].upper()
+            filename = shortcode_replace[shortcode]
 
             if cls.image_type == 'png':
                 if cls.sprites:
@@ -90,7 +90,7 @@ class Emoji(object):
                 alt = cls.convert(unicode)
             else:
                 alt = shortcode
-            filename = shortcode_replace[shortcode].upper()
+            filename = shortcode_replace[shortcode]
             if cls.image_type == 'png':
                 if cls.sprites:
                     return '<span class="emojione emojione-%s" title="%s">%s</span>'\
