@@ -65,7 +65,7 @@
   <!-- Masthead -->
   <header class="masthead">
     <div class="container">
-      <h1 class="masthead-title">Emoji One Labs</h1><span class="version">version <span>2.1.0</span></span>
+      <h1 class="masthead-title">Emoji One Labs</h1><span class="version">version <span>2.1.2</span></span>
     </div>
   </header>
 
@@ -105,7 +105,7 @@
 
       <h3>Some Considerations</h3>
       <ul>
-        <li><a href="http://caniuse.com/#feat=background-img-opts">background-size</a> is not supported in IE8, which these resizeable sprites rely on.</li>
+        <li><a href="http://caniuse.com/#feat=css-zoom">zoom</a> or <a href="http://caniuse.com/#feat=transforms2d">transform: scale()</a> can be used for custom scaling. transform: scale() is more widely supported.</li>
         <li>Depending on the amount of emoji you're actually using on a page, loading an entire spritesheet here could be overkill.</li>
       </ul>
 
@@ -128,9 +128,9 @@ emojione.sprites = true;</pre>
 $client->imageType = 'png';
 $client->sprites = true;</pre>
 
-      <p>If you are not using our conversion scripts, PNG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <span class="emojione-1f433">&#x1f433;</span></p>
+      <p>If you are not using our conversion scripts, PNG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433 aka <span class="emojione emojione-1f433">&#x1f433;</span></p>
       <pre class="brush: php">
-&lt;span class="emojione-1f433"&gt;
+&lt;span class="emojione emojione-1f433"&gt;
   &amp;#x1f433;
 &lt;/span&gt;</pre>
 

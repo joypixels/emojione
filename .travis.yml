@@ -8,8 +8,9 @@ php:
 before_script:
 - travis_retry composer self-update
 - travis_retry composer install --no-interaction --prefer-source
-- npm install grunt-cli
+- npm install -g grunt-cli
 - npm install grunt-contrib-qunit
+- npm install grunt
 
 script:
 - vendor/bin/phpunit -c lib/php/phpunit.xml.dist

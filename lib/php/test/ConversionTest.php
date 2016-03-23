@@ -11,7 +11,7 @@ use Emojione\Emojione;
 class ConversionTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $cacheBustParam = '?v=2.0.1';
+    private $cacheBustParam = '?v=2.1.2';
 
     /**
      * test single unicode character
@@ -221,10 +221,10 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         Emojione::$ascii = true;
 
         $ascii       = ':-)';
-        $unicode     = '😄';
-        $unicode_fix = '&#x1f604;';
-        $shortname   = ':smile:';
-        $image       = '<img class="emojione" alt="&#x1f604;" src="//cdn.jsdelivr.net/emojione/assets/png/1f604.png' . $this->cacheBustParam . '"/>';
+        $unicode     = '🙂';
+        $unicode_fix = '&#x1f642;';
+        $shortname   = ':slight_smile:';
+        $image       = '<img class="emojione" alt="&#x1f642;" src="//cdn.jsdelivr.net/emojione/assets/png/1f642.png' . $this->cacheBustParam . '"/>';
 
         $this->assertEquals(Emojione::shortnameToImage($shortname), $image);
         $this->assertEquals(Emojione::shortnameToImage($ascii), $image);
@@ -420,7 +420,7 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         $default_ascii = Emojione::$ascii;
         Emojione::$ascii = true;
 
-        $image = 'Smile <img class="emojione" alt=":)" src="//cdn.jsdelivr.net/emojione/assets/png/1f604.png" /> because it\'s going to be a good day.';
+        $image = 'Smile <img class="emojione" alt=":)" src="//cdn.jsdelivr.net/emojione/assets/png/1f642.png" /> because it\'s going to be a good day.';
 
         $this->assertEquals(Emojione::shortnameToImage($image), $image);
         $this->assertEquals(Emojione::toImage($image), $image);
@@ -442,7 +442,7 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         $default_ascii = Emojione::$ascii;
         Emojione::$ascii = true;
 
-        $image = 'Smile <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1f604.svg" type="image/svg+xml" standby=":)">:)</object> because it\'s going to be a good day.';
+        $image = 'Smile <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1f642.svg" type="image/svg+xml" standby=":)">:)</object> because it\'s going to be a good day.';
 
         $this->assertEquals(Emojione::shortnameToImage($image), $image);
         $this->assertEquals(Emojione::toImage($image), $image);

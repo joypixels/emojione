@@ -11,14 +11,14 @@ class Client implements ClientInterface
     public $ascii = false; // convert ascii smileys?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     public $imageType = 'png'; // or svg
-    public $cacheBustParam = '?v=2.0.1';
+    public $cacheBustParam = '?v=2.1.2';
     public $sprites = false;
     public $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
     public $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
     public $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
     public $unicode_replaceWith = false;
     public $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
-    public $unicodeRegexp = '([*#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(\\xF0\\x9F\\x8F[\\xBB-\\xBF])?(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..(\\xF0\\x9F\\x8F[\\xBB-\\xBF])?|(((?<zwj>\\xE2\\x80\\x8D)\\xE2\\x9D\\xA4\\xEF\\xB8\\x8F\k<zwj>\\xF0\\x9F..(\k<zwj>\\xF0\\x9F\\x91.)?|(\\xE2\\x80\\x8D\\xF0\\x9F\\x91.){2,3}))?))';
+    public $unicodeRegexp = '([*#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(\\xF0\\x9F\\x8F[\\xBB-\\xBF])?(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..((\\xE2\\x80\\x8D\\xF0\\x9F\\x97\\xA8)|(\\xF0\\x9F\\x8F[\\xBB-\\xBF])|(\\xE2\\x80\\x8D\\xF0\\x9F\\x91[\\xA6-\\xA9]){2,3}|(\\xE2\\x80\\x8D\\xE2\\x9D\\xA4\\xEF\\xB8\\x8F\\xE2\\x80\\x8D\\xF0\\x9F..(\\xE2\\x80\\x8D\\xF0\\x9F\\x91[\\xA6-\\xA9])?))?))';
 
     public $shortcodeRegexp = ':([-+\\w]+):';
 
@@ -245,7 +245,7 @@ class Client implements ClientInterface
             {
                 if ($this->sprites)
                 {
-                    return '<span class="emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return '<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {
@@ -317,7 +317,7 @@ class Client implements ClientInterface
             {
                 if ($this->sprites)
                 {
-                    return $m[2].'<span class="emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return $m[2].'<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {
@@ -355,11 +355,16 @@ class Client implements ClientInterface
 
             if (!in_array($unicode, $unicode_replace))
             {
-                $unicode = substr($m[1], 0, 4);
+                $unicode .= "\xEF\xB8\x8F";
 
                 if (!in_array($unicode, $unicode_replace))
                 {
-                    return $m[0];
+                    $unicode = substr($m[1], 0, 4);
+
+                    if (!in_array($unicode, $unicode_replace))
+                    {
+                        return $m[0];
+                    }
                 }
             }
 
@@ -387,11 +392,16 @@ class Client implements ClientInterface
 
             if (!in_array($unicode, $unicode_replace))
             {
-                $unicode = substr($m[1], 0, 4);
+                $unicode .= "\xEF\xB8\x8F";
 
                 if (!in_array($unicode, $unicode_replace))
                 {
-                    return $m[0];
+                    $unicode = substr($m[1], 0, 4);
+
+                    if (!in_array($unicode, $unicode_replace))
+                    {
+                        return $m[0];
+                    }
                 }
             }
 
@@ -411,7 +421,7 @@ class Client implements ClientInterface
             {
                 if ($this->sprites)
                 {
-                    return '<span class="emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
+                    return '<span class="emojione emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
                 }
                 else
                 {

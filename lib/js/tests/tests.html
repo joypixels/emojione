@@ -14,11 +14,11 @@
             QUnit.module("toImage");
             
                 QUnit.test( "test toImage", function( assert ) {
-                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.0.1\"/> <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.0.1\"/>");
+                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.1.2\"/> <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.1.2\"/>");
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
-                    assert.equal(emojione.toImage(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "<img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> is <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> and 저 is not <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> or <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> also :randomy: is not emoji");
+                    assert.equal(emojione.toImage(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "<img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> is <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> and 저 is not <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> or <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> also :randomy: is not emoji");
                 });
             
         
@@ -77,27 +77,27 @@
             QUnit.module("shortnameToImage");
             
                 QUnit.test( "single shortname character conversion", function( assert ) {
-                    assert.equal(emojione.shortnameToImage("Hello world! 😄 :smile:"), "Hello world! 😄 <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.0.1\"/>");
+                    assert.equal(emojione.shortnameToImage("Hello world! 😄 :smile:"), "Hello world! 😄 <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.1.2\"/>");
                 });
             
                 QUnit.test( "shortname at start of sentence with apostrophe", function( assert ) {
-                    assert.equal(emojione.shortnameToImage(":snail:'s are cool!"), "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.0.1\"/>'s are cool!");
+                    assert.equal(emojione.shortnameToImage(":snail:'s are cool!"), "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.1.2\"/>'s are cool!");
                 });
             
                 QUnit.test( "shortname shares a colon", function( assert ) {
-                    assert.equal(emojione.shortnameToImage(":invalid:snail:"), ":invalid<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.0.1\"/>");
+                    assert.equal(emojione.shortnameToImage(":invalid:snail:"), ":invalid<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.1.2\"/>");
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
-                    assert.equal(emojione.shortnameToImage(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "<img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> is 👽 and 저 is not <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> or <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/> also :randomy: is not emoji");
+                    assert.equal(emojione.shortnameToImage(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "<img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> is 👽 and 저 is not <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> or <img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/> also :randomy: is not emoji");
                 });
             
                 QUnit.test( "multiline emoji string", function( assert ) {
-                    assert.equal(emojione.shortnameToImage(":dancer:\n:dancer:"), "<img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.0.1\"/>\n<img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.0.1\"/>");
+                    assert.equal(emojione.shortnameToImage(":dancer:\n:dancer:"), "<img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.1.2\"/>\n<img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.1.2\"/>");
                 });
             
                 QUnit.test( "triple emoji string", function( assert ) {
-                    assert.equal(emojione.shortnameToImage(":dancer::dancer::alien:"), "<img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.0.1\"/><img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.0.1\"/><img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.0.1\"/>");
+                    assert.equal(emojione.shortnameToImage(":dancer::dancer::alien:"), "<img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.1.2\"/><img class=\"emojione\" alt=\"💃\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.1.2\"/><img class=\"emojione\" alt=\"👽\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f47d.png?v=2.1.2\"/>");
                 });
             
         
@@ -123,15 +123,15 @@
             QUnit.module("toImage");
             
                 QUnit.test( "single character shortname conversion", function( assert ) {
-                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.0.1\"/> <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.0.1\"/>");
+                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.1.2\"/> <img class=\"emojione\" alt=\"😄\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f604.png?v=2.1.2\"/>");
                 });
             
                 QUnit.test( "shortname shares a colon", function( assert ) {
-                    assert.equal(emojione.toImage(":invalid:snail:"), ":invalid<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.0.1\"/>");
+                    assert.equal(emojione.toImage(":invalid:snail:"), ":invalid<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.1.2\"/>");
                 });
             
                 QUnit.test( "single unicode character conversion", function( assert ) {
-                    assert.equal(emojione.toImage("🐌"), "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.0.1\"/>");
+                    assert.equal(emojione.toImage("🐌"), "<img class=\"emojione\" alt=\"🐌\" src=\"//cdn.jsdelivr.net/emojione/assets/png/1f40c.png?v=2.1.2\"/>");
                 });
             
         
