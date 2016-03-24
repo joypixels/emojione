@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
   summary: 'Meteor Package of http://www.emojione.com/ set',
-  version: '2.1.2',
+  version: '2.1.2_1',
   git: 'https://github.com/Ranks/emojione.git'
 });
 
@@ -25,21 +25,9 @@ Package.onUse(function(api) {
     'assets/css/emojione.css',
   ], 'client');
 
-  if ((process.env.EMOJIONE_ADD_SVG_SPRITES !== undefined && process.env.EMOJIONE_ADD_SVG_SPRITES.toLowerCase() === 'true') || (process.env.EMOJIONE_ADD_PNG_SPRITES !== undefined && process.env.EMOJIONE_ADD_PNG_SPRITES.toLowerCase() === 'true')) {
-    api.addFiles([
-      'assets/sprites/emojione.sprites.css',
-    ], 'client');
-    if (process.env.EMOJIONE_ADD_SVG_SPRITES) {
-        api.addAssets([
-          'assets/sprites/emojione.sprites.svg'
-        ], 'client');
-    }
-    if (process.env.EMOJIONE_ADD_PNG_SPRITES) {
-        api.addAssets([
-          'assets/sprites/emojione.sprites.png'
-        ], 'client');
-    }
-  }
+  api.addAssets('assets/sprites/emojione.sprites.css', 'client');
+  api.addAssets('assets/sprites/emojione.sprites.svg', 'client');
+  api.addAssets('assets/sprites/emojione.sprites.png', 'client');
 
   api.export('emojione');
 });
