@@ -8,6 +8,7 @@ if six.PY3:
 else:
     from cgi import escape
     from HTMLParser import HTMLParser
+    import struct
     unescape = HTMLParser.unescape
     chr = unichr
 
@@ -189,11 +190,18 @@ class Emoji(object):
 
     @classmethod
     def convert(cls, hex_unicode):
+
+        def char(i):
+            try:
+                return chr(i)
+            except ValueError:
+                return struct.pack('i', i).decode('utf-32')
+
         """
         Convert a unicode in hex string to actual unicode char
         """
 
         if '-' not in hex_unicode:
-            return chr(int(hex_unicode, 16))
+            return char(int(hex_unicode, 16))
         parts = hex_unicode.split('-')
-        return ''.join(chr(int(x, 16)) for x in parts)
+        return ''.join(char(int(x, 16)) for x in parts)
