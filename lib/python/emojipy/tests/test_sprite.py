@@ -18,6 +18,6 @@ class SpriteTest(TestCase):
         """
 
         text = 'Hello world! 😄 :smile:'
-        expected = 'Hello world! <span class="emojione emojione-1F604" title=":smile:">😄</span> :smile:'
+        expected = 'Hello world! <span class="emojione emojione-1f604" title=":smile:">😄</span> :smile:'
 
         self.assertEqual(self.emoji.unicode_to_image(text), expected)

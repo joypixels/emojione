@@ -8,6 +8,7 @@ if six.PY3:
 else:
     from cgi import escape
     from HTMLParser import HTMLParser
+    import struct
     unescape = HTMLParser.unescape
     chr = unichr
 
@@ -26,7 +27,7 @@ class Emoji(object):
     image_svg_path = 'https://cdn.jsdelivr.net/emojione/assets/svg/'
     image_path_svg_sprites = './../../assets/sprites/emojione.sprites.svg'
     ignored_regexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>'
-    unicode_regexp = "(" + '|'.join([x.decode('utf-8') for x in unicode_replace]) + ")"
+    unicode_regexp = "(" + '|'.join([re.escape(x.decode("utf-8")) for x in unicode_replace]) + ")"
     shortcode_regexp = ':([-+\\w]+):'
     ascii_regexp = '(\\<3|&lt;3|\\<\\/3|&lt;\\/3|\\:\'\\)|\\:\'\\-\\)|\\:D|\\:\\-D|\\=D|\\:\\)|\\:\\-\\)|\\=\\]|\\=\\)|\\:\\]|\'\\:\\)|\'\\:\\-\\)|\'\\=\\)|\'\\:D|\'\\:\\-D|\'\\=D|\\>\\:\\)|&gt;\\:\\)|\\>;\\)|&gt;;\\)|\\>\\:\\-\\)|&gt;\\:\\-\\)|\\>\\=\\)|&gt;\\=\\)|;\\)|;\\-\\)|\\*\\-\\)|\\*\\)|;\\-\\]|;\\]|;D|;\\^\\)|\'\\:\\(|\'\\:\\-\\(|\'\\=\\(|\\:\\*|\\:\\-\\*|\\=\\*|\\:\\^\\*|\\>\\:P|&gt;\\:P|X\\-P|x\\-p|\\>\\:\\[|&gt;\\:\\[|\\:\\-\\(|\\:\\(|\\:\\-\\[|\\:\\[|\\=\\(|\\>\\:\\(|&gt;\\:\\(|\\>\\:\\-\\(|&gt;\\:\\-\\(|\\:@|\\:\'\\(|\\:\'\\-\\(|;\\(|;\\-\\(|\\>\\.\\<|&gt;\\.&lt;|\\:\\$|\\=\\$|#\\-\\)|#\\)|%\\-\\)|%\\)|X\\)|X\\-\\)|\\*\\\\0\\/\\*|\\\\0\\/|\\*\\\\O\\/\\*|\\\\O\\/|O\\:\\-\\)|0\\:\\-3|0\\:3|0\\:\\-\\)|0\\:\\)|0;\\^\\)|O\\:\\-\\)|O\\:\\)|O;\\-\\)|O\\=\\)|0;\\-\\)|O\\:\\-3|O\\:3|B\\-\\)|B\\)|8\\)|8\\-\\)|B\\-D|8\\-D|\\-_\\-|\\-__\\-|\\-___\\-|\\>\\:\\\\|&gt;\\:\\\\|\\>\\:\\/|&gt;\\:\\/|\\:\\-\\/|\\:\\-\\.|\\:\\/|\\:\\\\|\\=\\/|\\=\\\\|\\:L|\\=L|\\:P|\\:\\-P|\\=P|\\:\\-p|\\:p|\\=p|\\:\\-Þ|\\:\\-&THORN;|\\:Þ|\\:&THORN;|\\:þ|\\:&thorn;|\\:\\-þ|\\:\\-&thorn;|\\:\\-b|\\:b|d\\:|\\:\\-O|\\:O|\\:\\-o|\\:o|O_O|\\>\\:O|&gt;\\:O|\\:\\-X|\\:X|\\:\\-#|\\:#|\\=X|\\=x|\\:x|\\:\\-x|\\=#)'
     shortcode_compiled = re.compile(ignored_regexp+"|("+shortcode_regexp+")",
@@ -55,7 +56,7 @@ class Emoji(object):
                 alt = unicode_char
             else:
                 alt = shortcode
-            filename = shortcode_replace[shortcode].upper()
+            filename = shortcode_replace[shortcode]
 
             if cls.image_type == 'png':
                 if cls.sprites:
@@ -90,7 +91,7 @@ class Emoji(object):
                 alt = cls.convert(unicode)
             else:
                 alt = shortcode
-            filename = shortcode_replace[shortcode].upper()
+            filename = shortcode_replace[shortcode]
             if cls.image_type == 'png':
                 if cls.sprites:
                     return '<span class="emojione emojione-%s" title="%s">%s</span>'\
@@ -189,11 +190,18 @@ class Emoji(object):
 
     @classmethod
     def convert(cls, hex_unicode):
+
+        def char(i):
+            try:
+                return chr(i)
+            except ValueError:
+                return struct.pack('i', i).decode('utf-32')
+
         """
         Convert a unicode in hex string to actual unicode char
         """
 
         if '-' not in hex_unicode:
-            return chr(int(hex_unicode, 16))
+            return char(int(hex_unicode, 16))
         parts = hex_unicode.split('-')
-        return ''.join(chr(int(x, 16)) for x in parts)
+        return ''.join(char(int(x, 16)) for x in parts)
