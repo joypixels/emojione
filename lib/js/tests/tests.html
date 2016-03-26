@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/qunit/1.14.0/qunit.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/qunit/1.14.0/qunit.css" type="text/css" media="screen" />
     </head>
     <body>
         <div id="qunit"></div>
@@ -113,6 +113,10 @@
             
                 QUnit.test( "multiline emoji string", function( assert ) {
                     assert.equal(emojione.toShort("💃\n💃"), ":dancer:\n:dancer:");
+                });
+            
+                QUnit.test( "Alias vs. canonical", function( assert ) {
+                    assert.equal(emojione.toShort("🇯🇵 どうもありがとう"), ":flag_jp: どうもありがとう");
                 });
             
         
