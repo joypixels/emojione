@@ -42,7 +42,6 @@ Special Thanks to Michael Hartmann for creating these scripts for us!
 
 ```
 cd lib/emojione-awesome
-npm install
 node generate.js
 
 ```
@@ -50,9 +49,9 @@ node generate.js
 ### How to compile scss
 
 Once you've generated the mapping you can build the css files via grunt.
-The compiled styles are outputted into /assets/css/emojione-awesome.css
+The compiled styles are output into /assets/css/emojione-awesome.css
 
 ```
-npm install grunt
+npm install grunt grunt-contrib-sass
 grunt sass
 ```
