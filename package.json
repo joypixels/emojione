@@ -1,6 +1,6 @@
 {
   "name": "emojione",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
   "author": "Emoji One <ryan@emojione.com> (http://emojione.com)",
   "main": "lib/js/emojione.js",
@@ -26,7 +26,7 @@
   },
   "bugs": "https://github.com/Ranks/emojione/issues",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-qunit": "^0.5.2",
@@ -35,7 +35,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-imageoptim": "^1.4.1",
     "grunt-jsonlint": "^1.0.4",
-    "grunt-spritesmith": "^4.6.0",
+    "grunt-spritesmith": "^5.1.0",
     "grunt-svgstore": "^0.5.0"
   },
   "scripts": {
