@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   '2.2.0' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M package.json
+5 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:171:21
+5 verbose stack     at ChildProcess.exithandler (child_process.js:204:7)
+5 verbose stack     at emitTwo (events.js:87:13)
+5 verbose stack     at ChildProcess.emit (events.js:172:7)
+5 verbose stack     at maybeClose (internal/child_process.js:821:16)
+5 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+6 verbose cwd /Sites/EmojiOne/repos/emojione
+7 error Darwin 15.4.0
+8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "version" "2.2.0"
+9 error node v4.3.1
+10 error npm  v2.14.12
+11 error Git working directory not clean.
+11 error M package.json
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
