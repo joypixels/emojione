@@ -11,3 +11,4 @@ lib/js/tests.html
 build/
 emojipy-*/
 emojipy.egg-info/
+npm-debug.log

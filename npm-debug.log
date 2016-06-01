@@ -1,26 +1,271 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'version',
-1 verbose cli   '2.2.0' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@2.14.12
 3 info using node@v4.3.1
-4 info git [ 'status', '--porcelain' ]
-5 verbose stack Error: Git working directory not clean.
-5 verbose stack M package.json
-5 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:171:21
-5 verbose stack     at ChildProcess.exithandler (child_process.js:204:7)
-5 verbose stack     at emitTwo (events.js:87:13)
-5 verbose stack     at ChildProcess.emit (events.js:172:7)
-5 verbose stack     at maybeClose (internal/child_process.js:821:16)
-5 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-6 verbose cwd /Sites/EmojiOne/repos/emojione
-7 error Darwin 15.4.0
-8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "version" "2.2.0"
-9 error node v4.3.1
-10 error npm  v2.14.12
-11 error Git working directory not clean.
-11 error M package.json
-12 error If you need help, you may report this error at:
-12 error     <https://github.com/npm/npm/issues>
-13 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Sites/EmojiOne/repos/emojione',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/caseyahenson/.npm/emojione/2.2.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/caseyahenson/.npm/emojione/2.2.0/package.tgz',
+9 verbose tar pack   '/Sites/EmojiOne/repos/emojione' ]
+10 verbose tarball /Users/caseyahenson/.npm/emojione/2.2.0/package.tgz
+11 verbose folder /Sites/EmojiOne/repos/emojione
+12 info prepublish emojione@2.2.0
+13 verbose addLocalTarball adding from inside cache /Users/caseyahenson/.npm/emojione/2.2.0/package.tgz
+14 silly cache afterAdd emojione@2.2.0
+15 verbose afterAdd /Users/caseyahenson/.npm/emojione/2.2.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/caseyahenson/.npm/emojione/2.2.0/package/package.json written
+17 silly publish { name: 'emojione',
+17 silly publish   version: '2.2.0',
+17 silly publish   description: 'Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.',
+17 silly publish   author:
+17 silly publish    { name: 'Emoji One',
+17 silly publish      email: 'ryan@emojione.com',
+17 silly publish      url: 'http://emojione.com' },
+17 silly publish   main: 'lib/js/emojione.js',
+17 silly publish   keywords:
+17 silly publish    [ 'emojione',
+17 silly publish      'Emoji One',
+17 silly publish      'emoji',
+17 silly publish      'emojis',
+17 silly publish      'emoticons',
+17 silly publish      'smileys',
+17 silly publish      'smilies',
+17 silly publish      'unicode',
+17 silly publish      'emoji set' ],
+17 silly publish   homepage: 'http://www.emojione.com',
+17 silly publish   licenses:
+17 silly publish    { type: '(CC-BY-SA-4.0 and MIT)',
+17 silly publish      url: 'https://github.com/Ranks/emojione/blob/master/LICENSE.md' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/Ranks/emojione.git' },
+17 silly publish   bugs: { url: 'https://github.com/Ranks/emojione/issues' },
+17 silly publish   devDependencies:
+17 silly publish    { grunt: '^1.0.1',
+17 silly publish      'grunt-contrib-cssmin': '^0.12.2',
+17 silly publish      'grunt-contrib-jshint': '^0.11.0',
+17 silly publish      'grunt-contrib-qunit': '^0.5.2',
+17 silly publish      'grunt-contrib-sass': '^0.9.2',
+17 silly publish      'grunt-contrib-uglify': '^0.8.0',
+17 silly publish      'grunt-contrib-watch': '^0.6.1',
+17 silly publish      'grunt-imageoptim': '^1.4.1',
+17 silly publish      'grunt-jsonlint': '^1.0.4',
+17 silly publish      'grunt-spritesmith': '^5.1.0',
+17 silly publish      'grunt-svgstore': '^0.5.0' },
+17 silly publish   scripts: { test: 'grunt travis' },
+17 silly publish   readme: '#![Emoji One Logo](http://git.emojione.com/assets/logo.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)\n> bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)\n\nThe web\'s first and only complete open source emoji set. It is 100% free and super easy to integrate.\n\n\n\n## The Idea\n\nTo standardize emoji on the web through the use of common :shortnames:.\n\nWhen storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.\n\n\n#### _What are Shortnames?_\n\n Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We\'ve compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.\n\n\n\n\n## Installation\n\nWe\'ve teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:\n\n```\n<script src="//cdn.jsdelivr.net/emojione/2.2.0/lib/js/emojione.min.js"></script>\n<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.2.0/assets/css/emojione.min.css"/>\n```\n\nAlternatively, CDNjs is also available as a [CDN Host for Emoji One](https://cdnjs.com/libraries/emojione).\n\nQuick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit).\n\n#### NPM\n```\n> npm install emojione\n```\n\n#### Bower\n```\n> bower install emojione\n```\n\n\n#### Composer\n```\n$ composer require emojione/emojione\n```\n\n#### Meteor\n```\nmeteor add emojione:emojione\n```\n\n\n## Usage Examples\n\nBelow there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.\n\n\n### Javascript Conversion\n\n\n**[.toShort\\(str\\)](http://git.emojione.com/demos/2.2.0/jstoshort.html)** - _native unicode -> shortnames_\n\nThis demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)\n\n**[.shortnameToImage\\(str\\)](http://git.emojione.com/demos/2.2.0/jsshortnametoimage.html)** - _shortname -> images_\n\nThis demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)\n\n**[.unicodeToImage\\(str\\)](http://git.emojione.com/demos/2.2.0/jsunicodetoimage.html)** - _native unicode -> images_\n\nThis demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)\n\n**[.toImage\\(str\\)](http://git.emojione.com/demos/2.2.0/jstoimage.html)** - _native unicode + shortnames -> images (mixed input)_\n\nThis demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.\n\n\n### PHP Conversion\n\n##### As of version 1.4.1 this library syntax has changed.\n\n**[toShort\\($str\\)](http://git.emojione.com/demos/2.2.0/phptoshort.php)** - _native unicode -> shortnames_\n\nThis demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)\n\n**[shortnameToImage\\($str\\)](http://git.emojione.com/demos/2.2.0/phpshortnametoimage.php)** - _shortname -> images_\n\nThis demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)\n\n**[unicodeToImage\\($str\\)](http://git.emojione.com/demos/2.2.0/phpunicodetoimage.php)** - _native unicode -> images_\n\nThis demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)\n\n**[toImage\\($str\\)](http://git.emojione.com/demos/2.2.0/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_\n\nThis demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.\n\n\n##### Note: As of version 1.4.1 the following implementation has been deprecated. It\'s included in the library for backwards compatibility but will be removed at a later date.\n\n**[::toShort\\($str\\)](http://git.emojione.com/demos/1.4.0/phptoshort.php)** - _native unicode -> shortnames_\n\nThis demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it to their corresponding shortnames. (we recommend this for database storage)\n\n**[::shortnameToImage\\($str\\)](http://git.emojione.com/demos/1.4.0/phpshortnametoimage.php)** - _shortname -> images_\n\nThis demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)\n\n**[::unicodeToImage\\($str\\)](http://git.emojione.com/demos/1.4.0/phpunicodetoimage.php)** - _native unicode -> images_\n\nThis demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)\n\n**[::toImage\\($str\\)](http://git.emojione.com/demos/1.4.0/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_\n\nThis demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.\n\n### Meteor Conversion\n\n#### Template helpers\n\n```handlebars\nMy emoji {{> emojione \':beers:\'}} text.\n```\n\nOr\n\n```handlebars\n{{#emojione}}My emoji :beers: text.{{/emojione}}\n```\n\n### Extras\n\n**[shortnameToUnicode(str)](http://git.emojione.com/demos/2.2.0/shortnametounicode.html)**\n\nChange from shortnames to native unicode emoji.\n\n**[Shortname Autocomplete](http://git.emojione.com/demos/2.2.0/autocomplete.html)**\n\nEasily add shortname autocomplete functionality to any text input on your page.\n\n**[ASCII Smiley Conversion](http://git.emojione.com/demos/2.2.0/ascii-smileys.html)**\n\nWith one quick step you can start converting common ASCII smileys to their corresponding images.\n\n**[Alternate Alt Tags](http://git.emojione.com/demos/2.2.0/alternate-alt-tags.html)**\n\nChange from the native unicode emoji in the resulting alt tags to their shortnames instead.\n\n**[Live Preview Box](http://git.emojione.com/demos/2.2.0/live-preview.html)**\n\nDisplay converted Emoji in a preview box as the user is typing.\n\n**[Conversion HTML Class](http://git.emojione.com/demos/2.2.0/class-convert.html)**\n\nStick a class of .emojione-convert on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.\n\n**[Convert on Form Submission](http://git.emojione.com/demos/2.2.0/convert-on-submit.html)**\n\nConverts unicode input to shortnames once the user submits the form.\n\n**[Sprites (PNG)](http://git.emojione.com/demos/2.2.0/sprites-png.html)**\n\nWith an additional CSS file you can use Emoji One as resizable PNG sprites (up to 64x64).\n\n**[Sprites (SVG)](http://git.emojione.com/demos/2.2.0/sprites-svg.html)**\n\nThis sprite method requires no extra CSS, and is infinitely resizable.\n\n\n## Other Considerations\n### Character Encoding &mdash; UTF-8\n\nIf you\'re getting serious about implementing emoji into your website, you will want to consider your web stack\'s character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilities here, so you\'ll have to figure what works best for your own situation. \n\nA quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji.\n\nTo get you started, here\'s a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).\n\n## Information\n\n### Bug reports\n\nIf you discover any bugs, feel free to create an issue on GitHub. We also welcome the open-source community to contribute to the project by forking it and issuing pull requests.\n\n *  https://github.com/Ranks/emojione/issues\n\n\n### Contact\n\nIf you have any questions, comments, or concerns you are welcome to contact us.\n\n*  [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Ranks/emojione?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)\n* [support@emojione.com](mailto:support@emojione.com)\n* http://emojione.com\n* https://twitter.com/emojione\n\n\n### Alternatives\nWe sincerely hope that you choose to use Emoji One and support our project, but if you feel like it\'s not for you, please have a look at these possible alternatives:\n\n* https://github.com/hassankhan/emojify.js\n* https://github.com/Genshin/PhantomOpenEmoji\n* https://github.com/iamcal/php-emoji\n* https://github.com/node-modules/emoji\n* https://github.com/steveklabnik/emoji\n* https://github.com/rockerhieu/emojicon\n* https://github.com/HenrikJoreteg/emoji-images\n* https://github.com/frissdiegurke/emoji-parser\n\n## Licenses\n\n### Emoji One Artwork\n\n*  Applies to all PNG and SVG files as well as any adaptations made.\n*  The following applies to artwork included in Emoji One GitHub libraries versions < 2.0.0.\n  *  License: Creative Commons Attribution-ShareAlike 4.0 International\n  *  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/\n  *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode\n*  The following applies to artwork included in Emoji One GitHub libraries versions >= 2.0.0.\n  *  License: Creative Commons Attribution 4.0 International\n  *  Human Readable License: http://creativecommons.org/licenses/by/4.0/\n  *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode\n\n\n### Emoji One Non-Artwork\n\n*  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.\n*  License: MIT\n*  Complete Legal Terms: http://opensource.org/licenses/MIT\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '3355652f8f4dd82af1967564bc6364d49b303835',
+17 silly publish   _id: 'emojione@2.2.0',
+17 silly publish   _shasum: 'e2374d4978e5fbd9f174ffda95fc136f258f27ac',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name emojione
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/emojione
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/caseyahenson/.npm/emojione/2.2.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/emojione
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 8:56:30 PM
+28 verbose request using bearer token for auth
+29 verbose request id 3f34a183e41a9978
+30 http request PUT https://registry.npmjs.org/emojione
+31 http 503 https://registry.npmjs.org/emojione
+32 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+32 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+32 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+32 verbose bad json <html>
+32 verbose bad json   <head>
+32 verbose bad json     <title>503 backend write error</title>
+32 verbose bad json   </head>
+32 verbose bad json   <body>
+32 verbose bad json     <h1>Error 503 backend write error</h1>
+32 verbose bad json     <p>backend write error</p>
+32 verbose bad json     <h3>Guru Mediation:</h3>
+32 verbose bad json     <p>Details: cache-atl6243-ATL 1464742713 2746774162</p>
+32 verbose bad json     <hr>
+32 verbose bad json     <p>Varnish cache server</p>
+32 verbose bad json   </body>
+32 verbose bad json </html>
+33 error registry error parsing json
+34 verbose headers { server: 'Varnish',
+34 verbose headers   'retry-after': '0',
+34 verbose headers   'content-type': 'text/html; charset=utf-8',
+34 verbose headers   'content-length': '451',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Wed, 01 Jun 2016 00:58:33 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'close',
+34 verbose headers   'x-served-by': 'cache-atl6243-ATL',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1464742591.912501,VS0,VE121382' }
+35 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
+35 info retry
+35 info retry <?xml version="1.0" encoding="utf-8"?>
+35 info retry <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+35 info retry  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+35 info retry <html>
+35 info retry   <head>
+35 info retry     <title>503 backend write error</title>
+35 info retry   </head>
+35 info retry   <body>
+35 info retry     <h1>Error 503 backend write error</h1>
+35 info retry     <p>backend write error</p>
+35 info retry     <h3>Guru Mediation:</h3>
+35 info retry     <p>Details: cache-atl6243-ATL 1464742713 2746774162</p>
+35 info retry     <hr>
+35 info retry     <p>Varnish cache server</p>
+35 info retry   </body>
+35 info retry </html>
+36 info attempt registry request try #2 at 8:58:43 PM
+37 verbose request using bearer token for auth
+38 http request PUT https://registry.npmjs.org/emojione
+39 http 503 https://registry.npmjs.org/emojione
+40 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+40 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+40 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+40 verbose bad json <html>
+40 verbose bad json   <head>
+40 verbose bad json     <title>503 backend write error</title>
+40 verbose bad json   </head>
+40 verbose bad json   <body>
+40 verbose bad json     <h1>Error 503 backend write error</h1>
+40 verbose bad json     <p>backend write error</p>
+40 verbose bad json     <h3>Guru Mediation:</h3>
+40 verbose bad json     <p>Details: cache-iad2139-IAD 1464742846 2681643660</p>
+40 verbose bad json     <hr>
+40 verbose bad json     <p>Varnish cache server</p>
+40 verbose bad json   </body>
+40 verbose bad json </html>
+41 error registry error parsing json
+42 verbose headers { server: 'Varnish',
+42 verbose headers   'retry-after': '0',
+42 verbose headers   'content-type': 'text/html; charset=utf-8',
+42 verbose headers   'content-length': '451',
+42 verbose headers   'accept-ranges': 'bytes',
+42 verbose headers   date: 'Wed, 01 Jun 2016 01:00:46 GMT',
+42 verbose headers   via: '1.1 varnish',
+42 verbose headers   connection: 'close',
+42 verbose headers   'x-served-by': 'cache-iad2139-IAD',
+42 verbose headers   'x-cache': 'MISS',
+42 verbose headers   'x-cache-hits': '0',
+42 verbose headers   'x-timer': 'S1464742725.026168,VS0,VE121429' }
+43 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
+43 info retry
+43 info retry <?xml version="1.0" encoding="utf-8"?>
+43 info retry <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+43 info retry  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+43 info retry <html>
+43 info retry   <head>
+43 info retry     <title>503 backend write error</title>
+43 info retry   </head>
+43 info retry   <body>
+43 info retry     <h1>Error 503 backend write error</h1>
+43 info retry     <p>backend write error</p>
+43 info retry     <h3>Guru Mediation:</h3>
+43 info retry     <p>Details: cache-iad2139-IAD 1464742846 2681643660</p>
+43 info retry     <hr>
+43 info retry     <p>Varnish cache server</p>
+43 info retry   </body>
+43 info retry </html>
+44 info attempt registry request try #3 at 9:01:46 PM
+45 verbose request using bearer token for auth
+46 http request PUT https://registry.npmjs.org/emojione
+47 http 503 https://registry.npmjs.org/emojione
+48 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+48 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+48 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+48 verbose bad json <html>
+48 verbose bad json   <head>
+48 verbose bad json     <title>503 backend write error</title>
+48 verbose bad json   </head>
+48 verbose bad json   <body>
+48 verbose bad json     <h1>Error 503 backend write error</h1>
+48 verbose bad json     <p>backend write error</p>
+48 verbose bad json     <h3>Guru Mediation:</h3>
+48 verbose bad json     <p>Details: cache-dfw1821-DFW 1464743031 3543789941</p>
+48 verbose bad json     <hr>
+48 verbose bad json     <p>Varnish cache server</p>
+48 verbose bad json   </body>
+48 verbose bad json </html>
+49 error registry error parsing json
+50 verbose headers { server: 'Varnish',
+50 verbose headers   'retry-after': '0',
+50 verbose headers   'content-type': 'text/html; charset=utf-8',
+50 verbose headers   'content-length': '451',
+50 verbose headers   'accept-ranges': 'bytes',
+50 verbose headers   date: 'Wed, 01 Jun 2016 01:03:51 GMT',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   connection: 'close',
+50 verbose headers   'x-served-by': 'cache-dfw1821-DFW',
+50 verbose headers   'x-cache': 'MISS',
+50 verbose headers   'x-cache-hits': '0',
+50 verbose headers   'x-timer': 'S1464742909.333605,VS0,VE121884' }
+51 verbose request invalidating /Users/caseyahenson/.npm/registry.npmjs.org/emojione on PUT
+52 error publish Failed PUT 503
+53 verbose stack SyntaxError: Unexpected token <
+53 verbose stack
+53 verbose stack <?xml version="1.0" encoding="utf-8"?>
+53 verbose stack <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+53 verbose stack  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+53 verbose stack <html>
+53 verbose stack   <head>
+53 verbose stack     <title>503 backend write error</title>
+53 verbose stack   </head>
+53 verbose stack   <body>
+53 verbose stack     <h1>Error 503 backend write error</h1>
+53 verbose stack     <p>backend write error</p>
+53 verbose stack     <h3>Guru Mediation:</h3>
+53 verbose stack     <p>Details: cache-dfw1821-DFW 1464743031 3543789941</p>
+53 verbose stack     <hr>
+53 verbose stack     <p>Varnish cache server</p>
+53 verbose stack   </body>
+53 verbose stack </html>
+53 verbose stack
+53 verbose stack     at Object.parse (native)
+53 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:199:23)
+53 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+53 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+53 verbose stack     at emitTwo (events.js:87:13)
+53 verbose stack     at Request.emit (events.js:172:7)
+53 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+53 verbose stack     at emitOne (events.js:82:20)
+53 verbose stack     at Request.emit (events.js:169:7)
+53 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+54 verbose cwd /Sites/EmojiOne/repos/emojione
+55 error Darwin 15.4.0
+56 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+57 error node v4.3.1
+58 error npm  v2.14.12
+59 error Unexpected token <
+59 error
+59 error <?xml version="1.0" encoding="utf-8"?>
+59 error <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+59 error  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+59 error <html>
+59 error   <head>
+59 error     <title>503 backend write error</title>
+59 error   </head>
+59 error   <body>
+59 error     <h1>Error 503 backend write error</h1>
+59 error     <p>backend write error</p>
+59 error     <h3>Guru Mediation:</h3>
+59 error     <p>Details: cache-dfw1821-DFW 1464743031 3543789941</p>
+59 error     <hr>
+59 error     <p>Varnish cache server</p>
+59 error   </body>
+59 error </html>
+60 error If you need help, you may report this error at:
+60 error     <https://github.com/npm/npm/issues>
+61 verbose exit [ 1, true ]
