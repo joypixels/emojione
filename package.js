@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
   summary: 'Meteor Package of http://www.emojione.com/ set',
-  version: '2.2.1',
+  version: '2.2.2',
   git: 'https://github.com/Ranks/emojione.git'
 });
 
