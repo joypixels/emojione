@@ -7,9 +7,9 @@ The web's first and only complete open source emoji set. It is 100% free and sup
 
 ## The Idea
 
-To standardize emoji on the web through the use of common :shortnames:.
+To standardize emoji on the web through the use of common :shortnames:, making it simpler for developers of all levels to use and have full control over the rendering of their emojis.
 
-When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
+When storing user inputted text in your database, say from a guestbook or through a CMS admin, you could avoid all the headaches about Unicode cross-platform compatibility and scalability by storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
 
 
 #### _What are Shortnames?_
