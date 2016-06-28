@@ -11,7 +11,7 @@ use Emojione\Emojione;
 class ConversionTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $cacheBustParam = '?v=2.1.4';
+    private $cacheBustParam = '?v=2.2.5';
 
     /**
      * test single unicode character

@@ -9,7 +9,7 @@ use Emojione\Emojione;
  */
 class EmojiTest extends \PHPUnit_Framework_TestCase
 {
-    private $cacheBustParam = '?v=2.1.4';
+    private $cacheBustParam = '?v=2.2.5';
 
     public function emojiProvider()
     {
