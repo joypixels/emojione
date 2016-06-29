@@ -6,7 +6,7 @@
 2 info using npm@2.14.12
 3 info using node@v4.3.1
 4 verbose install initial load of /Sites/EmojiOne/repos/emojione/package.json
-5 warn package.json emojione@2.2.0 No license field.
+5 warn package.json emojione@2.2.5 No license field.
 6 verbose installManyTop reading scoped package data from /Sites/EmojiOne/repos/emojione/node_modules/grunt/package.json
 7 verbose installManyTop reading scoped package data from /Sites/EmojiOne/repos/emojione/node_modules/grunt-contrib-cssmin/package.json
 8 verbose installManyTop reading scoped package data from /Sites/EmojiOne/repos/emojione/node_modules/grunt-contrib-jshint/package.json
