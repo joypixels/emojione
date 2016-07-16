@@ -1850,8 +1850,6 @@
         @"peanuts" : @"\U0001f95c",
         @"kiwi" : @"\U0001f95d",
         @"pancakes" : @"\U0001f95e",
-        @"asterisk_symbol" : @"\U0000002a",
-        @"pound_symbol" : @"#",
         @"regional_indicator_z" : @"\U0001f1ff",
         @"regional_indicator_y" : @"\U0001f1fe",
         @"regional_indicator_x" : @"\U0001f1fd",
@@ -1878,16 +1876,6 @@
         @"regional_indicator_c" : @"\U0001f1e8",
         @"regional_indicator_b" : @"\U0001f1e7",
         @"regional_indicator_a" : @"\U0001f1e6",
-        @"digit_nine" : @"9",
-        @"digit_eight" : @"8",
-        @"digit_seven" : @"7",
-        @"digit_six" : @"6",
-        @"digit_five" : @"5",
-        @"digit_four" : @"4",
-        @"digit_three" : @"3",
-        @"digit_two" : @"2",
-        @"digit_one" : @"1",
-        @"digit_zero" : @"0",
             };
 }
 

@@ -1831,8 +1831,6 @@ public abstract class Emojione
         _shortNameToUnicode.put("peanuts", new String(new int[] {0x1f95c}, 0, 1));
         _shortNameToUnicode.put("kiwi", new String(new int[] {0x1f95d}, 0, 1));
         _shortNameToUnicode.put("pancakes", new String(new int[] {0x1f95e}, 0, 1));
-        _shortNameToUnicode.put("asterisk_symbol", new String(new int[] {0x002a}, 0, 1));
-        _shortNameToUnicode.put("pound_symbol", new String(new int[] {0x0023}, 0, 1));
         _shortNameToUnicode.put("regional_indicator_z", new String(new int[] {0x1f1ff}, 0, 1));
         _shortNameToUnicode.put("regional_indicator_y", new String(new int[] {0x1f1fe}, 0, 1));
         _shortNameToUnicode.put("regional_indicator_x", new String(new int[] {0x1f1fd}, 0, 1));
@@ -1859,16 +1857,6 @@ public abstract class Emojione
         _shortNameToUnicode.put("regional_indicator_c", new String(new int[] {0x1f1e8}, 0, 1));
         _shortNameToUnicode.put("regional_indicator_b", new String(new int[] {0x1f1e7}, 0, 1));
         _shortNameToUnicode.put("regional_indicator_a", new String(new int[] {0x1f1e6}, 0, 1));
-        _shortNameToUnicode.put("digit_nine", new String(new int[] {0x0039}, 0, 1));
-        _shortNameToUnicode.put("digit_eight", new String(new int[] {0x0038}, 0, 1));
-        _shortNameToUnicode.put("digit_seven", new String(new int[] {0x0037}, 0, 1));
-        _shortNameToUnicode.put("digit_six", new String(new int[] {0x0036}, 0, 1));
-        _shortNameToUnicode.put("digit_five", new String(new int[] {0x0035}, 0, 1));
-        _shortNameToUnicode.put("digit_four", new String(new int[] {0x0034}, 0, 1));
-        _shortNameToUnicode.put("digit_three", new String(new int[] {0x0033}, 0, 1));
-        _shortNameToUnicode.put("digit_two", new String(new int[] {0x0032}, 0, 1));
-        _shortNameToUnicode.put("digit_one", new String(new int[] {0x0031}, 0, 1));
-        _shortNameToUnicode.put("digit_zero", new String(new int[] {0x0030}, 0, 1));
     }
 
 }
