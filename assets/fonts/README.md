@@ -6,7 +6,7 @@ There's no better way to port our emoji into your device than through a native f
 https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-android.ttf
 
   * Compatible with rooted Android devices.
-  * Updated Mar 28, 2016
+  * Updated June 21, 2016
 
 Android Setup Help:
 * We recommend Emoji Switcher (now free for Emoji One): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
@@ -20,7 +20,7 @@ https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-apple.ttf
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
   * Rename font to AppleColorEmoji@2x.ttf for iOS, jailbreak required.
   * Known Issue: On Mac OSX, emoji may display significantly smaller than normal (system wide).
-  * Updated Dec 29, 2015
+  * Updated July 18, 2016
   
 Mac OS Instructions:
 Using the latest OS (El Capitan), I was able to load this emoji file in less than a minute.  The original emoji ttf is located in system/library/fonts, do not touch this.  You can safely upload the renamed file (from emojione-apple.ttf, to Apple Color Emoji.ttf) to the /library/fonts folder.  That file will override the default.  This was my experience, but yours may vary.  If someone could create a video and/or web-site guide, we'd gladly link to it.
