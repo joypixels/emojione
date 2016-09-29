@@ -30,8 +30,8 @@ Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a soft
 
 ###Black & White Font
 https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-bw.otf
-Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used to generate this font.
 
+  * Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used to generate this font.
   * SVGs available at https://github.com/Ranks/emojione/raw/master/assets/svg_bw/
   * PNGs available at https://github.com/Ranks/emojione/raw/master/assets/png_bw/
 
