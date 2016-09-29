@@ -9,7 +9,7 @@ https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-android.ttf
   * Updated September 3, 2016
 
 Android Setup Help:
-* We recommend Emoji Switcher (now free for Emoji One): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
+* We recommend Emoji Switcher (now free for EmojiOne): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
 * Reddit Thread: https://www.reddit.com/r/Android/comments/3xezb9/emojione_on_android/
 * Must have a rooted Android phone.
 
@@ -27,6 +27,13 @@ Using the latest OS (El Capitan), I was able to load this emoji file in less tha
 
 iOS Instructions:
 Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a software application for iOS that enables a user to find and install software packages on jailbroken iOS devices (iPhone, iPod, iPad).
+
+###Black & White Font
+https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-bw.otf
+Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used to generate this font.
+
+  * SVGs available at https://github.com/Ranks/emojione/raw/master/assets/svg_bw/
+  * PNGs available at https://github.com/Ranks/emojione/raw/master/assets/png_bw/
 
 ###Linux Font
 #####Emoji One SVGinOT Color Font
