@@ -31,7 +31,7 @@ Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a soft
 ###EmojiOne SVG-based Color Fonts
 Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used, in part, to generate this font. Using these fonts with Firefox or Microsoft Edge, you can enjoy full-color EmojiOne emoji. Black and white images will show as the fall back for systems that are not able to render color SVG fonts. The font is available in the following formats:
 
-  * Cross-platform Opent Type Font: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.otf
+  * Open Type Font: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.otf
   * Web Open Font Format: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.woff
   * Web Open Font Format 2.0: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.woff2
 
