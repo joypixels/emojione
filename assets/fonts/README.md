@@ -28,18 +28,17 @@ Using the latest OS (El Capitan), I was able to load this emoji file in less tha
 iOS Instructions:
 Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a software application for iOS that enables a user to find and install software packages on jailbroken iOS devices (iPhone, iPod, iPad).
 
-###Black & White Font
-https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-bw.otf
+###EmojiOne SVG-based Color Fonts
+Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used, in part, to generate this font. Using these fonts with Firefox or Microsoft Edge, you can enjoy full-color EmojiOne emoji. Black and white images will show as the fall back for systems that are not able to render color SVG fonts. The font is available in the following formats:
 
-  * Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used to generate this font.
+  * Cross-platform Opent Type Font: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.otf
+  * Web Open Font Format: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.woff
+  * Web Open Font Format 2.0: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.woff2
+
+The black and white images used to generate these fonts are also provided here:
+
   * SVGs available at https://github.com/Ranks/emojione/raw/master/assets/svg_bw/
   * PNGs available at https://github.com/Ranks/emojione/raw/master/assets/png_bw/
-
-###Linux Font
-#####Emoji One SVGinOT Color Font
-A color and B&W emoji SVGinOT font built primarily from Emoji One artwork with full support for ZWJ, skin tone modifiers and country flags. Developed by @eosrei
-
-https://github.com/eosrei/emojione-color-font
 
 ---
   
