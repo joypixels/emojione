@@ -98,7 +98,7 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
         $test     = 'Hello world! :) :D ;) :smile:';
         $expected = 'Hello world! :slightly_smiling_face: :smiley: :wink: :smile:';
 
-        $this->assertEquals(Emojione::toShort($test), $expected);
+        $this->assertEquals(Emojione::asciiToShortname($test), $expected);
     }
 
     /**
