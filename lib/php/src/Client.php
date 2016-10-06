@@ -103,6 +103,13 @@ class Client implements ClientInterface
         return $string;
     }
 
+    public function asciiToShortname($string)
+    {
+        $ruleset = $this->getRuleset();
+        $asciiRegexp = $ruleset->getAsciiRegexp();
+        return preg_replace_callback('/'.$this->ignoredRegexp.'|((\\s|^)'.$asciiRegexp.'(?=\\s|$|[!,.?]))/S', array($this, 'asciiToShortnameCallback'), $string);
+    }
+
     /**
      * This will output image markup (for png or svg) from shortname input.
      *
@@ -282,6 +289,23 @@ class Client implements ClientInterface
             $shortname = $m[3];
             $unicode = $ascii_replace[$shortname];
             return $m[2].$this->convert($unicode);
+        }
+    }
+
+    public function asciiToShortnameCallback($m)
+    {
+        if ((!is_array($m)) || (!isset($m[3])) || (empty($m[3])))
+        {
+            return $m[0];
+        }
+        else
+        {
+            $ruleset = $this->getRuleset();
+            $ascii_replace = $ruleset->getAsciiReplace();
+            $shortcode_replace = array_flip($ruleset->getShortcodeReplace());
+            $shortname = $m[3];
+            $unicode = $ascii_replace[$shortname];
+            return $shortcode_replace[$unicode];
         }
     }
 
