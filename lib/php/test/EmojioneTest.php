@@ -96,7 +96,7 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
     public function testAsciiToShortname()
     {
         $test     = 'Hello world! :) :D ;) :smile:';
-        $expected = 'Hello world! :slight_smile: :smiley: :wink: :smile:';
+        $expected = 'Hello world! :slightly_smiling_face: :smiley: :wink: :smile:';
 
         $this->assertEquals(Emojione::toShort($test), $expected);
     }

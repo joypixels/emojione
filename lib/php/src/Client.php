@@ -305,7 +305,7 @@ class Client implements ClientInterface
             $shortcode_replace = array_flip($ruleset->getShortcodeReplace());
             $shortname = $m[3];
             $unicode = $ascii_replace[$shortname];
-            return $shortcode_replace[$unicode];
+            return $m[2].$shortcode_replace[$unicode];
         }
     }
 
