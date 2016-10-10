@@ -132,6 +132,12 @@ Or
 {{#emojione}}My emoji :beers: text.{{/emojione}}
 ```
 
+### Swift Conversion
+
+```swift
+Emojione.transform(string: "Rocket.Chat: :rocket:")
+```
+
 ### Extras
 
 **[shortnameToUnicode(str)](http://git.emojione.com/demos/latest/shortnametounicode.html)**
