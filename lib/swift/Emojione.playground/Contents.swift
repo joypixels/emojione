@@ -1836,15 +1836,14 @@ struct Emojione {
         var transformedString = string as NSString
         
         let regex = try! NSRegularExpression(pattern: ":([-+\\w]+):", options: [])
-        let matches = regex.matches(in: string, options: [], range: NSMakeRange(0, oldString.length))
-        print(matches.count)
+        let matches = regex.matches(in: transformedString as String, options: [], range: NSMakeRange(0, transformedString.length))
         
         for result in matches {
             guard result.numberOfRanges == 2 else { continue }
             
             let shortname = oldString.substring(with: result.rangeAt(1))
             if let emoji = values[shortname] {
-                transformedString = transformedString.replacingCharacters(in: result.rangeAt(0), with: emoji) as NSString
+                transformedString = transformedString.replacingOccurrences(of: ":\(shortname):", with: emoji) as NSString
             }
         }
         
@@ -1854,5 +1853,5 @@ struct Emojione {
 
 
 Emojione.transform(string: "Tractor: :tractor:")
-Emojione.transform(string: "Rocket.Chat: :rocket:")
+Emojione.transform(string: "Rocket.Chat: :rocket: :tractor: :thumbsup: :bomb: :fire: :foobar:")
 Emojione.transform(string: "Regional Indicator A: :regional_indicator_a:")
