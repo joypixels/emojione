@@ -53,7 +53,7 @@ $client->imagePathSVG = './../assets/svg/';
 <!-- Masthead -->
 <header class="masthead">
   <div class="container">
-    <h1 class="masthead-title">EmojiOne Labs</h1><span class="version">version <span>2.2.5</span></span>
+    <h1 class="masthead-title">EmojiOne Labs</h1><span class="version">version <span>2.2.6</span></span>
   </div>
 </header>
 
