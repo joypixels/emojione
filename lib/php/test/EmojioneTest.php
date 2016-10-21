@@ -9,6 +9,29 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
 
     private $cacheBustParam = '?v=2.2.5';
 
+    public function emojiProvider()
+    {
+        $file = dirname (__FILE__).'/../../../emoji.json';
+
+        $string = file_get_contents($file);
+
+        $json = json_decode($string, true);
+
+        $data = array();
+
+        foreach($json as $emoji)
+        {
+            if($emoji['aliases_ascii'] && count($emoji['aliases_ascii']) > 0){
+                $data[] = array(
+                    $emoji['shortname'],
+                    $emoji['aliases_ascii'][0],
+                );
+            }
+
+        }
+        return $data;
+    }
+
     /**
      * test Emojione::toImage()
      *
@@ -96,9 +119,19 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
     public function testAsciiToShortname()
     {
         $test     = 'Hello world! :) :D ;) :smile:';
-        $expected = 'Hello world! :slightly_smiling_face: :smiley: :wink: :smile:';
+        $expected = 'Hello world! :slight_smile: :smiley: :wink: :smile:';
 
         $this->assertEquals(Emojione::asciiToShortname($test), $expected);
+    }
+
+    /**
+     * Test Ascii to shortnames with dataProvider
+     *
+     * @dataProvider emojiProvider
+     */
+    public function testAsciiToShortnameWithDataProvider($shortname, $ascii)
+    {
+        $this->assertEquals($shortname, Emojione::asciiToShortname($ascii));
     }
 
     /**

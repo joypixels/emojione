@@ -103,6 +103,14 @@ class Client implements ClientInterface
         return $string;
     }
 
+    /**
+     * This will replace ascii with their shortname equivalent, it bases on reversed ::shortnameToAsciiCallback
+     * ex. :) --> :slight_smile:
+     * This is useful for systems that don't ascii emoji.
+     *
+     * @param   string  $string The input ascii.
+     * @return  string  String with shortname replacements.
+     */
     public function asciiToShortname($string)
     {
         $ruleset = $this->getRuleset();
@@ -292,6 +300,10 @@ class Client implements ClientInterface
         }
     }
 
+    /**
+     * @param   array   $m  Results of preg_replace_callback().
+     * @return  string  Shortname replacement result.
+     */
     public function asciiToShortnameCallback($m)
     {
         if ((!is_array($m)) || (!isset($m[3])) || (empty($m[3])))
@@ -302,7 +314,8 @@ class Client implements ClientInterface
         {
             $ruleset = $this->getRuleset();
             $ascii_replace = $ruleset->getAsciiReplace();
-            $shortcode_replace = array_flip($ruleset->getShortcodeReplace());
+
+            $shortcode_replace = array_flip(array_reverse($ruleset->getShortcodeReplace()));
             $shortname = $m[3];
             $unicode = $ascii_replace[$shortname];
             return $m[2].$shortcode_replace[$unicode];
