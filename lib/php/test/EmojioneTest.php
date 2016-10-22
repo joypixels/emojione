@@ -21,13 +21,13 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
 
         foreach($json as $emoji)
         {
-            if($emoji['aliases_ascii'] && count($emoji['aliases_ascii']) > 0){
+            if(isset($emoji['aliases_ascii']) && is_array($emoji['aliases_ascii'])){
+                foreach($emoji['aliases_ascii'] as $ascii)
                 $data[] = array(
-                    $emoji['shortname'],
-                    $emoji['aliases_ascii'][0],
+                    $ascii,
+                    $emoji['shortname']
                 );
             }
-
         }
         return $data;
     }
@@ -129,7 +129,7 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
      *
      * @dataProvider emojiProvider
      */
-    public function testAsciiToShortnameWithDataProvider($shortname, $ascii)
+    public function testAsciiToShortnameWithDataProvider($ascii, $shortname)
     {
         $this->assertEquals($shortname, Emojione::asciiToShortname($ascii));
     }
