@@ -11,7 +11,7 @@ class Client implements ClientInterface
     public $ascii = false; // convert ascii smileys?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     public $imageType = 'png'; // or svg
-    public $cacheBustParam = '?v=2.2.5';
+    public $cacheBustParam = '?v=2.2.6';
     public $sprites = false;
     public $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
     public $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
