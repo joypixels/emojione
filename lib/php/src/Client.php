@@ -9,6 +9,7 @@ namespace Emojione;
 class Client implements ClientInterface
 {
     public $ascii = false; // convert ascii smileys?
+    public $shortcodes = true; // convert shortcodes?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     public $imageType = 'png'; // or svg
     public $cacheBustParam = '?v=2.2.5';
@@ -75,7 +76,10 @@ class Client implements ClientInterface
      */
     public function shortnameToUnicode($string)
     {
-        $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToUnicodeCallback'), $string);
+        if ($this->shortcodes)
+        {
+            $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToUnicodeCallback'), $string);
+        }
 
         if ($this->ascii)
         {
@@ -126,7 +130,10 @@ class Client implements ClientInterface
      */
     public function shortnameToImage($string)
     {
-        $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToImageCallback'), $string);
+        if ($this->shortcodes)
+        {
+            $string = preg_replace_callback('/'.$this->ignoredRegexp.'|('.$this->shortcodeRegexp.')/Si', array($this, 'shortnameToImageCallback'), $string);
+        }
 
         if ($this->ascii)
         {
