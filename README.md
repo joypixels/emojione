@@ -1,4 +1,4 @@
-#![Emoji One Logo](http://git.emojione.com/assets/logo.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
+#![EmojiOne Logo](http://git.emojione.com/assets/logo.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
 
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
@@ -9,7 +9,7 @@ The web's first and only complete open source emoji set. It is 100% free and sup
 
 To standardize emoji on the web through the use of common :shortnames:.
 
-When storing user inputted text in your database, say from a guestbook or through a CMS admin, you should always make sure you are storing text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
+When storing user inputted text in your database, say from a guestbook or through a CMS admin, it is recommended that you store text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
 
 
 #### _What are Shortnames?_
@@ -213,7 +213,7 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
 
 ## Licenses
 
-### Emoji One Artwork
+### EmojiOne Artwork
 
 *  Applies to all PNG and SVG files as well as any adaptations made.
 *  The following applies to artwork included in Emoji One GitHub libraries versions < 2.0.0.
@@ -226,7 +226,7 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
   *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
 
 
-### Emoji One Non-Artwork
+### EmojiOne Non-Artwork
 
 *  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
 *  License: MIT
