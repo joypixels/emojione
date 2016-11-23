@@ -1,4 +1,4 @@
-#### Emoji One Artwork
+#### EmojiOne Artwork
 
 *  Applies to all PNG and SVG files as well as any adaptations made.
 *  License: Creative Commons Attribution 4.0 International
@@ -6,7 +6,7 @@
 *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
 
 
-#### Emoji One Non-Artwork
+#### EmojiOne Non-Artwork
 
 *  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
 *  License: MIT
