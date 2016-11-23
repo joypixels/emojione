@@ -24,8 +24,8 @@ When storing user inputted text in your database, say from a guestbook or throug
 We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
-<script src="//cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.2.6/assets/css/emojione.min.css"/>
+<script src="https://cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/2.2.6/assets/css/emojione.min.css"/>
 ```
 
 Alternatively, CDNjs is also available as a [CDN Host for Emoji One](https://cdnjs.com/libraries/emojione).
@@ -130,6 +130,12 @@ Or
 
 ```handlebars
 {{#emojione}}My emoji :beers: text.{{/emojione}}
+```
+
+### Swift Conversion
+
+```swift
+Emojione.transform(string: "Rocket.Chat: :rocket:")
 ```
 
 ### Extras
