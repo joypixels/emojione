@@ -12,11 +12,12 @@ class Client implements ClientInterface
     public $shortcodes = true; // convert shortcodes?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     public $imageType = 'png'; // or svg
-    public $cacheBustParam = '?v=2.2.5';
+    public $cacheBustParam = '?v=2.2.6';
     public $sprites = false;
-    public $imagePathPNG = '//cdn.jsdelivr.net/emojione/assets/png/';
-    public $imagePathSVG = '//cdn.jsdelivr.net/emojione/assets/svg/';
+    public $imagePathPNG = 'https://cdn.jsdelivr.net/emojione/assets/png/';
+    public $imagePathSVG = 'https://cdn.jsdelivr.net/emojione/assets/svg/';
     public $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
+    public $imageTitleTag = true;
     public $unicode_replaceWith = false;
     public $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
     public $unicodeRegexp = '([*#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(\\xF0\\x9F\\x8F[\\xBB-\\xBF])?(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..((\\xE2\\x80\\x8D\\xF0\\x9F\\x97\\xA8)|(\\xF0\\x9F\\x8F[\\xBB-\\xBF])|(\\xE2\\x80\\x8D\\xF0\\x9F\\x91[\\xA6-\\xA9]){2,3}|(\\xE2\\x80\\x8D\\xE2\\x9D\\xA4\\xEF\\xB8\\x8F\\xE2\\x80\\x8D\\xF0\\x9F..(\\xE2\\x80\\x8D\\xF0\\x9F\\x91[\\xA6-\\xA9])?))?))';
@@ -253,6 +254,7 @@ class Client implements ClientInterface
 
             $unicode = $shortcode_replace[$shortname];
             $filename = $unicode;
+            $titleTag = $this->imageTitleTag ? 'title="'.htmlspecialchars($shortname).'"' : '';
 
             if ($this->unicodeAlt)
             {
@@ -271,7 +273,7 @@ class Client implements ClientInterface
                 }
                 else
                 {
-                    return '<img class="emojione" alt="'.$alt.'" src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
+                    return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
                 }
             }
 
@@ -346,6 +348,7 @@ class Client implements ClientInterface
 
             $shortname = html_entity_decode($m[3]);
             $unicode = $ascii_replace[$shortname];
+            $titleTag = $this->imageTitleTag ? 'title="'.htmlspecialchars($shortname).'"' : '';
 
             // unicode char or shortname for the alt tag? (unicode is better for copying and pasting the resulting text)
             if ($this->unicodeAlt)
@@ -365,7 +368,7 @@ class Client implements ClientInterface
                 }
                 else
                 {
-                    return $m[2].'<img class="emojione" alt="'.$alt.'" src="'.$this->imagePathPNG.$unicode.'.png'.$this->cacheBustParam.'"/>';
+                    return $m[2].'<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$unicode.'.png'.$this->cacheBustParam.'"/>';
                 }
             }
 
@@ -463,6 +466,7 @@ class Client implements ClientInterface
 
             $shortname = array_search($unicode, $unicode_replace);
             $filename = $shortcode_replace[$shortname];
+            $titleTag = $this->imageTitleTag ? 'title="'.htmlspecialchars($shortname).'"' : '';
 
             if ($this->unicodeAlt)
             {
@@ -481,7 +485,7 @@ class Client implements ClientInterface
                 }
                 else
                 {
-                    return '<img class="emojione" alt="'.$alt.'" src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
+                    return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' title="'.htmlspecialchars($shortname).'" src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
                 }
             }
 

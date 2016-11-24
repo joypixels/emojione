@@ -5,10 +5,10 @@
 🐌
 
 # character mid sentence
-The 🐌 is Emoji One's official mascot.
+The 🦄 is Emoji One's official mascot.
 
 # character mid sentence with a comma
-The 🐌, is Emoji One's official mascot.
+The 🦄, is Emoji One's official mascot.
 
 # character at start of sentence
 🐌 mail.
@@ -17,19 +17,19 @@ The 🐌, is Emoji One's official mascot.
 🐌's are cool!
 
 # character at end of sentence
-Emoji One's official mascot is 🐌.
+Emoji One's official mascot is 🦄.
 
 # character at end of sentence with alternate puncuation
-Emoji One's official mascot is 🐌!
+Emoji One's official mascot is 🦄!
 
 # character at end of sentence with preceeding colon
-Emoji One's official mascot: 🐌
+Emoji One's official mascot: 🦄
 
 # character inside of IMG tag
-The <img class="emojione" alt="🐌" src="//cdn.jsdelivr.net/emojione/assets/png/1F40C.png" /> is Emoji One's official mascot.
+The <img class="emojione" alt="🦄" title=":unicorn:" src="https://cdn.jsdelivr.net/emojione/assets/png/1F984.png" /> is Emoji One's official mascot.
 
 # characters inside of OBJECT tag
-The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.svg" type="image/svg+xml" standby="🐌">🐌</object> is Emoji One's official mascot.
+The <object class="emojione" data="https://cdn.jsdelivr.net/emojione/assets/svg/1F40C.svg" type="image/svg+xml" standby="🐌">🐌</object> is Emoji One's official mascot.
 
 ```
 
@@ -41,10 +41,10 @@ The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.
 :snail:
 
 # shortname mid sentence
-The :snail: is Emoji One's official mascot.
+The :unicorn: is Emoji One's official mascot.
 
 # shortname mid sentence with a comma
-The :snail:, is Emoji One's official mascot.
+The :unicorn:, is Emoji One's official mascot.
 
 # shortname at start of sentence
 :snail: mail.
@@ -53,16 +53,16 @@ The :snail:, is Emoji One's official mascot.
 :snail:'s are cool!
 
 # shortname at end of sentence
-Emoji One's official mascot is :snail:.
+Emoji One's official mascot is :unicorn:.
 
 # shortname at end of sentence with alternate puncuation
-Emoji One's official mascot is :snail:!
+Emoji One's official mascot is :unicorn:!
 
 # shortname at end of sentence with preceeding colon
-Emoji One's official mascot: :snail:
+Emoji One's official mascot: :unicorn:
 
 # shortname inside of IMG tag
-The <img class="emojione" alt=":snail:" src="//cdn.jsdelivr.net/emojione/assets/png/1F40C.png" /> is Emoji One's official mascot.
+The <img class="emojione" alt=":unicorn:" title=":unicorn:" src="https://cdn.jsdelivr.net/emojione/assets/png/1F984.png" /> is Emoji One's official mascot.
 
 # shortnames inside of OBJECT tag
 The <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F40C.svg" type="image/svg+xml" standby=":snail:">:snail:</object> is Emoji One's official mascot.
@@ -94,10 +94,10 @@ The reverse is the joy smiley is the cry smiley :'(.
 This is the "flushed" smiley: :$.
 
 # smiley inside of an IMG tag  (shouldn't convert anything inside of the tag)
-Smile <img class="emojione" alt=":)" src="//cdn.jsdelivr.net/emojione/assets/png/1F604.png" /> because it's going to be a good day.
+Smile <img class="emojione" alt=":)" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/png/1F604.png" /> because it's going to be a good day.
 
 # smiley inside of OBJECT tag  (shouldn't convert anything inside of the tag)
-Smile <object class="emojione" data="//cdn.jsdelivr.net/emojione/assets/svg/1F604.svg" type="image/svg+xml" standby=":)">:)</object> because it's going to be a good day.
+Smile <object class="emojione" data="https://cdn.jsdelivr.net/emojione/assets/svg/1F604.svg" type="image/svg+xml" standby=":)">:)</object> because it's going to be a good day.
 
 # typical username password fail  (shouldn't convert the user:pass, but should convert the last :p)
 Please log-in with user:pass as your credentials :P.
