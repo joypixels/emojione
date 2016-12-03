@@ -1,4 +1,4 @@
-#![EmojiOne Logo](http://git.emojione.com/assets/logo.png) Emoji One [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
+#![EmojiOne Logo](http://git.emojione.com/assets/logo.png) EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
 
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
@@ -24,11 +24,11 @@ When storing user inputted text in your database, say from a guestbook or throug
 We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
-<script src="https://cdn.jsdelivr.net/emojione/2.2.6/lib/js/emojione.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/2.2.6/assets/css/emojione.min.css"/>
+<script src="https://cdn.jsdelivr.net/emojione/2.2.7/lib/js/emojione.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/2.2.7/assets/css/emojione.min.css"/>
 ```
 
-Alternatively, CDNjs is also available as a [CDN Host for Emoji One](https://cdnjs.com/libraries/emojione).
+Alternatively, CDNjs is also available as a [CDN Host for EmojiOne](https://cdnjs.com/libraries/emojione).
 
 Quick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit).
 
@@ -68,15 +68,15 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 
 **[.shortnameToImage\(str\)](http://git.emojione.com/demos/latest/jsshortnametoimage.html)** - _shortname -> images_
 
-This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
+This demo shows you how to take input containing only shortnames and translate it directly to EmojiOne images. (when displaying the unified input to clients)
 
 **[.unicodeToImage\(str\)](http://git.emojione.com/demos/latest/jsunicodetoimage.html)** - _native unicode -> images_
 
-This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to EmojiOne images. (would be great for a live editor preview)
 
 **[.toImage\(str\)](http://git.emojione.com/demos/latest/jstoimage.html)** - _native unicode + shortnames -> images (mixed input)_
 
-This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
+This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into EmojiOne images for display.
 
 
 ### PHP Conversion
@@ -89,15 +89,15 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 
 **[shortnameToImage\($str\)](http://git.emojione.com/demos/latest/phpshortnametoimage.php)** - _shortname -> images_
 
-This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
+This demo shows you how to take input containing only shortnames and translate it directly to EmojiOne images. (when displaying the unified input to clients)
 
 **[unicodeToImage\($str\)](http://git.emojione.com/demos/latest/phpunicodetoimage.php)** - _native unicode -> images_
 
-This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to EmojiOne images. (would be great for a live editor preview)
 
 **[toImage\($str\)](http://git.emojione.com/demos/latest/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 
-This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
+This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into EmojiOne images for display.
 
 
 ##### Note: As of version 1.4.1 the following implementation has been deprecated. It's included in the library for backwards compatibility but will be removed at a later date.
@@ -108,15 +108,15 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 
 **[::shortnameToImage\($str\)](http://git.emojione.com/demos/1.4.0/phpshortnametoimage.php)** - _shortname -> images_
 
-This demo shows you how to take input containing only shortnames and translate it directly to Emoji One images. (when displaying the unified input to clients)
+This demo shows you how to take input containing only shortnames and translate it directly to EmojiOne images. (when displaying the unified input to clients)
 
 **[::unicodeToImage\($str\)](http://git.emojione.com/demos/1.4.0/phpunicodetoimage.php)** - _native unicode -> images_
 
-This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to Emoji One images. (would be great for a live editor preview)
+This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to EmojiOne images. (would be great for a live editor preview)
 
 **[::toImage\($str\)](http://git.emojione.com/demos/1.4.0/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 
-This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into Emoji One images for display.
+This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into EmojiOne images for display.
 
 ### Meteor Conversion
 
@@ -170,7 +170,7 @@ Converts unicode input to shortnames once the user submits the form.
 
 **[Sprites (PNG)](http://git.emojione.com/demos/latest/sprites-png.html)**
 
-With an additional CSS file you can use Emoji One as resizable PNG sprites (up to 64x64).
+With an additional CSS file you can use EmojiOne as resizable PNG sprites (up to 64x64).
 
 **[Sprites (SVG)](http://git.emojione.com/demos/latest/sprites-svg.html)**
 
@@ -206,7 +206,7 @@ If you have any questions, comments, or concerns you are welcome to contact us.
 
 
 ### Alternatives
-We sincerely hope that you choose to use Emoji One and support our project, but if you feel like it's not for you, please have a look at these possible alternatives:
+We sincerely hope that you choose to use EmojiOne and support our project, but if you feel like it's not for you, please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
 * https://github.com/Genshin/PhantomOpenEmoji
@@ -222,11 +222,11 @@ We sincerely hope that you choose to use Emoji One and support our project, but 
 ### EmojiOne Artwork
 
 *  Applies to all PNG and SVG files as well as any adaptations made.
-*  The following applies to artwork included in Emoji One GitHub libraries versions < 2.0.0.
+*  The following applies to artwork included in EmojiOne GitHub libraries versions < 2.0.0.
   *  License: Creative Commons Attribution-ShareAlike 4.0 International
   *  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
   *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
-*  The following applies to artwork included in Emoji One GitHub libraries versions >= 2.0.0.
+*  The following applies to artwork included in EmojiOne GitHub libraries versions >= 2.0.0.
   *  License: Creative Commons Attribution 4.0 International
   *  Human Readable License: http://creativecommons.org/licenses/by/4.0/
   *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode

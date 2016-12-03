@@ -12,7 +12,7 @@ class Client implements ClientInterface
     public $shortcodes = true; // convert shortcodes?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     public $imageType = 'png'; // or svg
-    public $cacheBustParam = '?v=2.2.6';
+    public $cacheBustParam = '?v=2.2.7';
     public $sprites = false;
     public $imagePathPNG = 'https://cdn.jsdelivr.net/emojione/assets/png/';
     public $imagePathSVG = 'https://cdn.jsdelivr.net/emojione/assets/svg/';
