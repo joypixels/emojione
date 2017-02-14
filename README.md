@@ -234,6 +234,6 @@ We sincerely hope that you choose to use EmojiOne and support our project, but i
 
 ### EmojiOne Non-Artwork
 
-*  Applies to the Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
+*  Applies to: Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
 *  License: MIT
 *  Complete Legal Terms: http://opensource.org/licenses/MIT
