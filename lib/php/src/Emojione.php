@@ -6,12 +6,9 @@ class Emojione
 {
     public static $ascii = false; // convert ascii smileys?
     public static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
-    public static $imageType = 'png';
-    public static $cacheBustParam = '?v=2.2.7';
+    public static $cacheBustParam = '?v=3.0';
     public static $sprites = false;
     public static $imagePathPNG = 'https://cdn.jsdelivr.net/emojione/assets/png/';
-    public static $imagePathSVG = 'https://cdn.jsdelivr.net/emojione/assets/svg/';
-    public static $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
     public static $imageTitleTag = true;
     public static $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
     public static $unicodeRegexp = '([*#0-9](?>\\xEF\\xB8\\x8F)?\\xE2\\x83\\xA3|\\xC2[\\xA9\\xAE]|\\xE2..(\\xF0\\x9F\\x8F[\\xBB-\\xBF])?(?>\\xEF\\xB8\\x8F)?|\\xE3(?>\\x80[\\xB0\\xBD]|\\x8A[\\x97\\x99])(?>\\xEF\\xB8\\x8F)?|\\xF0\\x9F(?>[\\x80-\\x86].(?>\\xEF\\xB8\\x8F)?|\\x87.\\xF0\\x9F\\x87.|..((\\xE2\\x80\\x8D\\xF0\\x9F\\x97\\xA8)|(\\xF0\\x9F\\x8F[\\xBB-\\xBF])|(\\xE2\\x80\\x8D\\xF0\\x9F\\x91[\\xA6-\\xA9]){2,3}|(\\xE2\\x80\\x8D\\xE2\\x9D\\xA4\\xEF\\xB8\\x8F\\xE2\\x80\\x8D\\xF0\\x9F..(\\xE2\\x80\\x8D\\xF0\\x9F\\x91[\\xA6-\\xA9])?))?))';
@@ -81,13 +78,10 @@ class Emojione
     {
         static::$ascii               = $client->ascii;
         static::$unicodeAlt          = $client->unicodeAlt;
-        static::$imageType           = $client->imageType;
         static::$cacheBustParam      = $client->cacheBustParam;
         static::$sprites             = $client->sprites;
         static::$imagePathPNG        = $client->imagePathPNG;
-        static::$imagePathSVG        = $client->imagePathSVG;
         static::$imageTitleTag       = $client->imageTitleTag;
-        static::$imagePathSVGSprites = $client->imagePathSVGSprites;
         static::$ignoredRegexp       = $client->ignoredRegexp;
         static::$unicodeRegexp       = $client->unicodeRegexp;
         static::$shortcodeRegexp     = $client->shortcodeRegexp;
@@ -105,13 +99,10 @@ class Emojione
     {
         $client->ascii               = static::$ascii;
         $client->unicodeAlt          = static::$unicodeAlt;
-        $client->imageType           = static::$imageType;
         $client->cacheBustParam      = static::$cacheBustParam;
         $client->sprites             = static::$sprites;
         $client->imagePathPNG        = static::$imagePathPNG;
-        $client->imagePathSVG        = static::$imagePathSVG;
         $client->imageTitleTag       = static::$imageTitleTag;
-        $client->imagePathSVGSprites = static::$imagePathSVGSprites;
         $client->ignoredRegexp       = static::$ignoredRegexp;
         $client->unicodeRegexp       = static::$unicodeRegexp;
         $client->shortcodeRegexp     = static::$shortcodeRegexp;

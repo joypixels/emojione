@@ -12,11 +12,9 @@ class Client implements ClientInterface
     public $shortcodes = true; // convert shortcodes?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
     public $imageType = 'png'; // or svg
-    public $cacheBustParam = '?v=2.2.7';
+    public $cacheBustParam = '?v=3.0';
     public $sprites = false;
     public $imagePathPNG = 'https://cdn.jsdelivr.net/emojione/assets/png/';
-    public $imagePathSVG = 'https://cdn.jsdelivr.net/emojione/assets/svg/';
-    public $imagePathSVGSprites = './../../assets/sprites/emojione.sprites.svg';
     public $imageTitleTag = true;
     public $unicode_replaceWith = false;
     public $ignoredRegexp = '<object[^>]*>.*?<\/object>|<span[^>]*>.*?<\/span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>';
@@ -265,25 +263,13 @@ class Client implements ClientInterface
                 $alt = $shortname;
             }
 
-            if ($this->imageType == 'png')
-            {
-                if ($this->sprites)
-                {
-                    return '<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
-                }
-                else
-                {
-                    return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
-                }
-            }
-
             if ($this->sprites)
             {
-                return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.$this->imagePathSVGSprites.'#emoji-'.$unicode.'"></use></svg>';
+                return '<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
             }
             else
             {
-                return '<object class="emojione" data="'.$this->imagePathSVG.$filename.'.svg'.$this->cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+                return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
             }
         }
     }
@@ -360,25 +346,13 @@ class Client implements ClientInterface
                 $alt = htmlspecialchars($shortname);
             }
 
-            if ($this->imageType == 'png')
-            {
-                if ($this->sprites)
-                {
-                    return $m[2].'<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
-                }
-                else
-                {
-                    return $m[2].'<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$unicode.'.png'.$this->cacheBustParam.'"/>';
-                }
-            }
-
             if ($this->sprites)
             {
-                return $m[2].'<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.$this->imagePathSVGSprites.'#emoji-'.$unicode.'"></use></svg>';
+                return $m[2].'<span class="emojione emojione-'.$unicode.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
             }
             else
             {
-                return $m[2].'<object class="emojione" data="'.$this->imagePathSVG.$unicode.'.svg'.$this->cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+                return $m[2].'<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$unicode.'.png'.$this->cacheBustParam.'"/>';
             }
         }
     }
@@ -477,25 +451,13 @@ class Client implements ClientInterface
                 $alt = $shortname;
             }
 
-            if ($this->imageType == 'png')
-            {
-                if ($this->sprites)
-                {
-                    return '<span class="emojione emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
-                }
-                else
-                {
-                    return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' title="'.htmlspecialchars($shortname).'" src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
-                }
-            }
-
             if ($this->sprites)
             {
-                return '<svg class="emojione"><description>'.$alt.'</description><use xlink:href="'.$this->imagePathSVGSprites.'#emoji-'.$filename.'"></use></svg>';
+                return '<span class="emojione emojione-'.$filename.'" title="'.htmlspecialchars($shortname).'">'.$alt.'</span>';
             }
             else
             {
-                return '<object class="emojione" data="'.$this->imagePathSVG.$filename.'.svg'.$this->cacheBustParam.'" type="image/svg+xml" standby="'.$alt.'">'.$alt.'</object>';
+                return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' title="'.htmlspecialchars($shortname).'" src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
             }
         }
     }
