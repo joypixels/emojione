@@ -14,8 +14,8 @@ If you've chosen to unify your inputted text so that it contains only shortnames
 **HTML:**
 `<input type="button" value="Convert" onclick="convert()"/>`
 
-**Javascript**
-```
+**Javascript Snippet**
+```javascript
 function convert() {
 	var input = document.getElementById('inputText').value;
 	var output = emojione.shortnameToImage(input);
@@ -33,8 +33,8 @@ This function is simply a shorthand for **.unicodeToImage(str)** and **.shortnam
 **HTML:**
 `<input type="button" value="Convert" onclick="convert()"/>`
 
-**Javascript**
-```
+**Javascript Snippet**
+```javascript
 function convert() {
 	var input = document.getElementById('inputText').value;
 	var output = emojione.toImage(input);
@@ -52,8 +52,8 @@ Our recommendation is to unify all user inputted text by converting native unico
 **HTML:**
 `<input type="button" value="Convert" onclick="convert()"/>`
 
-**Javascript**
-```
+**Javascript Snippet**
+```javascript
 function convert() {
 	var input = document.getElementById('inputText').value;
 	var output = emojione.toShort(input);
@@ -73,11 +73,27 @@ If you have native unicode emoji characters that you want to convert directly to
 **HTML:**
 `<input type="button" value="Convert" onclick="convert()"/>`
 
-**Javascript**
-```
+**Javascript Snippet**
+```javascript
 function convert() {
 	var input = document.getElementById('inputText').value;
 	var output = emojione.unicodeToImage(input);
 	document.getElementById('outputText').innerHTML = output;
 }
 ```
+
+----------
+
+##.shortnameToUnicode(str)
+*Convert Shortnames to Native Unicode*
+
+If you'd like to convert shortnames back to native unicode emoji characters, you can use this function.
+
+**Javascript Snippet**
+````javascript
+function convert() {
+	var input = document.getElementById('inputText').value;
+	var output = emojione.shortnameToUnicode(input);
+	document.getElementById('outputText').innerHTML = output;
+}
+````

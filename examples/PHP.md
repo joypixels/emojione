@@ -107,3 +107,24 @@ if(isset($_POST['inputText'])) {
 	echo $client->unicodeToImage($_POST['inputText']);
 }
 ```
+
+----------
+
+##shortnameToUnicode($str)
+*Convert Shortnames to Native Unicode*
+
+If you'd like to convert shortnames back to native unicode emoji characters, you can use this function.
+
+**PHP Snippet**
+```php
+namespace Emojione;
+
+// include the PHP library (if not autoloaded)
+require('./../lib/php/autoload.php');
+
+$client = new Client(new Ruleset());
+
+if(isset($_POST['inputText'])) {
+	echo $client->shortnameToUnicode($_POST['inputText']);
+}
+```
