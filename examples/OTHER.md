@@ -43,8 +43,8 @@ $(document).ready(function() {
 To get this working correctly you'll needed to include a few extra pieces, including:
 
 **Required Extras**
- - `<a href="http://jquery.com/">jQuery</a>`
- - `<a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">jquery-textcomplete</a>`
+ - <a href="http://jquery.com/" target="_blank">jQuery</a>
+ - <a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">jquery-textcomplete</a>
  - Custom JS (shown below)
  - Custom CSS (shown below)
  
@@ -199,7 +199,7 @@ function convert() {
 Start typing shortnames (:smile:, :blush:, :heart:, etc.) or entering native emojis from a compatible device.
 
 **Required Extras**
- - <a href="http://jquery.com/">jQuery</a>
+ - <a href="http://jquery.com/" target="_blank">jQuery</a>
  - Custom JS (shown below)
  
 **jQuery Snippet**
@@ -221,7 +221,7 @@ Using jQuery, this demo shows you how you can stick a class of **.convert-emoji*
 
 **Required Extras**
 To get this working correctly we need to include a few extras, including:
- - `<a href="http://jquery.com/">jQuery</a>`
+ - <a href="http://jquery.com/" target="_blank">jQuery</a>
  - Custom JS (shown below)
  
 **jQuery Snippet**
@@ -244,7 +244,7 @@ $(document).ready(function() {
 </p>
 ```
 
-**HTML Output***
+**HTML Output**
 ```html
 <p class="convert-emoji">
 	Welcome to this EmojiOne <img class="emojione" alt="🐌" title=":snail:" src="./assets/png/1f40c.png"> demo! <img class="emojione" alt="😄" title=":smile:" src="./assets/png/1f604.png">
@@ -259,12 +259,12 @@ $(document).ready(function() {
 We've setup a <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.png">spritesheet</a> for people to use. These sprites are resizeable up to 64x64 pixels, (at which point they will begin to stretch).
 
 **Some Considerations**
- - <a href="http://caniuse.com/#feat=css-zoom">zoom</a> or <a href="http://caniuse.com/#feat=transforms2d">transform: scale()</a> can be used for custom scaling. transform: scale() is more widely supported.
+ - <a href="http://caniuse.com/#feat=css-zoom" target="_blank">zoom</a> or <a href="http://caniuse.com/#feat=transforms2d" target="_blank">transform: scale()</a> can be used for custom scaling. transform: scale() is more widely supported.
  - Depending on the number of emoji being used on a page, loading an entire spritesheet here could be overkill.
  
 **1. Attach Sprite CSS Stylesheet:**
 
-To get PNG sprites working you first need to link the Sprites stylesheet in your &lt;head&gt;. This file is available in our <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.css">git repo under /assets/sprites</a>. Make sure to include the accompanying <em>emojione.sprites.png</em> file in the same directory, or update its path in the css file if you move it.
+To get PNG sprites working you first need to link the Sprites stylesheet in your &lt;head&gt;. This file is available in our <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.css">git repo under /assets/sprites</a>. Make sure to include the accompanying **emojione.sprites.png** file in the same directory, or update its path in the css file if you move it.
 
 `<link rel="stylesheet" href="path/to/emojione.sprites.css"/>`
 
@@ -273,7 +273,9 @@ To get PNG sprites working you first need to link the Sprites stylesheet in your
 Once the stylesheet is attached, it's just a matter of enabling PNG Sprites in your EmojiOne configuration:
 
 **Javascript Snippet**
-`emojione.sprites = true;`
+```javascript
+emojione.sprites = true;
+```
 
 **PHP Snippet**
 ```php
