@@ -168,4 +168,124 @@ $(document).ready(function() {
 .dropdown-menu li:hover a {
   color: inherit;
 }
- ```
+```
+ 
+----------
+ 
+##ASCII Smileys
+
+It's turned off by default, but by flipping one simple switch you can enable ASCII smiley conversion.
+
+>**Note:** Enabling ASCII smiley conversion may have unwanted results in your application. We've done our best to make sure that ASCII smileys are only converted when intended, but we cannot be sure. Everyone gets annoyed when regular phrases are automatically converted to smileys so please consider that before enabling this feature
+
+**Javascript Snippet**
+```javascript
+emojione.ascii = true; // (default: false)
+
+// to enable ASCII conversion in the PHP toolkit you would do:
+// Emojione::$ascii = true;
+
+function convert() {
+	var input = document.getElementById('inputText').value;
+	var output = emojione.shortnameToImage(input);
+	document.getElementById('outputText').innerHTML = output;
+}
+```
+
+----------
+
+##Live Preview Box
+
+Start typing shortnames (:smile:, :blush:, :heart:, etc.) or entering native emojis from a compatible device.
+
+**Required Extras**
+ - <a href="http://jquery.com/">jQuery</a>
+ - Custom JS (shown below)
+ 
+**jQuery Snippet**
+```javascript
+$(document).ready(function() {
+	$("#inputText").on('keyup change input',function(e) {
+	  var source = $('#inputText').val();
+	  var preview = emojione.toImage(source);
+	  $('#outputText').html(preview);
+	});
+});
+```
+
+----------
+
+##Conversion HTML Class
+
+Using jQuery, this demo shows you how you can stick a class of **.convert-emoji** on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.
+
+**Required Extras**
+To get this working correctly we need to include a few extras, including:
+ - `<a href="http://jquery.com/">jQuery</a>`
+ - Custom JS (shown below)
+ 
+**jQuery Snippet**
+```javascript
+$(document).ready(function() {
+	$(".convert-emoji").each(function() {
+		var original = $(this).html();
+		// use .shortnameToImage if only converting shortnames (for slightly better performance)
+		var converted = emojione.toImage(original);
+		$(this).html(converted);
+	});
+});
+```
+
+**HTML Input**
+```html
+<p class"convert-emoji">
+    Welcome to this EmojiOne :snail: demo! 😄
+    I hope you like what we've put together here for you. :thumbsup: :smile:
+</p>
+```
+
+**HTML Output***
+```html
+<p class="convert-emoji">
+	Welcome to this EmojiOne <img class="emojione" alt="🐌" title=":snail:" src="./assets/png/1f40c.png"> demo! <img class="emojione" alt="😄" title=":smile:" src="./assets/png/1f604.png">
+	I hope you like what we've put together here for you. <img class="emojione" alt="👍" title=":thumbsup:" src="./assets/png/1f44d.png"> <img class="emojione" alt="😄" title=":smile:" src="./assets/svg/1f604.png">
+</p>
+```
+
+----------
+
+##PNG Sprite
+
+We've setup a <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.png">spritesheet</a> for people to use. These sprites are resizeable up to 64x64 pixels, (at which point they will begin to stretch).
+
+**Some Considerations**
+ - <a href="http://caniuse.com/#feat=css-zoom">zoom</a> or <a href="http://caniuse.com/#feat=transforms2d">transform: scale()</a> can be used for custom scaling. transform: scale() is more widely supported.
+ - Depending on the number of emoji being used on a page, loading an entire spritesheet here could be overkill.
+ 
+**1. Attach Sprite CSS Stylesheet:**
+
+To get PNG sprites working you first need to link the Sprites stylesheet in your &lt;head&gt;. This file is available in our <a href="https://github.com/Ranks/emojione/blob/master/assets/sprites/emojione.sprites.css">git repo under /assets/sprites</a>. Make sure to include the accompanying <em>emojione.sprites.png</em> file in the same directory, or update its path in the css file if you move it.
+
+`<link rel="stylesheet" href="path/to/emojione.sprites.css"/>`
+
+**2. Enable PNG Sprite Mode**
+
+Once the stylesheet is attached, it's just a matter of enabling PNG Sprites in your EmojiOne configuration:
+
+**Javascript Snippet**
+`emojione.sprites = true;`
+
+**PHP Snippet**
+```php
+$client = new Client(new Ruleset());
+$client->sprites = true;
+```
+
+If you're not using our conversion scripts, PNG sprites can be implemented using the following markup structure. In this example we're using the unicode symbol 1F433:
+
+**HTML Markup**
+```html
+<span class="emojione emojione-1f433">
+  &#x1f433;
+</span>
+```
