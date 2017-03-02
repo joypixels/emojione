@@ -43,8 +43,8 @@ $(document).ready(function() {
 To get this working correctly you'll needed to include a few extra pieces, including:
 
 **Required Extras**
- - <a href="http://jquery.com/">jQuery</a>
- - <a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">jquery-textcomplete</a>
+ - `<a href="http://jquery.com/">jQuery</a>`
+ - `<a href="https://github.com/yuku-t/jquery-textcomplete" target="_blank">jquery-textcomplete</a>`
  - Custom JS (shown below)
  - Custom CSS (shown below)
  
