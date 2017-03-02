@@ -1,24 +1,26 @@
 #EmojiOne
 
-##**Javascript Implementation Examples**
+##**Additional Implementation Examples**
 
-The following Javascript code snippets demonstrate common usages of EmojiOne within your project.
+The following code snippets demonstrate common usages of EmojiOne within your project.
 
 ----------
 
-##.shortnameToImage(str)
-*Convert Shortnames to Images*
+##Alternate Alt Tags
 
-If you've chosen to unify your inputted text so that it contains only shortnames then this is the function (or its matching PHP function) you will want to use to convert the shortnames images when displaying it to the client.
+By default, both the Javascript and PHP toolkits we've provided will use the native unicode character as the alt tag for converted <IMG> tags. Doing this makes it so that if you copy and paste the converted text, in most cases, it will copy the native unicode emoji instead of the image. You can optionally turn this off by setting **unicodeAlt** to **false**. If set to false, the toolkits will use the :shortname: as the alternate text instead.
 
 **HTML:**
-`<input type="button" value="Convert" onclick="convert()"/>`
+`<p id="example2-png">PNG: Hello world! &#x1f604;&nbsp;</p>`
 
 **Javascript**
-```
-function convert() {
-	var input = document.getElementById('inputText').value;
-	var output = emojione.shortnameToImage(input);
-	document.getElementById('outputText').innerHTML = output;
-}
+```javascript
+$(document).ready(function() {
+	// turn unicode alternate text off!
+	emojione.unicodeAlt = false;
+	
+	var input = $('#example-png').html();
+	var replaced = emojione.toImage(input);
+	$('#example-png').html(replaced);
+});
 ```
