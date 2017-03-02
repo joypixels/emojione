@@ -63,10 +63,20 @@ if(isset($_POST['inputText'])) {
 ##toShort($str)
 *Convert Native Unicode Emoji to Shortnames*
 
+Our recommendation is to unify all user inputted text by converting native unicode emoji, such as those inputted by mobile devices, to their corresponding shortnames. This demo shows you how to use the **toShort($str)** PHP function provided in our toolkit to do just that.
 
 **PHP Snippet**
 ```php
-Our recommendation is to unify all user inputted text by converting native unicode emoji, such as those inputted by mobile devices, to their corresponding shortnames. This demo shows you how to use the **toShort($str)** PHP function provided in our toolkit to do just that.
+namespace Emojione;
+
+// include the PHP library (if not autoloaded)
+require('./../lib/php/autoload.php');
+
+$client = new Client(new Ruleset());
+
+if(isset($_POST['inputText'])) {
+  echo $client->toShort($_POST['inputText']);
+}
 ```
 
 ----------
