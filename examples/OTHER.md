@@ -10,14 +10,14 @@ The following code snippets demonstrate common usages of EmojiOne within your pr
 
 By default, both the Javascript and PHP toolkits we've provided will use the native unicode character as the alt tag for converted <IMG> tags. Doing this makes it so that if you copy and paste the converted text, in most cases, it will copy the native unicode emoji instead of the image. You can optionally turn this off by setting **unicodeAlt** to **false**. If set to false, the toolkits will use the :shortname: as the alternate text instead.
 
-**HTML:**
+**HTML Output (default)**
 ```html
 <p id="example-png">
 	PNG: Hello world! <img class="emojione" alt="😄" title=":smile:" src="../assets/png/1f604.png">
 </p>
 ```
 
-**Javascript**
+**Javascript For Shortname Alt**
 ```javascript
 $(document).ready(function() {
 	// turn unicode alternate text off
@@ -28,3 +28,11 @@ $(document).ready(function() {
 	$('#example-png').html(replaced);
 });
 ```
+
+**HTML Output For Shortname Alt**
+```html
+<p id="example-png">
+	PNG: Hello world! <img class="emojione" alt=":smile:" title=":smile:" src="../assets/png/1f604.png">
+</p>
+```
+
