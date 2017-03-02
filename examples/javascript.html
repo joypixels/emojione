@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Implementation Examples - EmojiOne Labs</title>
+
+    <!-- Emoji One CSS: -->
+    <link rel="stylesheet" href="./../assets/css/emojione.min.css" type="text/css" media="all" />
+
+    <!-- jQuery: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Demos Stylesheet: -->
+    <link rel="stylesheet" href="styles/demos.css"/>
+
+    <!-- Typekit: -->
+    <script type="text/javascript" src="https://use.typekit.net/ivu8ilu.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Syntax Highlighting -->
+    <script type="text/javascript" src="scripts/shCore.js"></script>
+    <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <link rel="stylesheet" href="styles/shCoreRDark.css"/>
+
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+    <div class="container">
+        <h1 class="masthead-title">EmojiOne Labs</h1><span class="version">version <span>3.0</span></span>
+    </div>
+</header>
+
+<!-- Page: -->
+<main>
+
+  <div class="container">
+  	
+      <h1>Index</h1>
+      <ul>
+      	<li><a href="#shortnameToImage">.shortnameToImage(str)</a></li>
+        <li><a href="#toImage">.toImage(str)</a></li>
+        <li><a href="#toShort">.toShort(str)</a></li>
+        <li><a href="#unicodeToImage">.unicodeToImage(str)</a></li>
+      </ul>
+    
+      <br>
+      <br>
+      <br>
+  
+  	  <h1 id="shortnameToImage">.shortnameToImage(str) <a href="#" style="font-size: 12px;">Top</a></h1>
+      <h2>convert shortnames to images</h2>
+
+      <p>If you've chosen to unify your inputted text so that it contains only shortnames then this is the function (or its matching PHP function) you will want to use to convert the shortnames images when displaying it to the client.</p>
+
+    <h3>JS Snippet:</h3>
+        <pre class="brush: js">
+    // &lt;input type="button" value="Convert" onclick="convert()"/&gt;
+
+    &lt;script type="text/javascript"&gt;
+    function convert() {
+        var input = document.getElementById('inputText').value;
+        var output = emojione.shortnameToImage(input);
+        document.getElementById('outputText').innerHTML = output;
+      }
+    &lt;/script&gt;
+        </pre>
+        
+
+      <h1 id="toImage">.toImage(str) <a href="#" style="font-size: 12px;">Top</a></h1>
+      <h2>convert native unicode emoji and shortnames directly to images</h2>
+
+      <p>This function is simply a shorthand for <a href="#unicodeToImage">.unicodeToImage(str)</a> and <a href="#shortnameToImage">.shortnameToImage(str)</a>. First it will convert native unicode emoji directly to images and then convert any shortnames to images. This function can be useful to take mixed input and convert it directly to images if, for example, you wanted to give clients a live preview of their inputted text. Also, if your source text contains both unicode characters and shortnames (you didn't unify it) then this function will be useful to you.</p>
+      
+    <h3>JS Snippet:</h3>
+        <pre class="brush: js">
+    // &lt;input type="button" value="Convert" onclick="convert()"/&gt;
+
+    &lt;script type="text/javascript"&gt;
+   function convert() {
+        var input = document.getElementById('inputText').value;
+        var output = emojione.toImage(input);
+        document.getElementById('outputText').innerHTML = output;
+    }
+    &lt;/script&gt;
+        </pre>
+        
+        
+        
+    <h1 id="toShort">.toShort(str) <a href="#" style="font-size: 12px;">Top</a></h1>
+    <h2>convert native unicode emoji to shortnames</h2>
+
+    <p>Our recommendation is to unify all user inputted text by converting native unicode emoji, such as those inputted by mobile devices, to their corresponding shortnames. This demo shows you how to use the <strong>.toShort(str)</strong> Javascript function provided in our toolkit to do just that.</p>
+
+    <h3>JS Snippet:</h3>
+        <pre class="brush: js">
+    // &lt;input type="button" value="Convert" onclick="convert()"/&gt;
+
+    &lt;script type="text/javascript"&gt;
+    function convert() {
+        var input = document.getElementById('inputText').value;
+        var output = emojione.toShort(input);
+        document.getElementById('outputText').innerHTML = output;
+    }
+    &lt;/script&gt;
+        </pre>
+        
+    
+    <h1 id="unicodeToImage">.unicodeToImage(str) <a href="#" style="font-size: 12px;">Top</a></h1>
+      <h2>convert native unicode emoji directly to images</h2>
+
+      <p>If you have native unicode emoji characters that you want to convert directly to images, you can use this function. It should be noted that once your input text has been converted to images it cannot be converted back using the provided functions.</p>
+
+      <p>For that reason, we recommend only converting input text to images when it's ready to display to the client. The better alternative, in our opinion, is to convert native unicode emoji to their corresponding shortname using <a href="#toShort">.toShort(str)</a> for database storage.</p>
+
+    <h3>JS Snippet:</h3>
+        <pre class="brush: js">
+    // &lt;input type="button" value="Convert" onclick="convert()"/&gt;
+
+    &lt;script type="text/javascript"&gt;
+    function convert() {
+        var input = document.getElementById('inputText').value;
+        var output = emojione.unicodeToImage(input);
+        document.getElementById('outputText').innerHTML = output;
+      }
+    &lt;/script&gt;
+        </pre>
+
+  </div>
+
+</main>
+
+<footer class="demo-footer">
+    <div class="container">
+        <small>&copy; Copyright 2014-2017 Ranks.com.</small>
+        <small>EmojiOne artwork is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY-4.0</a> License</small>
+        <small>EmojiOne demos, documentation, scripts, stylesheets and all other non-artwork is licensed under the <a
+                href="http://opensource.org/licenses/MIT">MIT</a> License</small>
+    </div>
+</footer>
+
+</body>
+</html>
