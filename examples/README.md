@@ -10,4 +10,4 @@ To assist you in getting started with EmojiOne in your project, we've included e
 
 ##Demos
 
-You may also want to visit our <a href="demos.emojione.com" target="_blank">Live Demos</a> to see the examples in action.
+You may also want to visit our <a href="https://demos.emojione.com/latest/" target="_blank">Live Demos</a> to see the examples in action.
