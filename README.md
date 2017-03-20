@@ -209,13 +209,15 @@ If you have any questions, comments, or concerns you are welcome to contact us.
 We sincerely hope that you choose to use EmojiOne and support our project, but if you feel like it's not for you, please have a look at these possible alternatives:
 
 * https://github.com/hassankhan/emojify.js
-* https://github.com/Genshin/PhantomOpenEmoji
-* https://github.com/iamcal/php-emoji
+* https://github.com/emojidex/ (used to be known as [Phantom Open Emoji](https://github.com/Genshin/PhantomOpenEmoji))
+* https://github.com/iamcal/emoji-data (with [PHP](https://github.com/iamcal/php-emoji) and [Javascript](https://github.com/iamcal/js-emoji) interfaces)
 * https://github.com/node-modules/emoji
 * https://github.com/steveklabnik/emoji
 * https://github.com/rockerhieu/emojicon
 * https://github.com/HenrikJoreteg/emoji-images
 * https://github.com/frissdiegurke/emoji-parser
+* https://github.com/muan/emojilib
+* https://github.com/kcthota/emoji4j
 
 ## Licenses
 
