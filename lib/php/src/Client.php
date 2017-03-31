@@ -485,7 +485,7 @@ class Client implements ClientInterface
                 }
                 else
                 {
-                    return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' title="'.htmlspecialchars($shortname).'" src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
+                    return '<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$filename.'.png'.$this->cacheBustParam.'"/>';
                 }
             }
 
