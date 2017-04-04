@@ -31,3 +31,6 @@ $ composer require emojione/emojione
 ```
 meteor add emojione:emojione
 ```
+
+### Version 2 Installation
+If you're looking to use emojione < version 3.0, refer to the 2.2.7 branch. **CDN dependency has been preserved for version 2.**

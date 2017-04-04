@@ -1,22 +1,41 @@
 #![EmojiOne Logo](http://git.emojione.com/assets/logo.png) EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
 > bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
 
-The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
+The web's first and only complete open source emoji set. It is 100% free for digital use and super easy to integrate.
 
 
+## What's Included?
 
-## The Idea
+ - This project includes libraries used to convert emoji into various formats, including conversion to EmojiOne emoji images.
+ - All libraries included here are available free under the MIT license.
+ 
+ 
+ ## License to Use EmojiOne Images
+ 
+ **EmojiOne Version 3**
+ EmojiOne launched version 3.0 in 2017, which has several licensing options available. PNG 32px, 64px, and 128px as well as 32px and 64px sprites are available for digital use, with attribution, under the Creative Commons license. See [emojione.com/developers/free-license](https://www.emojione.com/developers/free-license) for more information on usage and attribution requirements.
+ 
+ *Premium Licenses are available for larger PNG assets and SVG assets, for digital and print use.* See [emojione.com/developers/premium-license](https://www.emojione.com/developers/premium-license) for more information or to obtain a Premium License.
+ 
+ **EmojiOne Version 2**
+ EmojiOne version 2 assets (all SVG and PNG) remain available for digital use, with attribution, under the Creative Commons license.
 
-To standardize emoji on the web through the use of common :shortnames:.
 
-When storing user inputted text in your database, say from a guestbook or through a CMS admin, it is recommended that you store text containing only :shortnames: and not Unicode emoji characters or emoji images. Then, when you are displaying that content to the user, you can convert it server-side with the PHP toolkit provided, or client-side using the Javascript toolkit which is also provided. Demos of this process using Javascript, jQuery, and PHP are included in the repo, and we have example code snippets below.
+## Installation
+To install emojione, please refer to the guide at [INSTALLATION.md](INSTALLATION.md). **Version 3 introduces many  potentially-breaking changes.** Refer to the [UPGRADE.md](UPGRADE.md) documentation for more details.
+
+
+## Contributing
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more info on contributing to the emojione project. For artwork comments and questions please see the emojione-assets repo.
+
+## Usage
+You'll find basic usage examples in [USAGE.md](USAGE.md), as well as live demos at [https://demos.emojione.com/latest](demos.emojione.com).
 
 
 #### _What are Shortnames?_
 
  Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We've compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.
  
-
 
 ## Other Considerations
 ### Character Encoding &mdash; UTF-8
