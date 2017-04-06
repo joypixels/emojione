@@ -1,4 +1,4 @@
-# ![EmojiOne Logo](http://git.emojione.com/assets/logo.png) EmojiOne 
+# ![EmojiOne Logo](https://prod.emojione.com/images/vectors/emojione-typeface.svg)
 
 > [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione)
 
