@@ -1,5 +1,6 @@
-#![EmojiOne Logo](http://git.emojione.com/assets/logo.png) EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
-> bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
+# ![EmojiOne Logo](http://git.emojione.com/assets/logo.png) EmojiOne 
+
+> [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione)
 
 The web's first and only complete open source emoji set. It is 100% free for digital use and super easy to integrate.
 
@@ -29,22 +30,8 @@ To install emojione, please refer to the guide at [INSTALLATION.md](INSTALLATION
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more info on contributing to the emojione project. For artwork comments and questions please see the emojione-assets repo.
 
 ## Usage
-You'll find basic usage examples in [USAGE.md](USAGE.md), as well as live demos at [https://demos.emojione.com/latest](demos.emojione.com).
+You'll find basic usage examples here in the /examples/ directory, and links to usage demos in [USAGE.md](USAGE.md).
 
-
-#### _What are Shortnames?_
-
- Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We've compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.
- 
-
-## Other Considerations
-### Character Encoding &mdash; UTF-8
-
-If you're getting serious about implementing emoji into your website, you will want to consider your web stack's character encoding. You should make sure that all connection points are using the same encoding. There are a lot of options and configuration possibilities here, so you'll have to figure what works best for your own situation. 
-
-A quick Google search will bring up a lot of information on how to get your entire web stack to use UTF-8, which is needed to properly handle Unicode emoji.
-
-To get you started, here's a nice guide: [UTF-8: The Secret of Character Encoding](http://htmlpurifier.org/docs/enduser-utf8.html).
 
 ## Information
 

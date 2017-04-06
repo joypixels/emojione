@@ -8,12 +8,19 @@
  - Deprecated vars: 
  	- [emojione.js] imagePathSVG, imagePathSVGSprites, imageType (now defaulted to png)
  - Tests also updated (added explicit protocol for cdn, included previously-added title attribute to img tag)
-  - Added var: matchGreedy (default false)
+  - Added vars: 
+  	- emojiVersion (str)
+	- emojiSize (str)
+  	- matchGreedy (bool)
 
 **PHP**
  - Deprecated vars: 
 	- [src/Client.php] imagePathSVG, imagePathSVGSprites
-		[src/Emojione.php] imagePathSVG, imagePathSVGSprites, imageType
+	- [src/Emojione.php] imagePathSVG, imagePathSVGSprites, imageType
+ - Added vars:
+ 	- emojiVersion (str)
+	- emojiSize (str)
+	- matchGreedy (bool)
  - Tests
 	- [tests/ConversionTest.php] removed testSmileyInsideAnObject()
 	- [tests/ConversionTest.php] removed testShortnameInsideOfObjectTag()
