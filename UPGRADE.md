@@ -58,3 +58,6 @@ Replaced by ‘examples’. Contains code snippets of each of the functions prev
  - **order** (str)
  - **category** (str)
  - **category_label** (str)
+
+##Shortname Changes
+Along with the many changes to emojione version 3.0 comes a number of shortname updates. **Any shortnames that change will still appear as an alternate shortname (or alias) in the data files.** You can view the complete list of primary shortname changes in the [extras/alpha-codes readme] (extras/alpha-codes/).
