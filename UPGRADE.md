@@ -25,10 +25,10 @@
 	- [tests/ConversionTest.php] removed testSmileyInsideAnObject()
 	- [tests/ConversionTest.php] removed testShortnameInsideOfObjectTag()
 
-##Demos
+## Demos
 Replaced by ‘examples’. Contains code snippets of each of the functions previously demonstrated. Updated demos can be found at <a href="https://demos.emojione.com/latest"></a>.
 
-##JSON Files
+## JSON Files
 **EMOJI.JSON (updated)** 
  - primary key is now *base code point* rather than shortname
 	- base code point is the full unicode code point minus VS16 and ZWJ
@@ -59,5 +59,5 @@ Replaced by ‘examples’. Contains code snippets of each of the functions prev
  - **category** (str)
  - **category_label** (str)
 
-##Shortname Changes
+## Shortname Changes
 Along with the many changes to emojione version 3.0 comes a number of shortname updates. **Any shortnames that change will still appear as an alternate shortname (or alias) in the data files.** You can view the complete list of primary shortname changes in the [extras/alpha-codes readme] (extras/alpha-codes/).
