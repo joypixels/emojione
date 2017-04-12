@@ -14,14 +14,15 @@ data_dict = json.loads(open(json_package_path).read())
 unicode_replace = {}
 shortcode_replace = {}
 ascii_replace = {}
+category_replace = {}
 
 for key, value in data_dict.items():
-    unicode_hex = value['unicode']
-    ascii_list = value['aliases_ascii']
+    unicode_hex = value['code_points']['base']
+    ascii = value['ascii']
     shortname = value['shortname']
-    for ascii in ascii_list:
-        ascii_replace[ascii] = unicode_hex
+    ascii_replace[ascii] = unicode_hex
     shortcode_replace[shortname] = unicode_hex
+    category_replace[shortname] = value['category']
 
     if '-' not in unicode_hex:
         unicode_char = chr(int(unicode_hex, 16))
@@ -34,8 +35,10 @@ for key, value in data_dict.items():
 print(unicode_replace)
 print(shortcode_replace)
 print(ascii_replace)
+print(category_replace)
 cog.out('unicode_replace = %s\n\n' % unicode_replace)
 cog.out('shortcode_replace = %s\n\n' % shortcode_replace)
 cog.out('ascii_replace = %s\n\n' % ascii_replace)
+cog.out('category_replace = %s\n\n' % category_replace)
 ]]] */
 //[[[end]]]

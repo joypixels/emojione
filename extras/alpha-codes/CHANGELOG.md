@@ -1,6 +1,16 @@
 changelog
 ---------
 
+####UPDATE 2017-04-15
+* additions
+  * gender based roles
+  * aliases for diversity naming convention (e.g. tone1 = light_skin_tone)
+  
+* changes
+  * in a previous version, csv columns were renamed to more closely match the json attribute labels. now we've updated "alpha code" to "alpha_code" for closer alignment
+  * we've removed the versioning from this data set now that it's part of the emojione repo
+  
+
 ####1.1 / 2016-07-19
 
 * additions

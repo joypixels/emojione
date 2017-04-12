@@ -8,7 +8,7 @@ This utility provides a method to convert from shortname to unicode characters.
 ### How to re-generate mapping
 
 ```
-cd lib/ios/generator
+cd lib/swift/generator
 npm install
 node generate.js
 ```

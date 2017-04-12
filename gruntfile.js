@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                     'sourcemap': 'none'
                 },
                 files: {
-                    'assets/css/emojione-awesome.css': 'lib/emojione-awesome/emojione-awesome.scss'
+                    'extras/css/emojione-awesome.css': 'lib/emojione-awesome/emojione-awesome.scss'
                 }
             }
         },
@@ -35,8 +35,7 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: {
-                    'assets/css/emojione.min.css': ['assets/css/emojione.css'],
-                    'assets/sprites/emojione.sprites.css': ['assets/sprites/emojione.sprites.css']
+                    'assets/css/emojione.min.css': ['assets/css/emojione.css']
                 }
             }
         },
@@ -57,6 +56,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-qunit');
-    grunt.registerTask('default', ['jshint','jsonlint', 'sass', 'uglify', 'cssmin']);
+    //grunt.registerTask('default', ['jshint','jsonlint', 'sass', 'uglify', 'cssmin']);
+	grunt.registerTask('default', ['sass']);
     grunt.registerTask('travis', ['qunit']);
 };
