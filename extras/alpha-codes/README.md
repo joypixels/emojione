@@ -48,7 +48,7 @@ We've included the current list of emoji alpha codes in two formats, json and cs
 *  Complete Legal Terms: http://opensource.org/licenses/MIT
 
 ### PRIMARY SHORTNAME CHANGES
-The following is a list of shortnames that have been moved into the ":aliases:" column and replaced by a new primary shortname (alpha code).
+The following is a list of shortnames that have been moved into the ":aliases:" column and replaced by a new primary shortname (alpha code), as of the emojione 3.0 update (April 2017).
 
 ```
 Previous Shortname,New Shortname
