@@ -1,4 +1,4 @@
-# ![EmojiOne Logo](https://prod.emojione.com/images/vectors/emojione-typeface.svg)
+# ![EmojiOne Logo](https://www.emojione.com/images/vectors/emojione-typeface.svg)
 
 > [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione)
 
@@ -32,7 +32,7 @@ To install emojione, please refer to the guide at [INSTALLATION.md](INSTALLATION
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more info on contributing to the emojione project. For artwork comments and questions please see the emojione-assets repo.
 
 ## Usage
-You'll find basic usage examples here in the /examples/ directory, and links to usage demos in [USAGE.md](USAGE.md).
+You'll find basic usage examples here in the [/examples/](examples/) directory, and links to usage demos in [USAGE.md](USAGE.md).
 
 
 ## Information
