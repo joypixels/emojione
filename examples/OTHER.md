@@ -1,12 +1,12 @@
-#EmojiOne
+# EmojiOne
 
-##**Additional Implementation Examples**
+## **Additional Implementation Examples**
 
 The following code snippets demonstrate common usages of EmojiOne within your project.
 
 ----------
 
-##Alternate Alt Tags
+## Alternate Alt Tags
 
 By default, both the Javascript and PHP toolkits we've provided will use the native unicode character as the alt tag for converted <IMG> tags. Doing this makes it so that if you copy and paste the converted text, in most cases, it will copy the native unicode emoji instead of the image. You can optionally turn this off by setting **unicodeAlt** to **false**. If set to false, the toolkits will use the :shortname: as the alternate text instead.
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 ----------
 
-##Shortname AutoComplete
+## Shortname AutoComplete
 
 To get this working correctly you'll needed to include a few extra pieces, including:
 
@@ -172,7 +172,7 @@ $(document).ready(function() {
  
 ----------
  
-##ASCII Smileys
+## ASCII Smileys
 
 It's turned off by default, but by flipping one simple switch you can enable ASCII smiley conversion.
 
@@ -194,7 +194,7 @@ function convert() {
 
 ----------
 
-##Live Preview Box
+## Live Preview Box
 
 Start typing shortnames (:smile:, :blush:, :heart:, etc.) or entering native emojis from a compatible device.
 
@@ -215,7 +215,7 @@ $(document).ready(function() {
 
 ----------
 
-##Conversion HTML Class
+## Conversion HTML Class
 
 Using jQuery, this demo shows you how you can stick a class of **.convert-emoji** on any HTML element and automatically convert native unicode emoji and/or shortnames to images after page load.
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
 
 ----------
 
-##PNG Sprite
+## PNG Sprite
 
 We've setup a collection of <a href="https://github.com/Ranks/emojione-assets/blob/master/sprites/">spritesheets</a> for people to use. These sprites are split by category (plus diversity) and come in 32px and 64px sizes.
 
