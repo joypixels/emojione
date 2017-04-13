@@ -24,6 +24,13 @@ interface RulesetInterface
      * @return array The unicode shortcode rules
      */
     public function getUnicodeReplace();
+	
+	/**
+     * Returns the unicode shortcode greedy replacement rules
+     *
+     * @return array The unicode shortcode greedy rules
+     */
+    public function getUnicodeReplaceGreedy();
 
     /**
      * Returns the regexp to find ascii smilies
