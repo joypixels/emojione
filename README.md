@@ -1,4 +1,4 @@
-# ![EmojiOne Logo](https://www.emojione.com/images/vectors/emojione-typeface.svg)
+# ![EmojiOne Logo](https://prod.emojione.com/images/vectors/emojione-typeface.svg)
 
 > [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione)
 
@@ -15,9 +15,9 @@ The web's first and only complete open source emoji set. It is 100% free for dig
  
 ### EmojiOne Version 3
  
- EmojiOne launched version 3.0 in 2017, which has several licensing options available. PNG 32px, 64px, and 128px as well as 32px and 64px sprites are available for digital use, with attribution. See [emojione.com/developers/free-license](https://www.emojione.com/developers/free-license) for more information on usage and attribution requirements.
+ EmojiOne launched version 3.0 in 2017, which has several licensing options available. PNG 32px, 64px, and 128px as well as 32px and 64px sprites are available for digital use, with attribution. See [emojione.com/developers/free-license](https://prod.emojione.com/developers/free-license) for more information on usage and attribution requirements.
  
- *Premium Licenses are available for larger PNG assets and SVG assets, for digital and print use.* See [emojione.com/developers/premium-license](https://www.emojione.com/developers/premium-license) for more information or to obtain a Premium License.
+ *Premium Licenses are available for larger PNG assets and SVG assets, for digital and print use.* See [emojione.com/developers/premium-license](https://prod.emojione.com/developers/premium-license) for more information or to obtain a Premium License.
  
  ### EmojiOne Version 2
  
