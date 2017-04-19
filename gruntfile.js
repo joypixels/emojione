@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: {
-                    'assets/css/emojione.min.css': ['assets/css/emojione.css']
+                    'extras/css/emojione.min.css': ['extras/css/emojione.css']
                 }
             }
         },
