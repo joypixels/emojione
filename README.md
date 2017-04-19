@@ -267,6 +267,8 @@ Must contain:
 - Our name (EmojiOne)
 - A link to our website (https://www.emojione.com)
 - The title and a link to our Creative Commons license
+    - Creative Commons Attribution International 4.0 (CC-BY 4.0)
+    - https://creativecommons.org/licenses/by/4.0/legalcode
 
 Also helpful:
 - Make sure it does not look like we created or endorse your product
