@@ -265,7 +265,8 @@ In section 3(a)(1) of the CC-BY 4.0 legal terms, it lists the following as the g
 
 Must contain:
 - Our name (EmojiOne)
-- A link to our website (https://www.emojione.com)
+- A link to our website
+    - https://www.emojione.com
 - The title and a link to our Creative Commons license
     - Creative Commons Attribution International 4.0 (CC-BY 4.0)
     - https://creativecommons.org/licenses/by/4.0/legalcode
