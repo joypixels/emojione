@@ -278,20 +278,20 @@ Also helpful:
 
 ### Attribution Location
 
-Apps:
+#### Apps:
 - A note/link in the app store description is required.
 - Other links/praise are much appreciated:
     - App settings
     - Official app website
     - Social media
     
-Websites:
+#### Websites:
 - A note/link on every web page where our emojis are displayed is required.
 - Other links/praise are much appreciated:
     - Main homepage
     - Social media
     
-Web Videos:
+#### Web Videos:
 - A note/link in the video description is required.
 - Other links/praise are much appreciated:
     - On-screen when emojis are displayed
