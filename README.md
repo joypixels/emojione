@@ -1,5 +1,6 @@
-#![EmojiOne Logo](http://git.emojione.com/assets/logo.png) EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
-> bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)
+![EmojiOne Logo](http://git.emojione.com/assets/logo.png)
+## EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
+_bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)_
 
 **\*PLEASE NOTE\*** - The following is related to an older, unsupported version of the EmojiOne emoji artwork (v2.x). They are still available under their old terms, which can be found below.
 
@@ -201,9 +202,9 @@ If you discover any bugs, feel free to create an issue on GitHub. We also welcom
 
 If you have any questions, comments, or concerns you are welcome to contact us.
 
-*  [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Ranks/emojione?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+* [Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Ranks/emojione?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 * [support@emojione.com](mailto:support@emojione.com)
-* http://emojione.com
+* https://emojione.com
 * https://twitter.com/emojione
 
 
