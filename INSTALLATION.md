@@ -3,11 +3,9 @@
 We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
-<script src="https://cdn.jsdelivr.net/emojione/3.0/lib/js/emojione.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0/assets/css/emojione.min.css"/>
+<script src="https://raw.githubusercontent.com/Ranks/emojione/master/lib/js/emojione.min.js"></script>
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Ranks/emojione/master/extras/css/emojione.min.css"/>
 ```
-
-Alternatively, CDNjs is also available as a [CDN Host for EmojiOne](https://cdnjs.com/libraries/emojione).
 
 Quick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit). **If you wish to serve image assets locally you'll need to install [emojione-assets](https://www.github.com/Ranks/emojione-assets) and include the pngs and/or sprites into your project.** Many of our [demos](https://demos.emojione.com/latest/) use assets locally simply by pointing the `imagePathPNG` variable to your local asset location.
 
@@ -33,7 +31,7 @@ meteor add emojione:emojione
 ```
 
 ### Version 2 Installation
-If you're looking to use emojione < version 3.0, refer to the 2.2.7 branch. **CDN (jsdelivr) dependency has been preserved for version 2.**
+If you're looking to use emojione < version 3.0, refer to [the 2.2.7 branch](https://github.com/Ranks/emojione/tree/2.2.7). **CDN (jsdelivr) dependency has been preserved for version 2.**
 
 
 ### Character Encoding &mdash; UTF-8

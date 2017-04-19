@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
-  summary: 'Meteor Package of http://www.emojione.com/ set',
-  version: '3.0',
+  summary: 'Meteor Package of the https://www.emojione.com/ set.',
+  version: '3.0.0',
   git: 'https://github.com/Ranks/emojione.git'
 });
 
@@ -22,11 +22,20 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'lib/meteor/emojione-client.js',
-    'assets/css/emojione.css',
+    'extras/css/emojione.css',
   ], 'client');
-
-  api.addAssets('assets/sprites/emojione.sprites.css', 'client');
-  api.addAssets('assets/sprites/emojione.sprites.png', 'client');
+  
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32.min.css', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-activity.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-diversity.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-flags.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-food.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-nature.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-objects.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-people.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-regional.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-symbols.png', 'client');
+  api.addAssets('../emojione-assets/sprites/emojione-sprite-32-travel.png', 'client');
 
   api.export('emojione');
 });
