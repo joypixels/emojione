@@ -3,7 +3,7 @@
 There's no better way to port our emoji into your device than through a native font.  We don't have the resources ourselves to construct fonts, so we'll depend on helpful contributions from the open source community.
 
 ### Google Font - emojione-android.ttf
-https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-android.ttf
+https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-android.ttf
 
   * Compatible with rooted Android devices.
   * Updated November 5, 2016
@@ -14,7 +14,7 @@ Android Setup Help:
 * Must have a rooted Android phone.
 
 ### Apple Font
-https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-apple.ttf
+https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-apple.ttf
 
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
@@ -31,14 +31,14 @@ Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a soft
 ### EmojiOne SVG-based Color Fonts
 Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used, in part, to generate this font. Using these fonts with Firefox or Microsoft Edge, you can enjoy full-color EmojiOne emoji. Black and white images will show as the fall back for systems that are not able to render color SVG fonts. The font is available in the following formats:
 
-  * Open Type Font: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.otf
-  * Web Open Font Format: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.woff
-  * Web Open Font Format 2.0: https://github.com/Ranks/emojione/raw/master/assets/fonts/emojione-svg.woff2
+  * Open Type Font: https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-svg.otf
+  * Web Open Font Format: https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-svg.woff
+  * Web Open Font Format 2.0: https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-svg.woff2
 
-The black and white images used to generate these fonts are also provided here:
+The black and white images used to generate these fonts are also provided in the v2 branch here:
 
-  * SVGs available at https://github.com/Ranks/emojione/raw/master/assets/svg_bw/
-  * PNGs available at https://github.com/Ranks/emojione/raw/master/assets/png_bw/
+  * SVGs available at https://github.com/Ranks/emojione/tree/2.2.7/assets/svg_bw/
+  * PNGs available at https://github.com/Ranks/emojione/tree/2.2.7/assets/png_bw/
 
 ---
   
