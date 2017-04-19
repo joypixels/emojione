@@ -22,6 +22,84 @@ When storing user inputted text in your database, say from a guestbook or throug
  Shortnames are semi-standardized human-readable identifiers for each emoji icon. Many online web applications will accept these shortnames as alternatives for the actual unicode character. We've compiled the full list over at [emoji.codes](http://emoji.codes/) with quick copy & search functions.
 
 
+## Licenses
+
+### EmojiOne Artwork
+
+*  Applies to all PNG and SVG files as well as any adaptations made.
+*  The following applies to artwork included in EmojiOne GitHub libraries versions < 2.0.0.
+    *  License: Creative Commons Attribution-ShareAlike 4.0 International
+    *  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
+    *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
+*  The following applies to artwork included in EmojiOne GitHub libraries versions >= 2.0.0 and < 3.0.0.
+    *  License: Creative Commons Attribution 4.0 International
+    *  Human Readable License: http://creativecommons.org/licenses/by/4.0/
+    *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
+  
+### EmojiOne Non-Artwork
+
+*  Applies to: Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
+*  License: MIT
+*  Complete Legal Terms: http://opensource.org/licenses/MIT
+
+
+## EmojiOne Artwork Attribution
+
+In general, proper attribution/credit must be given on every web page, app, or video description where our emojis are displayed. More specific information for each category can be found below.
+
+### Creative Commons Requirements
+
+In section 3(a)(1) of the CC-BY 4.0 legal terms, it lists the following as the guidelines needed to fulfill the attribution requirements:
+
+> If You Share the Licensed Material (including in modified form), You must:
+> - retain the following if it is supplied by the Licensor with the Licensed Material:
+>     - identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+>     - a copyright notice;
+>     - a notice that refers to this Public License;
+>     - a notice that refers to the disclaimer of warranties;
+>     - a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+> - indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+> - indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License."
+
+### Proper Attribution Examples
+
+Must contain:
+- Our name (EmojiOne)
+- A link to our website
+    - https://www.emojione.com
+- The title and a link to our Creative Commons license
+    - Creative Commons Attribution International 4.0 (CC-BY 4.0)
+    - https://creativecommons.org/licenses/by/4.0/legalcode
+
+Also helpful:
+- Make sure it does not look like we created or endorse your product
+- List all modifications you've made to the artwork
+
+### Ideal Attribution
+
+> Emoji artwork is provided by [EmojiOne](https://www.emojione.com) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+### Attribution Location
+
+#### Apps:
+- A note/link in the app store description is required.
+- Other links/praise are much appreciated:
+    - App settings
+    - Official app website
+    - Social media
+    
+#### Websites:
+- A note/link on every web page where our emojis are displayed is required.
+- Other links/praise are much appreciated:
+    - Main homepage
+    - Social media
+    
+#### Web Videos:
+- A note/link in the video description is required.
+- Other links/praise are much appreciated:
+    - On-screen when emojis are displayed
+    - On-screen in credits
+    - Social media
 
 
 ## Installation
@@ -221,82 +299,3 @@ We sincerely hope that you choose to use EmojiOne and support our project, but i
 * https://github.com/rockerhieu/emojicon
 * https://github.com/HenrikJoreteg/emoji-images
 * https://github.com/frissdiegurke/emoji-parser
-
-## Licenses
-
-### EmojiOne Artwork
-
-*  Applies to all PNG and SVG files as well as any adaptations made.
-*  The following applies to artwork included in EmojiOne GitHub libraries versions < 2.0.0.
-    *  License: Creative Commons Attribution-ShareAlike 4.0 International
-    *  Human Readable License: http://creativecommons.org/licenses/by-sa/4.0/
-    *  Complete Legal Terms: http://creativecommons.org/licenses/by-sa/4.0/legalcode
-*  The following applies to artwork included in EmojiOne GitHub libraries versions >= 2.0.0 and < 3.0.0.
-    *  License: Creative Commons Attribution 4.0 International
-    *  Human Readable License: http://creativecommons.org/licenses/by/4.0/
-    *  Complete Legal Terms: http://creativecommons.org/licenses/by/4.0/legalcode
-  
-### EmojiOne Non-Artwork
-
-*  Applies to: Javascript, JSON, PHP, CSS, HTML files, and everything else not covered under the artwork license above.
-*  License: MIT
-*  Complete Legal Terms: http://opensource.org/licenses/MIT
-
-
-## EmojiOne Artwork Attribution
-
-In general, proper attribution/credit must be given on every web page, app, or video description where our emojis are displayed. More specific information for each category can be found below.
-
-### Creative Commons Requirements
-
-In section 3(a)(1) of the CC-BY 4.0 legal terms, it lists the following as the guidelines needed to fulfill the attribution requirements:
-
-> If You Share the Licensed Material (including in modified form), You must:
-> - retain the following if it is supplied by the Licensor with the Licensed Material:
->     - identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
->     - a copyright notice;
->     - a notice that refers to this Public License;
->     - a notice that refers to the disclaimer of warranties;
->     - a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
-> - indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
-> - indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License."
-
-### Proper Attribution Examples
-
-Must contain:
-- Our name (EmojiOne)
-- A link to our website
-    - https://www.emojione.com
-- The title and a link to our Creative Commons license
-    - Creative Commons Attribution International 4.0 (CC-BY 4.0)
-    - https://creativecommons.org/licenses/by/4.0/legalcode
-
-Also helpful:
-- Make sure it does not look like we created or endorse your product
-- List all modifications you've made to the artwork
-
-### Ideal Attribution
-
-> Emoji artwork is provided by [EmojiOne](https://www.emojione.com) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)
-
-### Attribution Location
-
-#### Apps:
-- A note/link in the app store description is required.
-- Other links/praise are much appreciated:
-    - App settings
-    - Official app website
-    - Social media
-    
-#### Websites:
-- A note/link on every web page where our emojis are displayed is required.
-- Other links/praise are much appreciated:
-    - Main homepage
-    - Social media
-    
-#### Web Videos:
-- A note/link in the video description is required.
-- Other links/praise are much appreciated:
-    - On-screen when emojis are displayed
-    - On-screen in credits
-    - Social media
