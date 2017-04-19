@@ -243,7 +243,7 @@ We sincerely hope that you choose to use EmojiOne and support our project, but i
 *  Complete Legal Terms: http://opensource.org/licenses/MIT
 
 
-## Attribution
+## EmojiOne Artwork Attribution
 
 In general, proper attribution/credit must be given on every web page, app, or video description where our emojis are displayed. More specific information for each category can be found below.
 
