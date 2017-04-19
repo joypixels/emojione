@@ -1,8 +1,10 @@
 ![EmojiOne Logo](http://git.emojione.com/assets/logo.png)
-## EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
-_bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)_
 
-**\*PLEASE NOTE\*** - The following is related to an older, unsupported version of the EmojiOne emoji artwork (v2.x). They are still available under their old terms, which can be found below.
+#### \*PLEASE NOTE\*
+The following is related to an older, unsupported version of the EmojiOne emoji artwork (v2.x). They are still available under their old terms, which can be found below.
+
+# EmojiOne [![Build Status](https://travis-ci.org/Ranks/emojione.svg?branch=master)](https://travis-ci.org/Ranks/emojione)
+_bringing you [emojione.com](http://emojione.com/) & [emoji.codes](http://emoji.codes/)_
 
 The web's first and only complete open source emoji set. It is 100% free and super easy to integrate.
 
