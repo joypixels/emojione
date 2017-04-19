@@ -272,11 +272,11 @@ Also helpful:
 - Make sure it does not look like we created or endorse your product
 - List all modifications you've made to the artwork
 
-#### Ideal Attribution
+### Ideal Attribution
 
 > Emoji artwork is provided by [EmojiOne](https://www.emojione.com) and is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)
 
-#### Attribution Location
+### Attribution Location
 
 Apps:
 - A note/link in the app store description is required.
