@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
   summary: 'Meteor Package of http://www.emojione.com/ set',
-  version: '2.2.7',
+  version: '3.0',
   git: 'https://github.com/Ranks/emojione.git'
 });
 
@@ -26,7 +26,6 @@ Package.onUse(function(api) {
   ], 'client');
 
   api.addAssets('assets/sprites/emojione.sprites.css', 'client');
-  api.addAssets('assets/sprites/emojione.sprites.svg', 'client');
   api.addAssets('assets/sprites/emojione.sprites.png', 'client');
 
   api.export('emojione');

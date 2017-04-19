@@ -15,20 +15,14 @@ Uses human-friendly class names (based on emoji shortcodes). View a full list of
 Additional classes let you modify size:
 
 ```
+<!-- Coffee Emoji (small) -->
+<i class="e1a-coffee e1a-sm"></i>
+
+<!-- Coffee Emoji (medium) -->
+<i class="e1a-coffee e1a-med"></i>
+
 <!-- Coffee Emoji (large) -->
 <i class="e1a-coffee e1a-lg"></i>
-
-<!-- Coffee Emoji (2x) -->
-<i class="e1a-coffee e1a-2x"></i>
-
-<!-- Coffee Emoji (3x) -->
-<i class="e1a-coffee e1a-3x"></i>
-
-<!-- Coffee Emoji (4x) -->
-<i class="e1a-coffee e1a-4x"></i>
-
-<!-- Coffee Emoji (5x) -->
-<i class="e1a-coffee e1a-5x"></i>
 
 ```
 
@@ -49,7 +43,7 @@ node generate.js
 ### How to compile scss
 
 Once you've generated the mapping you can build the css files via grunt.
-The compiled styles are output into /assets/css/emojione-awesome.css
+The compiled styles are output into /extras/css/emojione-awesome.css
 
 ```
 npm install grunt grunt-contrib-sass

@@ -7,7 +7,7 @@ use Emojione\Emojione;
 class EmojioneTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $cacheBustParam = '?v=2.2.7';
+    private $emojiVersion = '3.0';
 
     public function emojiProvider()
     {
@@ -40,7 +40,7 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
     public function testToImage()
     {
         $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! <img class="emojione" alt="😄" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/png/1f604.png' . $this->cacheBustParam . '"/> <img class="emojione" alt="&#x1f604;" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/png/1f604.png' . $this->cacheBustParam . '"/>';
+        $expected = 'Hello world! <img class="emojione" alt="😄" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/' . $this->emojiVersion . '/png/32/1f604.png"/> <img class="emojione" alt="&#x1f604;" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/' . $this->emojiVersion . '/png/32/1f604.png"/>';
 
         $this->assertEquals(Emojione::toImage($test), $expected);
     }
@@ -93,7 +93,7 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
     public function testShortnameToImage()
     {
         $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! 😄 <img class="emojione" alt="&#x1f604;" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/png/1f604.png' . $this->cacheBustParam . '"/>';
+        $expected = 'Hello world! 😄 <img class="emojione" alt="&#x1f604;" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/' . $this->emojiVersion . '/png/32/1f604.png"/>';
 
         $this->assertEquals(Emojione::shortnameToImage($test), $expected);
     }
@@ -142,7 +142,7 @@ class EmojioneTest extends \PHPUnit_Framework_TestCase
     public function testUnicodeToImage()
     {
         $test     = 'Hello world! 😄 :smile:';
-        $expected = 'Hello world! <img class="emojione" alt="😄" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/png/1f604.png' . $this->cacheBustParam . '"/> :smile:';
+        $expected = 'Hello world! <img class="emojione" alt="😄" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/' . $this->emojiVersion . '/png/32/1f604.png"/> :smile:';
 
         $this->assertEquals(Emojione::unicodeToImage($test), $expected);
     }

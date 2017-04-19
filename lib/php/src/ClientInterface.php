@@ -45,7 +45,7 @@ interface ClientInterface
     public function shortnameToAscii($string);
 
     /**
-     * This will output image markup (for png or svg) from shortname input.
+     * This will output image markup from shortname input.
      *
      * @param   string  $string The input string.
      * @return  string  String with appropriate html for rendering emoji.
@@ -61,7 +61,7 @@ interface ClientInterface
     public function toShort($string);
 
     /**
-     * This will output image markup (for png or svg) from unicode input.
+     * This will output image markup from unicode input.
      *
      * @param   string  $string The input string.
      * @return  string  String with appropriate html for rendering emoji.

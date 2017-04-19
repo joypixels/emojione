@@ -9,7 +9,7 @@ use Emojione\Emojione;
  */
 class EmojiTest extends \PHPUnit_Framework_TestCase
 {
-    private $cacheBustParam = '?v=2.2.7';
+    private $emojiVersion = '3.0';
 
     public function emojiProvider()
     {
@@ -55,7 +55,7 @@ class EmojiTest extends \PHPUnit_Framework_TestCase
 
         $convert_unicode = strtolower(Emojione::convert($simple_unicode));
 
-        $image_template = '<img class="emojione" alt="%1$s" src="https://cdn.jsdelivr.net/emojione/assets/png/%2$s.png' . $this->cacheBustParam . '"/>';
+        $image_template = '<img class="emojione" alt="%1$s" src="https://cdn.jsdelivr.net/emojione/assets/' . $this->emojiVersion . '/png/32/%2$s.png"/>';
 
         $image = sprintf($image_template, $convert_unicode, $simple_unicode);
 

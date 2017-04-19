@@ -1,6 +1,6 @@
 {
   "name": "emojione",
-  "version": "2.2.7",
+  "version": "3.0",
   "main": [
     "assets/css/emojione.css",
     "lib/js/emojione.js"
@@ -15,7 +15,7 @@
   ],
   "keywords": [
     "emojione",
-    "Emoji One",
+    "EmojiOne",
     "emoji",
     "emojis",
     "emoticons",
