@@ -16,10 +16,12 @@ Android Setup Help:
 ### Apple Font
 
 **For older apple devices**
-  * https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-apple.ttf
+
+https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-apple.ttf
 
 **For latest apple devices**
-  * https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-apple.ttf
+
+https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-apple.ttc
 
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
