@@ -7,6 +7,7 @@ https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-android.ttf
 
   * Compatible with rooted Android devices.
   * Updated November 5, 2016
+  * Developers using the font within their app, please review [this issue](https://github.com/Ranks/emojione/issues/385) regarding proper display of digits.
 
 Android Setup Help:
 * We recommend Emoji Switcher (now free for EmojiOne): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
