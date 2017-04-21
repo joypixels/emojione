@@ -34,6 +34,7 @@ Replaced by ‘examples’. Contains code snippets of each of the functions prev
 	- base code point is the full unicode code point minus VS16 and ZWJ
 	- base code point is used as an identifier for emoji file names (PNG) as well as within sprites (CSS)
  - **unicode** (str) and **unicode_alt** (str) are depricated. code points are now organized within **code_points** (array)
+ 	- **base** (str) is identical to the primary key
 	- **output** (str) is the recommended code point to use for conversion to native unicode
 	- **match_default** (array) contains one or more code points used to identify native unicode
 	- **match_greedy** (array) contains one or more code points used to identify potential native unicode variants
