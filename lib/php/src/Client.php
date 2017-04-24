@@ -221,16 +221,15 @@ class Client implements ClientInterface
             $unicode_replace = $ruleset->getUnicodeReplace();
 			$shortcode_replace = $ruleset->getShortcodeReplace();
 
-            $shortname = strtoupper($m[1]);
+            $shortname = strtolower($m[1]);
 
             if (!array_key_exists($shortname, $shortcode_replace)) {
                 return $m[0];
             }
 
-
             $unicode = $shortcode_replace[$shortname][0];
 
-            return $unicode;
+            return $this->convert($unicode);
         }
     }
 
@@ -293,10 +292,19 @@ class Client implements ClientInterface
         {
             $ruleset = $this->getRuleset();
             $ascii_replace = $ruleset->getAsciiReplace();
-
-            $shortname = $m[3];
-            $unicode = $ascii_replace[$shortname];
-            return $m[2].$this->convert($unicode);
+			$shortcode_replace = $ruleset->getShortcodeReplace();
+            $ascii = $m[3];
+			
+			if ( empty($ascii_replace[$ascii]) )
+			{
+				return $m[3];
+			}
+			else
+			{
+				$shortname = $ascii_replace[$ascii];
+				$uc_output = $shortcode_replace[$shortname][0];
+				return $m[2].$this->convert($uc_output);
+			}
         }
     }
 
@@ -317,8 +325,16 @@ class Client implements ClientInterface
 
             $shortcode_replace = array_flip(array_reverse($ruleset->getShortcodeReplace()));
             $shortname = $m[3];
-            $unicode = $ascii_replace[$shortname];
-            return $m[2].$shortcode_replace[$unicode];
+			
+			if ( empty($ascii_replace[$shortname]) )
+			{
+				return $m[3];
+			}
+			else
+			{
+				$unicode = $ascii_replace[$shortname];
+				return $m[2].$shortcode_replace[$unicode];
+			}
         }
     }
 
@@ -338,29 +354,39 @@ class Client implements ClientInterface
             $ascii_replace = $ruleset->getAsciiReplace();
 			$shortcode_replace = $ruleset->getShortcodeReplace();
 
-            $shortname = html_entity_decode($m[3]);
-            $unicode = $ascii_replace[$shortname];
-			$category = $shortcode_replace[$shortname][3];
-            $titleTag = $this->imageTitleTag ? 'title="'.htmlspecialchars($shortname).'"' : '';
-
-            // unicode char or shortname for the alt tag? (unicode is better for copying and pasting the resulting text)
-            if ($this->unicodeAlt)
-            {
-                $alt = $this->convert($unicode);
-            }
-            else
-            {
-                $alt = htmlspecialchars($shortname);
-            }
-
-            if ($this->sprites)
-            {
-                return $m[2].'<span class="emojione emojione-32-'.$category.' _'.$unicode.'" '.$titleTag.'>'.$alt.'</span>';
-            }
-            else
-            {
-                return $m[2].'<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$unicode.'.png"/>';
-            }
+            $ascii = html_entity_decode($m[3]);
+			
+			if ( empty($ascii_replace[$ascii]) )
+			{
+				return $m[3];
+			}
+			else
+			{
+				$shortname = $ascii_replace[$ascii];
+				$unicode = $shortcode_replace[$shortname][2];
+				$uc_output = $shortcode_replace[$shortname][0];
+				$category = $shortcode_replace[$shortname][3];
+				$titleTag = $this->imageTitleTag ? 'title="'.htmlspecialchars($shortname).'"' : '';
+	
+				// unicode char or shortname for the alt tag? (unicode is better for copying and pasting the resulting text)
+				if ($this->unicodeAlt)
+				{
+					$alt = $this->convert($uc_output);
+				}
+				else
+				{
+					$alt = htmlspecialchars($ascii);
+				}
+	
+				if ($this->sprites)
+				{
+					return $m[2].'<span class="emojione emojione-32-'.$category.' _'.$unicode.'" '.$titleTag.'>'.$alt.'</span>';
+				}
+				else
+				{
+					return $m[2].'<img class="emojione" alt="'.$alt.'" '.$titleTag.' src="'.$this->imagePathPNG.$unicode.'.png"/>';
+				}
+			}
         }
     }
 
