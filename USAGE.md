@@ -1,3 +1,20 @@
+# emojione Usage
+
+## Object Properties
+
+Both PHP and JavaScript libraries now have wider range of available properties to customize your experience. The following are available for both libraries.
+
+ - `emojiVersion` (str) - Used only to direct CDN path. This is a 2-digit version (e.g. '3.0'). Not recommended for usage below 3.0.0.
+ - `emojiSize` (str) **Default: `32`** - Used only to direct CDN path for non-sprite PNG usage. Available options are '32', '64', and '128'.
+ - `greedyMatch` (bool) **Default: `false`** - When `true`, matches non-fully-qualified Unicode values.
+ - `imageTitleTag` (bool) **Default: `true`** - When `false`, removes title attribute from <img> tag.
+ - `sprites` (bool) **Default: `false`** - When `true`, sprite markup will be used. Sprite CSS and PNG assets must be additionally included.
+ - `spriteSize` (str) **Default `32`** - Alternate size is `64`.
+ - `unicodeAlt` (bool) **Default `false`** - When `true`, sets unicode char as alt attribute for ability to copy image as unicode.
+ - `ascii` (bool) **Default `false`** - When `true`, matches ASCII characters (in `unicodeToImage` and `shortnameToImage` functions).
+ - `riskyMatchAscii` (bool) **Default `false`** - When `true`, matches ASCII characters not encapsulated by spaces. Can cause issues when matching (e.g. `C://filepath` or `<button>.</button>` both contain ASCII chars).
+
+
 ## Usage Examples
 
 Below there are some examples of how you will actually use the libraries to convert Unicode emoji characters to :shortnames: and :shortnames: to emoji images.

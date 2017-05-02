@@ -11,7 +11,9 @@
   - Added vars: 
   	- emojiVersion (str)
 	- emojiSize (str)
-  	- matchGreedy (bool)
+  	- greedyMatch (bool)
+	- spriteSize (str)
+	- riskyMatchAscii (bool)
 
 **PHP**
  - Deprecated vars: 
@@ -20,7 +22,9 @@
  - Added vars:
  	- emojiVersion (str)
 	- emojiSize (str)
-	- matchGreedy (bool)
+	- greedyMatch (bool)
+	- spriteSize (str)
+	- riskyMatchAscii (bool)
  - Tests
 	- [tests/ConversionTest.php] removed testSmileyInsideAnObject()
 	- [tests/ConversionTest.php] removed testShortnameInsideOfObjectTag()
