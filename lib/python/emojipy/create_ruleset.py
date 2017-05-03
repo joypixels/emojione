@@ -20,7 +20,9 @@ for key, value in data_dict.items():
     unicode_hex = value['code_points']['base']
     ascii = value['ascii']
     shortname = value['shortname']
-    ascii_replace[ascii] = unicode_hex
+    if ascii:
+        for item in ascii:
+            ascii_replace[item] = unicode_hex
     shortcode_replace[shortname] = unicode_hex
     category_replace[shortname] = value['category']
 

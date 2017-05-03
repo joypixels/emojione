@@ -74,3 +74,8 @@ class ConversionTests(TestCase):
         unicode = 'The <img class="emojione" alt="🐌" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f40c.png"/> is EmojiOne\'s original mascot.';
         self.assertEqual(Emoji.unicode_to_image(unicode), unicode)
         self.assertEqual(Emoji.shortcode_to_image(unicode), unicode)
+
+    def test_ascii_char(self):
+        ascii = ">:/"
+        image = '<img class="emojione" alt="😕" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f615.png"/>'
+        self.assertEqual(Emoji.ascii_to_image(ascii), image)
