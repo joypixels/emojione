@@ -3,8 +3,8 @@
 We've teamed up with [JSDelivr](http://www.jsdelivr.com/#!emojione) to provide a simple way to install these emoji on any javascript-enabled website. Add the following script and stylesheet links to the head of your webpage:
 
 ```
-<script src="https://cdn.jsdelivr.net/emojione/3.0.2/lib/js/emojione.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.2/extras/css/emojione.min.css"/>
+<script src="https://cdn.jsdelivr.net/emojione/3.0.3/lib/js/emojione.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.3/extras/css/emojione.min.css"/>
 ```
 
 Quick installs can also be done using NPM and Bower (for the Javascript toolkit) or Composer (for the PHP toolkit). **If you wish to serve image assets locally you'll need to install [emojione-assets](https://www.github.com/Ranks/emojione-assets) and include the pngs and/or sprites into your project.** Many of our [demos](https://demos.emojione.com/latest/) use assets locally simply by pointing the `imagePathPNG` variable to your local asset location.
