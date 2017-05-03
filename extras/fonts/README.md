@@ -5,14 +5,22 @@ There's no better way to port our emoji into your device than through a native f
 ### Google Font - emojione-android.ttf
 https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-android.ttf
 
-  * Compatible with rooted Android devices.
-  * Updated November 5, 2016
+  * Compatible with rooted Android devices and Linux.
+  * Updated May 4, 2017
   * Developers using the font within their app, please review [this issue](https://github.com/Ranks/emojione/issues/385) regarding proper display of digits.
 
 Android Setup Help:
 * We recommend Emoji Switcher (now free for EmojiOne): https://play.google.com/store/apps/details?id=com.stevenschoen.emojiswitcher&hl=en
 * Reddit Thread: https://www.reddit.com/r/Android/comments/3xezb9/emojione_on_android/
 * Must have a rooted Android phone.
+
+Linux Setup Help:
+  * Place the file in `~/.local/share/fonts/`
+  * Update fontconfig cache with `fc-cache -f`
+  * Chrome and all derivative apps (like Electron) will display color emoji after a restart.
+  * Install a patched Cairo library to display color emoji in all GTK+ apps:
+    * https://aur.archlinux.org/packages/cairo-coloredemoji
+    * https://software.opensuse.org/package/libcairo2-color-emoji
 
 ### Apple Font
 
@@ -60,5 +68,5 @@ The black and white images used to generate these fonts are also provided in the
   * We provide no guarantees that the font will function on your device.
   
 ### Acknowledgements
-  * Google Font: Thanks to Miguel Sousa from Adobe Systems.
+  * Google Font: Thanks to Miguel Sousa from Adobe Systems and [Maxim Baz](https://github.com/maximbaz).
   * Apple Font: Thanks to Philip (@pw5a29) and Cody (@vXBaKeRXv).
