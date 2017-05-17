@@ -1,4 +1,4 @@
-![EmojiOne Logo](http://git.emojione.com/assets/logo.png)
+![EmojiOne Logo](https://www.emojione.com/images/vectors/emojione-typeface.svg)
 
 #### \*PLEASE NOTE\*
 The following is related to an older, unsupported version of the EmojiOne emoji artwork (v2.x). They are still available under their old terms, which can be found below.
