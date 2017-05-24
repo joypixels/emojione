@@ -6,7 +6,7 @@ There's no better way to port our emoji into your device than through a native f
 https://github.com/Ranks/emojione/raw/master/extras/fonts/emojione-android.ttf
 
   * Compatible with rooted Android devices and Linux.
-  * Updated May 4, 2017
+  * Updated May 23, 2017
   * Developers using the font within their app, please review [this issue](https://github.com/Ranks/emojione/issues/385) regarding proper display of digits.
 
 Android Setup Help:
@@ -68,5 +68,5 @@ The black and white images used to generate these fonts are also provided in the
   * We provide no guarantees that the font will function on your device.
   
 ### Acknowledgements
-  * Google Font: Thanks to Miguel Sousa from Adobe Systems and [Maxim Baz](https://github.com/maximbaz).
+  * Google Font: Thanks to Miguel Sousa from Adobe Systems, [Maxim Baz](https://github.com/maximbaz) and [Albert Chang](https://github.com/mxalbert1996).
   * Apple Font: Thanks to Philip (@pw5a29) and Cody (@vXBaKeRXv).
