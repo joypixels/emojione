@@ -16,7 +16,8 @@ Android Setup Help:
 
 Linux Setup Help:
   * Place the file in `~/.local/share/fonts/`
-  * Update fontconfig cache with `fc-cache -f`
+  * Create the following fontconfig file: [latest](https://github.com/maximbaz/dotfiles/blob/master/.config/fontconfig/conf.d/70-emojione-color.conf) ([snapshot](https://github.com/maximbaz/dotfiles/blob/b63b2fe4bb5362d207e407c646655070cd1251bc/.config/fontconfig/conf.d/70-emojione-color.conf))
+  * Update fontconfig cache with `$ fc-cache -f`
   * Chrome and all derivative apps (like Electron) will display color emoji after a restart.
   * Install a patched Cairo library to display color emoji in all GTK+ apps:
     * https://aur.archlinux.org/packages/cairo-coloredemoji
