@@ -13,7 +13,7 @@
 * We unfortunately cannot accept submissions for emoji art revisions.
 * Design suggestions are welcome. They will be considered by the designers. There's no guarantee they will be adopted. 
 * Notes on visual errors are also accepted.
-* Please see the [emojione-assets repo](https://www.github.com/ranks/emojione-assets) for more information on submitting artwork suggestions or visual errors. 
+* Please see the [emojione-assets repo](https://www.github.com/emojione/emojione-assets) for more information on submitting artwork suggestions or visual errors. 
   
 
 Thank you for your interest in contributing to this library.
