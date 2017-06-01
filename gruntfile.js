@@ -2,7 +2,10 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
-            files: ['gruntfile.js', 'lib/js/emojione.js']
+            files: ['gruntfile.js', 'lib/js/src/**'],
+            options: {
+                jshintrc: true
+            }
         },
         jsonlint: {
             files: {
@@ -48,7 +51,26 @@ module.exports = function(grunt) {
         // run QUnit tests
         qunit: {
             all: ['lib/js/tests/tests.html']
-        }
+        },
+        rollup: {
+            umd: {
+                options: {
+                    format: 'umd',
+                    moduleName: 'emojione'
+                },
+                files: {
+                    './lib/js/emojione.js': './lib/js/src/index.js',
+                }
+            },
+            es: {
+                options: {
+                    format: 'es'
+                },
+                files: {
+                    'lib/js/emojione.es.js': 'lib/js/src/index.js'
+                }
+            },
+        },
 
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -58,6 +80,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-qunit');
-    grunt.registerTask('default', ['jshint','jsonlint', 'sass', 'uglify', 'cssmin']);
-    grunt.registerTask('travis', ['qunit']);
+    grunt.loadNpmTasks('grunt-rollup');
+    grunt.registerTask('default', ['jshint','jsonlint', 'sass', 'uglify', 'cssmin', 'rollup']);
+    grunt.registerTask('travis', ['rollup', 'qunit']);
 };

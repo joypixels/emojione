@@ -134,6 +134,20 @@
                     assert.equal(emojione.toImage("🐌"), "<img class=\"emojione\" alt=\"🐌\" title=\":snail:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/1f40c.png\"/>");
                 });
 
+            QUnit.module("greedyMatch");
+                QUnit.test( "unicodeToImage with greedyMatch:false", function ( assert ) {
+                    assert.equal(emojione.unicodeToImage("Hello world! \u2049\ufe0f"), "Hello world! <img class=\"emojione\" alt=\"\u2049\ufe0f\" title=\":interrobang:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/2049.png\"/>");
+                    assert.equal(emojione.unicodeToImage("Hello world! \u2049"), "Hello world! \u2049");
+
+                });
+
+                QUnit.test( "unicodeToImage with greedyMatch:true", function ( assert ) {
+                    emojione.greedyMatch = true;
+                    assert.equal(emojione.unicodeToImage("Hello world! \u2049\ufe0f"), "Hello world! <img class=\"emojione\" alt=\"\u2049\ufe0f\" title=\":interrobang:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/2049.png\"/>");
+                    assert.equal(emojione.unicodeToImage("Hello world! \u2049"), "Hello world! <img class=\"emojione\" alt=\"\u2049\ufe0f\" title=\":interrobang:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/2049.png\"/>");
+                    emojione.greedyMatch = false; // reset
+
+                });
 
         </script>
     </body>
