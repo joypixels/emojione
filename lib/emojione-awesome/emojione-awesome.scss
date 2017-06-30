@@ -30,6 +30,6 @@ $size-map: (
 @each $code, $name in $emoji-map {
 
 	.e1a-#{$name} {
-		background-image: url("https://cdn.jsdelivr.net/emojione/assets/3.0/png/128/#{$code}.png");
+		background-image: url("https://cdn.jsdelivr.net/emojione/assets/3.1/png/128/#{$code}.png");
 	}
 }

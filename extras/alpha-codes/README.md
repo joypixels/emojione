@@ -19,16 +19,19 @@ We've included the current list of emoji alpha codes in two formats, json and cs
 ```
 {
     "1f600": {
+        "output": "1f601",
         "name": "grinning face",
         "alpha_code": ":grinning:",
         "aliases": ""
     },
     "1f642": {
+        "output": "1f642",
         "name": "slightly smiling face",
         "alpha_code": ":slight_smile:",
         "aliases": ":slightly_smiling_face:"
     },
     "1f36e": {
+        "output": "1f46e",
         "name": "custard",
         "alpha_code": ":custard:",
         "aliases": ":pudding:|:flan:"
@@ -39,7 +42,7 @@ We've included the current list of emoji alpha codes in two formats, json and cs
 ##### CSV
 
 ```
-“unicode”, “name”, "alpha_code”, “aliases”
+“unicode”, "output", “name”, "alpha_code”, “aliases”
 ```
 
 ### LICENSE

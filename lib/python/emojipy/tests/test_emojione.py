@@ -11,16 +11,16 @@ class EmojipyTest(TestCase):
 
     def test_unicode_to_image(self):
         txt = 'Hello world! 😄 :smile:'
-        expected = """Hello world! <img class="emojione" alt="😄" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f604.png"/> :smile:"""
+        expected = """Hello world! <img class="emojione" alt="😄" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png"/> :smile:"""
 
         self.assertEqual(Emoji.unicode_to_image(txt), expected)
 
     def test_shortcode_to_image(self):
         txt = 'Hello world! 😄 :smile:'
-        expected = """Hello world! 😄 <img class="emojione" alt="😄" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f604.png"/>"""
+        expected = """Hello world! 😄 <img class="emojione" alt="😄" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png"/>"""
         self.assertEqual(Emoji.shortcode_to_image(txt), expected)
         Emoji.unicode_alt = False
-        expected = """Hello world! 😄 <img class="emojione" alt=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f604.png"/>"""
+        expected = """Hello world! 😄 <img class="emojione" alt=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png"/>"""
         self.assertEqual(Emoji.shortcode_to_image(txt), expected)
         Emoji.unicode_alt = True
 

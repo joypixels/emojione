@@ -7,7 +7,7 @@ use Emojione\Emojione;
 class EmojioneTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $emojiVersion = '3.0';
+    private $emojiVersion = '3.1';
 
     public function emojiProvider()
     {

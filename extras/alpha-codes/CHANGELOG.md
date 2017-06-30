@@ -1,6 +1,14 @@
 changelog
 ---------
 
+####UPDATE 2017-06-30
+* additions
+  * Unicode 10 charcters
+  
+* changes
+  * inclusion of output code point attribute, used to generate native Unicode
+  
+
 ####UPDATE 2017-04-15
 * additions
   * gender based roles

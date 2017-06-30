@@ -26,7 +26,7 @@ EmojiOne's official mascot is 🦄!
 EmojiOne's official mascot: 🦄
 
 # character inside of IMG tag
-The <img class="emojione" alt="🦄" title=":unicorn:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/1f984.png" /> is EmojiOne's official mascot.
+The <img class="emojione" alt="🦄" title=":unicorn:" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f984.png" /> is EmojiOne's official mascot.
 
 ```
 
@@ -59,7 +59,7 @@ EmojiOne's official mascot is :unicorn:!
 EmojiOne's official mascot: :unicorn:
 
 # shortname inside of IMG tag
-The <img class="emojione" alt=":unicorn:" title=":unicorn:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/1f984.png" /> is EmojiOne's official mascot.
+The <img class="emojione" alt=":unicorn:" title=":unicorn:" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f984.png" /> is EmojiOne's official mascot.
 
 ```
 
@@ -88,7 +88,7 @@ The reverse is the joy smiley is the cry smiley :'(.
 This is the "flushed" smiley: :$.
 
 # smiley inside of an IMG tag  (shouldn't convert anything inside of the tag)
-Smile <img class="emojione" alt=":)" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/1f604.png" /> because it's going to be a good day.
+Smile <img class="emojione" alt=":)" title=":smile:" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f604.png" /> because it's going to be a good day.
 
 # typical username password fail  (shouldn't convert the user:pass, but should convert the last :p)
 Please log-in with user:pass as your credentials :P.
