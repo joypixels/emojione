@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
   summary: 'Meteor Package of the https://www.emojione.com/ set.',
-  version: '3.1.0',
+  version: '3.1.1',
   git: 'https://github.com/emojione/emojione.git'
 });
 
@@ -22,7 +22,8 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'lib/meteor/emojione-client.js',
-    'extras/css/emojione.css'
+    'extras/css/emojione.css',
+    'extras/css/emojione-awesome.css'
   ], 'client');
   
   api.addAssets('../emojione-assets/sprites/emojione-sprite-32.min.css', 'client');

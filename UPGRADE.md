@@ -37,21 +37,28 @@ Replaced by ‘examples’. Contains code snippets of each of the functions prev
  - primary key is now *base code point* rather than shortname
 	- base code point is the full unicode code point minus VS16 and ZWJ
 	- base code point is used as an identifier for emoji file names (PNG) as well as within sprites (CSS)
- - **unicode** (str) and **unicode_alt** (str) are depricated. code points are now organized within **code_points** (array)
- 	- **base** (str) is identical to the primary key
-	- **output** (str) is the recommended code point to use for conversion to native unicode
-	- **match_default** (array) contains one or more code points used to identify native unicode
-	- **match_greedy** (array) contains one or more code points used to identify potential native unicode variants
-		- note: the match_greedy code point(s) may replace non-emoji variants producing undesired results
-	- **decimal** (str) replaces **code_decimal** (str)
- - **emoji_order** (int) is now simply **order** (int)
- - **display** (int) determines whether an emoji should be shown on a keyboard
- - **aliases** (array) is now **shortname_alternates** (array)
+ - **name** (str)
+ - **unicode_version** (num) - floating-point number indicating initial Unicode release
+ - **category** (str) - key for `category` property in `emoji_categories.json`
+ - **emoji_order** (num) is now simply **order** (num)
+ - **display** (num) determines whether an emoji should be shown on a keyboard
+ - **shortname** (str) colon-encapsulated, snake_case representation of the emoji name
+ - **aliases** (array) is now **shortname_alternates** (array) alternative (including previously-used) shortnames
  - **aliases_ascii** (array) is now **ascii** (array)
  - **diversity** (str) is either `null` or the base code point of the corresponding Fitzpatrick Emoji Modifier
  - **diversities** (array) contains the base code points of the diversity children for a diversity parent (non-diverse, diversity base)
  - **gender** (str) is either `null` or the base code point of the corresponding male/female emoji symbol
  - **genders** (array) contains the base code points of the gender children for a gender parent (gender-neutral, gender base)
+ - **unicode** (str) and **unicode_alt** (str) are depricated. code points are now organized within **code_points** (array)
+ 	- **base** (str) is identical to the primary key
+ 	- **fully_qualified** (str) represents code point according to [this Unicode documentation](http://unicode.org/Public/emoji/5.0/emoji-test.txt)
+ 	- **non_fully_qualified** (str) derived from same documentation as FQ. NFQ code point convention is used for PNG file names in font file builds
+	- **output** (str) is the recommended code point to use for conversion to native unicode
+	- **match_default** (array) contains one or more code points used to identify native unicode
+	- **match_greedy** (array) contains one or more code points used to identify potential native unicode variants
+		- note: the match_greedy code point(s) may replace non-emoji variants producing undesired results
+	- **decimal** (str) replaces **code_decimal** (str)
+ - **keywords** (array)
 
 **EMOJI_STRATEGY.JSON (updated)**
  - primary key is now *base code point* rather than short name

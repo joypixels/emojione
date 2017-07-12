@@ -2,10 +2,11 @@
 
 ## Object Properties
 
-Both PHP and JavaScript libraries now have wider range of available properties to customize your experience. The following are available for both libraries.
+Both PHP and JavaScript libraries now have wider range of available properties. The following are available for both libraries.
 
- - `emojiVersion` (str) - Used only to direct CDN path. This is a 2-digit version (e.g. '3.0'). Not recommended for usage below 3.0.0.
+ - `emojiVersion` (str) - Used only to direct CDN path. This is a 2-digit version (e.g. '3.1'). Not recommended for usage below 3.0.0.
  - `emojiSize` (str) **Default: `32`** - Used only to direct CDN path for non-sprite PNG usage. Available options are '32', '64', and '128'.
+ - `imagePathPNG` (str) - Defaults to CDN (jsdelivr) path. Setting as alternate path overwrites `emojiSize` option.
  - `greedyMatch` (bool) **Default: `false`** - When `true`, matches non-fully-qualified Unicode values.
  - `imageTitleTag` (bool) **Default: `true`** - When `false`, removes title attribute from <img> tag.
  - `sprites` (bool) **Default: `false`** - When `true`, sprite markup will be used. Sprite CSS and PNG assets must be additionally included.
