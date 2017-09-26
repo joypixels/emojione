@@ -10,6 +10,8 @@
         <script src="http://cdn.jsdelivr.net/qunit/1.14.0/qunit.js"></script>
         <script src="../emojione.js"></script>
         <script>
+        emojione.emojiSize = '64';
+        emojione.spriteSize = '64';
         <% _.each(data, function(collection) { %>
             QUnit.module("<%= collection.module %>");
             <% _.each(collection.tests, function(test) { %>

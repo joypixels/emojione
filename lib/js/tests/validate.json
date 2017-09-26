@@ -6,7 +6,7 @@
         {
           "description": "test toImage",
           "text": "Hello world! 😄 :smile:",
-          "expected": "Hello world! <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f604.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\\\"/>"
+          "expected": "Hello world! <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\\\"/>"
         },
         {
           "description": "mixed ascii, regular unicode and duplicate emoji",

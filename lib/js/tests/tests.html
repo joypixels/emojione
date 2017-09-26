@@ -10,11 +10,13 @@
         <script src="http://cdn.jsdelivr.net/qunit/1.14.0/qunit.js"></script>
         <script src="../emojione.js"></script>
         <script>
+        emojione.emojiSize = '64';
+        emojione.spriteSize = '64';
         
             QUnit.module("toImage");
             
                 QUnit.test( "test toImage", function( assert ) {
-                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f604.png\"/> <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/>");
+                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/> <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/>");
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
