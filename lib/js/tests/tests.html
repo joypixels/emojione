@@ -193,7 +193,7 @@
             
                 QUnit.test( "2 consecutive on new lines", function( assert ) {
 	                
-                    assert.equal(emojione.toImage(":ro:\n:ro:"), "<img class=\"emojione\" alt=\"🇷🇴\" title=\":flag_ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>\n<img class=\"emojione\" alt=\"🇷🇴\" title=\":flag_ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>");
+                    assert.equal(emojione.toImage(":ro:\n:ro:"), "<img class=\"emojione\" alt=\"🇷🇴\" title=\":ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>\n<img class=\"emojione\" alt=\"🇷🇴\" title=\":ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>");
 	                
                 });
             
@@ -205,7 +205,28 @@
             
                 QUnit.test( "inside a word unsafe", function( assert ) {
 	                
-                    assert.equal(emojione.toImage("a:ro:a"), "a<img class=\"emojione\" alt=\"🇷🇴\" title=\":flag_ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>a");
+                    assert.equal(emojione.toImage("a:ro:a"), "a<img class=\"emojione\" alt=\"🇷🇴\" title=\":ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>a");
+	                
+                });
+            
+                QUnit.test( "alias", function( assert ) {
+	                
+                    assert.equal(emojione.toImage(":couplekiss_mm:"), "<img class=\"emojione\" alt=\"👨‍❤️‍💋‍👨\" title=\":couplekiss_mm:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f468-2764-1f48b-1f468.png\"/>");
+	                
+                });
+            
+                QUnit.test( "alias with +", function( assert ) {
+	                
+                    assert.equal(emojione.toImage(":+1_tone1:"), "<img class=\"emojione\" alt=\"👍🏻\" title=\":+1_tone1:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f44d-1f3fb.png\"/>");
+	                
+                });
+            
+        
+            QUnit.module("unifyUnicode");
+            
+                QUnit.test( "alias", function( assert ) {
+	                
+                    assert.equal(emojione.unifyUnicode(":couplekiss_mm:"), "👨‍❤️‍💋‍👨");
 	                
                 });
             

@@ -166,7 +166,7 @@
         {
           "description": "2 consecutive on new lines",
           "text": ":ro:\\n:ro:",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"🇷🇴\\\" title=\\\":flag_ro:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\\\"/>\\n<img class=\\\"emojione\\\" alt=\\\"🇷🇴\\\" title=\\\":flag_ro:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\\\"/>"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"🇷🇴\\\" title=\\\":ro:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\\\"/>\\n<img class=\\\"emojione\\\" alt=\\\"🇷🇴\\\" title=\\\":ro:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\\\"/>"
         },
         {
           "description": "inside a word safe",
@@ -178,7 +178,27 @@
         {
           "description": "inside a word unsafe",
           "text": "a:ro:a",
-          "expected": "a<img class=\\\"emojione\\\" alt=\\\"🇷🇴\\\" title=\\\":flag_ro:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\\\"/>a"
+          "expected": "a<img class=\\\"emojione\\\" alt=\\\"🇷🇴\\\" title=\\\":ro:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\\\"/>a"
+        },
+        {
+          "description": "alias",
+          "text": ":couplekiss_mm:",
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"👨‍❤️‍💋‍👨\\\" title=\\\":couplekiss_mm:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f468-2764-1f48b-1f468.png\\\"/>"
+        },
+        {
+          "description": "alias with +",
+          "text": ":+1_tone1:",
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"👍🏻\\\" title=\\\":+1_tone1:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f44d-1f3fb.png\\\"/>"
+        }
+      ]
+    },
+    {
+      "module": "unifyUnicode",
+      "tests": [
+        {
+          "description": "alias",
+          "text": ":couplekiss_mm:",
+          "expected": "👨‍❤️‍💋‍👨"
         }
       ]
     }
