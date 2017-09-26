@@ -16,7 +16,9 @@
             QUnit.module("<%= collection.module %>");
             <% _.each(collection.tests, function(test) { %>
                 QUnit.test( "<%= test.description %>", function( assert ) {
+	                <%= test.start %>
                     assert.equal(emojione.<%= collection.module %>("<%= test.text %>"), "<%= test.expected %>");
+	                <%= test.end %>
                 });
             <% }); %>
         <% }); %>
