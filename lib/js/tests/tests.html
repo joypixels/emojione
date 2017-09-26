@@ -69,6 +69,10 @@
                     assert.equal(emojione.shortnameToUnicode(":dancer::dancer::alien:"), "💃💃👽");
                 });
             
+                QUnit.test( "shortname with +", function( assert ) {
+                    assert.equal(emojione.shortnameToUnicode(":+1: :+1_tone3:"), "👍 👍🏽");
+                });
+            
         
             QUnit.module("shortnameToImage");
             
@@ -94,6 +98,10 @@
             
                 QUnit.test( "triple emoji string", function( assert ) {
                     assert.equal(emojione.shortnameToImage(":dancer::dancer::alien:"), "<img class=\"emojione\" alt=\"💃\" title=\":dancer:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f483.png\"/><img class=\"emojione\" alt=\"💃\" title=\":dancer:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f483.png\"/><img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f47d.png\"/>");
+                });
+            
+                QUnit.test( "shortname with +", function( assert ) {
+                    assert.equal(emojione.shortnameToImage(":+1: :+1_tone2:"), "<img class=\"emojione\" alt=\"👍\" title=\":thumbsup:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f44d.png\"/> <img class=\"emojione\" alt=\"👍🏼\" title=\":thumbsup_tone2:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f44d-1f3fc.png\"/>");
                 });
             
         

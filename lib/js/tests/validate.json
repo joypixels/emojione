@@ -72,6 +72,11 @@
           "description": "triple emoji string",
           "text": ":dancer::dancer::alien:",
           "expected": "💃💃👽"
+        },
+        {
+          "description": "shortname with +",
+          "text": ":+1: :+1_tone3:",
+          "expected": "👍 👍🏽"
         }
       ]
     },
@@ -107,6 +112,11 @@
           "description": "triple emoji string",
           "text": ":dancer::dancer::alien:",
           "expected": "<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f483.png\\\"/><img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f483.png\\\"/><img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f47d.png\\\"/>"
+        },
+        {
+          "description": "shortname with +",
+          "text": ":+1: :+1_tone2:",
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"👍\\\" title=\\\":thumbsup:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f44d.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"👍🏼\\\" title=\\\":thumbsup_tone2:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f44d-1f3fc.png\\\"/>"
         }
       ]
     },
