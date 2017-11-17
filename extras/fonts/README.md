@@ -18,10 +18,10 @@ Android Setup Help:
 
 Linux Setup Help:
 
-* ArchLinux users are advised to install [AUR package](https://aur.archlinux.org/packages/emojione-fonts/)
+* ArchLinux users are advised to install [AUR package](https://aur.archlinux.org/packages/ttf-emojione/)
 * Alternatively setup the font manually:
   * Place the file in `~/.local/share/fonts/`
-  * Create the following fontconfig file: [snapshot](https://github.com/maximbaz/dotfiles/blob/b63b2fe4bb5362d207e407c646655070cd1251bc/.config/fontconfig/conf.d/70-emojione-color.conf)
+  * Create the following fontconfig file: [latest](https://aur.archlinux.org/cgit/aur.git/tree/70-emojione-color.conf?h=ttf-emojione) ([snapshot](https://github.com/maximbaz/dotfiles/blob/b63b2fe4bb5362d207e407c646655070cd1251bc/.config/fontconfig/conf.d/70-emojione-color.conf))
   * Update fontconfig cache with `$ fc-cache -f; sudo fc-cache -f`
 * The font seems to be working now in Chrome and Firefox, as well as in many other apps!
 
