@@ -17,13 +17,13 @@ Android Setup Help:
 * Must have a rooted Android phone.
 
 Linux Setup Help:
+
+* ArchLinux users are advised to install [AUR package](https://aur.archlinux.org/packages/ttf-emojione/)
+* Alternatively setup the font manually:
   * Place the file in `~/.local/share/fonts/`
-  * Create the following fontconfig file: [latest](https://github.com/maximbaz/dotfiles/blob/master/.config/fontconfig/conf.d/70-emojione-color.conf) ([snapshot](https://github.com/maximbaz/dotfiles/blob/b63b2fe4bb5362d207e407c646655070cd1251bc/.config/fontconfig/conf.d/70-emojione-color.conf))
-  * Update fontconfig cache with `$ fc-cache -f`
-  * Chrome and all derivative apps (like Electron) will display color emoji after a restart.
-  * Install a patched Cairo library to display color emoji in all GTK+ apps:
-    * https://aur.archlinux.org/packages/cairo-coloredemoji
-    * https://software.opensuse.org/package/libcairo2-color-emoji
+  * Create the following fontconfig file: [latest](https://aur.archlinux.org/cgit/aur.git/tree/70-emojione-color.conf?h=ttf-emojione) ([snapshot](https://github.com/maximbaz/dotfiles/blob/c893a835372c927eba9ec7e086e76b64f6210d8c/.config/fontconfig/conf.d/70-emojione-color.conf))
+  * Update fontconfig cache with `$ fc-cache -f; sudo fc-cache -f`
+* The font seems to be working now in Chrome and Firefox, as well as in many other apps!
 
 ### Apple Font
 
