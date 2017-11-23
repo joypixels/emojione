@@ -1,0 +1,10 @@
+{
+	"toImage": [
+		{
+			"ascii": true
+		}, {
+			"ascii": true,
+			"riskyMatchShortNames": false
+		}
+	]
+}

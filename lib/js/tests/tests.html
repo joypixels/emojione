@@ -10,128 +10,224 @@
         <script src="http://cdn.jsdelivr.net/qunit/1.14.0/qunit.js"></script>
         <script src="../emojione.js"></script>
         <script>
+        emojione.emojiSize = '64';
+        emojione.spriteSize = '64';
         
             QUnit.module("toImage");
             
                 QUnit.test( "test toImage", function( assert ) {
-                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.0/png/64/1f604.png\"/> <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/>");
+	                
+                    assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/> <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/>");
+	                
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
+	                
                     assert.equal(emojione.toImage(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "<img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> is <img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> and 저 is not <img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> or <img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> also :randomy: is not emoji");
+	                
                 });
             
         
             QUnit.module("unifyUnicode");
             
                 QUnit.test( "test unifyUnicode", function( assert ) {
+	                
                     assert.equal(emojione.unifyUnicode("Hello world! 😄 :smile:"), "Hello world! 😄 😄");
+	                
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
+	                
                     assert.equal(emojione.unifyUnicode(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "👽 is 👽 and 저 is not 👽 or 👽 also :randomy: is not emoji");
+	                
                 });
             
                 QUnit.test( "multiline emoji string", function( assert ) {
+	                
                     assert.equal(emojione.unifyUnicode(":dancer:\
 :dancer:"), "💃\
 💃");
+	                
                 });
             
                 QUnit.test( "triple emoji string", function( assert ) {
+	                
                     assert.equal(emojione.unifyUnicode(":dancer::dancer::alien:"), "💃💃👽");
+	                
                 });
             
         
             QUnit.module("shortnameToUnicode");
             
                 QUnit.test( "single unicode character conversion", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToUnicode("Hello world! 😄 :smile:"), "Hello world! 😄 😄");
+	                
                 });
             
                 QUnit.test( "shortname at start of sentence with apostrophe", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToUnicode(":snail:'s are cool!"), "🐌's are cool!");
+	                
                 });
             
                 QUnit.test( "shortname shares a colon", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToUnicode(":invalid:snail:"), ":invalid🐌");
+	                
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToUnicode(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "👽 is 👽 and 저 is not 👽 or 👽 also :randomy: is not emoji");
+	                
                 });
             
                 QUnit.test( "multiline emoji string", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToUnicode(":dancer:\n:dancer:"), "💃\n💃");
+	                
                 });
             
                 QUnit.test( "triple emoji string", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToUnicode(":dancer::dancer::alien:"), "💃💃👽");
+	                
                 });
             
         
             QUnit.module("shortnameToImage");
             
                 QUnit.test( "single shortname character conversion", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToImage("Hello world! 😄 :smile:"), "Hello world! 😄 <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/>");
+	                
                 });
             
                 QUnit.test( "shortname at start of sentence with apostrophe", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToImage(":snail:'s are cool!"), "<img class=\"emojione\" alt=\"🐌\" title=\":snail:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f40c.png\"/>'s are cool!");
+	                
                 });
             
                 QUnit.test( "shortname shares a colon", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToImage(":invalid:snail:"), ":invalid<img class=\"emojione\" alt=\"🐌\" title=\":snail:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f40c.png\"/>");
+	                
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToImage(":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji"), "<img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> is 👽 and 저 is not <img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> or <img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/> also :randomy: is not emoji");
+	                
                 });
             
                 QUnit.test( "multiline emoji string", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToImage(":dancer:\n:dancer:"), "<img class=\"emojione\" alt=\"💃\" title=\":dancer:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f483.png\"/>\n<img class=\"emojione\" alt=\"💃\" title=\":dancer:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f483.png\"/>");
+	                
                 });
             
                 QUnit.test( "triple emoji string", function( assert ) {
+	                
                     assert.equal(emojione.shortnameToImage(":dancer::dancer::alien:"), "<img class=\"emojione\" alt=\"💃\" title=\":dancer:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f483.png\"/><img class=\"emojione\" alt=\"💃\" title=\":dancer:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f483.png\"/><img class=\"emojione\" alt=\"👽\" title=\":alien:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f47d.png\"/>");
+	                
                 });
             
         
             QUnit.module("toShort");
             
                 QUnit.test( "single unicode character conversion", function( assert ) {
+	                
                     assert.equal(emojione.toShort("Hello world! 😄 :smile:"), "Hello world! :smile: :smile:");
+	                
                 });
             
                 QUnit.test( "mixed ascii, regular unicode and duplicate emoji", function( assert ) {
+	                
                     assert.equal(emojione.toShort("👽 is not :alien: and 저 is not 👽 or 👽"), ":alien: is not :alien: and 저 is not :alien: or :alien:");
+	                
                 });
             
                 QUnit.test( "multiline emoji string", function( assert ) {
+	                
                     assert.equal(emojione.toShort("💃\n💃"), ":dancer:\n:dancer:");
+	                
                 });
             
                 QUnit.test( "alias vs. canonical", function( assert ) {
+	                
                     assert.equal(emojione.toShort("🇯🇵 どうもありがとう"), ":flag_jp: どうもありがとう");
+	                
                 });
             
                 QUnit.test( "unicode character conversion within excluded tag", function( assert ) {
+	                
                     assert.equal(emojione.toShort("<div>😄</div>"), "<div>:smile:</div>");
+	                
                 });
             
         
             QUnit.module("toImage");
             
                 QUnit.test( "single character shortname conversion", function( assert ) {
+	                
                     assert.equal(emojione.toImage("Hello world! 😄 :smile:"), "Hello world! <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/> <img class=\"emojione\" alt=\"😄\" title=\":smile:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f604.png\"/>");
+	                
                 });
             
                 QUnit.test( "shortname shares a colon", function( assert ) {
+	                
                     assert.equal(emojione.toImage(":invalid:snail:"), ":invalid<img class=\"emojione\" alt=\"🐌\" title=\":snail:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f40c.png\"/>");
+	                
                 });
             
                 QUnit.test( "single unicode character conversion", function( assert ) {
+	                
                     assert.equal(emojione.toImage("🐌"), "<img class=\"emojione\" alt=\"🐌\" title=\":snail:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f40c.png\"/>");
+	                
+                });
+            
+        
+            QUnit.module("toImage");
+            
+                QUnit.test( "2 consecutive on new lines", function( assert ) {
+	                
+                    assert.equal(emojione.toImage(":ro:\n:ro:"), "<img class=\"emojione\" alt=\"🇷🇴\" title=\":ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>\n<img class=\"emojione\" alt=\"🇷🇴\" title=\":ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>");
+	                
+                });
+            
+                QUnit.test( "inside a word safe", function( assert ) {
+	                emojione.riskyMatchShortNames = false;
+                    assert.equal(emojione.toImage("a:ro:a"), "a:ro:a");
+	                emojione.riskyMatchShortNames = true;
+                });
+            
+                QUnit.test( "inside a word unsafe", function( assert ) {
+	                
+                    assert.equal(emojione.toImage("a:ro:a"), "a<img class=\"emojione\" alt=\"🇷🇴\" title=\":ro:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f1f7-1f1f4.png\"/>a");
+	                
+                });
+            
+                QUnit.test( "alias", function( assert ) {
+	                
+                    assert.equal(emojione.toImage(":couplekiss_mm:"), "<img class=\"emojione\" alt=\"👨‍❤️‍💋‍👨\" title=\":couplekiss_mm:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f468-2764-1f48b-1f468.png\"/>");
+	                
+                });
+            
+                QUnit.test( "alias with +", function( assert ) {
+	                
+                    assert.equal(emojione.toImage(":+1_tone1:"), "<img class=\"emojione\" alt=\"👍🏻\" title=\":+1_tone1:\" src=\"https://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f44d-1f3fb.png\"/>");
+	                
+                });
+            
+        
+            QUnit.module("unifyUnicode");
+            
+                QUnit.test( "alias", function( assert ) {
+	                
+                    assert.equal(emojione.unifyUnicode(":couplekiss_mm:"), "👨‍❤️‍💋‍👨");
+	                
                 });
             
         
