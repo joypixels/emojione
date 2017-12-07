@@ -38,7 +38,7 @@ Linux Setup Help:
   * Updated July 8, 2017
   
 Mac OS Instructions:
-Using the latest OS (El Capitan), I was able to load this emoji file in less than a minute.  The original emoji ttf is located in system/library/fonts, do not touch this.  You can safely upload the renamed file (from emojione-apple.ttf, to Apple Color Emoji.ttf) to the /library/fonts folder.  That file will override the default.  This was my experience, but yours may vary.  If someone could create a video and/or web-site guide, we'd gladly link to it.
+Simply move the font into `~/Library/Fonts/Apple Color Emoji.ttc`. You should immediately see a new version of the Apple Color Emoji font in your Fontbook, and it will be useable immediately.
 
 iOS Instructions:
 Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a software application for iOS that enables a user to find and install software packages on jailbroken iOS devices (iPhone, iPod, iPad).
