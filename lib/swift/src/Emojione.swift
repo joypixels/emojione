@@ -86,6 +86,7 @@ struct Emojione {
         "smile": "\u{0001f604}",
         "grin": "\u{0001f601}",
         "laughing": "\u{0001f606}",
+        "rolling_on_the_floor_laughing": "\u{0001f923}",
         "sweat_smile": "\u{0001f605}",
         "joy": "\u{0001f602}",
         "rofl": "\u{0001f923}",
@@ -93,7 +94,9 @@ struct Emojione {
         "blush": "\u{0001f60a}",
         "innocent": "\u{0001f607}",
         "slight_smile": "\u{0001f642}",
+        "slighty_smiling_face": "\u{0001f642}",
         "upside_down": "\u{0001f643}",
+        "upside_down_face": "\u{0001f643}",
         "wink": "\u{0001f609}",
         "relieved": "\u{0001f60c}",
         "heart_eyes": "\u{0001f60d}",
@@ -118,6 +121,7 @@ struct Emojione {
         "worried": "\u{0001f61f}",
         "confused": "\u{0001f615}",
         "slight_frown": "\u{0001f641}",
+        "slighty_frowning_Face": "\u{0001f641}",
         "persevere": "\u{0001f623}",
         "confounded": "\u{0001f616}",
         "tired_face": "\u{0001f62b}",
@@ -212,6 +216,18 @@ struct Emojione {
         "thumbsdown_tone3": "\u{0001f44e}\u{0001f3fd}",
         "thumbsdown_tone4": "\u{0001f44e}\u{0001f3fe}",
         "thumbsdown_tone5": "\u{0001f44e}\u{0001f3ff}",
+        "thumbup": "\u{0001f44d}",
+        "thumbup_tone1": "\u{0001f44d}\u{0001f3fb}",
+        "thumbup_tone2": "\u{0001f44d}\u{0001f3fc}",
+        "thumbup_tone3": "\u{0001f44d}\u{0001f3fd}",
+        "thumbup_tone4": "\u{0001f44d}\u{0001f3fe}",
+        "thumbup_tone5": "\u{0001f44d}\u{0001f3ff}",
+        "thumbdown": "\u{0001f44e}",
+        "thumbdown_tone1": "\u{0001f44e}\u{0001f3fb}",
+        "thumbdown_tone2": "\u{0001f44e}\u{0001f3fc}",
+        "thumbdown_tone3": "\u{0001f44e}\u{0001f3fd}",
+        "thumbdown_tone4": "\u{0001f44e}\u{0001f3fe}",
+        "thumbdown_tone5": "\u{0001f44e}\u{0001f3ff}",
         "punch": "\u{0001f44a}",
         "punch_tone1": "\u{0001f44a}\u{0001f3fb}",
         "punch_tone2": "\u{0001f44a}\u{0001f3fc}",
@@ -2675,7 +2691,7 @@ struct Emojione {
         "man_genie": "\u{0001f9de}\u{00002642}",
         "woman_zombie": "\u{0001f9df}\u{00002640}",
         "man_zombie": "\u{0001f9df}\u{00002642}",
-    ]
+        ]
     
     static func transform(string: String) -> String {
         let oldString = string as NSString
