@@ -12,6 +12,7 @@
   	- emojiVersion (str)
 	- emojiSize (str)
   	- greedyMatch (bool)
+  	- blacklistChars (bool)
 	- spriteSize (str)
 	- riskyMatchAscii (bool)
 
@@ -23,6 +24,7 @@
  	- emojiVersion (str)
 	- emojiSize (str)
 	- greedyMatch (bool)
+	- blacklistChars (str)
 	- spriteSize (str)
 	- riskyMatchAscii (bool)
  - Tests

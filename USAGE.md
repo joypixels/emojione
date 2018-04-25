@@ -8,6 +8,7 @@ Both PHP and JavaScript libraries now have wider range of available properties. 
  - `emojiSize` (str) **Default: `32`** - Used only to direct CDN path for non-sprite PNG usage. Available options are '32', '64', and '128'.
  - `imagePathPNG` (str) - Defaults to CDN (jsdelivr) path. Setting as alternate path overwrites `emojiSize` option.
  - `greedyMatch` (bool) **Default: `false`** - When `true`, matches non-fully-qualified Unicode values.
+ - `blacklistChars` (str) **Default: `''`** - Comma-separated list of characters that should not be replaced. For example, setting to `'#,*'` ensures pound and asterisk symbols are not replaced.
  - `imageTitleTag` (bool) **Default: `true`** - When `false`, removes title attribute from <img> tag.
  - `sprites` (bool) **Default: `false`** - When `true`, sprite markup will be used. Sprite CSS and PNG assets must be additionally included.
  - `spriteSize` (str) **Default `32`** - Alternate size is `64`.
