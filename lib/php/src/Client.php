@@ -466,7 +466,7 @@ class Client implements ClientInterface
             }
             else
             {
-                $unicode;
+                return $unicode;
             }
 
             $filename = $shortcode_replace[$shortname][2];
