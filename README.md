@@ -21,7 +21,7 @@ The web's first and only complete open source emoji set. It is 100% free for dig
  
  ### EmojiOne Version 2
  
- EmojiOne version 2 assets (all SVG and PNG) are available in [the 2.2.7 branch](https://github.com/emojione/emojione/tree/2.2.7), and they remain available for digital use (with attribution) under the Creative Commons license. Please see [INSTALLATION.md](INSTALLATION.md) for instructions on installing version 2, and [UPGRADE.md](UPGRADE.md) for instructions on upgrading from version 2 to version 3.
+ EmojiOne version 2 is no longer supported or distributed. Please see [UPGRADE.md](UPGRADE.md) for instructions on upgrading from version 2 to version 3.
 
 
 ## Installation

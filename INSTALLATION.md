@@ -31,7 +31,7 @@ meteor add emojione:emojione
 ```
 
 ### Version 2 Installation
-If you're looking to use emojione < version 3.0, refer to [the 2.2.7 branch](https://github.com/emojione/emojione/tree/2.2.7). **CDN (jsdelivr) dependency has been preserved for version 2.**
+EmojiOne version 2 is no longer supported or distributed.
 
 
 ### Character Encoding &mdash; UTF-8
