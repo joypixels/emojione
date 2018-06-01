@@ -2,7 +2,7 @@
 
 > [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione)
 
-The web's first and only complete open source emoji set. It is 100% free for digital use and super easy to integrate.
+A set of libraries to help users find and replace native system emojis with EmojiOne in their app or website.
 
 
 ## What's Included?
