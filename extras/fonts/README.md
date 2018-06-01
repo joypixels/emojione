@@ -50,11 +50,6 @@ Through a cooperative effort with Adobe Systems, EmojiOne created black and whit
   * Web Open Font Format: [emojione-svg.woff](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-svg.woff)
   * Web Open Font Format 2.0: [emojione-svg.woff2](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-svg.woff2)
 
-The black and white images used to generate these fonts are also provided in the v2 branch here:
-
-  * SVGs available at https://github.com/Ranks/emojione/tree/2.2.7/assets/svg_bw/
-  * PNGs available at https://github.com/Ranks/emojione/tree/2.2.7/assets/png_bw/
-
 ---
   
 ### Contributions
