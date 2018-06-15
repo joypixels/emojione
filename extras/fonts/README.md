@@ -5,7 +5,7 @@ There's no better way to port our emoji into your device than through a native f
 > Note: Due to their size, the font files have been removed from this repo and instead will be attached to releases on our repo that hosts the artwork and related assets, [emojione-assets](https://github.com/emojione/emojione-assets).
 >
 > Please go here to download the font files: [emojione-assets/releases](https://github.com/emojione/emojione-assets/releases)
-### Google Font - [emojione-android.ttf](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-android.ttf)
+### Google Font - [emojione-android.ttf](https://github.com/emojione/emojione-assets/releases/download/3.1.5/emojione-android.ttf)
 
   * Compatible with rooted Android devices and Linux.
   * Updated July 6, 2017
@@ -27,9 +27,9 @@ Linux Setup Help:
 
 ### Apple Font
 
-**For older apple devices** - [emojione-apple.ttf](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-apple.ttf)
+**For older apple devices** - [emojione-apple.ttf](https://github.com/emojione/emojione-assets/releases/download/3.1.5/emojione-apple.ttf)
 
-**For latest apple devices** - [emojione-apple.ttc](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-apple.ttc)
+**For latest apple devices** - [emojione-apple.ttc](https://github.com/emojione/emojione-assets/releases/download/3.1.5/emojione-apple.ttc)
 
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttf for Mac OSX.
@@ -46,9 +46,9 @@ Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a soft
 ### EmojiOne SVG-based Color Fonts
 Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used, in part, to generate this font. Using these fonts with Firefox or Microsoft Edge, you can enjoy full-color EmojiOne emoji. Black and white images will show as the fall back for systems that are not able to render color SVG fonts. The font is available in the following formats:
 
-  * Open Type Font: [emojione-svg.otf](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-svg.otf)
-  * Web Open Font Format: [emojione-svg.woff](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-svg.woff)
-  * Web Open Font Format 2.0: [emojione-svg.woff2](https://github.com/emojione/emojione-assets/releases/download/3.1.4/emojione-svg.woff2)
+  * Open Type Font: [emojione-svg.otf](https://github.com/emojione/emojione-assets/releases/download/3.1.5/emojione-svg.otf)
+  * Web Open Font Format: [emojione-svg.woff](https://github.com/emojione/emojione-assets/releases/download/3.1.5/emojione-svg.woff)
+  * Web Open Font Format 2.0: [emojione-svg.woff2](https://github.com/emojione/emojione-assets/releases/download/3.1.5/emojione-svg.woff2)
 
 ---
   

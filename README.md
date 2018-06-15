@@ -21,7 +21,7 @@ A set of libraries to help users find and replace native system emojis with Emoj
  
  ### EmojiOne Version 2
  
- EmojiOne version 2 is no longer supported or distributed. Please see [UPGRADE.md](UPGRADE.md) for instructions on upgrading from version 2 to version 3.
+ EmojiOne version 2 is no longer supported or distributed. Please see [UPGRADE.md](UPGRADE.md) for instructions on upgrading from version 2 to version 3. Version 2 was bound by the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 
 ## Installation
