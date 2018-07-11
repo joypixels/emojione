@@ -452,7 +452,7 @@ class Client implements ClientInterface
             $unicode_replace = $ruleset->getUnicodeReplace();
             $unicode_replace_greedy = $ruleset->getUnicodeReplaceGreedy();
 
-            $unicode = strtoupper($m[0]);
+            $unicode = $m[0];
 
             $bList = explode(',', $this->blacklistChars);
 

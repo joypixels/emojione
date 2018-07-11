@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
   summary: 'Meteor Package of the https://www.emojione.com/ set.',
-  version: '3.1.6',
+  version: '3.1.7',
   git: 'https://github.com/emojione/emojione.git'
 });
 
@@ -11,13 +11,13 @@ Package.onUse(function(api) {
   api.addFiles([
     'lib/meteor/pre-export.js',
     'lib/js/emojione.js',
-    'lib/meteor/post-export.js',
+    'lib/meteor/post-export.js'
   ]);
 
   api.use([
     'blaze',
     'htmljs',
-    'templating',
+    'templating'
   ], 'client');
 
   api.addFiles([
