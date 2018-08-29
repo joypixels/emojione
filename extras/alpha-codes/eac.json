@@ -66,55 +66,55 @@
         "aliases": ""
     },
     "00a9": {
-        "output": "00a9-fe0f",
+        "output": null,
         "name": "copyright",
         "alpha_code": ":copyright:",
         "aliases": ""
     },
     "00ae": {
-        "output": "00ae-fe0f",
+        "output": null,
         "name": "registered",
         "alpha_code": ":registered:",
         "aliases": ""
     },
     "203c": {
-        "output": "203c-fe0f",
+        "output": null,
         "name": "double exclamation mark",
         "alpha_code": ":bangbang:",
         "aliases": ""
     },
     "2049": {
-        "output": "2049-fe0f",
+        "output": null,
         "name": "exclamation question mark",
         "alpha_code": ":interrobang:",
         "aliases": ""
     },
     "2122": {
-        "output": "2122-fe0f",
+        "output": null,
         "name": "trade mark",
         "alpha_code": ":tm:",
         "aliases": ""
     },
     "2139": {
-        "output": "2139-fe0f",
+        "output": null,
         "name": "information",
         "alpha_code": ":information_source:",
         "aliases": ""
     },
     "2194": {
-        "output": "2194-fe0f",
+        "output": null,
         "name": "left-right arrow",
         "alpha_code": ":left_right_arrow:",
         "aliases": ""
     },
     "2195": {
-        "output": "2195-fe0f",
+        "output": null,
         "name": "up-down arrow",
         "alpha_code": ":arrow_up_down:",
         "aliases": ""
     },
     "2196": {
-        "output": "2196-fe0f",
+        "output": null,
         "name": "up-left arrow",
         "alpha_code": ":arrow_upper_left:",
         "aliases": ""
@@ -126,19 +126,19 @@
         "aliases": ":third_place_medal:"
     },
     "2197": {
-        "output": "2197-fe0f",
+        "output": null,
         "name": "up-right arrow",
         "alpha_code": ":arrow_upper_right:",
         "aliases": ""
     },
     "2198": {
-        "output": "2198-fe0f",
+        "output": null,
         "name": "down-right arrow",
         "alpha_code": ":arrow_lower_right:",
         "aliases": ""
     },
     "2199": {
-        "output": "2199-fe0f",
+        "output": null,
         "name": "down-left arrow",
         "alpha_code": ":arrow_lower_left:",
         "aliases": ""
@@ -150,13 +150,13 @@
         "aliases": ":second_place_medal:"
     },
     "21a9": {
-        "output": "21a9-fe0f",
+        "output": null,
         "name": "right arrow curving left",
         "alpha_code": ":leftwards_arrow_with_hook:",
         "aliases": ""
     },
     "21aa": {
-        "output": "21aa-fe0f",
+        "output": null,
         "name": "left arrow curving right",
         "alpha_code": ":arrow_right_hook:",
         "aliases": ""
@@ -169,7 +169,7 @@
     },
     "231b": {
         "output": "231b",
-        "name": "hourglass",
+        "name": "hourglass done",
         "alpha_code": ":hourglass:",
         "aliases": ""
     },
@@ -205,48 +205,48 @@
     },
     "23f3": {
         "output": "23f3",
-        "name": "hourglass with flowing sand",
+        "name": "hourglass not done",
         "alpha_code": ":hourglass_flowing_sand:",
         "aliases": ""
     },
     "24c2": {
-        "output": "24c2-fe0f",
+        "output": null,
         "name": "circled M",
         "alpha_code": ":m:",
         "aliases": ""
     },
     "25aa": {
-        "output": "25aa-fe0f",
+        "output": null,
         "name": "black small square",
         "alpha_code": ":black_small_square:",
         "aliases": ""
     },
     "25ab": {
-        "output": "25ab-fe0f",
+        "output": null,
         "name": "white small square",
         "alpha_code": ":white_small_square:",
         "aliases": ""
     },
     "25b6": {
-        "output": "25b6-fe0f",
+        "output": null,
         "name": "play button",
         "alpha_code": ":arrow_forward:",
         "aliases": ""
     },
     "25c0": {
-        "output": "25c0-fe0f",
+        "output": null,
         "name": "reverse button",
         "alpha_code": ":arrow_backward:",
         "aliases": ""
     },
     "25fb": {
-        "output": "25fb-fe0f",
+        "output": null,
         "name": "white medium square",
         "alpha_code": ":white_medium_square:",
         "aliases": ""
     },
     "25fc": {
-        "output": "25fc-fe0f",
+        "output": null,
         "name": "black medium square",
         "alpha_code": ":black_medium_square:",
         "aliases": ""
@@ -264,25 +264,25 @@
         "aliases": ""
     },
     "2600": {
-        "output": "2600-fe0f",
+        "output": null,
         "name": "sun",
         "alpha_code": ":sunny:",
         "aliases": ""
     },
     "2601": {
-        "output": "2601-fe0f",
+        "output": null,
         "name": "cloud",
         "alpha_code": ":cloud:",
         "aliases": ""
     },
     "260e": {
-        "output": "260e-fe0f",
+        "output": null,
         "name": "telephone",
         "alpha_code": ":telephone:",
         "aliases": ""
     },
     "2611": {
-        "output": "2611-fe0f",
+        "output": null,
         "name": "ballot box with check",
         "alpha_code": ":ballot_box_with_check:",
         "aliases": ""
@@ -300,13 +300,13 @@
         "aliases": ""
     },
     "261d": {
-        "output": "261d-fe0f",
+        "output": null,
         "name": "index pointing up",
         "alpha_code": ":point_up:",
         "aliases": ""
     },
     "263a": {
-        "output": "263a-fe0f",
+        "output": null,
         "name": "smiling face",
         "alpha_code": ":relaxed:",
         "aliases": ""
@@ -360,7 +360,7 @@
         "aliases": ""
     },
     "002a": {
-        "output": "002a-fe0f",
+        "output": null,
         "name": "asterisk",
         "alpha_code": ":asterisk_symbol:",
         "aliases": ""
@@ -397,7 +397,7 @@
     },
     "264f": {
         "output": "264f",
-        "name": "Scorpius",
+        "name": "Scorpio",
         "alpha_code": ":scorpius:",
         "aliases": ""
     },
@@ -444,37 +444,37 @@
         "aliases": ""
     },
     "2660": {
-        "output": "2660-fe0f",
+        "output": null,
         "name": "spade suit",
         "alpha_code": ":spades:",
         "aliases": ""
     },
     "2663": {
-        "output": "2663-fe0f",
+        "output": null,
         "name": "club suit",
         "alpha_code": ":clubs:",
         "aliases": ""
     },
     "2665": {
-        "output": "2665-fe0f",
+        "output": null,
         "name": "heart suit",
         "alpha_code": ":hearts:",
         "aliases": ""
     },
     "2666": {
-        "output": "2666-fe0f",
+        "output": null,
         "name": "diamond suit",
         "alpha_code": ":diamonds:",
         "aliases": ""
     },
     "2668": {
-        "output": "2668-fe0f",
+        "output": null,
         "name": "hot springs",
         "alpha_code": ":hotsprings:",
         "aliases": ""
     },
     "267b": {
-        "output": "267b-fe0f",
+        "output": null,
         "name": "recycling symbol",
         "alpha_code": ":recycle:",
         "aliases": ""
@@ -498,7 +498,7 @@
         "aliases": ""
     },
     "26a0": {
-        "output": "26a0-fe0f",
+        "output": null,
         "name": "warning",
         "alpha_code": ":warning:",
         "aliases": ""
@@ -606,7 +606,7 @@
         "aliases": ""
     },
     "2702": {
-        "output": "2702-fe0f",
+        "output": null,
         "name": "scissors",
         "alpha_code": ":scissors:",
         "aliases": ""
@@ -618,13 +618,13 @@
         "aliases": ""
     },
     "2708": {
-        "output": "2708-fe0f",
+        "output": null,
         "name": "airplane",
         "alpha_code": ":airplane:",
         "aliases": ""
     },
     "2709": {
-        "output": "2709-fe0f",
+        "output": null,
         "name": "envelope",
         "alpha_code": ":envelope:",
         "aliases": ""
@@ -642,31 +642,31 @@
         "aliases": ""
     },
     "270c": {
-        "output": "270c-fe0f",
+        "output": null,
         "name": "victory hand",
         "alpha_code": ":v:",
         "aliases": ""
     },
     "270f": {
-        "output": "270f-fe0f",
+        "output": null,
         "name": "pencil",
         "alpha_code": ":pencil2:",
         "aliases": ""
     },
     "2712": {
-        "output": "2712-fe0f",
+        "output": null,
         "name": "black nib",
         "alpha_code": ":black_nib:",
         "aliases": ""
     },
     "2714": {
-        "output": "2714-fe0f",
+        "output": null,
         "name": "heavy check mark",
         "alpha_code": ":heavy_check_mark:",
         "aliases": ""
     },
     "2716": {
-        "output": "2716-fe0f",
+        "output": null,
         "name": "heavy multiplication x",
         "alpha_code": ":heavy_multiplication_x:",
         "aliases": ""
@@ -678,25 +678,25 @@
         "aliases": ""
     },
     "2733": {
-        "output": "2733-fe0f",
+        "output": null,
         "name": "eight-spoked asterisk",
         "alpha_code": ":eight_spoked_asterisk:",
         "aliases": ""
     },
     "2734": {
-        "output": "2734-fe0f",
+        "output": null,
         "name": "eight-pointed star",
         "alpha_code": ":eight_pointed_black_star:",
         "aliases": ""
     },
     "2744": {
-        "output": "2744-fe0f",
+        "output": null,
         "name": "snowflake",
         "alpha_code": ":snowflake:",
         "aliases": ""
     },
     "2747": {
-        "output": "2747-fe0f",
+        "output": null,
         "name": "sparkle",
         "alpha_code": ":sparkle:",
         "aliases": ""
@@ -744,7 +744,7 @@
         "aliases": ""
     },
     "2764": {
-        "output": "2764-fe0f",
+        "output": null,
         "name": "red heart",
         "alpha_code": ":heart:",
         "aliases": ""
@@ -768,7 +768,7 @@
         "aliases": ""
     },
     "27a1": {
-        "output": "27a1-fe0f",
+        "output": null,
         "name": "right arrow",
         "alpha_code": ":arrow_right:",
         "aliases": ""
@@ -780,25 +780,25 @@
         "aliases": ""
     },
     "2934": {
-        "output": "2934-fe0f",
+        "output": null,
         "name": "right arrow curving up",
         "alpha_code": ":arrow_heading_up:",
         "aliases": ""
     },
     "2935": {
-        "output": "2935-fe0f",
+        "output": null,
         "name": "right arrow curving down",
         "alpha_code": ":arrow_heading_down:",
         "aliases": ""
     },
     "2b05": {
-        "output": "2b05-fe0f",
+        "output": null,
         "name": "left arrow",
         "alpha_code": ":arrow_left:",
         "aliases": ""
     },
     "2b06": {
-        "output": "2b06-fe0f",
+        "output": null,
         "name": "up arrow",
         "alpha_code": ":arrow_up:",
         "aliases": ""
@@ -810,7 +810,7 @@
         "aliases": ""
     },
     "2b07": {
-        "output": "2b07-fe0f",
+        "output": null,
         "name": "down arrow",
         "alpha_code": ":arrow_down:",
         "aliases": ""
@@ -829,7 +829,7 @@
     },
     "2b50": {
         "output": "2b50",
-        "name": "white medium star",
+        "name": "star",
         "alpha_code": ":star:",
         "aliases": ""
     },
@@ -840,19 +840,19 @@
         "aliases": ""
     },
     "3030": {
-        "output": "3030-fe0f",
+        "output": null,
         "name": "wavy dash",
         "alpha_code": ":wavy_dash:",
         "aliases": ""
     },
     "303d": {
-        "output": "303d-fe0f",
+        "output": null,
         "name": "part alternation mark",
         "alpha_code": ":part_alternation_mark:",
         "aliases": ""
     },
     "3297": {
-        "output": "3297-fe0f",
+        "output": null,
         "name": "Japanese \u201ccongratulations\u201d button",
         "alpha_code": ":congratulations:",
         "aliases": ""
@@ -864,7 +864,7 @@
         "aliases": ":shopping_trolley:"
     },
     "3299": {
-        "output": "3299-fe0f",
+        "output": null,
         "name": "Japanese \u201csecret\u201d button",
         "alpha_code": ":secret:",
         "aliases": ""
@@ -882,25 +882,25 @@
         "aliases": ""
     },
     "1f170": {
-        "output": "1f170-fe0f",
+        "output": null,
         "name": "A button (blood type)",
         "alpha_code": ":a:",
         "aliases": ""
     },
     "1f171": {
-        "output": "1f171-fe0f",
+        "output": null,
         "name": "B button (blood type)",
         "alpha_code": ":b:",
         "aliases": ""
     },
     "1f17e": {
-        "output": "1f17e-fe0f",
+        "output": null,
         "name": "O button (blood type)",
         "alpha_code": ":o2:",
         "aliases": ""
     },
     "1f17f": {
-        "output": "1f17f-fe0f",
+        "output": null,
         "name": "P button",
         "alpha_code": ":parking:",
         "aliases": ""
@@ -1068,7 +1068,7 @@
         "aliases": ""
     },
     "1f202": {
-        "output": "1f202-fe0f",
+        "output": null,
         "name": "Japanese \u201cservice charge\u201d button",
         "alpha_code": ":sa:",
         "aliases": ""
@@ -1128,7 +1128,7 @@
         "aliases": ":paella:"
     },
     "1f237": {
-        "output": "1f237-fe0f",
+        "output": null,
         "name": "Japanese \u201cmonthly amount\u201d button",
         "alpha_code": ":u6708:",
         "aliases": ""
@@ -1309,7 +1309,7 @@
     },
     "1f31b": {
         "output": "1f31b",
-        "name": "first quarter moon with face",
+        "name": "first quarter moon face",
         "alpha_code": ":first_quarter_moon_with_face:",
         "aliases": ""
     },
@@ -2070,7 +2070,7 @@
         "aliases": ""
     },
     "0023": {
-        "output": "0023-fe0f",
+        "output": null,
         "name": "pound symbol",
         "alpha_code": ":pound_symbol:",
         "aliases": ""
@@ -3007,7 +3007,7 @@
     },
     "1f46f": {
         "output": "1f46f",
-        "name": "people with bunny ears partying",
+        "name": "people with bunny ears",
         "alpha_code": ":people_with_bunny_ears_partying:",
         "aliases": ":dancers:"
     },
@@ -3655,7 +3655,7 @@
     },
     "1f50d": {
         "output": "1f50d",
-        "name": "left-pointing magnifying glass",
+        "name": "magnifying glass tilted left",
         "alpha_code": ":mag:",
         "aliases": ""
     },
@@ -3673,7 +3673,7 @@
     },
     "1f50e": {
         "output": "1f50e",
-        "name": "right-pointing magnifying glass",
+        "name": "magnifying glass tilted right",
         "alpha_code": ":mag_right:",
         "aliases": ""
     },
@@ -3829,7 +3829,7 @@
     },
     "1f51f": {
         "output": "1f51f",
-        "name": "keycap 10",
+        "name": "keycap: 10",
         "alpha_code": ":keycap_ten:",
         "aliases": ""
     },
@@ -4105,7 +4105,7 @@
     },
     "1f53c": {
         "output": "1f53c",
-        "name": "up button",
+        "name": "upwards button",
         "alpha_code": ":arrow_up_small:",
         "aliases": ""
     },
@@ -4117,7 +4117,7 @@
     },
     "1f53d": {
         "output": "1f53d",
-        "name": "down button",
+        "name": "downwards button",
         "alpha_code": ":arrow_down_small:",
         "aliases": ""
     },
@@ -4291,7 +4291,7 @@
     },
     "1f601": {
         "output": "1f601",
-        "name": "grinning face with smiling eyes",
+        "name": "beaming face with smiling eyes",
         "alpha_code": ":grin:",
         "aliases": ""
     },
@@ -4303,7 +4303,7 @@
     },
     "1f603": {
         "output": "1f603",
-        "name": "smiling face with open mouth",
+        "name": "grinning face with big eyes",
         "alpha_code": ":smiley:",
         "aliases": ""
     },
@@ -4315,13 +4315,13 @@
     },
     "1f604": {
         "output": "1f604",
-        "name": "smiling face with open mouth & smiling eyes",
+        "name": "grinning face with smiling eyes",
         "alpha_code": ":smile:",
         "aliases": ""
     },
     "1f605": {
         "output": "1f605",
-        "name": "smiling face with open mouth & cold sweat",
+        "name": "grinning face with sweat",
         "alpha_code": ":sweat_smile:",
         "aliases": ""
     },
@@ -4333,7 +4333,7 @@
     },
     "1f606": {
         "output": "1f606",
-        "name": "smiling face with open mouth & closed eyes",
+        "name": "grinning squinting face",
         "alpha_code": ":laughing:",
         "aliases": ":satisfied:"
     },
@@ -4357,7 +4357,7 @@
     },
     "1f60b": {
         "output": "1f60b",
-        "name": "face savouring delicious food",
+        "name": "face savoring food",
         "alpha_code": ":yum:",
         "aliases": ""
     },
@@ -4405,7 +4405,7 @@
     },
     "1f613": {
         "output": "1f613",
-        "name": "face with cold sweat",
+        "name": "downcast face with sweat",
         "alpha_code": ":sweat:",
         "aliases": ""
     },
@@ -4453,7 +4453,7 @@
     },
     "1f61c": {
         "output": "1f61c",
-        "name": "face with stuck-out tongue & winking eye",
+        "name": "winking face with tongue",
         "alpha_code": ":stuck_out_tongue_winking_eye:",
         "aliases": ""
     },
@@ -4465,7 +4465,7 @@
     },
     "1f61d": {
         "output": "1f61d",
-        "name": "face with stuck-out tongue & closed eyes",
+        "name": "squinting face with tongue",
         "alpha_code": ":stuck_out_tongue_closed_eyes:",
         "aliases": ""
     },
@@ -4513,7 +4513,7 @@
     },
     "1f625": {
         "output": "1f625",
-        "name": "disappointed but relieved face",
+        "name": "sad but relieved face",
         "alpha_code": ":disappointed_relieved:",
         "aliases": ""
     },
@@ -4549,7 +4549,7 @@
     },
     "1f630": {
         "output": "1f630",
-        "name": "face with open mouth & cold sweat",
+        "name": "anxious face with sweat",
         "alpha_code": ":cold_sweat:",
         "aliases": ""
     },
@@ -4597,7 +4597,7 @@
     },
     "1f63a": {
         "output": "1f63a",
-        "name": "smiling cat face with open mouth",
+        "name": "grinning cat face",
         "alpha_code": ":smiley_cat:",
         "aliases": ""
     },
@@ -4615,7 +4615,7 @@
     },
     "1f63d": {
         "output": "1f63d",
-        "name": "kissing cat face with closed eyes",
+        "name": "kissing cat face",
         "alpha_code": ":kissing_cat:",
         "aliases": ""
     },
@@ -4735,7 +4735,7 @@
     },
     "1f685": {
         "output": "1f685",
-        "name": "high-speed train with bullet nose",
+        "name": "bullet train",
         "alpha_code": ":bullettrain_front:",
         "aliases": ""
     },
@@ -5011,7 +5011,7 @@
     },
     "1f61b": {
         "output": "1f61b",
-        "name": "face with stuck-out tongue",
+        "name": "face with tongue",
         "alpha_code": ":stuck_out_tongue:",
         "aliases": ""
     },
@@ -5359,13 +5359,13 @@
     },
     "1f31c": {
         "output": "1f31c",
-        "name": "last quarter moon with face",
+        "name": "last quarter moon face",
         "alpha_code": ":last_quarter_moon_with_face:",
         "aliases": ""
     },
     "1f31d": {
         "output": "1f31d",
-        "name": "full moon with face",
+        "name": "full moon face",
         "alpha_code": ":full_moon_with_face:",
         "aliases": ""
     },
@@ -5635,7 +5635,7 @@
     },
     "1f504": {
         "output": "1f504",
-        "name": "anticlockwise arrows button",
+        "name": "counterclockwise arrows button",
         "alpha_code": ":arrows_counterclockwise:",
         "aliases": ""
     },
@@ -7086,13 +7086,13 @@
         "aliases": ":gi:"
     },
     "1f39e": {
-        "output": "1f39e-fe0f",
+        "output": null,
         "name": "film frames",
         "alpha_code": ":film_frames:",
         "aliases": ""
     },
     "1f39f": {
-        "output": "1f39f-fe0f",
+        "output": null,
         "name": "admission tickets",
         "alpha_code": ":tickets:",
         "aliases": ":admission_tickets:"
@@ -7104,43 +7104,43 @@
         "aliases": ":sports_medal:"
     },
     "1f3cb": {
-        "output": "1f3cb-fe0f",
+        "output": null,
         "name": "person lifting weights",
         "alpha_code": ":person_lifting_weights:",
         "aliases": ":lifter:|:weight_lifter:"
     },
     "1f3cc": {
-        "output": "1f3cc-fe0f",
+        "output": null,
         "name": "person golfing",
         "alpha_code": ":person_golfing:",
         "aliases": ":golfer:"
     },
     "1f3cd": {
-        "output": "1f3cd-fe0f",
+        "output": null,
         "name": "motorcycle",
         "alpha_code": ":motorcycle:",
         "aliases": ":racing_motorcycle:"
     },
     "1f3ce": {
-        "output": "1f3ce-fe0f",
+        "output": null,
         "name": "racing car",
         "alpha_code": ":race_car:",
         "aliases": ":racing_car:"
     },
     "1f396": {
-        "output": "1f396-fe0f",
+        "output": null,
         "name": "military medal",
         "alpha_code": ":military_medal:",
         "aliases": ""
     },
     "1f397": {
-        "output": "1f397-fe0f",
+        "output": null,
         "name": "reminder ribbon",
         "alpha_code": ":reminder_ribbon:",
         "aliases": ""
     },
     "1f336": {
-        "output": "1f336-fe0f",
+        "output": null,
         "name": "hot pepper",
         "alpha_code": ":hot_pepper:",
         "aliases": ""
@@ -7152,85 +7152,85 @@
         "aliases": ":right_fist_tone4:"
     },
     "1f327": {
-        "output": "1f327-fe0f",
+        "output": null,
         "name": "cloud with rain",
         "alpha_code": ":cloud_rain:",
         "aliases": ":cloud_with_rain:"
     },
     "1f328": {
-        "output": "1f328-fe0f",
+        "output": null,
         "name": "cloud with snow",
         "alpha_code": ":cloud_snow:",
         "aliases": ":cloud_with_snow:"
     },
     "1f329": {
-        "output": "1f329-fe0f",
+        "output": null,
         "name": "cloud with lightning",
         "alpha_code": ":cloud_lightning:",
         "aliases": ":cloud_with_lightning:"
     },
     "1f32a": {
-        "output": "1f32a-fe0f",
+        "output": null,
         "name": "tornado",
         "alpha_code": ":cloud_tornado:",
         "aliases": ":cloud_with_tornado:"
     },
     "1f32b": {
-        "output": "1f32b-fe0f",
+        "output": null,
         "name": "fog",
         "alpha_code": ":fog:",
         "aliases": ""
     },
     "1f32c": {
-        "output": "1f32c-fe0f",
+        "output": null,
         "name": "wind face",
         "alpha_code": ":wind_blowing_face:",
         "aliases": ""
     },
     "1f43f": {
-        "output": "1f43f-fe0f",
+        "output": null,
         "name": "chipmunk",
         "alpha_code": ":chipmunk:",
         "aliases": ""
     },
     "1f577": {
-        "output": "1f577-fe0f",
+        "output": null,
         "name": "spider",
         "alpha_code": ":spider:",
         "aliases": ""
     },
     "1f578": {
-        "output": "1f578-fe0f",
+        "output": null,
         "name": "spider web",
         "alpha_code": ":spider_web:",
         "aliases": ""
     },
     "1f321": {
-        "output": "1f321-fe0f",
+        "output": null,
         "name": "thermometer",
         "alpha_code": ":thermometer:",
         "aliases": ""
     },
     "1f399": {
-        "output": "1f399-fe0f",
+        "output": null,
         "name": "studio microphone",
         "alpha_code": ":microphone2:",
         "aliases": ":studio_microphone:"
     },
     "1f39a": {
-        "output": "1f39a-fe0f",
+        "output": null,
         "name": "level slider",
         "alpha_code": ":level_slider:",
         "aliases": ""
     },
     "1f39b": {
-        "output": "1f39b-fe0f",
+        "output": null,
         "name": "control knobs",
         "alpha_code": ":control_knobs:",
         "aliases": ""
     },
     "1f3f3": {
-        "output": "1f3f3-fe0f",
+        "output": null,
         "name": "white flag",
         "alpha_code": ":flag_white:",
         "aliases": ":waving_white_flag:"
@@ -7242,13 +7242,13 @@
         "aliases": ":waving_black_flag:"
     },
     "1f3f5": {
-        "output": "1f3f5-fe0f",
+        "output": null,
         "name": "rosette",
         "alpha_code": ":rosette:",
         "aliases": ""
     },
     "1f3f7": {
-        "output": "1f3f7-fe0f",
+        "output": null,
         "name": "label",
         "alpha_code": ":label:",
         "aliases": ""
@@ -7260,97 +7260,97 @@
         "aliases": ""
     },
     "1f4fd": {
-        "output": "1f4fd-fe0f",
+        "output": null,
         "name": "film projector",
         "alpha_code": ":projector:",
         "aliases": ":film_projector:"
     },
     "271d": {
-        "output": "271d-fe0f",
+        "output": null,
         "name": "latin cross",
         "alpha_code": ":cross:",
         "aliases": ":latin_cross:"
     },
     "1f549": {
-        "output": "1f549-fe0f",
+        "output": null,
         "name": "om",
         "alpha_code": ":om_symbol:",
         "aliases": ""
     },
     "1f54a": {
-        "output": "1f54a-fe0f",
+        "output": null,
         "name": "dove",
         "alpha_code": ":dove:",
         "aliases": ":dove_of_peace:"
     },
     "1f56f": {
-        "output": "1f56f-fe0f",
+        "output": null,
         "name": "candle",
         "alpha_code": ":candle:",
         "aliases": ""
     },
     "1f570": {
-        "output": "1f570-fe0f",
+        "output": null,
         "name": "mantelpiece clock",
         "alpha_code": ":clock:",
         "aliases": ":mantlepiece_clock:"
     },
     "1f573": {
-        "output": "1f573-fe0f",
+        "output": null,
         "name": "hole",
         "alpha_code": ":hole:",
         "aliases": ""
     },
     "1f576": {
-        "output": "1f576-fe0f",
+        "output": null,
         "name": "sunglasses",
         "alpha_code": ":dark_sunglasses:",
         "aliases": ""
     },
     "1f579": {
-        "output": "1f579-fe0f",
+        "output": null,
         "name": "joystick",
         "alpha_code": ":joystick:",
         "aliases": ""
     },
     "1f587": {
-        "output": "1f587-fe0f",
+        "output": null,
         "name": "linked paperclips",
         "alpha_code": ":paperclips:",
         "aliases": ":linked_paperclips:"
     },
     "1f58a": {
-        "output": "1f58a-fe0f",
+        "output": null,
         "name": "pen",
         "alpha_code": ":pen_ballpoint:",
         "aliases": ":lower_left_ballpoint_pen:"
     },
     "1f58b": {
-        "output": "1f58b-fe0f",
+        "output": null,
         "name": "fountain pen",
         "alpha_code": ":pen_fountain:",
         "aliases": ":lower_left_fountain_pen:"
     },
     "1f58c": {
-        "output": "1f58c-fe0f",
+        "output": null,
         "name": "paintbrush",
         "alpha_code": ":paintbrush:",
         "aliases": ":lower_left_paintbrush:"
     },
     "1f58d": {
-        "output": "1f58d-fe0f",
+        "output": null,
         "name": "crayon",
         "alpha_code": ":crayon:",
         "aliases": ":lower_left_crayon:"
     },
     "1f5a5": {
-        "output": "1f5a5-fe0f",
+        "output": null,
         "name": "desktop computer",
         "alpha_code": ":desktop:",
         "aliases": ":desktop_computer:"
     },
     "1f5a8": {
-        "output": "1f5a8-fe0f",
+        "output": null,
         "name": "printer",
         "alpha_code": ":printer:",
         "aliases": ""
@@ -7362,13 +7362,13 @@
         "aliases": ":right_fist_tone5:"
     },
     "2328": {
-        "output": "2328-fe0f",
+        "output": null,
         "name": "keyboard",
         "alpha_code": ":keyboard:",
         "aliases": ""
     },
     "1f5b2": {
-        "output": "1f5b2-fe0f",
+        "output": null,
         "name": "trackball",
         "alpha_code": ":trackball:",
         "aliases": ""
@@ -7380,79 +7380,79 @@
         "aliases": ":back_of_hand_tone1:"
     },
     "1f5bc": {
-        "output": "1f5bc-fe0f",
+        "output": null,
         "name": "framed picture",
         "alpha_code": ":frame_photo:",
         "aliases": ":frame_with_picture:"
     },
     "1f5c2": {
-        "output": "1f5c2-fe0f",
+        "output": null,
         "name": "card index dividers",
         "alpha_code": ":dividers:",
         "aliases": ":card_index_dividers:"
     },
     "1f5c3": {
-        "output": "1f5c3-fe0f",
+        "output": null,
         "name": "card file box",
         "alpha_code": ":card_box:",
         "aliases": ":card_file_box:"
     },
     "1f5c4": {
-        "output": "1f5c4-fe0f",
+        "output": null,
         "name": "file cabinet",
         "alpha_code": ":file_cabinet:",
         "aliases": ""
     },
     "1f5d1": {
-        "output": "1f5d1-fe0f",
+        "output": null,
         "name": "wastebasket",
         "alpha_code": ":wastebasket:",
         "aliases": ""
     },
     "1f5d2": {
-        "output": "1f5d2-fe0f",
+        "output": null,
         "name": "spiral notepad",
         "alpha_code": ":notepad_spiral:",
         "aliases": ":spiral_note_pad:"
     },
     "1f5d3": {
-        "output": "1f5d3-fe0f",
+        "output": null,
         "name": "spiral calendar",
         "alpha_code": ":calendar_spiral:",
         "aliases": ":spiral_calendar_pad:"
     },
     "1f5dc": {
-        "output": "1f5dc-fe0f",
+        "output": null,
         "name": "clamp",
         "alpha_code": ":compression:",
         "aliases": ""
     },
     "1f5dd": {
-        "output": "1f5dd-fe0f",
+        "output": null,
         "name": "old key",
         "alpha_code": ":key2:",
         "aliases": ":old_key:"
     },
     "1f5de": {
-        "output": "1f5de-fe0f",
+        "output": null,
         "name": "rolled-up newspaper",
         "alpha_code": ":newspaper2:",
         "aliases": ":rolled_up_newspaper:"
     },
     "1f5e1": {
-        "output": "1f5e1-fe0f",
+        "output": null,
         "name": "dagger",
         "alpha_code": ":dagger:",
         "aliases": ":dagger_knife:"
     },
     "1f5e3": {
-        "output": "1f5e3-fe0f",
+        "output": null,
         "name": "speaking head",
         "alpha_code": ":speaking_head:",
         "aliases": ":speaking_head_in_silhouette:"
     },
     "1f5e8": {
-        "output": "1f5e8-fe0f",
+        "output": null,
         "name": "left speech bubble",
         "alpha_code": ":speech_left:",
         "aliases": ":left_speech_bubble:"
@@ -7464,7 +7464,7 @@
         "aliases": ":back_of_hand_tone2:"
     },
     "1f5ef": {
-        "output": "1f5ef-fe0f",
+        "output": null,
         "name": "right anger bubble",
         "alpha_code": ":anger_right:",
         "aliases": ":right_anger_bubble:"
@@ -7476,13 +7476,13 @@
         "aliases": ":back_of_hand_tone3:"
     },
     "1f5f3": {
-        "output": "1f5f3-fe0f",
+        "output": null,
         "name": "ballot box with ballot",
         "alpha_code": ":ballot_box:",
         "aliases": ":ballot_box_with_ballot:"
     },
     "1f5fa": {
-        "output": "1f5fa-fe0f",
+        "output": null,
         "name": "world map",
         "alpha_code": ":map:",
         "aliases": ":world_map:"
@@ -7494,62 +7494,62 @@
         "aliases": ""
     },
     "1f6e0": {
-        "output": "1f6e0-fe0f",
+        "output": null,
         "name": "hammer and wrench",
         "alpha_code": ":tools:",
         "aliases": ":hammer_and_wrench:"
     },
     "1f6e1": {
-        "output": "1f6e1-fe0f",
+        "output": null,
         "name": "shield",
         "alpha_code": ":shield:",
         "aliases": ""
     },
     "1f6e2": {
-        "output": "1f6e2-fe0f",
+        "output": null,
         "name": "oil drum",
         "alpha_code": ":oil:",
         "aliases": ":oil_drum:"
     },
     "1f6f0": {
-        "output": "1f6f0-fe0f",
+        "output": null,
         "name": "satellite",
         "alpha_code": ":satellite_orbital:",
         "aliases": ""
     },
     "1f37d": {
-        "output": "1f37d-fe0f",
+        "output": null,
         "name": "fork and knife with plate",
         "alpha_code": ":fork_knife_plate:",
         "aliases": ":fork_and_knife_with_plate:"
     },
     "1f441": {
-        "output": "1f441-fe0f",
+        "output": null,
         "name": "eye",
         "alpha_code": ":eye:",
         "aliases": ""
     },
     "1f574": {
-        "output": "1f574-fe0f",
-        "name": "man in business suit levitating",
-        "alpha_code": ":man_in_business_suit_levitating:",
-        "aliases": ""
+        "output": null,
+        "name": "man in suit levitating",
+        "alpha_code": ":levitate:",
+        "aliases": ":man_in_business_suit_levitating:"
     },
     "1f575": {
-        "output": "1f575-fe0f",
+        "output": null,
         "name": "detective",
         "alpha_code": ":detective:",
         "aliases": ":spy:|:sleuth_or_spy:"
     },
     "270d": {
-        "output": "270d-fe0f",
+        "output": null,
         "name": "writing hand",
         "alpha_code": ":writing_hand:",
         "aliases": ""
     },
     "1f590": {
-        "output": "1f590-fe0f",
-        "name": "raised hand with fingers splayed",
+        "output": null,
+        "name": "hand with fingers splayed",
         "alpha_code": ":hand_splayed:",
         "aliases": ":raised_hand_with_fingers_splayed:"
     },
@@ -7578,79 +7578,79 @@
         "aliases": ":slightly_smiling_face:"
     },
     "1f3d4": {
-        "output": "1f3d4-fe0f",
+        "output": null,
         "name": "snow-capped mountain",
         "alpha_code": ":mountain_snow:",
         "aliases": ":snow_capped_mountain:"
     },
     "1f3d5": {
-        "output": "1f3d5-fe0f",
+        "output": null,
         "name": "camping",
         "alpha_code": ":camping:",
         "aliases": ""
     },
     "1f3d6": {
-        "output": "1f3d6-fe0f",
+        "output": null,
         "name": "beach with umbrella",
         "alpha_code": ":beach:",
         "aliases": ":beach_with_umbrella:"
     },
     "1f3d7": {
-        "output": "1f3d7-fe0f",
+        "output": null,
         "name": "building construction",
         "alpha_code": ":construction_site:",
         "aliases": ":building_construction:"
     },
     "1f3d8": {
-        "output": "1f3d8-fe0f",
+        "output": null,
         "name": "houses",
         "alpha_code": ":homes:",
         "aliases": ":house_buildings:"
     },
     "1f3d9": {
-        "output": "1f3d9-fe0f",
+        "output": null,
         "name": "cityscape",
         "alpha_code": ":cityscape:",
         "aliases": ""
     },
     "1f3da": {
-        "output": "1f3da-fe0f",
+        "output": null,
         "name": "derelict house",
         "alpha_code": ":house_abandoned:",
         "aliases": ":derelict_house_building:"
     },
     "1f3db": {
-        "output": "1f3db-fe0f",
+        "output": null,
         "name": "classical building",
         "alpha_code": ":classical_building:",
         "aliases": ""
     },
     "1f3dc": {
-        "output": "1f3dc-fe0f",
+        "output": null,
         "name": "desert",
         "alpha_code": ":desert:",
         "aliases": ""
     },
     "1f3dd": {
-        "output": "1f3dd-fe0f",
+        "output": null,
         "name": "desert island",
         "alpha_code": ":island:",
         "aliases": ":desert_island:"
     },
     "1f3de": {
-        "output": "1f3de-fe0f",
+        "output": null,
         "name": "national park",
         "alpha_code": ":park:",
         "aliases": ":national_park:"
     },
     "1f3df": {
-        "output": "1f3df-fe0f",
+        "output": null,
         "name": "stadium",
         "alpha_code": ":stadium:",
         "aliases": ""
     },
     "1f6cb": {
-        "output": "1f6cb-fe0f",
+        "output": null,
         "name": "couch and lamp",
         "alpha_code": ":couch:",
         "aliases": ":couch_and_lamp:"
@@ -7662,43 +7662,43 @@
         "aliases": ":back_of_hand_tone4:"
     },
     "1f6cd": {
-        "output": "1f6cd-fe0f",
+        "output": null,
         "name": "shopping bags",
         "alpha_code": ":shopping_bags:",
         "aliases": ""
     },
     "1f6ce": {
-        "output": "1f6ce-fe0f",
+        "output": null,
         "name": "bellhop bell",
         "alpha_code": ":bellhop:",
         "aliases": ":bellhop_bell:"
     },
     "1f6cf": {
-        "output": "1f6cf-fe0f",
+        "output": null,
         "name": "bed",
         "alpha_code": ":bed:",
         "aliases": ""
     },
     "1f6e3": {
-        "output": "1f6e3-fe0f",
+        "output": null,
         "name": "motorway",
         "alpha_code": ":motorway:",
         "aliases": ""
     },
     "1f6e4": {
-        "output": "1f6e4-fe0f",
+        "output": null,
         "name": "railway track",
         "alpha_code": ":railway_track:",
         "aliases": ":railroad_track:"
     },
     "1f6e5": {
-        "output": "1f6e5-fe0f",
+        "output": null,
         "name": "motor boat",
         "alpha_code": ":motorboat:",
         "aliases": ""
     },
     "1f6e9": {
-        "output": "1f6e9-fe0f",
+        "output": null,
         "name": "small airplane",
         "alpha_code": ":airplane_small:",
         "aliases": ":small_airplane:"
@@ -7716,7 +7716,7 @@
         "aliases": ""
     },
     "1f6f3": {
-        "output": "1f6f3-fe0f",
+        "output": null,
         "name": "passenger ship",
         "alpha_code": ":cruise_ship:",
         "aliases": ":passenger_ship:"
@@ -9565,31 +9565,31 @@
     },
     "1f590-1f3fb": {
         "output": "1f590-1f3fb",
-        "name": "raised hand with fingers splayed: light skin tone",
+        "name": "hand with fingers splayed: light skin tone",
         "alpha_code": ":hand_splayed_tone1:",
         "aliases": ":raised_hand_with_fingers_splayed_tone1:"
     },
     "1f590-1f3fc": {
         "output": "1f590-1f3fc",
-        "name": "raised hand with fingers splayed: medium-light skin tone",
+        "name": "hand with fingers splayed: medium-light skin tone",
         "alpha_code": ":hand_splayed_tone2:",
         "aliases": ":raised_hand_with_fingers_splayed_tone2:"
     },
     "1f590-1f3fd": {
         "output": "1f590-1f3fd",
-        "name": "raised hand with fingers splayed: medium skin tone",
+        "name": "hand with fingers splayed: medium skin tone",
         "alpha_code": ":hand_splayed_tone3:",
         "aliases": ":raised_hand_with_fingers_splayed_tone3:"
     },
     "1f590-1f3fe": {
         "output": "1f590-1f3fe",
-        "name": "raised hand with fingers splayed: medium-dark skin tone",
+        "name": "hand with fingers splayed: medium-dark skin tone",
         "alpha_code": ":hand_splayed_tone4:",
         "aliases": ":raised_hand_with_fingers_splayed_tone4:"
     },
     "1f590-1f3ff": {
         "output": "1f590-1f3ff",
-        "name": "raised hand with fingers splayed: dark skin tone",
+        "name": "hand with fingers splayed: dark skin tone",
         "alpha_code": ":hand_splayed_tone5:",
         "aliases": ":raised_hand_with_fingers_splayed_tone5:"
     },
@@ -9798,25 +9798,25 @@
         "aliases": ":keycap_asterisk:"
     },
     "23cf": {
-        "output": "23cf-fe0f",
+        "output": null,
         "name": "eject button",
         "alpha_code": ":eject:",
         "aliases": ":eject_symbol:"
     },
     "23ed": {
-        "output": "23ed-fe0f",
+        "output": null,
         "name": "next track button",
         "alpha_code": ":track_next:",
         "aliases": ":next_track:"
     },
     "23ee": {
-        "output": "23ee-fe0f",
+        "output": null,
         "name": "last track button",
         "alpha_code": ":track_previous:",
         "aliases": ":previous_track:"
     },
     "23ef": {
-        "output": "23ef-fe0f",
+        "output": null,
         "name": "play or pause button",
         "alpha_code": ":play_pause:",
         "aliases": ""
@@ -9828,265 +9828,265 @@
         "aliases": ""
     },
     "23f1": {
-        "output": "23f1-fe0f",
+        "output": null,
         "name": "stopwatch",
         "alpha_code": ":stopwatch:",
         "aliases": ""
     },
     "23f2": {
-        "output": "23f2-fe0f",
+        "output": null,
         "name": "timer clock",
         "alpha_code": ":timer:",
         "aliases": ":timer_clock:"
     },
     "23f8": {
-        "output": "23f8-fe0f",
+        "output": null,
         "name": "pause button",
         "alpha_code": ":pause_button:",
         "aliases": ":double_vertical_bar:"
     },
     "23f9": {
-        "output": "23f9-fe0f",
+        "output": null,
         "name": "stop button",
         "alpha_code": ":stop_button:",
         "aliases": ""
     },
     "23fa": {
-        "output": "23fa-fe0f",
+        "output": null,
         "name": "record button",
         "alpha_code": ":record_button:",
         "aliases": ""
     },
     "2602": {
-        "output": "2602-fe0f",
+        "output": null,
         "name": "umbrella",
         "alpha_code": ":umbrella2:",
         "aliases": ""
     },
     "2603": {
-        "output": "2603-fe0f",
+        "output": null,
         "name": "snowman",
         "alpha_code": ":snowman2:",
         "aliases": ""
     },
     "2604": {
-        "output": "2604-fe0f",
+        "output": null,
         "name": "comet",
         "alpha_code": ":comet:",
         "aliases": ""
     },
     "2618": {
-        "output": "2618-fe0f",
+        "output": null,
         "name": "shamrock",
         "alpha_code": ":shamrock:",
         "aliases": ""
     },
     "2620": {
-        "output": "2620-fe0f",
+        "output": null,
         "name": "skull and crossbones",
         "alpha_code": ":skull_crossbones:",
         "aliases": ":skull_and_crossbones:"
     },
     "2622": {
-        "output": "2622-fe0f",
+        "output": null,
         "name": "radioactive",
         "alpha_code": ":radioactive:",
         "aliases": ":radioactive_sign:"
     },
     "2623": {
-        "output": "2623-fe0f",
+        "output": null,
         "name": "biohazard",
         "alpha_code": ":biohazard:",
         "aliases": ":biohazard_sign:"
     },
     "2626": {
-        "output": "2626-fe0f",
+        "output": null,
         "name": "orthodox cross",
         "alpha_code": ":orthodox_cross:",
         "aliases": ""
     },
     "262a": {
-        "output": "262a-fe0f",
+        "output": null,
         "name": "star and crescent",
         "alpha_code": ":star_and_crescent:",
         "aliases": ""
     },
     "262e": {
-        "output": "262e-fe0f",
+        "output": null,
         "name": "peace symbol",
         "alpha_code": ":peace:",
         "aliases": ":peace_symbol:"
     },
     "262f": {
-        "output": "262f-fe0f",
+        "output": null,
         "name": "yin yang",
         "alpha_code": ":yin_yang:",
         "aliases": ""
     },
     "2638": {
-        "output": "2638-fe0f",
+        "output": null,
         "name": "wheel of dharma",
         "alpha_code": ":wheel_of_dharma:",
         "aliases": ""
     },
     "2639": {
-        "output": "2639-fe0f",
+        "output": null,
         "name": "frowning face",
         "alpha_code": ":frowning2:",
         "aliases": ":white_frowning_face:"
     },
     "2692": {
-        "output": "2692-fe0f",
+        "output": null,
         "name": "hammer and pick",
         "alpha_code": ":hammer_pick:",
         "aliases": ":hammer_and_pick:"
     },
     "2694": {
-        "output": "2694-fe0f",
+        "output": null,
         "name": "crossed swords",
         "alpha_code": ":crossed_swords:",
         "aliases": ""
     },
     "2696": {
-        "output": "2696-fe0f",
+        "output": null,
         "name": "balance scale",
         "alpha_code": ":scales:",
         "aliases": ""
     },
     "2697": {
-        "output": "2697-fe0f",
+        "output": null,
         "name": "alembic",
         "alpha_code": ":alembic:",
         "aliases": ""
     },
     "2699": {
-        "output": "2699-fe0f",
+        "output": null,
         "name": "gear",
         "alpha_code": ":gear:",
         "aliases": ""
     },
     "269b": {
-        "output": "269b-fe0f",
+        "output": null,
         "name": "atom symbol",
         "alpha_code": ":atom:",
         "aliases": ":atom_symbol:"
     },
     "269c": {
-        "output": "269c-fe0f",
+        "output": null,
         "name": "fleur-de-lis",
         "alpha_code": ":fleur-de-lis:",
         "aliases": ""
     },
     "26b0": {
-        "output": "26b0-fe0f",
+        "output": null,
         "name": "coffin",
         "alpha_code": ":coffin:",
         "aliases": ""
     },
     "26b1": {
-        "output": "26b1-fe0f",
+        "output": null,
         "name": "funeral urn",
         "alpha_code": ":urn:",
         "aliases": ":funeral_urn:"
     },
     "26c8": {
-        "output": "26c8-fe0f",
+        "output": null,
         "name": "cloud with lightning and rain",
         "alpha_code": ":thunder_cloud_rain:",
         "aliases": ":thunder_cloud_and_rain:"
     },
     "26cf": {
-        "output": "26cf-fe0f",
+        "output": null,
         "name": "pick",
         "alpha_code": ":pick:",
         "aliases": ""
     },
     "26d1": {
-        "output": "26d1-fe0f",
+        "output": null,
         "name": "rescue worker\u2019s helmet",
         "alpha_code": ":helmet_with_cross:",
         "aliases": ":helmet_with_white_cross:"
     },
     "26d3": {
-        "output": "26d3-fe0f",
+        "output": null,
         "name": "chains",
         "alpha_code": ":chains:",
         "aliases": ""
     },
     "26e9": {
-        "output": "26e9-fe0f",
+        "output": null,
         "name": "shinto shrine",
         "alpha_code": ":shinto_shrine:",
         "aliases": ""
     },
     "26f0": {
-        "output": "26f0-fe0f",
+        "output": null,
         "name": "mountain",
         "alpha_code": ":mountain:",
         "aliases": ""
     },
     "26f1": {
-        "output": "26f1-fe0f",
+        "output": null,
         "name": "umbrella on ground",
         "alpha_code": ":beach_umbrella:",
         "aliases": ":umbrella_on_ground:"
     },
     "26f4": {
-        "output": "26f4-fe0f",
+        "output": null,
         "name": "ferry",
         "alpha_code": ":ferry:",
         "aliases": ""
     },
     "26f7": {
-        "output": "26f7-fe0f",
+        "output": null,
         "name": "skier",
         "alpha_code": ":skier:",
         "aliases": ""
     },
     "26f8": {
-        "output": "26f8-fe0f",
+        "output": null,
         "name": "ice skate",
         "alpha_code": ":ice_skate:",
         "aliases": ""
     },
     "26f9": {
-        "output": "26f9-fe0f",
+        "output": null,
         "name": "person bouncing ball",
         "alpha_code": ":person_bouncing_ball:",
         "aliases": ":basketball_player:|:person_with_ball:"
     },
     "2721": {
-        "output": "2721-fe0f",
+        "output": null,
         "name": "star of David",
         "alpha_code": ":star_of_david:",
         "aliases": ""
     },
     "2763": {
-        "output": "2763-fe0f",
+        "output": null,
         "name": "heavy heart exclamation",
         "alpha_code": ":heart_exclamation:",
         "aliases": ":heavy_heart_exclamation_mark_ornament:"
     },
     "1f324": {
-        "output": "1f324-fe0f",
+        "output": null,
         "name": "sun behind small cloud",
         "alpha_code": ":white_sun_small_cloud:",
         "aliases": ":white_sun_with_small_cloud:"
     },
     "1f325": {
-        "output": "1f325-fe0f",
+        "output": null,
         "name": "sun behind large cloud",
         "alpha_code": ":white_sun_cloud:",
         "aliases": ":white_sun_behind_cloud:"
     },
     "1f326": {
-        "output": "1f326-fe0f",
+        "output": null,
         "name": "sun behind rain cloud",
         "alpha_code": ":white_sun_rain_cloud:",
         "aliases": ":white_sun_behind_cloud_with_rain:"
     },
     "1f5b1": {
-        "output": "1f5b1-fe0f",
+        "output": null,
         "name": "computer mouse",
         "alpha_code": ":mouse_three_button:",
         "aliases": ":three_button_mouse:"
@@ -10872,74 +10872,74 @@
         "aliases": ""
     },
     "0039": {
-        "output": "0039-fe0f",
+        "output": null,
         "name": "digit nine",
         "alpha_code": ":digit_nine:",
         "aliases": ""
     },
     "0038": {
-        "output": "0038-fe0f",
+        "output": null,
         "name": "digit eight",
         "alpha_code": ":digit_eight:",
         "aliases": ""
     },
     "0037": {
-        "output": "0037-fe0f",
+        "output": null,
         "name": "digit seven",
         "alpha_code": ":digit_seven:",
         "aliases": ""
     },
     "0036": {
-        "output": "0036-fe0f",
+        "output": null,
         "name": "digit six",
         "alpha_code": ":digit_six:",
         "aliases": ""
     },
     "0035": {
-        "output": "0035-fe0f",
+        "output": null,
         "name": "digit five",
         "alpha_code": ":digit_five:",
         "aliases": ""
     },
     "0034": {
-        "output": "0034-fe0f",
+        "output": null,
         "name": "digit four",
         "alpha_code": ":digit_four:",
         "aliases": ""
     },
     "0033": {
-        "output": "0033-fe0f",
+        "output": null,
         "name": "digit three",
         "alpha_code": ":digit_three:",
         "aliases": ""
     },
     "0032": {
-        "output": "0032-fe0f",
+        "output": null,
         "name": "digit two",
         "alpha_code": ":digit_two:",
         "aliases": ""
     },
     "0031": {
-        "output": "0031-fe0f",
+        "output": null,
         "name": "digit one",
         "alpha_code": ":digit_one:",
         "aliases": ""
     },
     "0030": {
-        "output": "0030-fe0f",
+        "output": null,
         "name": "digit zero",
         "alpha_code": ":digit_zero:",
         "aliases": ""
     },
     "1f46f-2642": {
         "output": "1f46f-200d-2642-fe0f",
-        "name": "men with bunny ears partying",
+        "name": "men with bunny ears",
         "alpha_code": ":men_with_bunny_ears_partying:",
         "aliases": ""
     },
     "1f46f-2640": {
         "output": "1f46f-200d-2640-fe0f",
-        "name": "women with bunny ears partying",
+        "name": "women with bunny ears",
         "alpha_code": ":women_with_bunny_ears_partying:",
         "aliases": ""
     },
@@ -13987,33 +13987,33 @@
     },
     "1f574-1f3fb": {
         "output": "1f574-1f3fb",
-        "name": "man in business suit levitating: light skin tone",
-        "alpha_code": ":man_in_business_suit_levitating_tone1:",
-        "aliases": ":man_in_business_suit_levitating_light_skin_tone:"
+        "name": "man in suit levitating: light skin tone",
+        "alpha_code": ":levitate_tone1:",
+        "aliases": ":man_in_business_suit_levitating_tone1:|:man_in_business_suit_levitating_light_skin_tone:"
     },
     "1f574-1f3fc": {
         "output": "1f574-1f3fc",
-        "name": "man in business suit levitating: medium-light skin tone",
-        "alpha_code": ":man_in_business_suit_levitating_tone2:",
-        "aliases": ":man_in_business_suit_levitating_medium_light_skin_tone:"
+        "name": "man in suit levitating: medium-light skin tone",
+        "alpha_code": ":levitate_tone2:",
+        "aliases": ":man_in_business_suit_levitating_tone2:|:man_in_business_suit_levitating_medium_light_skin_tone:"
     },
     "1f574-1f3fd": {
         "output": "1f574-1f3fd",
-        "name": "man in business suit levitating: medium skin tone",
-        "alpha_code": ":man_in_business_suit_levitating_tone3:",
-        "aliases": ":man_in_business_suit_levitating_medium_skin_tone:"
+        "name": "man in suit levitating: medium skin tone",
+        "alpha_code": ":levitate_tone3:",
+        "aliases": ":man_in_business_suit_levitating_tone3:|:man_in_business_suit_levitating_medium_skin_tone:"
     },
     "1f574-1f3fe": {
         "output": "1f574-1f3fe",
-        "name": "man in business suit levitating: medium-dark skin tone",
-        "alpha_code": ":man_in_business_suit_levitating_tone4:",
-        "aliases": ":man_in_business_suit_levitating_medium_dark_skin_tone:"
+        "name": "man in suit levitating: medium-dark skin tone",
+        "alpha_code": ":levitate_tone4:",
+        "aliases": ":man_in_business_suit_levitating_tone4:|:man_in_business_suit_levitating_medium_dark_skin_tone:"
     },
     "1f574-1f3ff": {
         "output": "1f574-1f3ff",
-        "name": "man in business suit levitating: dark skin tone",
-        "alpha_code": ":man_in_business_suit_levitating_tone5:",
-        "aliases": ":man_in_business_suit_levitating_dark_skin_tone:"
+        "name": "man in suit levitating: dark skin tone",
+        "alpha_code": ":levitate_tone5:",
+        "aliases": ":man_in_business_suit_levitating_tone5:|:man_in_business_suit_levitating_dark_skin_tone:"
     },
     "1f6cc-1f3fb": {
         "output": "1f6cc-1f3fb",
@@ -14460,19 +14460,19 @@
         "aliases": ":woman_firefighter_dark_skin_tone:"
     },
     "2640": {
-        "output": "2640-fe0f",
+        "output": null,
         "name": "female sign",
         "alpha_code": ":female_sign:",
         "aliases": ""
     },
     "2642": {
-        "output": "2642-fe0f",
+        "output": null,
         "name": "male sign",
         "alpha_code": ":male_sign:",
         "aliases": ""
     },
     "2695": {
-        "output": "2695-fe0f",
+        "output": null,
         "name": "medical symbol",
         "alpha_code": ":medical_symbol:",
         "aliases": ""
@@ -14593,8 +14593,8 @@
     },
     "1f92a": {
         "output": "1f92a",
-        "name": "crazy face",
-        "alpha_code": ":crazy_face:",
+        "name": "zany face",
+        "alpha_code": ":zany_face:",
         "aliases": ""
     },
     "1f92b": {
@@ -14605,7 +14605,7 @@
     },
     "1f92c": {
         "output": "1f92c",
-        "name": "face with symbols over mouth",
+        "name": "face with symbols on mouth",
         "alpha_code": ":face_with_symbols_over_mouth:",
         "aliases": ""
     },
@@ -15994,5 +15994,971 @@
         "name": "man in lotus position: dark skin tone",
         "alpha_code": ":man_in_lotus_position_tone5:",
         "aliases": ":man_in_lotus_position_dark_skin_tone:"
+    },
+    "265f": {
+        "output": "265f-fe0f",
+        "name": "chess pawn",
+        "alpha_code": ":chess_pawn:",
+        "aliases": ""
+    },
+    "267e": {
+        "output": "267e-fe0f",
+        "name": "infinity",
+        "alpha_code": ":infinity:",
+        "aliases": ""
+    },
+    "1f6f9": {
+        "output": "1f6f9",
+        "name": "skateboard",
+        "alpha_code": ":skateboard:",
+        "aliases": ""
+    },
+    "1f94d": {
+        "output": "1f94d",
+        "name": "lacrosse",
+        "alpha_code": ":lacrosse:",
+        "aliases": ""
+    },
+    "1f94e": {
+        "output": "1f94e",
+        "name": "softball",
+        "alpha_code": ":softball:",
+        "aliases": ""
+    },
+    "1f94f": {
+        "output": "1f94f",
+        "name": "flying disc",
+        "alpha_code": ":flying_disc:",
+        "aliases": ""
+    },
+    "1f96c": {
+        "output": "1f96c",
+        "name": "leafy green",
+        "alpha_code": ":leafy_green:",
+        "aliases": ""
+    },
+    "1f96d": {
+        "output": "1f96d",
+        "name": "mango",
+        "alpha_code": ":mango:",
+        "aliases": ""
+    },
+    "1f96e": {
+        "output": "1f96e",
+        "name": "moon cake",
+        "alpha_code": ":moon_cake:",
+        "aliases": ""
+    },
+    "1f96f": {
+        "output": "1f96f",
+        "name": "bagel",
+        "alpha_code": ":bagel:",
+        "aliases": ""
+    },
+    "1f970": {
+        "output": "1f970",
+        "name": "smiling face with 3 hearts",
+        "alpha_code": ":smiling_face_with_3_hearts:",
+        "aliases": ""
+    },
+    "1f973": {
+        "output": "1f973",
+        "name": "partying face",
+        "alpha_code": ":partying_face:",
+        "aliases": ""
+    },
+    "1f974": {
+        "output": "1f974",
+        "name": "woozy face",
+        "alpha_code": ":woozy_face:",
+        "aliases": ""
+    },
+    "1f975": {
+        "output": "1f975",
+        "name": "hot face",
+        "alpha_code": ":hot_face:",
+        "aliases": ""
+    },
+    "1f976": {
+        "output": "1f976",
+        "name": "cold face",
+        "alpha_code": ":cold_face:",
+        "aliases": ""
+    },
+    "1f97a": {
+        "output": "1f97a",
+        "name": "pleading face",
+        "alpha_code": ":pleading_face:",
+        "aliases": ""
+    },
+    "1f97c": {
+        "output": "1f97c",
+        "name": "lab coat",
+        "alpha_code": ":lab_coat:",
+        "aliases": ""
+    },
+    "1f97d": {
+        "output": "1f97d",
+        "name": "goggles",
+        "alpha_code": ":goggles:",
+        "aliases": ""
+    },
+    "1f97e": {
+        "output": "1f97e",
+        "name": "hiking boot",
+        "alpha_code": ":hiking_boot:",
+        "aliases": ""
+    },
+    "1f97f": {
+        "output": "1f97f",
+        "name": "woman\u2019s flat shoe",
+        "alpha_code": ":womans_flat_shoe:",
+        "aliases": ""
+    },
+    "1f998": {
+        "output": "1f998",
+        "name": "kangaroo",
+        "alpha_code": ":kangaroo:",
+        "aliases": ""
+    },
+    "1f999": {
+        "output": "1f999",
+        "name": "llama",
+        "alpha_code": ":llama:",
+        "aliases": ""
+    },
+    "1f99a": {
+        "output": "1f99a",
+        "name": "peacock",
+        "alpha_code": ":peacock:",
+        "aliases": ""
+    },
+    "1f99b": {
+        "output": "1f99b",
+        "name": "hippopotamus",
+        "alpha_code": ":hippopotamus:",
+        "aliases": ""
+    },
+    "1f99c": {
+        "output": "1f99c",
+        "name": "parrot",
+        "alpha_code": ":parrot:",
+        "aliases": ""
+    },
+    "1f99d": {
+        "output": "1f99d",
+        "name": "raccoon",
+        "alpha_code": ":raccoon:",
+        "aliases": ""
+    },
+    "1f99e": {
+        "output": "1f99e",
+        "name": "lobster",
+        "alpha_code": ":lobster:",
+        "aliases": ""
+    },
+    "1f99f": {
+        "output": "1f99f",
+        "name": "mosquito",
+        "alpha_code": ":mosquito:",
+        "aliases": ""
+    },
+    "1f9a0": {
+        "output": "1f9a0",
+        "name": "microbe",
+        "alpha_code": ":microbe:",
+        "aliases": ""
+    },
+    "1f9a1": {
+        "output": "1f9a1",
+        "name": "badger",
+        "alpha_code": ":badger:",
+        "aliases": ""
+    },
+    "1f9a2": {
+        "output": "1f9a2",
+        "name": "swan",
+        "alpha_code": ":swan:",
+        "aliases": ""
+    },
+    "1f9b0": {
+        "output": "1f9b0",
+        "name": "red-haired",
+        "alpha_code": ":red_haired:",
+        "aliases": ""
+    },
+    "1f9b1": {
+        "output": "1f9b1",
+        "name": "curly-haired",
+        "alpha_code": ":curly_haired:",
+        "aliases": ""
+    },
+    "1f9b2": {
+        "output": "1f9b2",
+        "name": "bald",
+        "alpha_code": ":bald:",
+        "aliases": ""
+    },
+    "1f9b3": {
+        "output": "1f9b3",
+        "name": "white-haired",
+        "alpha_code": ":white_haired:",
+        "aliases": ""
+    },
+    "1f9b4": {
+        "output": "1f9b4",
+        "name": "bone",
+        "alpha_code": ":bone:",
+        "aliases": ""
+    },
+    "1f9b5": {
+        "output": "1f9b5",
+        "name": "leg",
+        "alpha_code": ":leg:",
+        "aliases": ""
+    },
+    "1f9b6": {
+        "output": "1f9b6",
+        "name": "foot",
+        "alpha_code": ":foot:",
+        "aliases": ""
+    },
+    "1f9b7": {
+        "output": "1f9b7",
+        "name": "tooth",
+        "alpha_code": ":tooth:",
+        "aliases": ""
+    },
+    "1f9b8": {
+        "output": "1f9b8",
+        "name": "superhero",
+        "alpha_code": ":superhero:",
+        "aliases": ""
+    },
+    "1f9b9": {
+        "output": "1f9b9",
+        "name": "supervillain",
+        "alpha_code": ":supervillain:",
+        "aliases": ""
+    },
+    "1f9c1": {
+        "output": "1f9c1",
+        "name": "cupcake",
+        "alpha_code": ":cupcake:",
+        "aliases": ""
+    },
+    "1f9c2": {
+        "output": "1f9c2",
+        "name": "salt",
+        "alpha_code": ":salt:",
+        "aliases": ""
+    },
+    "1f9e7": {
+        "output": "1f9e7",
+        "name": "red envelope",
+        "alpha_code": ":red_envelope:",
+        "aliases": ""
+    },
+    "1f9e8": {
+        "output": "1f9e8",
+        "name": "firecracker",
+        "alpha_code": ":firecracker:",
+        "aliases": ""
+    },
+    "1f9e9": {
+        "output": "1f9e9",
+        "name": "jigsaw",
+        "alpha_code": ":jigsaw:",
+        "aliases": ""
+    },
+    "1f9ea": {
+        "output": "1f9ea",
+        "name": "test tube",
+        "alpha_code": ":test_tube:",
+        "aliases": ""
+    },
+    "1f9eb": {
+        "output": "1f9eb",
+        "name": "petri dish",
+        "alpha_code": ":petri_dish:",
+        "aliases": ""
+    },
+    "1f9ec": {
+        "output": "1f9ec",
+        "name": "dna",
+        "alpha_code": ":dna:",
+        "aliases": ""
+    },
+    "1f9ed": {
+        "output": "1f9ed",
+        "name": "compass",
+        "alpha_code": ":compass:",
+        "aliases": ""
+    },
+    "1f9ee": {
+        "output": "1f9ee",
+        "name": "abacus",
+        "alpha_code": ":abacus:",
+        "aliases": ""
+    },
+    "1f9ef": {
+        "output": "1f9ef",
+        "name": "fire extinguisher",
+        "alpha_code": ":fire_extinguisher:",
+        "aliases": ""
+    },
+    "1f9f0": {
+        "output": "1f9f0",
+        "name": "toolbox",
+        "alpha_code": ":toolbox:",
+        "aliases": ""
+    },
+    "1f9f1": {
+        "output": "1f9f1",
+        "name": "bricks",
+        "alpha_code": ":bricks:",
+        "aliases": ""
+    },
+    "1f9f2": {
+        "output": "1f9f2",
+        "name": "magnet",
+        "alpha_code": ":magnet:",
+        "aliases": ""
+    },
+    "1f9f3": {
+        "output": "1f9f3",
+        "name": "luggage",
+        "alpha_code": ":luggage:",
+        "aliases": ""
+    },
+    "1f9f4": {
+        "output": "1f9f4",
+        "name": "squeeze bottle",
+        "alpha_code": ":squeeze_bottle:",
+        "aliases": ""
+    },
+    "1f9f5": {
+        "output": "1f9f5",
+        "name": "thread",
+        "alpha_code": ":thread:",
+        "aliases": ""
+    },
+    "1f9f6": {
+        "output": "1f9f6",
+        "name": "yarn",
+        "alpha_code": ":yarn:",
+        "aliases": ""
+    },
+    "1f9f7": {
+        "output": "1f9f7",
+        "name": "safety pin",
+        "alpha_code": ":safety_pin:",
+        "aliases": ""
+    },
+    "1f9f8": {
+        "output": "1f9f8",
+        "name": "teddy bear",
+        "alpha_code": ":teddy_bear:",
+        "aliases": ""
+    },
+    "1f9f9": {
+        "output": "1f9f9",
+        "name": "broom",
+        "alpha_code": ":broom:",
+        "aliases": ""
+    },
+    "1f9fa": {
+        "output": "1f9fa",
+        "name": "basket",
+        "alpha_code": ":basket:",
+        "aliases": ""
+    },
+    "1f9fb": {
+        "output": "1f9fb",
+        "name": "roll of paper",
+        "alpha_code": ":roll_of_paper:",
+        "aliases": ""
+    },
+    "1f9fc": {
+        "output": "1f9fc",
+        "name": "soap",
+        "alpha_code": ":soap:",
+        "aliases": ""
+    },
+    "1f9fd": {
+        "output": "1f9fd",
+        "name": "sponge",
+        "alpha_code": ":sponge:",
+        "aliases": ""
+    },
+    "1f9fe": {
+        "output": "1f9fe",
+        "name": "receipt",
+        "alpha_code": ":receipt:",
+        "aliases": ""
+    },
+    "1f9ff": {
+        "output": "1f9ff",
+        "name": "nazar amulet",
+        "alpha_code": ":nazar_amulet:",
+        "aliases": ""
+    },
+    "1f9b5-1f3fb": {
+        "output": "1f9b5-1f3fb",
+        "name": "leg: light skin tone",
+        "alpha_code": ":leg_tone1:",
+        "aliases": ":leg_light_skin_tone:"
+    },
+    "1f9b5-1f3fc": {
+        "output": "1f9b5-1f3fc",
+        "name": "leg: medium-light skin tone",
+        "alpha_code": ":leg_tone2:",
+        "aliases": ":leg_medium_light_skin_tone:"
+    },
+    "1f9b5-1f3fd": {
+        "output": "1f9b5-1f3fd",
+        "name": "leg: medium skin tone",
+        "alpha_code": ":leg_tone3:",
+        "aliases": ":leg_medium_skin_tone:"
+    },
+    "1f9b5-1f3fe": {
+        "output": "1f9b5-1f3fe",
+        "name": "leg: medium-dark skin tone",
+        "alpha_code": ":leg_tone4:",
+        "aliases": ":leg_medium_dark_skin_tone:"
+    },
+    "1f9b5-1f3ff": {
+        "output": "1f9b5-1f3ff",
+        "name": "leg: dark skin tone",
+        "alpha_code": ":leg_tone5:",
+        "aliases": ":leg_dark_skin_tone:"
+    },
+    "1f9b6-1f3fb": {
+        "output": "1f9b6-1f3fb",
+        "name": "foot: light skin tone",
+        "alpha_code": ":foot_tone1:",
+        "aliases": ":foot_light_skin_tone:"
+    },
+    "1f9b6-1f3fc": {
+        "output": "1f9b6-1f3fc",
+        "name": "foot: medium-light skin tone",
+        "alpha_code": ":foot_tone2:",
+        "aliases": ":foot_medium_light_skin_tone:"
+    },
+    "1f9b6-1f3fd": {
+        "output": "1f9b6-1f3fd",
+        "name": "foot: medium skin tone",
+        "alpha_code": ":foot_tone3:",
+        "aliases": ":foot_medium_skin_tone:"
+    },
+    "1f9b6-1f3fe": {
+        "output": "1f9b6-1f3fe",
+        "name": "foot: medium-dark skin tone",
+        "alpha_code": ":foot_tone4:",
+        "aliases": ":foot_medium_dark_skin_tone:"
+    },
+    "1f9b6-1f3ff": {
+        "output": "1f9b6-1f3ff",
+        "name": "foot: dark skin tone",
+        "alpha_code": ":foot_tone5:",
+        "aliases": ":foot_dark_skin_tone:"
+    },
+    "1f9b8-1f3fb": {
+        "output": "1f9b8-1f3fb",
+        "name": "superhero: light skin tone",
+        "alpha_code": ":superhero_tone1:",
+        "aliases": ":superhero_light_skin_tone:"
+    },
+    "1f9b8-1f3fc": {
+        "output": "1f9b8-1f3fc",
+        "name": "superhero: medium-light skin tone",
+        "alpha_code": ":superhero_tone2:",
+        "aliases": ":superhero_medium_light_skin_tone:"
+    },
+    "1f9b8-1f3fd": {
+        "output": "1f9b8-1f3fd",
+        "name": "superhero: medium skin tone",
+        "alpha_code": ":superhero_tone3:",
+        "aliases": ":superhero_medium_skin_tone:"
+    },
+    "1f9b8-1f3fe": {
+        "output": "1f9b8-1f3fe",
+        "name": "superhero: medium-dark skin tone",
+        "alpha_code": ":superhero_tone4:",
+        "aliases": ":superhero_medium_dark_skin_tone:"
+    },
+    "1f9b8-1f3ff": {
+        "output": "1f9b8-1f3ff",
+        "name": "superhero: dark skin tone",
+        "alpha_code": ":superhero_tone5:",
+        "aliases": ":superhero_dark_skin_tone:"
+    },
+    "1f9b9-1f3fb": {
+        "output": "1f9b9-1f3fb",
+        "name": "supervillain: light skin tone",
+        "alpha_code": ":supervillain_tone1:",
+        "aliases": ":supervillain_light_skin_tone:"
+    },
+    "1f9b9-1f3fc": {
+        "output": "1f9b9-1f3fc",
+        "name": "supervillain: medium-light skin tone",
+        "alpha_code": ":supervillain_tone2:",
+        "aliases": ":supervillain_medium_light_skin_tone:"
+    },
+    "1f9b9-1f3fd": {
+        "output": "1f9b9-1f3fd",
+        "name": "supervillain: medium skin tone",
+        "alpha_code": ":supervillain_tone3:",
+        "aliases": ":supervillain_medium_skin_tone:"
+    },
+    "1f9b9-1f3fe": {
+        "output": "1f9b9-1f3fe",
+        "name": "supervillain: medium-dark skin tone",
+        "alpha_code": ":supervillain_tone4:",
+        "aliases": ":supervillain_medium_dark_skin_tone:"
+    },
+    "1f9b9-1f3ff": {
+        "output": "1f9b9-1f3ff",
+        "name": "supervillain: dark skin tone",
+        "alpha_code": ":supervillain_tone5:",
+        "aliases": ":supervillain_dark_skin_tone:"
+    },
+    "1f468-1f9b0": {
+        "output": "1f468-200d-1f9b0",
+        "name": "man, red haired",
+        "alpha_code": ":man_red_haired:",
+        "aliases": ""
+    },
+    "1f468-1f9b1": {
+        "output": "1f468-200d-1f9b1",
+        "name": "man, curly haired",
+        "alpha_code": ":man_curly_haired:",
+        "aliases": ""
+    },
+    "1f468-1f9b2": {
+        "output": "1f468-200d-1f9b2",
+        "name": "man, bald",
+        "alpha_code": ":man_bald:",
+        "aliases": ""
+    },
+    "1f468-1f9b3": {
+        "output": "1f468-200d-1f9b3",
+        "name": "man, white haired",
+        "alpha_code": ":man_white_haired:",
+        "aliases": ""
+    },
+    "1f468-1f3fb-1f9b0": {
+        "output": "1f468-1f3fb-200d-1f9b0",
+        "name": "man, red haired: light skin tone",
+        "alpha_code": ":man_red_haired_tone1:",
+        "aliases": ":man_red_haired_light_skin_tone:"
+    },
+    "1f468-1f3fb-1f9b1": {
+        "output": "1f468-1f3fb-200d-1f9b1",
+        "name": "man, curly haired: light skin tone",
+        "alpha_code": ":man_curly_haired_tone1:",
+        "aliases": ":man_curly_haired_light_skin_tone:"
+    },
+    "1f468-1f3fb-1f9b2": {
+        "output": "1f468-1f3fb-200d-1f9b2",
+        "name": "man, bald: light skin tone",
+        "alpha_code": ":man_bald_tone1:",
+        "aliases": ":man_bald_light_skin_tone:"
+    },
+    "1f468-1f3fb-1f9b3": {
+        "output": "1f468-1f3fb-200d-1f9b3",
+        "name": "man, white haired: light skin tone",
+        "alpha_code": ":man_white_haired_tone1:",
+        "aliases": ":man_white_haired_light_skin_tone:"
+    },
+    "1f468-1f3fc-1f9b0": {
+        "output": "1f468-1f3fc-200d-1f9b0",
+        "name": "man, red haired: medium-light skin tone",
+        "alpha_code": ":man_red_haired_tone2:",
+        "aliases": ":man_red_haired_medium_light_skin_tone:"
+    },
+    "1f468-1f3fc-1f9b1": {
+        "output": "1f468-1f3fc-200d-1f9b1",
+        "name": "man, curly haired: medium-light skin tone",
+        "alpha_code": ":man_curly_haired_tone2:",
+        "aliases": ":man_curly_haired_medium_light_skin_tone:"
+    },
+    "1f468-1f3fc-1f9b2": {
+        "output": "1f468-1f3fc-200d-1f9b2",
+        "name": "man, bald: medium-light skin tone",
+        "alpha_code": ":man_bald_tone2:",
+        "aliases": ":man_bald_medium_light_skin_tone:"
+    },
+    "1f468-1f3fc-1f9b3": {
+        "output": "1f468-1f3fc-200d-1f9b3",
+        "name": "man, white haired: medium-light skin tone",
+        "alpha_code": ":man_white_haired_tone2:",
+        "aliases": ":man_white_haired_medium_light_skin_tone:"
+    },
+    "1f468-1f3fd-1f9b0": {
+        "output": "1f468-1f3fd-200d-1f9b0",
+        "name": "man, red haired: medium skin tone",
+        "alpha_code": ":man_red_haired_tone3:",
+        "aliases": ":man_red_haired_medium_skin_tone:"
+    },
+    "1f468-1f3fd-1f9b1": {
+        "output": "1f468-1f3fd-200d-1f9b1",
+        "name": "man, curly haired: medium skin tone",
+        "alpha_code": ":man_curly_haired_tone3:",
+        "aliases": ":man_curly_haired_medium_skin_tone:"
+    },
+    "1f468-1f3fd-1f9b2": {
+        "output": "1f468-1f3fd-200d-1f9b2",
+        "name": "man, bald: medium skin tone",
+        "alpha_code": ":man_bald_tone3:",
+        "aliases": ":man_bald_medium_skin_tone:"
+    },
+    "1f468-1f3fd-1f9b3": {
+        "output": "1f468-1f3fd-200d-1f9b3",
+        "name": "man, white haired: medium skin tone",
+        "alpha_code": ":man_white_haired_tone3:",
+        "aliases": ":man_white_haired_medium_skin_tone:"
+    },
+    "1f468-1f3fe-1f9b0": {
+        "output": "1f468-1f3fe-200d-1f9b0",
+        "name": "man, red haired: medium-dark skin tone",
+        "alpha_code": ":man_red_haired_tone4:",
+        "aliases": ":man_red_haired_medium_dark_skin_tone:"
+    },
+    "1f468-1f3fe-1f9b1": {
+        "output": "1f468-1f3fe-200d-1f9b1",
+        "name": "man, curly haired: medium-dark skin tone",
+        "alpha_code": ":man_curly_haired_tone4:",
+        "aliases": ":man_curly_haired_medium_dark_skin_tone:"
+    },
+    "1f468-1f3fe-1f9b2": {
+        "output": "1f468-1f3fe-200d-1f9b2",
+        "name": "man, bald: medium-dark skin tone",
+        "alpha_code": ":man_bald_tone4:",
+        "aliases": ":man_bald_medium_dark_skin_tone:"
+    },
+    "1f468-1f3fe-1f9b3": {
+        "output": "1f468-1f3fe-200d-1f9b3",
+        "name": "man, white haired: medium-dark skin tone",
+        "alpha_code": ":man_white_haired_tone4:",
+        "aliases": ":man_white_haired_medium_dark_skin_tone:"
+    },
+    "1f468-1f3ff-1f9b0": {
+        "output": "1f468-1f3ff-200d-1f9b0",
+        "name": "man, red haired: dark skin tone",
+        "alpha_code": ":man_red_haired_tone5:",
+        "aliases": ":man_red_haired_dark_skin_tone:"
+    },
+    "1f468-1f3ff-1f9b1": {
+        "output": "1f468-1f3ff-200d-1f9b1",
+        "name": "man, curly haired: dark skin tone",
+        "alpha_code": ":man_curly_haired_tone5:",
+        "aliases": ":man_curly_haired_dark_skin_tone:"
+    },
+    "1f468-1f3ff-1f9b2": {
+        "output": "1f468-1f3ff-200d-1f9b2",
+        "name": "man, bald: dark skin tone",
+        "alpha_code": ":man_bald_tone5:",
+        "aliases": ":man_bald_dark_skin_tone:"
+    },
+    "1f468-1f3ff-1f9b3": {
+        "output": "1f468-1f3ff-200d-1f9b3",
+        "name": "man, white haired: dark skin tone",
+        "alpha_code": ":man_white_haired_tone5:",
+        "aliases": ":man_white_haired_dark_skin_tone:"
+    },
+    "1f469-1f9b0": {
+        "output": "1f469-200d-1f9b0",
+        "name": "woman, red haired",
+        "alpha_code": ":woman_red_haired:",
+        "aliases": ""
+    },
+    "1f469-1f9b1": {
+        "output": "1f469-200d-1f9b1",
+        "name": "woman, curly haired",
+        "alpha_code": ":woman_curly_haired:",
+        "aliases": ""
+    },
+    "1f469-1f9b2": {
+        "output": "1f469-200d-1f9b2",
+        "name": "woman, bald",
+        "alpha_code": ":woman_bald:",
+        "aliases": ""
+    },
+    "1f469-1f9b3": {
+        "output": "1f469-200d-1f9b3",
+        "name": "woman, white haired",
+        "alpha_code": ":woman_white_haired:",
+        "aliases": ""
+    },
+    "1f469-1f3fb-1f9b0": {
+        "output": "1f469-1f3fb-200d-1f9b0",
+        "name": "woman, red haired: light skin tone",
+        "alpha_code": ":woman_red_haired_tone1:",
+        "aliases": ":woman_red_haired_light_skin_tone:"
+    },
+    "1f469-1f3fb-1f9b1": {
+        "output": "1f469-1f3fb-200d-1f9b1",
+        "name": "woman, curly haired: light skin tone",
+        "alpha_code": ":woman_curly_haired_tone1:",
+        "aliases": ":woman_curly_haired_light_skin_tone:"
+    },
+    "1f469-1f3fb-1f9b2": {
+        "output": "1f469-1f3fb-200d-1f9b2",
+        "name": "woman, bald: light skin tone",
+        "alpha_code": ":woman_bald_tone1:",
+        "aliases": ":woman_bald_light_skin_tone:"
+    },
+    "1f469-1f3fb-1f9b3": {
+        "output": "1f469-1f3fb-200d-1f9b3",
+        "name": "woman, white haired: light skin tone",
+        "alpha_code": ":woman_white_haired_tone1:",
+        "aliases": ":woman_white_haired_light_skin_tone:"
+    },
+    "1f469-1f3fc-1f9b0": {
+        "output": "1f469-1f3fc-200d-1f9b0",
+        "name": "woman, red haired: medium-light skin tone",
+        "alpha_code": ":woman_red_haired_tone2:",
+        "aliases": ":woman_red_haired_medium_light_skin_tone:"
+    },
+    "1f469-1f3fc-1f9b1": {
+        "output": "1f469-1f3fc-200d-1f9b1",
+        "name": "woman, curly haired: medium-light skin tone",
+        "alpha_code": ":woman_curly_haired_tone2:",
+        "aliases": ":woman_curly_haired_medium_light_skin_tone:"
+    },
+    "1f469-1f3fc-1f9b2": {
+        "output": "1f469-1f3fc-200d-1f9b2",
+        "name": "woman, bald: medium-light skin tone",
+        "alpha_code": ":woman_bald_tone2:",
+        "aliases": ":woman_bald_medium_light_skin_tone:"
+    },
+    "1f469-1f3fc-1f9b3": {
+        "output": "1f469-1f3fc-200d-1f9b3",
+        "name": "woman, white haired: medium-light skin tone",
+        "alpha_code": ":woman_white_haired_tone2:",
+        "aliases": ":woman_white_haired_medium_light_skin_tone:"
+    },
+    "1f469-1f3fd-1f9b0": {
+        "output": "1f469-1f3fd-200d-1f9b0",
+        "name": "woman, red haired: medium skin tone",
+        "alpha_code": ":woman_red_haired_tone3:",
+        "aliases": ":woman_red_haired_medium_skin_tone:"
+    },
+    "1f469-1f3fd-1f9b1": {
+        "output": "1f469-1f3fd-200d-1f9b1",
+        "name": "woman, curly haired: medium skin tone",
+        "alpha_code": ":woman_curly_haired_tone3:",
+        "aliases": ":woman_curly_haired_medium_skin_tone:"
+    },
+    "1f469-1f3fd-1f9b2": {
+        "output": "1f469-1f3fd-200d-1f9b2",
+        "name": "woman, bald: medium skin tone",
+        "alpha_code": ":woman_bald_tone3:",
+        "aliases": ":woman_bald_medium_skin_tone:"
+    },
+    "1f469-1f3fd-1f9b3": {
+        "output": "1f469-1f3fd-200d-1f9b3",
+        "name": "woman, white haired: medium skin tone",
+        "alpha_code": ":woman_white_haired_tone3:",
+        "aliases": ":woman_white_haired_medium_skin_tone:"
+    },
+    "1f469-1f3fe-1f9b0": {
+        "output": "1f469-1f3fe-200d-1f9b0",
+        "name": "woman, red haired: medium-dark skin tone",
+        "alpha_code": ":woman_red_haired_tone4:",
+        "aliases": ":woman_red_haired_medium_dark_skin_tone:"
+    },
+    "1f469-1f3fe-1f9b1": {
+        "output": "1f469-1f3fe-200d-1f9b1",
+        "name": "woman, curly haired: medium-dark skin tone",
+        "alpha_code": ":woman_curly_haired_tone4:",
+        "aliases": ":woman_curly_haired_medium_dark_skin_tone:"
+    },
+    "1f469-1f3fe-1f9b2": {
+        "output": "1f469-1f3fe-200d-1f9b2",
+        "name": "woman, bald: medium-dark skin tone",
+        "alpha_code": ":woman_bald_tone4:",
+        "aliases": ":woman_bald_medium_dark_skin_tone:"
+    },
+    "1f469-1f3fe-1f9b3": {
+        "output": "1f469-1f3fe-200d-1f9b3",
+        "name": "woman, white haired: medium-dark skin tone",
+        "alpha_code": ":woman_white_haired_tone4:",
+        "aliases": ":woman_white_haired_medium_dark_skin_tone:"
+    },
+    "1f469-1f3ff-1f9b0": {
+        "output": "1f469-1f3ff-200d-1f9b0",
+        "name": "woman, red haired: dark skin tone",
+        "alpha_code": ":woman_red_haired_tone5:",
+        "aliases": ":woman_red_haired_dark_skin_tone:"
+    },
+    "1f469-1f3ff-1f9b1": {
+        "output": "1f469-1f3ff-200d-1f9b1",
+        "name": "woman, curly haired: dark skin tone",
+        "alpha_code": ":woman_curly_haired_tone5:",
+        "aliases": ":woman_curly_haired_dark_skin_tone:"
+    },
+    "1f469-1f3ff-1f9b2": {
+        "output": "1f469-1f3ff-200d-1f9b2",
+        "name": "woman, bald: dark skin tone",
+        "alpha_code": ":woman_bald_tone5:",
+        "aliases": ":woman_bald_dark_skin_tone:"
+    },
+    "1f469-1f3ff-1f9b3": {
+        "output": "1f469-1f3ff-200d-1f9b3",
+        "name": "woman, white haired: dark skin tone",
+        "alpha_code": ":woman_white_haired_tone5:",
+        "aliases": ":woman_white_haired_dark_skin_tone:"
+    },
+    "1f9b8-2640": {
+        "output": "1f9b8-200d-2640-fe0f",
+        "name": "woman superhero",
+        "alpha_code": ":woman_superhero:",
+        "aliases": ""
+    },
+    "1f9b8-2642": {
+        "output": "1f9b8-200d-2642-fe0f",
+        "name": "man superhero",
+        "alpha_code": ":man_superhero:",
+        "aliases": ""
+    },
+    "1f9b8-1f3fb-2640": {
+        "output": "1f9b8-1f3fb-200d-2640-fe0f",
+        "name": "woman superhero: light skin tone",
+        "alpha_code": ":woman_superhero_tone1:",
+        "aliases": ":woman_superhero_light_skin_tone:"
+    },
+    "1f9b8-1f3fb-2642": {
+        "output": "1f9b8-1f3fb-200d-2642-fe0f",
+        "name": "man superhero: light skin tone",
+        "alpha_code": ":man_superhero_tone1:",
+        "aliases": ":man_superhero_light_skin_tone:"
+    },
+    "1f9b8-1f3fc-2640": {
+        "output": "1f9b8-1f3fc-200d-2640-fe0f",
+        "name": "woman superhero: medium-light skin tone",
+        "alpha_code": ":woman_superhero_tone2:",
+        "aliases": ":woman_superhero_medium_light_skin_tone:"
+    },
+    "1f9b8-1f3fc-2642": {
+        "output": "1f9b8-1f3fc-200d-2642-fe0f",
+        "name": "man superhero: medium-light skin tone",
+        "alpha_code": ":man_superhero_tone2:",
+        "aliases": ":man_superhero_medium_light_skin_tone:"
+    },
+    "1f9b8-1f3fd-2640": {
+        "output": "1f9b8-1f3fd-200d-2640-fe0f",
+        "name": "woman superhero: medium skin tone",
+        "alpha_code": ":woman_superhero_tone3:",
+        "aliases": ":woman_superhero_medium_skin_tone:"
+    },
+    "1f9b8-1f3fd-2642": {
+        "output": "1f9b8-1f3fd-200d-2642-fe0f",
+        "name": "man superhero: medium skin tone",
+        "alpha_code": ":man_superhero_tone3:",
+        "aliases": ":man_superhero_medium_skin_tone:"
+    },
+    "1f9b8-1f3fe-2640": {
+        "output": "1f9b8-1f3fe-200d-2640-fe0f",
+        "name": "woman superhero: medium-dark skin tone",
+        "alpha_code": ":woman_superhero_tone4:",
+        "aliases": ":woman_superhero_medium_dark_skin_tone:"
+    },
+    "1f9b8-1f3fe-2642": {
+        "output": "1f9b8-1f3fe-200d-2642-fe0f",
+        "name": "man superhero: medium-dark skin tone",
+        "alpha_code": ":man_superhero_tone4:",
+        "aliases": ":man_superhero_medium_dark_skin_tone:"
+    },
+    "1f9b8-1f3ff-2640": {
+        "output": "1f9b8-1f3ff-200d-2640-fe0f",
+        "name": "woman superhero: dark skin tone",
+        "alpha_code": ":woman_superhero_tone5:",
+        "aliases": ":woman_superhero_dark_skin_tone:"
+    },
+    "1f9b8-1f3ff-2642": {
+        "output": "1f9b8-1f3ff-200d-2642-fe0f",
+        "name": "man superhero: dark skin tone",
+        "alpha_code": ":man_superhero_tone5:",
+        "aliases": ":man_superhero_dark_skin_tone:"
+    },
+    "1f9b9-2640": {
+        "output": "1f9b9-200d-2640-fe0f",
+        "name": "woman supervillain",
+        "alpha_code": ":woman_supervillain:",
+        "aliases": ""
+    },
+    "1f9b9-2642": {
+        "output": "1f9b9-200d-2642-fe0f",
+        "name": "man supervillain",
+        "alpha_code": ":man_supervillain:",
+        "aliases": ""
+    },
+    "1f9b9-1f3fb-2640": {
+        "output": "1f9b9-1f3fb-200d-2640-fe0f",
+        "name": "woman supervillain: light skin tone",
+        "alpha_code": ":woman_supervillain_tone1:",
+        "aliases": ":woman_supervillain_light_skin_tone:"
+    },
+    "1f9b9-1f3fb-2642": {
+        "output": "1f9b9-1f3fb-200d-2642-fe0f",
+        "name": "man supervillain: light skin tone",
+        "alpha_code": ":man_supervillain_tone1:",
+        "aliases": ":man_supervillain_light_skin_tone:"
+    },
+    "1f9b9-1f3fc-2640": {
+        "output": "1f9b9-1f3fc-200d-2640-fe0f",
+        "name": "woman supervillain: medium-light skin tone",
+        "alpha_code": ":woman_supervillain_tone2:",
+        "aliases": ":woman_supervillain_medium_light_skin_tone:"
+    },
+    "1f9b9-1f3fc-2642": {
+        "output": "1f9b9-1f3fc-200d-2642-fe0f",
+        "name": "man supervillain: medium-light skin tone",
+        "alpha_code": ":man_supervillain_tone2:",
+        "aliases": ":man_supervillain_medium_light_skin_tone:"
+    },
+    "1f9b9-1f3fd-2640": {
+        "output": "1f9b9-1f3fd-200d-2640-fe0f",
+        "name": "woman supervillain: medium skin tone",
+        "alpha_code": ":woman_supervillain_tone3:",
+        "aliases": ":woman_supervillain_medium_skin_tone:"
+    },
+    "1f9b9-1f3fd-2642": {
+        "output": "1f9b9-1f3fd-200d-2642-fe0f",
+        "name": "man supervillain: medium skin tone",
+        "alpha_code": ":man_supervillain_tone3:",
+        "aliases": ":man_supervillain_medium_skin_tone:"
+    },
+    "1f9b9-1f3fe-2640": {
+        "output": "1f9b9-1f3fe-200d-2640-fe0f",
+        "name": "woman supervillain: medium-dark skin tone",
+        "alpha_code": ":woman_supervillain_tone4:",
+        "aliases": ":woman_supervillain_medium_dark_skin_tone:"
+    },
+    "1f9b9-1f3fe-2642": {
+        "output": "1f9b9-1f3fe-200d-2642-fe0f",
+        "name": "man supervillain: medium-dark skin tone",
+        "alpha_code": ":man_supervillain_tone4:",
+        "aliases": ":man_supervillain_medium_dark_skin_tone:"
+    },
+    "1f9b9-1f3ff-2640": {
+        "output": "1f9b9-1f3ff-200d-2640-fe0f",
+        "name": "woman supervillain: dark skin tone",
+        "alpha_code": ":woman_supervillain_tone5:",
+        "aliases": ":woman_supervillain_dark_skin_tone:"
+    },
+    "1f9b9-1f3ff-2642": {
+        "output": "1f9b9-1f3ff-200d-2642-fe0f",
+        "name": "man supervillain: dark skin tone",
+        "alpha_code": ":man_supervillain_tone5:",
+        "aliases": ":man_supervillain_dark_skin_tone:"
+    },
+    "1f3f4-2620": {
+        "output": "1f3f4-200d-2620-fe0f",
+        "name": "pirate flag",
+        "alpha_code": ":pirate_flag:",
+        "aliases": ""
     }
 }

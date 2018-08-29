@@ -81,35 +81,6 @@ if(isset($_POST['inputText'])) {
 
 ----------
 
-## unicodeToImage($str)
-*Convert Native Unicode Emoji Directly to Images*
-
-If you have native unicode emoji characters that you want to convert directly to images, you can use this function. It should be noted that once your input text has been converted to images it cannot be converted back using the provided functions.
-
->For that reason, we recommend only converting input text to images when it's ready to display to the client. The better alternative, in our opinion, is to convert native unicode emoji to their corresponding shortname using **toShort($str)** for database storage.
-
-**PHP Snippet**
-```php
-namespace Emojione;
-
-// include the PHP library (if not autoloaded)
-require('./../lib/php/autoload.php');
-
-$client = new Client(new Ruleset());
-
-// ###############################################
-// if you want to host the images somewhere else
-// you can easily change the default paths
-$client->imagePathPNG = './../assets/png/'; // defaults to jsdelivr's free CDN
-// ###############################################
-
-if(isset($_POST['inputText'])) {
-	echo $client->unicodeToImage($_POST['inputText']);
-}
-```
-
-----------
-
 ## shortnameToUnicode($str)
 *Convert Shortnames to Native Unicode*
 

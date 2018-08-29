@@ -12,9 +12,6 @@ module.exports = function(grunt) {
         // BUILD EMOJI ONE AWESOME CSS (SASS -> CSS)
         sass: {
             dist: {
-                options: {
-                    'sourcemap': 'none'
-                },
                 files: {
                     'extras/css/emojione-awesome.css': 'lib/emojione-awesome/emojione-awesome.scss'
                 }

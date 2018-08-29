@@ -7,6 +7,7 @@ Both PHP and JavaScript libraries now have wider range of available properties. 
  - `emojiVersion` (str) - Used only to direct CDN path. This is a 2-digit version (e.g. '3.1'). Not recommended for usage below 3.0.0.
  - `emojiSize` (str) **Default: `32`** - Used only to direct CDN path for non-sprite PNG usage. Available options are '32', '64', and '128'.
  - `imagePathPNG` (str) - Defaults to CDN (jsdelivr) path. Setting as alternate path overwrites `emojiSize` option.
+ - `fileExtension` (str) - Defaults to .png. Set to '.svg' if using premium assets (.svg) locally.
  - `greedyMatch` (bool) **Default: `false`** - When `true`, matches non-fully-qualified Unicode values.
  - `blacklistChars` (str) **Default: `''`** - Comma-separated list of characters that should not be replaced. For example, setting to `'#,*'` ensures pound and asterisk symbols are not replaced.
  - `imageTitleTag` (bool) **Default: `true`** - When `false`, removes title attribute from <img> tag.
@@ -33,10 +34,6 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 
 This demo shows you how to take input containing only shortnames and translate it directly to EmojiOne images. (when displaying the unified input to clients)
 
-**[.unicodeToImage\(str\)](https://demos.emojione.com/latest/jsunicodetoimage.html)** - _native unicode -> images_
-
-This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to EmojiOne images. (would be great for a live editor preview)
-
 **[.toImage\(str\)](https://demos.emojione.com/latest/jstoimage.html)** - _native unicode + shortnames -> images (mixed input)_
 
 This demo shows you how to take input containing both native unicode emoji and shortnames, and translate it into EmojiOne images for display.
@@ -53,10 +50,6 @@ This demo shows you how to take native unicode emoji input, such as that from yo
 **[shortnameToImage\($str\)](https://demos.emojione.com/latest/phpshortnametoimage.php)** - _shortname -> images_
 
 This demo shows you how to take input containing only shortnames and translate it directly to EmojiOne images. (when displaying the unified input to clients)
-
-**[unicodeToImage\($str\)](https://demos.emojione.com/latest/phpunicodetoimage.php)** - _native unicode -> images_
-
-This demo shows you how to take native unicode emoji input, such as that from your mobile device, and translate it directly to EmojiOne images. (would be great for a live editor preview)
 
 **[toImage\($str\)](https://demos.emojione.com/latest/phptoimage.php)** - _native unicode + shortnames -> images (mixed input)_
 

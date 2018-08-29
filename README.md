@@ -13,7 +13,10 @@ A set of libraries to help users find and replace native system emojis with Emoj
  
  ## License to Use EmojiOne Images
  
-### EmojiOne Version 3
+### EmojiOne Version 4
+ EmojiOne Version 4 is available under the same licensing structure as Version 3. Please see below for more details.
+ 
+### EmojiOne Version 3+
  
  EmojiOne launched version 3.0 in 2017, which has several licensing options available. PNG 32px, 64px, and 128px as well as 32px and 64px sprites are available for digital use, with attribution. See [emojione.com/developers/free-license](https://www.emojione.com/developers/free-license) for more information on usage and attribution requirements.
  

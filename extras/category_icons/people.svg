@@ -1,37 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xml:space="preserve"
-   enable-background="new 0 0 24 24"
-   viewBox="0 0 24 24"
-   height="24px"
-   width="24px"
-   y="0px"
-   x="0px"
-   id="Слой_1"
-   version="1.1"><metadata
-     id="metadata7236"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs7234" /><g
-     id="g7222"><path
-       style="fill:#000000;fill-opacity:1"
-       id="path7224"
-       d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0 M12,22C6.486,22,2,17.514,2,12   S6.486,2,12,2s10,4.486,10,10S17.514,22,12,22"
-       fill="#010202" /><path
-       style="fill:#000000;fill-opacity:1"
-       id="path7226"
-       d="M8,7C6.895,7,6,7.895,6,9s0.895,2,2,2s2-0.895,2-2S9.105,7,8,7"
-       fill="#010202" /><path
-       style="fill:#000000;fill-opacity:1"
-       id="path7228"
-       d="M16,7c-1.105,0-2,0.895-2,2s0.895,2,2,2s2-0.895,2-2S17.105,7,16,7"
-       fill="#010202" /><path
-       style="fill:#000000;fill-opacity:1"
-       id="path7230"
-       d="M15.232,15c-0.693,1.195-1.87,2-3.349,2c-1.477,0-2.655-0.805-3.347-2H15 M18,13H6c0,3.314,2.686,6,6,6   S18,16.314,18,13"
-       fill="#010202" /></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Слой_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+	 viewBox="-322.458 286.28 24 24" enable-background="new -322.458 286.28 24 24" xml:space="preserve">
+<g>
+	<path d="M-310.458,286.663c-6.406,0-11.618,5.211-11.618,11.618c0,6.406,5.212,11.618,11.618,11.618
+		c6.405,0,11.617-5.212,11.617-11.618C-298.841,291.874-304.053,286.663-310.458,286.663z M-310.458,308.597
+		c-5.689,0-10.317-4.628-10.317-10.317c0-5.689,4.628-10.318,10.317-10.318c5.688,0,10.316,4.628,10.316,10.318
+		C-300.142,303.969-304.77,308.597-310.458,308.597z"/>
+	<circle cx="-314.114" cy="296.269" r="1.645"/>
+	<circle cx="-306.802" cy="296.269" r="1.645"/>
+	<path d="M-305.709,301.348c-2.893,2.007-6.608,2.006-9.499,0c-0.409-0.283-0.46,0.023-0.333,0.264c2.14,4.093,8.027,4.092,10.168,0
+		C-305.248,301.37-305.298,301.064-305.709,301.348z"/>
+</g>
+</svg>

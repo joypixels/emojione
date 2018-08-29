@@ -1,6 +1,6 @@
-# Upgrading from emojione v2 to emojione v3
+# Upgrading from emojione v2 to emojione v3+
 
-*  emojione v3 brings about several breaking changes and new considerations
+*  emojione v3 brought about several breaking changes and new considerations
 *  please review EmojiOne Licensing for more information on using SVG or PNG (larger than 128px) assets
 
 ## Libraries
@@ -15,6 +15,7 @@
   	- blacklistChars (bool)
 	- spriteSize (str)
 	- riskyMatchAscii (bool)
+	- fileExtension (str)
 
 **PHP**
  - Deprecated vars: 
@@ -27,6 +28,7 @@
 	- blacklistChars (str)
 	- spriteSize (str)
 	- riskyMatchAscii (bool)
+	- fileExtension (str)
  - Tests
 	- [tests/ConversionTest.php] removed testSmileyInsideAnObject()
 	- [tests/ConversionTest.php] removed testShortnameInsideOfObjectTag()
@@ -53,7 +55,7 @@ Replaced by ‘examples’. Contains code snippets of each of the functions prev
  - **genders** (array) contains the base code points of the gender children for a gender parent (gender-neutral, gender base)
  - **unicode** (str) and **unicode_alt** (str) are depricated. code points are now organized within **code_points** (array)
  	- **base** (str) is identical to the primary key
- 	- **fully_qualified** (str) represents code point according to [this Unicode documentation](http://unicode.org/Public/emoji/5.0/emoji-test.txt)
+ 	- **fully_qualified** (str) represents code point according to [this Unicode documentation](http://unicode.org/Public/emoji/11.0/emoji-test.txt)
  	- **non_fully_qualified** (str) derived from same documentation as FQ. NFQ code point convention is used for PNG file names in font file builds
 	- **output** (str) is the recommended code point to use for conversion to native unicode
 	- **match_default** (array) contains one or more code points used to identify native unicode

@@ -63,27 +63,6 @@ function convert() {
 
 ----------
 
-## .unicodeToImage(str)
-*Convert Native Unicode Emoji Directly to Images*
-
-If you have native unicode emoji characters that you want to convert directly to images, you can use this function. It should be noted that once your input text has been converted to images it cannot be converted back using the provided functions.
-
->For that reason, we recommend only converting input text to images when it's ready to display to the client. The better alternative, in our opinion, is to convert native unicode emoji to their corresponding shortname using **.toShort(str)** for database storage.
-
-**HTML:**
-`<input type="button" value="Convert" onclick="convert()"/>`
-
-**Javascript Snippet**
-```javascript
-function convert() {
-	var input = document.getElementById('inputText').value;
-	var output = emojione.unicodeToImage(input);
-	document.getElementById('outputText').innerHTML = output;
-}
-```
-
-----------
-
 ## .shortnameToUnicode(str)
 *Convert Shortnames to Native Unicode*
 
