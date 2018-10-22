@@ -1,6 +1,6 @@
 # ![EmojiOne Logo](https://www.emojione.com/images/vectors/emojione-typeface.svg)
 
-> [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione)
+> [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione) [![jsDelivr hits](https://data.jsdelivr.com/v1/package/npm/emojione/badge?style=rounded)](https://www.jsdelivr.com/package/npm/emojione)
 
 A set of libraries to help users find and replace native system emojis with EmojiOne in their app or website.
 
