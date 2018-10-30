@@ -5,10 +5,10 @@ There's no better way to port our emoji into your device than through a native f
 > Note: Due to their size, the font files have been removed from this repo and instead will be attached to releases on our repo that hosts the artwork and related assets, [emojione-assets](https://github.com/emojione/emojione-assets).
 >
 > Please go here to download the font files: [emojione-assets/releases](https://github.com/emojione/emojione-assets/releases)
-### Google Font - [emojione-android.ttf](https://github.com/emojione/emojione-assets/releases/download/3.1.2/emojione-android.ttf)
+### Google Font - [emojione-android.ttf](https://github.com/emojione/emojione-assets/releases/download/4.0.1/emojione-android.ttf)
 
   * Compatible with rooted Android devices and Linux.
-  * Updated July 6, 2017
+  * Updated Sept 12, 2018
   * Developers using the font within their app, please review [this issue](https://github.com/Ranks/emojione/issues/385) regarding proper display of digits.
 
 Android Setup Help:
@@ -27,22 +27,35 @@ Linux Setup Help:
 
 ### Apple Font
 
-**For older apple devices** - [emojione-apple.ttf](https://github.com/emojione/emojione-assets/releases/download/3.1.2/emojione-apple.ttf)
-
-**For latest apple devices** - [emojione-apple.ttc](https://github.com/emojione/emojione-assets/releases/download/3.1.2/emojione-apple.ttc)
+**For latest apple devices** 
+- [emojione-mac.ttc](https://github.com/emojione/emojione-assets/releases/download/4.0.1/emojione-mac.ttc)
+- [emojione-ios.ttc](https://github.com/emojione/emojione-assets/releases/download/4.0.1/emojione-ios.ttc)
 
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
-  * Rename font to Apple Color Emoji.ttf for Mac OSX.
-  * Rename font to AppleColorEmoji@2x.ttf for iOS, jailbreak required.
-  * Known Issue: On Mac OSX, emoji may display significantly smaller than normal (system wide).
-  * Updated July 8, 2017
+  * Rename font to Apple Color Emoji.ttc for Mac OSX.
+  * Rename font to AppleColorEmoji@2x.ttc for iOS, jailbreak required.
+  * Updated Oct 29, 2018
   
-Mac OS Instructions:
-Simply move the font into `~/Library/Fonts/Apple Color Emoji.ttc`. You should immediately see a new version of the Apple Color Emoji font in your Fontbook, and it will be useable immediately.
+ 
+**Mac OS System Instructions:**
+	1.) Manual 
+	- Simply move the Mac compatible font into `~/Library/Fonts/Apple Color Emoji.ttc`. You should immediately see a new version of the Apple Color Emoji font in your Fontbook, and it will be useable immediately.
 
-iOS Instructions:
-Search for “EmojiOne 2016” on Cydia and apply with BytaFont. Cydia is a software application for iOS that enables a user to find and install software packages on jailbroken iOS devices (iPhone, iPod, iPad).
+**iOS System Instructions:**
+	1.) Manual 
+	- Take a look at [PoomSmarts Guide](https://poomsmart.github.io/repo/emoji10.html) Option #3: Manual
 
+	2.) Installable
+	Cydia is a package manager app for rooted/jailbroken iOS devices(iPhone, iPod, iPad) and is based on Debian APT [(Advanced Packaging Tool)](https://en.wikipedia.org/wiki/APT_(Debian)) 
+	Tap [Add EmojiPort Fonts](cydia://url/https://cydia.saurik.com/api/share#?source=https://vxbakerxv.github.io/repo/) cydia source for "EmojiOne 2018".
+
+App Instructions:
+    This has not been fully tested/confirmed but may work in app projects. 
+	Extract TTF from TTC and create new FontFamily name 'EmojiOne'. After that you should be able to drop the font in your project and use UIFont to call that newly created FontFamily name. 
+	[otc2otf.py](https://github.com/adobe-type-tools/afdko/tree/develop/python/afdko) Adobe standalone python script to extract fonts from a TTC
+	[fontname.py](https://github.com/chrissimpkins/fontname.py) FontTools python script to change name table in a TTF.
+	You can also use High-Logic FontCreator to do the above tasks.
+	
 ### EmojiOne SVG-based Color Fonts
 Through a cooperative effort with Adobe Systems, EmojiOne created black and white versions of the emoji set which were used, in part, to generate this font. Using these fonts with Firefox or Microsoft Edge, you can enjoy full-color EmojiOne emoji. Black and white images will show as the fall back for systems that are not able to render color SVG fonts. The font is available in the following formats:
 
