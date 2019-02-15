@@ -7,7 +7,7 @@ class Emojione
     public static $ascii = false; // convert ascii smileys?
 	public static $riskyMatchAscii = false; // set true to match ascii without leading/trailing space char
     public static $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
-	public static $emojiVersion = '4.0';
+	public static $emojiVersion = '4.5';
 	public static $emojiSize = '32';
 	public static $greedyMatch = false;
 	public static $blacklistChars = '';

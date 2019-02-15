@@ -11,7 +11,7 @@ use Emojione\Emojione;
 class ConversionTest extends \PHPUnit_Framework_TestCase
 {
 
-    private $emojiVersion = '4.0';
+    private $emojiVersion = '4.5';
 
     /**
      * test single unicode character

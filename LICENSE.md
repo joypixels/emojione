@@ -1,8 +1,8 @@
 #### EmojiOne Artwork
 
 *  Applies to all PNG files found in the emojione-assets repo as well as any adaptations made.
-*  Free license: [emojione.com/developers/free-license](https://www.emojione.com/developers/free-license)
-*  Premium license: [emojione.com/developers/premium-license](https://www.emojione.com/developers/premium-license)
+*  Free license: [emojione.com/licenses/free](https://www.emojione.com/licenses/free)
+*  Premium license: [emojione.com/licenses/premium](https://www.emojione.com/licenses/premium)
 
 
 #### EmojiOne Non-Artwork

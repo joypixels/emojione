@@ -12,7 +12,7 @@ class Client implements ClientInterface
     public $riskyMatchAscii = false; // set true to match ascii without leading/trailing space char
     public $shortcodes = true; // convert shortcodes?
     public $unicodeAlt = true; // use the unicode char as the alt attribute (makes copy and pasting the resulting text better)
-    public $emojiVersion = '4.0';
+    public $emojiVersion = '4.5';
     public $emojiSize = '32'; //available sizes are '32', '64', and '128'
     public $greedyMatch = false;
     public $blacklistChars = '';

@@ -6,12 +6,12 @@
         {
           "description": "test toImage",
           "text": "Hello world! 😄 :smile:",
-          "expected": "Hello world! <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f604.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f604.png\\\"/>"
+          "expected": "Hello world! <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f604.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f604.png\\\"/>"
         },
         {
           "description": "mixed ascii, regular unicode and duplicate emoji",
           "text": ":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> is <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> and 저 is not <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> or <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> also :randomy: is not emoji"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> is <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> and 저 is not <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> or <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> also :randomy: is not emoji"
         }
       ]
     },
@@ -81,32 +81,32 @@
         {
           "description": "single shortname character conversion",
           "text": "Hello world! 😄 :smile:",
-          "expected": "Hello world! 😄 <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f604.png\\\"/>"
+          "expected": "Hello world! 😄 <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f604.png\\\"/>"
         },
         {
           "description": "shortname at start of sentence with apostrophe",
           "text": ":snail:'s are cool!",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f40c.png\\\"/>'s are cool!"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f40c.png\\\"/>'s are cool!"
         },
         {
           "description": "shortname shares a colon",
           "text": ":invalid:snail:",
-          "expected": ":invalid<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f40c.png\\\"/>"
+          "expected": ":invalid<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f40c.png\\\"/>"
         },
         {
           "description": "mixed ascii, regular unicode and duplicate emoji",
           "text": ":alien: is 👽 and 저 is not :alien: or :alien: also :randomy: is not emoji",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> is 👽 and 저 is not <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> or <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/> also :randomy: is not emoji"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> is 👽 and 저 is not <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> or <img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/> also :randomy: is not emoji"
         },
         {
           "description": "multiline emoji string",
           "text": ":dancer:\\n:dancer:",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f483.png\\\"/>\\n<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f483.png\\\"/>"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f483.png\\\"/>\\n<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f483.png\\\"/>"
         },
         {
           "description": "triple emoji string",
           "text": ":dancer::dancer::alien:",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f483.png\\\"/><img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f483.png\\\"/><img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f47d.png\\\"/>"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f483.png\\\"/><img class=\\\"emojione\\\" alt=\\\"💃\\\" title=\\\":dancer:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f483.png\\\"/><img class=\\\"emojione\\\" alt=\\\"👽\\\" title=\\\":alien:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f47d.png\\\"/>"
         }
       ]
     },
@@ -146,17 +146,17 @@
         {
           "description": "single character shortname conversion",
           "text": "Hello world! 😄 :smile:",
-          "expected": "Hello world! <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f604.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f604.png\\\"/>"
+          "expected": "Hello world! <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f604.png\\\"/> <img class=\\\"emojione\\\" alt=\\\"😄\\\" title=\\\":smile:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f604.png\\\"/>"
         },
         {
           "description": "shortname shares a colon",
           "text": ":invalid:snail:",
-          "expected": ":invalid<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f40c.png\\\"/>"
+          "expected": ":invalid<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f40c.png\\\"/>"
         },
         {
           "description": "single unicode character conversion",
           "text": "🐌",
-          "expected": "<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.0/png/64/1f40c.png\\\"/>"
+          "expected": "<img class=\\\"emojione\\\" alt=\\\"🐌\\\" title=\\\":snail:\\\" src=\\\"https://cdn.jsdelivr.net/emojione/assets/4.5/png/64/1f40c.png\\\"/>"
         }
       ]
     }

@@ -5,7 +5,7 @@ There's no better way to port our emoji into your device than through a native f
 > Note: Due to their size, the font files have been removed from this repo and instead will be attached to releases on our repo that hosts the artwork and related assets, [emojione-assets](https://github.com/emojione/emojione-assets).
 >
 > Please go here to download the font files: [emojione-assets/releases](https://github.com/emojione/emojione-assets/releases)
-### Google Font - [emojione-android.ttf](https://github.com/emojione/emojione-assets/releases/download/4.0.1/emojione-android.ttf)
+### Google Font - [emojione-android.ttf](https://github.com/emojione/emojione-assets/releases/download/4.5/emojione-android.ttf)
 
   * Compatible with rooted Android devices and Linux.
   * Updated Sept 12, 2018
@@ -28,8 +28,8 @@ Linux Setup Help:
 ### Apple Font
 
 **For latest apple devices** 
-- [emojione-mac.ttc](https://github.com/emojione/emojione-assets/releases/download/4.0.1/emojione-mac.ttc)
-- [emojione-ios.ttc](https://github.com/emojione/emojione-assets/releases/download/4.0.1/emojione-ios.ttc)
+- [emojione-mac.ttc](https://github.com/emojione/emojione-assets/releases/download/4.5/emojione-mac.ttc)
+- [emojione-ios.ttc](https://github.com/emojione/emojione-assets/releases/download/4.5/emojione-ios.ttc)
 
   * Compatible with Mac OSX, and iOS devices (iPhone, iPad).
   * Rename font to Apple Color Emoji.ttc for Mac OSX.
