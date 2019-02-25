@@ -1,7 +1,7 @@
 Package.describe({
   name: 'emojione:emojione',
   summary: 'Meteor Package of the https://www.emojione.com/ set.',
-  version: '4.5.0',
+  version: '4.5.1',
   git: 'https://github.com/emojione/emojione.git'
 });
 
@@ -25,7 +25,7 @@ Package.onUse(function(api) {
     'extras/css/emojione.css',
     'extras/css/emojione-awesome.css'
   ], 'client');
-  
+
   api.addAssets('../emojione-assets/sprites/emojione-sprite-32.min.css', 'client');
   api.addAssets('../emojione-assets/sprites/emojione-sprite-32-activity.png', 'client');
   api.addAssets('../emojione-assets/sprites/emojione-sprite-32-diversity.png', 'client');
