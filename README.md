@@ -1,3 +1,6 @@
+# This Repository is now maintained as JoyPixels/emoji-toolkit.
+You'll find the latest version of our resources at [emoji-toolkit](https://github.com/joypixels/emoji-toolkit). Please see the [UPGRADE README](https://github.com/joypixels/emoji-toolkit/UPGRADE.md) for important information on what's changed from this repository. Thank you! 
+
 # ![EmojiOne Logo](https://www.emojione.com/images/vectors/emojione-typeface.svg)
 
 > [![npm version](https://img.shields.io/npm/v/emojione.svg)](https://www.npmjs.com/package/emojione) [![npm downloads](https://img.shields.io/npm/dt/emojione.svg)](https://www.npmjs.com/package/emojione) [![jsDelivr hits](https://data.jsdelivr.com/v1/package/npm/emojione/badge?style=rounded)](https://www.jsdelivr.com/package/npm/emojione)
