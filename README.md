@@ -1,4 +1,4 @@
-# This Repository is now maintained as JoyPixels/emoji-toolkit.
+# This repository is now maintained as JoyPixels/emoji-toolkit.
 You'll find the latest version of our resources at [emoji-toolkit](https://github.com/joypixels/emoji-toolkit). Please see the [UPGRADE README](https://github.com/joypixels/emoji-toolkit/UPGRADE.md) for important information on what's changed from this repository. Thank you! 
 
 # ![EmojiOne Logo](https://www.emojione.com/images/vectors/emojione-typeface.svg)
