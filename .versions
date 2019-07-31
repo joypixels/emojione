@@ -14,7 +14,7 @@ ecmascript-runtime@0.7.0
 ecmascript-runtime-client@0.7.1
 ecmascript-runtime-server@0.7.0
 ejson@1.1.0
-emojione:emojione@4.0.0
+emojione:emojione@4.5.1
 html-tools@1.0.11
 htmljs@1.0.11
 http@1.4.1
