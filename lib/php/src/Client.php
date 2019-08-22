@@ -332,7 +332,6 @@ class Client implements ClientInterface
             $ruleset = $this->getRuleset();
             $ascii_replace = $ruleset->getAsciiReplace();
 
-            $shortcode_replace = array_flip(array_reverse($ruleset->getShortcodeReplace()));
             $shortname = $m[3];
 
             if ( empty($ascii_replace[$shortname]) )
@@ -341,8 +340,7 @@ class Client implements ClientInterface
             }
             else
             {
-                $unicode = $ascii_replace[$shortname];
-                return $m[2].$shortcode_replace[$unicode];
+                return $m[2].$ascii_replace[$shortname];
             }
         }
     }
